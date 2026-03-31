@@ -1,0 +1,60 @@
+{
+  "experts": [
+    {
+      "id": "1",
+      "slug": "feyza-caksen",
+      "name": "Feyza Çaksen",
+      "title": "Klinik Psikolog",
+      "city": "konya",
+      "district": "Meram",
+      "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80",
+      "shortBio": "Ergen psikolojisi ve bireysel terapi alanında uzmanlaşmış, EMDR sertifikalı klinik psikolog.",
+      "services": ["bireysel-terapi", "ergen-psikolojisi", "kaygi-bozuklugu", "emdr"],
+      "sessionFee": "3.000₺",
+      "sessionType": ["Yüz Yüze", "Online"],
+      "experience": "5 yıl",
+      "phone": "+90 555 043 42 99",
+      "appointmentUrl": "https://wa.me/905550434299",
+      "featured": true
+    }
+  ],
+  "services": [
+    { "slug": "bireysel-terapi", "name": "Bireysel Terapi", "icon": "💬", "shortDescription": "Kişiye özel terapi seanslarıyla duygusal iyileşme ve kişisel gelişim." },
+    { "slug": "cift-terapisi", "name": "Çift Terapisi", "icon": "🤝", "shortDescription": "İlişki sorunlarını çözmek ve bağı güçlendirmek için çift terapisi." },
+    { "slug": "ergen-psikolojisi", "name": "Ergen Psikolojisi", "icon": "🌱", "shortDescription": "Ergenlerin duygusal ve sosyal gelişimini destekleyen uzman danışmanlık." },
+    { "slug": "aile-terapisi", "name": "Aile Terapisi", "icon": "🏠", "shortDescription": "Aile içi iletişimi güçlendiren ve çatışmaları çözen terapi desteği." },
+    { "slug": "kaygi-bozuklugu", "name": "Kaygı & Panik Atak", "icon": "🌿", "shortDescription": "Kaygı bozukluğu ve panik atak için kanıta dayalı terapi yaklaşımları." },
+    { "slug": "emdr", "name": "EMDR Terapisi", "icon": "✨", "shortDescription": "Travma ve TSSB tedavisinde etkili EMDR yöntemi." }
+  ],
+  "cities": [
+    { "slug": "konya", "name": "Konya", "region": "İç Anadolu", "active": true },
+    { "slug": "kayseri", "name": "Kayseri", "region": "İç Anadolu", "active": false },
+    { "slug": "eskisehir", "name": "Eskişehir", "region": "İç Anadolu", "active": false }
+  ],
+  "blogPosts": [
+    {
+      "slug": "konya-panik-atak-belirtileri",
+      "title": "Panik Atak Belirtileri Nelerdir? Nasıl Geçer?",
+      "excerpt": "Panik atak yaşıyorsanız yalnız değilsiniz. Belirtiler, nedenleri ve terapi süreci hakkında bilmeniz gerekenler.",
+      "publishedAt": "2026-03-15",
+      "category": "Kaygı",
+      "image": "/images/blog/panik-atak.jpg"
+    },
+    {
+      "slug": "konya-cift-terapisi-ne-zaman",
+      "title": "Çift Terapisine Ne Zaman Gidilmeli?",
+      "excerpt": "İlişkinizde tekrar eden kavgalar, iletişim kopukluğu veya güven sorunu mu var? Çift terapisi tam zamanı.",
+      "publishedAt": "2026-03-10",
+      "category": "İlişkiler",
+      "image": "/images/blog/cift-terapisi.jpg"
+    },
+    {
+      "slug": "ergen-psikologa-gitmiyor",
+      "title": "Ergeniniz Psikologa Gitmek İstemiyor mu?",
+      "excerpt": "Zorla getirilen ergen terapi sürecine direnç gösterir. İşte ilk adımı doğru atmanın yolu.",
+      "publishedAt": "2026-03-05",
+      "category": "Ergen",
+      "image": "/images/blog/ergen.jpg"
+    }
+  ]
+}

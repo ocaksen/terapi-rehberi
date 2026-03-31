@@ -25,12 +25,11 @@
   --color-sky:     #60c4f0;
 
   --font-sans: var(--font-inter), system-ui, sans-serif;
-  --font-serif: var(--font-playfair), Georgia, "Times New Roman", serif;
 }
 
 :root {
   --background: #fffaf7;
-  --foreground: #1a2e2a;
+  --foreground: #111827;
 }
 
 body {
@@ -38,11 +37,18 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
-h1, h2 {
-  font-family: var(--font-serif);
+h1, h2, h3, h4 {
+  font-family: var(--font-sans);
   letter-spacing: -0.02em;
+  color: #0f172a;
+}
+
+p {
+  color: #374151;
 }
 
 @layer base {
