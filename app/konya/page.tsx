@@ -87,7 +87,6 @@ export default function KonyaPage() {
               { label: "Meram Psikolog",    href: "/konya/meram" },
               { label: "Selçuklu Psikolog", href: "/konya/selcuklu" },
               { label: "Karatay Psikolog",  href: "/konya/karatay" },
-              { label: "Oyun Ablası",       href: "/konya/oyun-ablasi" },
             ].map((item) => (
               <Link
                 key={item.href}

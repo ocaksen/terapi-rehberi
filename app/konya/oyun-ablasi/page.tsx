@@ -220,10 +220,10 @@ export default function OyunAblasıPage() {
               Konya Psikologları →
             </Link>
             <Link
-              href="/konya/dil-terapisti"
+              href="/blog/konya-dil-terapisti-ne-zaman"
               className="bg-white border border-brand-200 text-brand-700 font-semibold px-5 py-2.5 rounded-xl hover:bg-brand-50 transition-colors text-sm text-center"
             >
-              Konya Dil Terapistleri →
+              Dil Terapisti Ne Zaman Gerekir? →
             </Link>
           </div>
         </section>
