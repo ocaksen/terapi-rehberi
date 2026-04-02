@@ -56,23 +56,68 @@ function inline(text: string): string {
     );
 }
 
+// Başlıktaki {#anchor-id} kısmını temizle
+function stripAnchorId(text: string): string {
+  return text.replace(/\s*\{#[^}]+\}/, "").trim();
+}
+
+// Markdown tabloyu HTML'e çevir
+function renderTable(block: string, key: number) {
+  const lines = block.trim().split("\n").filter((l) => l.trim());
+  if (lines.length < 2) return null;
+  const headers = lines[0].split("|").map((h) => h.trim()).filter(Boolean);
+  const rows = lines.slice(2).map((row) =>
+    row.split("|").map((c) => c.trim()).filter(Boolean)
+  );
+  return (
+    <div key={key} className="my-6 overflow-x-auto rounded-xl border border-cream-200">
+      <table className="w-full text-sm text-left">
+        <thead className="bg-brand-50 text-brand-800 font-semibold">
+          <tr>
+            {headers.map((h, j) => (
+              <th key={j} className="px-4 py-3 border-b border-cream-200">{h}</th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {rows.map((row, j) => (
+            <tr key={j} className={j % 2 === 0 ? "bg-white" : "bg-cream-50"}>
+              {row.map((cell, k) => (
+                <td key={k} className="px-4 py-3 text-slate-700 border-b border-cream-100"
+                  dangerouslySetInnerHTML={{ __html: inline(cell) }} />
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
 function renderContent(body: string) {
   const blocks = body.split("\n\n");
   return blocks.map((block, i) => {
     const trimmed = block.trim();
     if (!trimmed || trimmed === "---") return null;
 
+    // Markdown tablosu: | ile başlayan satırları içeriyor
+    if (trimmed.includes("|") && trimmed.split("\n").filter((l) => l.includes("|")).length >= 2) {
+      return renderTable(trimmed, i);
+    }
+
     if (trimmed.startsWith("## ")) {
+      const text = stripAnchorId(trimmed.replace(/^## /, ""));
       return (
         <h2 key={i} className="text-2xl font-bold text-brand-900 mt-10 mb-4 leading-snug">
-          {trimmed.replace(/^## /, "")}
+          {text}
         </h2>
       );
     }
     if (trimmed.startsWith("### ")) {
+      const text = stripAnchorId(trimmed.replace(/^### /, ""));
       return (
         <h3 key={i} className="text-lg font-bold text-brand-800 mt-7 mb-3">
-          {trimmed.replace(/^### /, "")}
+          {text}
         </h3>
       );
     }
