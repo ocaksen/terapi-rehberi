@@ -202,7 +202,7 @@ export default function UzmanOlClient() {
                 { val: "Ücretsiz", label: "Platform kayıt ücreti" },
                 { val: "%0",       label: "Komisyon oranı" },
                 { val: "48 saat",  label: "Başvuru yanıt süresi" },
-                { val: "🔒",       label: "KVKK uyumlu sistem" },
+                { val: "🎯",       label: "Hedefli danışan kitlesi" },
               ].map((s) => (
                 <div key={s.label} className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/20">
                   <p className="text-2xl font-bold text-white mb-1">{s.val}</p>
@@ -230,31 +230,6 @@ export default function UzmanOlClient() {
               <p className="text-brand-400 text-xs">{s.label}</p>
             </div>
           ))}
-        </div>
-      </section>
-
-      {/* ══════════════════════════════════════
-          FAYDALAR — HealMeUp'ın 8-kart yapısı
-      ══════════════════════════════════════ */}
-      <section className="py-16 px-4 bg-cream-50">
-        <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-10">
-            <p className="section-label mb-3">Neden TerapiRehberi?</p>
-            <h2 className="text-2xl sm:text-3xl font-bold text-slate-900">
-              TerapiRehberi'nde Uzman Olmanın Farkı
-            </h2>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {BENEFITS.map((b) => (
-              <div key={b.title} className="bg-white rounded-2xl border border-cream-200 p-6 hover:shadow-md transition-shadow">
-                <div className="w-11 h-11 rounded-xl bg-brand-50 border border-brand-100 flex items-center justify-center text-brand-600 mb-4">
-                  {b.svg}
-                </div>
-                <h3 className="font-bold text-slate-900 mb-2">{b.title}</h3>
-                <p className="text-slate-600 text-sm leading-relaxed">{b.desc}</p>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 

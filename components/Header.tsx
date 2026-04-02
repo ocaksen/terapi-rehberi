@@ -113,7 +113,7 @@ export default function Header() {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
           ? "bg-white/95 backdrop-blur-sm border-b border-cream-200 shadow-sm"
-          : "bg-transparent border-b border-transparent"
+          : "bg-brand-900/85 backdrop-blur-sm border-b border-white/10"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">

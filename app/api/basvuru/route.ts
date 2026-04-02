@@ -1,4 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
+import fs from "fs";
+import path from "path";
 
 export async function POST(req: NextRequest) {
   try {
@@ -43,6 +45,17 @@ export async function POST(req: NextRequest) {
         }),
       });
     }
+
+    // Dosyaya kaydet
+    try {
+      const filePath = path.join(process.cwd(), "data", "basvurular.json");
+      let existing: unknown[] = [];
+      if (fs.existsSync(filePath)) {
+        try { existing = JSON.parse(fs.readFileSync(filePath, "utf-8")); } catch { existing = []; }
+      }
+      existing.push({ ...data, tarih: new Date().toISOString() });
+      fs.writeFileSync(filePath, JSON.stringify(existing, null, 2), "utf-8");
+    } catch { /* sessiz hata */ }
 
     // --- WhatsApp yedek bildirimi (ADMIN_WHATSAPP env varsa) ---
     // adminPhone varsa client'a döndür, client tarafı window.open ile açar

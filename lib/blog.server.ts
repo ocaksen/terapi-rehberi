@@ -27,9 +27,11 @@ function estimateReadTime(body: string): string {
 function resolveImage(slug: string, frontmatterImage?: string): string | undefined {
   // 1. Frontmatter'da açıkça belirtilmişse kullan
   if (frontmatterImage) return frontmatterImage;
-  // 2. Sync script tarafından indirilmiş local görsel var mı?
-  const localPath = path.join(process.cwd(), "public", "images", "blog", `${slug}.jpg`);
-  if (fs.existsSync(localPath)) return `/images/blog/${slug}.jpg`;
+  // 2. Local görsel var mı? (.jpg, .png, .webp sırasıyla dene)
+  for (const ext of ["jpg", "png", "webp"]) {
+    const localPath = path.join(process.cwd(), "public", "images", "blog", `${slug}.${ext}`);
+    if (fs.existsSync(localPath)) return `/images/blog/${slug}.${ext}`;
+  }
   return undefined;
 }
 

@@ -32,8 +32,15 @@ export default function SoruSorClient({ sorular }: { sorular: SoruCevap[] }) {
     ? sorular
     : sorular.filter((s) => s.category === aktifFiltre);
 
-  function handleGonder() {
+  async function handleGonder() {
     if (soru.trim().length < 10) return;
+    try {
+      await fetch("/api/soru-sor", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ kategori: seciliKat, soru }),
+      });
+    } catch { /* sessiz hata */ }
     setGonderildi(true);
     setSoru("");
   }
