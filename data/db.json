@@ -67,9 +67,18 @@
       "shortDescription": "Kişiye özel terapi seanslarıyla duygusal iyileşme ve kişisel gelişim.",
       "longDescription": "Bireysel terapi, kişinin kendisiyle ve çevresiyle daha sağlıklı bir ilişki kurmasını hedefleyen, yüz yüze veya online gerçekleştirilen birebir görüşmelerdir. Konya'daki psikolog ve terapistlerimiz; depresyon, kaygı, özgüven sorunları, iş stresi, yas ve kimlik arayışı gibi pek çok konuda destek sunar.\n\nTerapi sürecinde hangi yaklaşım kullanılacağı tamamen danışanın ihtiyacına göre belirlenir: Bilişsel Davranışçı Terapi (BDT), Şema Terapi, Kabul ve Kararlılık Terapisi (ACT) veya psikodinamik yöntemler bunların başında gelir. İlk seans genellikle tanışma ve ihtiyaç değerlendirmesi amacıyla yapılır; sonraki seansların sıklığı ise psikolog ile birlikte planlanır.\n\nKonya'da bireysel terapi seansları 45–50 dakika sürer ve haftalık ya da iki haftada bir yapılabilir. Yüz yüze seans tercih edemeyenler için online bireysel terapi de aynı etkinlikte sonuç vermektedir.",
       "faqs": [
-        { "q": "Bireysel terapiye nasıl başlanır?", "a": "Sayfamızdaki uzmanlardan birini seçip randevu bağlantısına tıklayarak ilk görüşmeyi planlayabilirsiniz. İlk seans genellikle değerlendirme amaçlıdır ve herhangi bir taahhüt gerektirmez." },
-        { "q": "Kaç seans gerekir?", "a": "Sorunun türüne ve derinliğine göre değişir. Hafif kaygı veya stres için 6–8 seans yeterli olabilirken, kronik veya kökleşmiş sorunlar daha uzun bir süreci gerektirebilir." },
-        { "q": "Online terapi yüz yüze kadar etkili mi?", "a": "Araştırmalar, video terapi seanslarının birçok sorun için yüz yüze terapi kadar etkili olduğunu göstermektedir. Özellikle kaygı, depresyon ve ilişki sorunlarında benzer sonuçlar elde edilmektedir." }
+        {
+          "q": "Bireysel terapiye nasıl başlanır?",
+          "a": "Sayfamızdaki uzmanlardan birini seçip randevu bağlantısına tıklayarak ilk görüşmeyi planlayabilirsiniz. İlk seans genellikle değerlendirme amaçlıdır ve herhangi bir taahhüt gerektirmez."
+        },
+        {
+          "q": "Kaç seans gerekir?",
+          "a": "Sorunun türüne ve derinliğine göre değişir. Hafif kaygı veya stres için 6–8 seans yeterli olabilirken, kronik veya kökleşmiş sorunlar daha uzun bir süreci gerektirebilir."
+        },
+        {
+          "q": "Online terapi yüz yüze kadar etkili mi?",
+          "a": "Araştırmalar, video terapi seanslarının birçok sorun için yüz yüze terapi kadar etkili olduğunu göstermektedir. Özellikle kaygı, depresyon ve ilişki sorunlarında benzer sonuçlar elde edilmektedir."
+        }
       ]
     },
     {
@@ -79,9 +88,18 @@
       "shortDescription": "İlişki sorunlarını çözmek ve bağı güçlendirmek için çift terapisi.",
       "longDescription": "Çift terapisi, iki partnerin iletişim sorunlarını, güven krizlerini, cinsellik meselelerini ya da yoğunlaşan çatışmaları profesyonel bir terapist eşliğinde ele aldığı bir psikoterapi biçimidir. Konya'daki çift terapistlerimiz; ayrılık sürecinde de, ilişkiyi güçlendirme amacıyla da randevu vermektedir.\n\nÇift terapisinde yaygın olarak kullanılan Gottman Yöntemi ve Duygusal Odaklı Terapi (EFT), iletişim kalıplarını yeniden şekillendirmeye ve bağlanma güvenliğini pekiştirmeye odaklanır. Seans sayısı genellikle 8 ile 20 arasında değişir; haftalık görüşme önerilir.\n\nYeni evli çiftlerden uzun yıllık ilişkilere, nişanlı danışanlardan ayrılık sonrası uzlaşma çalışmalarına kadar her aşamada çift terapisi fayda sağlar. Eğer partneriniz terapiye katılmak istemiyorsa, bireysel olarak ilişki terapisi almak da mümkündür.",
       "faqs": [
-        { "q": "Partnerim katılmak istemezse ne olur?", "a": "Partneriniz hazır hissetmiyorsa siz bireysel olarak ilişki odaklı terapi alabilirsiniz. Bu yaklaşım da iletişim kalıplarını anlamaya ve değiştirmeye yardımcı olur." },
-        { "q": "Çift terapisi evliliği kurtarır mı?", "a": "Çift terapisi bir garanti vermez; ancak her iki taraf da sürece istekle katıldığında büyük değişimler mümkündür. Araştırmalar, yapılandırılmış çift terapisinin ilişki doyumunu anlamlı ölçüde artırdığını gösteriyor." },
-        { "q": "Kaç seansta sonuç alınır?", "a": "Çoğu çift ilk 4–6 seansta belirgin bir değişim fark etse de kapsamlı bir dönüşüm için genellikle 12–20 seans önerilir." }
+        {
+          "q": "Partnerim katılmak istemezse ne olur?",
+          "a": "Partneriniz hazır hissetmiyorsa siz bireysel olarak ilişki odaklı terapi alabilirsiniz. Bu yaklaşım da iletişim kalıplarını anlamaya ve değiştirmeye yardımcı olur."
+        },
+        {
+          "q": "Çift terapisi evliliği kurtarır mı?",
+          "a": "Çift terapisi bir garanti vermez; ancak her iki taraf da sürece istekle katıldığında büyük değişimler mümkündür. Araştırmalar, yapılandırılmış çift terapisinin ilişki doyumunu anlamlı ölçüde artırdığını gösteriyor."
+        },
+        {
+          "q": "Kaç seansta sonuç alınır?",
+          "a": "Çoğu çift ilk 4–6 seansta belirgin bir değişim fark etse de kapsamlı bir dönüşüm için genellikle 12–20 seans önerilir."
+        }
       ]
     },
     {
@@ -91,9 +109,18 @@
       "shortDescription": "Ergenlerin duygusal ve sosyal gelişimini destekleyen uzman danışmanlık.",
       "longDescription": "Ergenlik dönemi; kimlik oluşumu, akran baskısı, akademik stres ve aile içi çatışmaların yoğunlaştığı kritik bir gelişim sürecidir. Konya'daki ergen terapistlerimiz, 12–20 yaş grubundaki gençlerle seans yürütme konusunda özel eğitim almış uzmanlardır.\n\nErgen terapisinde sıklıkla ele alınan konular arasında okul kaygısı, sınav stresi, zorbalık, öfke kontrolü, sosyal geri çekilme, kimlik ve cinsel yönelim soruları, yeme bozuklukları ve kendine zarar verme davranışları yer alır. Terapist; hem genç hem de gerektiğinde ebeveynlerle görüşerek bütüncül bir destek çerçevesi oluşturur.\n\nErgenin terapiste güvenmesi için ilk birkaç seansta gizlilik ilkesi özenle korunur. Ebeveynlere düzenli aralıklarla genel geri bildirim verilirken içerik paylaşılmaz.",
       "faqs": [
-        { "q": "Çocuğumun terapiye ihtiyacı olduğunu nasıl anlarım?", "a": "İki haftadan uzun süren isteksizlik, okul kaçma, uyku sorunları, ani kilo değişimleri veya kendini yaralama belirtileri varsa bir uzmana başvurmanızı öneririz." },
-        { "q": "Ergen terapiste gitmek istemezse ne yapmalıyım?", "a": "Zorlamak genellikle direnci artırır. Önce siz bir danışma seansı alarak terapistten rehberlik isteyin; ebeveyn tutumu çoğu zaman gencin sürece dahil olmasını kolaylaştırır." },
-        { "q": "Seanslarda neler konuşulur?", "a": "Terapist genci yargılamaz; duyguları ve deneyimleri keşfetmesi için güvenli bir alan yaratır. Konuşmanın yanı sıra sanat, yazma ya da oyun tabanlı yöntemler de kullanılabilir." }
+        {
+          "q": "Çocuğumun terapiye ihtiyacı olduğunu nasıl anlarım?",
+          "a": "İki haftadan uzun süren isteksizlik, okul kaçma, uyku sorunları, ani kilo değişimleri veya kendini yaralama belirtileri varsa bir uzmana başvurmanızı öneririz."
+        },
+        {
+          "q": "Ergen terapiste gitmek istemezse ne yapmalıyım?",
+          "a": "Zorlamak genellikle direnci artırır. Önce siz bir danışma seansı alarak terapistten rehberlik isteyin; ebeveyn tutumu çoğu zaman gencin sürece dahil olmasını kolaylaştırır."
+        },
+        {
+          "q": "Seanslarda neler konuşulur?",
+          "a": "Terapist genci yargılamaz; duyguları ve deneyimleri keşfetmesi için güvenli bir alan yaratır. Konuşmanın yanı sıra sanat, yazma ya da oyun tabanlı yöntemler de kullanılabilir."
+        }
       ]
     },
     {
@@ -103,9 +130,18 @@
       "shortDescription": "Aile içi iletişimi güçlendiren ve çatışmaları çözen terapi desteği.",
       "longDescription": "Aile terapisi, ailenin tamamının veya bir kısmının katılımıyla yürütülen, ilişki dinamiklerini ve iletişim kalıplarını ele alan bir terapi biçimidir. Konya'daki aile terapistlerimiz; boşanma, kayıp, ebeveyn-çocuk çatışmaları ve aile içi şiddet toparlanma süreçleri gibi ağır konularda deneyimlidir.\n\nSistemik aile terapisi yaklaşımı, sorunu bireysel bir patoloji olarak değil, aile sistemi içindeki bir işlev bozukluğu olarak ele alır. Bu perspektif sayesinde suçlama döngüsü kırılır ve tüm aile üyeleri çözümün parçası haline gelir.\n\nKonya'da aile terapisi seansları genellikle 60–75 dakika sürer. Tüm üyelerin katılımı teşvik edilse de kısmi katılımla da ilerleme mümkündür. Ortalama 8–15 seans planlanan vakalarda aile için ev ödevi ve günlük iletişim egzersizleri de sürece dahil edilir.",
       "faqs": [
-        { "q": "Aile terapisine kimler katılmalı?", "a": "Sorundan etkilenen tüm aile üyelerinin katılması ideal olmakla birlikte, bazı seanslar yalnızca ebeveynler veya yalnızca çocuklarla da yapılabilir." },
-        { "q": "Boşanma sürecinde aile terapisi işe yarar mı?", "a": "Evet. Ayrılık sürecindeki ebeveynlerin çocuklarıyla sağlıklı iletişimini korumak ve boşanma sonrası ebeveynlik planı oluşturmak için oldukça faydalıdır." },
-        { "q": "Aile terapisi bireysel terapinin yerini tutar mı?", "a": "Tutmaz; tamamlayıcıdır. Ciddi bireysel sorunlarda (depresyon, bağımlılık vb.) aile terapisiyle eş zamanlı bireysel terapi önerilir." }
+        {
+          "q": "Aile terapisine kimler katılmalı?",
+          "a": "Sorundan etkilenen tüm aile üyelerinin katılması ideal olmakla birlikte, bazı seanslar yalnızca ebeveynler veya yalnızca çocuklarla da yapılabilir."
+        },
+        {
+          "q": "Boşanma sürecinde aile terapisi işe yarar mı?",
+          "a": "Evet. Ayrılık sürecindeki ebeveynlerin çocuklarıyla sağlıklı iletişimini korumak ve boşanma sonrası ebeveynlik planı oluşturmak için oldukça faydalıdır."
+        },
+        {
+          "q": "Aile terapisi bireysel terapinin yerini tutar mı?",
+          "a": "Tutmaz; tamamlayıcıdır. Ciddi bireysel sorunlarda (depresyon, bağımlılık vb.) aile terapisiyle eş zamanlı bireysel terapi önerilir."
+        }
       ]
     },
     {
@@ -115,9 +151,18 @@
       "shortDescription": "Kaygı bozukluğu ve panik atak için kanıta dayalı terapi yaklaşımları.",
       "longDescription": "Kaygı bozukluğu Türkiye'de en sık görülen ruh sağlığı sorunlarından biridir. Sürekli gerginlik, kontrol edilemeyen endişe, çarpıntı, nefes darlığı veya belirli durumlardan kaçınma gibi belirtiler işlevselliği ciddi biçimde bozabilir. Konya'daki uzmanlarımız bu konuda kanıta dayalı yöntemlerle çalışmaktadır.\n\nBilişsel Davranışçı Terapi (BDT), kaygı bozuklukları için en kapsamlı araştırma desteğine sahip yaklaşımdır. Maruz bırakma terapisi, bilişsel yeniden yapılandırma ve nefes teknikleri seanslar boyunca birlikte uygulanır. Panik ataklar için ise interoceptive exposure (beden duyumlarına maruz bırakma) özellikle etkili sonuçlar vermektedir.\n\nKonya'da kaygı terapisi genellikle 8–12 seansla önemli iyileşme sağlar. Gerekli durumlarda terapist psikiyatri konsültasyonu da düzenleyebilir.",
       "faqs": [
-        { "q": "Panik atak ile kaygı bozukluğu aynı şey mi?", "a": "Hayır. Panik atak, yoğun korku ve bedensel belirtilerle karakterize ani krizlerdir. Kaygı bozukluğu ise uzun süreli, günlük yaşamı etkileyen kronik bir endişe halidir. Her ikisi de tedavi edilebilir." },
-        { "q": "İlaç mı terapi mi?", "a": "Bu karar psikiyatrist tarafından verilir. Hafif-orta düzey kaygıda terapi tek başına yeterli olabilir; ağır vakalarda ilaç+terapi kombinasyonu daha hızlı sonuç verir." },
-        { "q": "Terapide ne kadar sürede iyileşme başlar?", "a": "BDT'de çoğu danışan 4–6. seanstan itibaren belirgin rahatlama hisseder. Panik atak sıklığı genellikle ilk 8 seansta önemli ölçüde azalır." }
+        {
+          "q": "Panik atak ile kaygı bozukluğu aynı şey mi?",
+          "a": "Hayır. Panik atak, yoğun korku ve bedensel belirtilerle karakterize ani krizlerdir. Kaygı bozukluğu ise uzun süreli, günlük yaşamı etkileyen kronik bir endişe halidir. Her ikisi de tedavi edilebilir."
+        },
+        {
+          "q": "İlaç mı terapi mi?",
+          "a": "Bu karar psikiyatrist tarafından verilir. Hafif-orta düzey kaygıda terapi tek başına yeterli olabilir; ağır vakalarda ilaç+terapi kombinasyonu daha hızlı sonuç verir."
+        },
+        {
+          "q": "Terapide ne kadar sürede iyileşme başlar?",
+          "a": "BDT'de çoğu danışan 4–6. seanstan itibaren belirgin rahatlama hisseder. Panik atak sıklığı genellikle ilk 8 seansta önemli ölçüde azalır."
+        }
       ]
     },
     {
@@ -127,9 +172,18 @@
       "shortDescription": "Travma ve TSSB tedavisinde etkili EMDR yöntemi.",
       "longDescription": "EMDR (Göz Hareketleriyle Duyarsızlaştırma ve Yeniden İşleme), travma, TSSB, fobiler ve kaygı bozuklukları tedavisinde Dünya Sağlık Örgütü tarafından da onaylanmış kanıta dayalı bir psikoterapi yöntemidir. Konya'daki EMDR sertifikalı terapistlerimiz bu yöntemi bireysel seans çerçevesinde uygulamaktadır.\n\nEMDR seanslarında danışan travmatik anıya eşzamanlı bir ikili uyaran (göz hareketi, dokunsal veya işitsel) eşliğinde odaklanır. Bu süreç, beynin travma anısını adaptif biçimde yeniden işlemesine olanak tanır. Anı kaybolmaz; ancak artık acı verici duygusal yük taşımaz hale gelir.\n\nKonya'da EMDR terapisi için standart seans süresi 60–90 dakikadır. Basit travmalarda 3–6 seans yeterli olabilirken, komplex travma veya TSSB vakalarında süreç uzayabilir. Seanslar arasında danışana stabilizasyon teknikleri de öğretilir.",
       "faqs": [
-        { "q": "EMDR kimler için uygundur?", "a": "Trafik kazası, kayıp, istismar, doğal afet, tıbbi travma ya da uzun süreli ihmal deneyimlerine bağlı TSSB, fobiler ve kaygı bozukluklarında etkilidir. Çocuklar dahil her yaşta uygulanabilir." },
-        { "q": "EMDR hipnoz mudur?", "a": "Hayır. EMDR'da danışan tamamen bilinçlidir ve her an süreci durdurabileceğini bilir. Hipnozdan farklı olarak herhangi bir telkin ya da transa girme söz konusu değildir." },
-        { "q": "EMDR için terapiste nasıl başvurabilirim?", "a": "Sayfamızdaki EMDR sertifikalı uzmanlardan birinin profilini inceleyip randevu alabilirsiniz. İlk seans, yöntemin uygunluğunun değerlendirilmesine ayrılır." }
+        {
+          "q": "EMDR kimler için uygundur?",
+          "a": "Trafik kazası, kayıp, istismar, doğal afet, tıbbi travma ya da uzun süreli ihmal deneyimlerine bağlı TSSB, fobiler ve kaygı bozukluklarında etkilidir. Çocuklar dahil her yaşta uygulanabilir."
+        },
+        {
+          "q": "EMDR hipnoz mudur?",
+          "a": "Hayır. EMDR'da danışan tamamen bilinçlidir ve her an süreci durdurabileceğini bilir. Hipnozdan farklı olarak herhangi bir telkin ya da transa girme söz konusu değildir."
+        },
+        {
+          "q": "EMDR için terapiste nasıl başvurabilirim?",
+          "a": "Sayfamızdaki EMDR sertifikalı uzmanlardan birinin profilini inceleyip randevu alabilirsiniz. İlk seans, yöntemin uygunluğunun değerlendirilmesine ayrılır."
+        }
       ]
     }
   ],
@@ -161,6 +215,69 @@
       "publishedAt": "2026-04-01",
       "category": "Genel",
       "image": "/images/blog/konya-psikolog-nasil-secilir.jpg",
+      "author": "TerapiRehberi Editör"
+    },
+    {
+      "slug": "konya-psikolog-fiyatlari-2026",
+      "title": "Konya'da Psikolog Seans Ücreti 2026",
+      "excerpt": "Psikolog ücreti kafanızı karıştırıyorsa yalnız değilsiniz. Konya'da seans fiyatlarını etkileyen faktörleri ve 2026 güncel rakamlarını derledik.",
+      "publishedAt": "2026-04-02",
+      "category": "Genel",
+      "image": "/images/blog/konya-psikolog-fiyatlari-2026.png",
+      "author": "Klinik Psikolog Feyza Çaksen"
+    },
+    {
+      "slug": "konya-aile-terapisi",
+      "title": "Konya Aile Terapisi: Kapsamlı Rehber 2026",
+      "excerpt": "İlişkinizde bir şeylerin yolunda gitmediğini hissediyorsunuz. Konya aile terapisi ne zaman gerekir, süreç nasıl işler?",
+      "publishedAt": "2026-04-02",
+      "category": "Aile",
+      "image": "/images/blog/konya-aile-terapisi.png",
+      "author": "TerapiRehberi Editör"
+    },
+    {
+      "slug": "konya-cocuk-psikoloji",
+      "title": "Konya Çocuk Psikolojisi: Uzman Rehberi 2026",
+      "excerpt": "Çocuğunuzda bir şeylerin yolunda gitmediğini hissediyorsunuz ama emin olamıyorsunuz. Konya çocuk psikoloğuna başvurmanız gerekip gerekmediğini öğrenin.",
+      "publishedAt": "2026-04-02",
+      "category": "Çocuk",
+      "image": "/images/blog/konya-cocuk-psikoloji.png",
+      "author": "TerapiRehberi Editör"
+    },
+    {
+      "slug": "konya-ergen-terapisi",
+      "title": "Konya Ergen Terapisi: Ebeveyn ve Genç Rehberi 2026",
+      "excerpt": "Ergenlik dönemi hem genç hem ebeveyn için zorlu olabilir. Konya'da ergen terapisi ne zaman gerekir ve süreç nasıl işler?",
+      "publishedAt": "2026-04-02",
+      "category": "Ergen",
+      "image": "/images/blog/konya-ergen-terapisi.png",
+      "author": "TerapiRehberi Editör"
+    },
+    {
+      "slug": "konya-online-terapi",
+      "title": "Konya Online Terapi: 2026 Kapsamlı Rehber",
+      "excerpt": "Evden çıkmadan Konya'nın psikologlarıyla çalışmak mümkün. Konya online terapi nedir, nasıl başlanır, nelere dikkat edilmeli?",
+      "publishedAt": "2026-04-02",
+      "category": "Genel",
+      "image": "/images/blog/konya-online-terapi.jpg",
+      "author": "TerapiRehberi Editör"
+    },
+    {
+      "slug": "konya-oyun-ablasi-nedir",
+      "title": "Oyun Terapisi Nedir? Konya Ebeveyn Rehberi 2026",
+      "excerpt": "Çocuklar duygularını sözcüklerle değil oyunla anlatır. Konya'da oyun terapisi nedir, ne zaman gerekir ve süreç nasıl işler?",
+      "publishedAt": "2026-04-02",
+      "category": "Çocuk",
+      "image": "/images/blog/konya-oyun-ablasi-nedir.png",
+      "author": "TerapiRehberi Editör"
+    },
+    {
+      "slug": "konya-dil-terapisti-ne-zaman",
+      "title": "Konya Dil Terapisti: Ne Zaman Başvurulmalı?",
+      "excerpt": "Çocuğunuzun konuşma gelişimini izliyorsunuz ama ne zaman uzman aranması gerektiğini bilmiyorsunuz. Doğru zamanı öğrenin.",
+      "publishedAt": "2026-04-02",
+      "category": "Çocuk",
+      "image": "/images/blog/konya-dil-terapisti-ne-zaman.png",
       "author": "TerapiRehberi Editör"
     }
   ],
