@@ -45,7 +45,7 @@ export function getAllBlogPostsFromFiles(): Omit<BlogPostFull, "body">[] {
   return getSlugs()
     .map((slug) => {
       const filePath = path.join(BLOG_DIR, `${slug}.md`);
-      const raw = fs.readFileSync(filePath, "utf-8");
+      const raw = fs.readFileSync(filePath, "utf-8").replace(/\r\n/g, "\n").replace(/\r/g, "\n");
       const { data, content } = matter(raw);
       const excerpt =
         data.excerpt ||
@@ -74,7 +74,7 @@ export function getBlogPostBySlugFromFile(
 ): BlogPostFull | undefined {
   const filePath = path.join(BLOG_DIR, `${slug}.md`);
   if (!fs.existsSync(filePath)) return undefined;
-  const raw = fs.readFileSync(filePath, "utf-8");
+  const raw = fs.readFileSync(filePath, "utf-8").replace(/\r\n/g, "\n").replace(/\r/g, "\n");
   const { data, content } = matter(raw);
   const excerpt =
     data.excerpt ||

@@ -46,6 +46,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
+// İnline markdown: bold + linkler
+function inline(text: string): string {
+  return text
+    .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>")
+    .replace(
+      /\[([^\]]+)\]\(([^)]+)\)/g,
+      '<a href="$2" class="text-brand-600 hover:underline font-medium">$1</a>'
+    );
+}
+
 function renderContent(body: string) {
   const blocks = body.split("\n\n");
   return blocks.map((block, i) => {
@@ -67,7 +77,28 @@ function renderContent(body: string) {
       );
     }
     if (trimmed.startsWith("- ") || trimmed.includes("\n- ")) {
-      const items = trimmed.split("\n").filter((l) => l.startsWith("- "));
+      const items = trimmed.split("\n").filter((l) => l.trim().startsWith("- "));
+
+      // İçindekiler tablosu (tüm satırlar link ise) — farklı stil
+      const isToc = items.every((l) => /\[.+\]\(#.+\)/.test(l));
+      if (isToc) {
+        return (
+          <nav key={i} className="my-6 bg-cream-50 border border-cream-200 rounded-xl px-5 py-4">
+            <p className="text-xs font-bold text-brand-600 uppercase tracking-widest mb-3">İçindekiler</p>
+            <ol className="space-y-1.5">
+              {items.map((item, j) => (
+                <li key={j}>
+                  <span
+                    className="text-sm text-brand-700 hover:text-brand-900"
+                    dangerouslySetInnerHTML={{ __html: inline(item.replace(/^- /, "")) }}
+                  />
+                </li>
+              ))}
+            </ol>
+          </nav>
+        );
+      }
+
       return (
         <ul key={i} className="my-5 space-y-2 pl-1">
           {items.map((item, j) => (
@@ -75,9 +106,7 @@ function renderContent(body: string) {
               <span className="text-brand-400 mt-1.5 shrink-0 text-xs">●</span>
               <span
                 className="text-[15px]"
-                dangerouslySetInnerHTML={{
-                  __html: item.replace(/^- /, "").replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>"),
-                }}
+                dangerouslySetInnerHTML={{ __html: inline(item.replace(/^- /, "")) }}
               />
             </li>
           ))}
@@ -93,9 +122,7 @@ function renderContent(body: string) {
               <span className="font-bold text-brand-500 shrink-0 w-6 text-[15px]">{j + 1}.</span>
               <span
                 className="text-[15px]"
-                dangerouslySetInnerHTML={{
-                  __html: item.replace(/^\d+\.\s*/, "").replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>"),
-                }}
+                dangerouslySetInnerHTML={{ __html: inline(item.replace(/^\d+\.\s*/, "")) }}
               />
             </li>
           ))}
@@ -107,9 +134,7 @@ function renderContent(body: string) {
       <p
         key={i}
         className="text-[15px] text-slate-700 leading-[1.8] my-4"
-        dangerouslySetInnerHTML={{
-          __html: trimmed.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>"),
-        }}
+        dangerouslySetInnerHTML={{ __html: inline(trimmed) }}
       />
     );
   });
