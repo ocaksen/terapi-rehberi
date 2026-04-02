@@ -9,14 +9,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const services = getAllServices();
 
   const staticRoutes: MetadataRoute.Sitemap = [
-    { url: BASE, lastModified: new Date(), changeFrequency: "weekly", priority: 1.0 },
-    { url: `${BASE}/konya`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.9 },
-    { url: `${BASE}/konya/psikologlar`, lastModified: new Date(), changeFrequency: "daily", priority: 0.9 },
-    { url: `${BASE}/konya/meram`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.8 },
-    { url: `${BASE}/konya/selcuklu`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.8 },
-    { url: `${BASE}/konya/karatay`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.8 },
-    { url: `${BASE}/blog`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.7 },
-    { url: `${BASE}/uzman-ol`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.6 },
+    { url: BASE,                              lastModified: new Date(), changeFrequency: "weekly",  priority: 1.0 },
+    { url: `${BASE}/konya`,                   lastModified: new Date(), changeFrequency: "weekly",  priority: 0.9 },
+    { url: `${BASE}/konya/psikologlar`,       lastModified: new Date(), changeFrequency: "daily",   priority: 0.9 },
+    { url: `${BASE}/konya/meram`,             lastModified: new Date(), changeFrequency: "weekly",  priority: 0.8 },
+    { url: `${BASE}/konya/selcuklu`,          lastModified: new Date(), changeFrequency: "weekly",  priority: 0.8 },
+    { url: `${BASE}/konya/karatay`,           lastModified: new Date(), changeFrequency: "weekly",  priority: 0.8 },
+    { url: `${BASE}/konya/oyun-ablasi`,       lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE}/blog`,                    lastModified: new Date(), changeFrequency: "weekly",  priority: 0.8 },
+    { url: `${BASE}/testler`,                 lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE}/soru-sor`,               lastModified: new Date(), changeFrequency: "weekly",  priority: 0.6 },
+    { url: `${BASE}/uzman-ol`,               lastModified: new Date(), changeFrequency: "monthly", priority: 0.6 },
+    { url: `${BASE}/hakkimizda`,             lastModified: new Date(), changeFrequency: "monthly", priority: 0.5 },
+    { url: `${BASE}/iletisim`,               lastModified: new Date(), changeFrequency: "monthly", priority: 0.5 },
   ];
 
   const serviceRoutes: MetadataRoute.Sitemap = services.map((s) => ({

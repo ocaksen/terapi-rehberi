@@ -1,3 +1,9 @@
+export interface Education {
+  degree: string;
+  school: string;
+  year?: string;
+}
+
 export interface Expert {
   id: string;
   slug: string;
@@ -7,6 +13,7 @@ export interface Expert {
   district: string;
   image: string;
   shortBio: string;
+  longBio?: string[];
   services: string[];
   sessionFee: string;
   sessionType: ("Yüz Yüze" | "Online")[];
@@ -14,6 +21,17 @@ export interface Expert {
   phone: string;
   appointmentUrl: string;
   featured: boolean;
+  education?: Education[];
+  certifications?: string[];
+  languages?: string[];
+  officeAddress?: string;
+  approaches?: string[];
+  videoUrl?: string;
+}
+
+export interface ServiceFaq {
+  q: string;
+  a: string;
 }
 
 export interface Service {
@@ -21,6 +39,8 @@ export interface Service {
   name: string;
   icon: string;
   shortDescription: string;
+  longDescription?: string;
+  faqs?: ServiceFaq[];
 }
 
 export interface City {
@@ -37,4 +57,52 @@ export interface BlogPost {
   publishedAt: string;
   category: string;
   image?: string;
+  author?: string;
+}
+
+export interface TestOption {
+  text: string;
+  value: number;
+}
+
+export interface TestQuestion {
+  id: number;
+  text: string;
+  reverse?: boolean;
+}
+
+export interface ScoreRange {
+  min: number;
+  max: number;
+  level: string;
+  color: string;
+  description: string;
+}
+
+export interface SoruCevap {
+  id: string;
+  category: "psikolog" | "cocuk" | "ergen" | "aile";
+  soru: string;
+  cevap: string;
+  uzman: string;
+  tarih: string;
+  begeni: number;
+}
+
+export interface PsychTest {
+  slug: string;
+  title: string;
+  shortTitle: string;
+  description: string;
+  icon?: string;
+  scale?: string;
+  category?: string;
+  color: string;
+  bg: string;
+  questionCount: number;
+  estimatedMinutes: number;
+  instruction: string;
+  options: TestOption[];
+  questions: TestQuestion[];
+  scoring: ScoreRange[];
 }

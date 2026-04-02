@@ -119,17 +119,31 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2.5 min-h-[44px]">
-          <div className="w-8 h-8 rounded-lg bg-brand-500 flex items-center justify-center shrink-0">
-            <svg className="w-4.5 h-4.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-            </svg>
-          </div>
+          {/* Logo mark — filiz/sürgün: büyüme, iyileşme */}
+          <svg width="30" height="30" viewBox="0 0 30 30" fill="none" className="shrink-0">
+            <path
+              d="M15 26 C15 26 15 16 15 13"
+              stroke={scrolled ? "#167a68" : "white"}
+              strokeWidth="1.6"
+              strokeLinecap="round"
+            />
+            <path
+              d="M15 13 C15 13 9 17 8 11 C7 6 12 4 15 8"
+              fill={scrolled ? "#167a68" : "white"}
+              opacity="0.8"
+            />
+            <path
+              d="M15 16 C15 16 21 20 22 14 C23 9 18 7 15 11"
+              fill={scrolled ? "#1a9b84" : "white"}
+              opacity="0.55"
+            />
+          </svg>
           <span
             className={`font-bold text-lg tracking-tight transition-colors duration-300 ${
               scrolled ? "text-brand-800" : "text-white"
             }`}
           >
-            Terapi<span className="text-brand-400">Rehberi</span>
+            Terapi<span className={scrolled ? "text-brand-500" : "text-brand-300"}>Rehberi</span>
           </span>
         </Link>
 
@@ -201,6 +215,8 @@ export default function Header() {
 
           {[
             { href: "/konya", label: "Konya" },
+            { href: "/testler", label: "Psikolojik Testler" },
+            { href: "/soru-sor", label: "Soru Sor" },
             { href: "/blog", label: "Blog" },
           ].map((item) => (
             <Link
@@ -262,6 +278,8 @@ export default function Header() {
           <div className="mt-2 border-t border-cream-100 pt-2 flex flex-col gap-1">
             {[
               { href: "/konya", label: "Konya" },
+              { href: "/testler", label: "Psikolojik Testler" },
+              { href: "/soru-sor", label: "Soru Sor" },
               { href: "/blog", label: "Blog" },
             ].map((item) => (
               <Link

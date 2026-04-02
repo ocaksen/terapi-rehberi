@@ -4,9 +4,16 @@ import { getExpertsByCity, getAllServices } from "@/lib/data";
 import ExpertFilters from "@/components/ExpertFilters";
 
 export const metadata: Metadata = {
-  title: "Konya Psikologlar — Uzman Terapist Listesi | TerapiRehberi",
-  description: "Konya'daki kimlik ve lisans doğrulamasından geçmiş uzman psikolog ve terapistleri listele, karşılaştır ve randevu al.",
-  alternates: { canonical: "/konya/psikologlar" },
+  title: "Konya Psikolog Listesi — Doğrulanmış Uzmanlar | TerapiRehberi",
+  description:
+    "Konya'da kimlik ve lisans doğrulamasından geçmiş psikolog ve terapistlerin tam listesi. Hizmet ve uzmanlık alanına göre filtrele, randevu al.",
+  keywords: ["konya psikolog listesi", "konya terapist bul", "konya psikolojik danışman", "konya online psikolog"],
+  alternates: { canonical: "https://www.terapirehberi.com/konya/psikologlar" },
+  openGraph: {
+    title: "Konya Psikolog Listesi — Doğrulanmış Uzmanlar",
+    description: "Konya'da kimlik ve lisans doğrulamasından geçmiş psikolog ve terapistler.",
+    url: "https://www.terapirehberi.com/konya/psikologlar",
+  },
 };
 
 interface Props {

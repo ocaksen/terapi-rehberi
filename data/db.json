@@ -9,52 +9,1641 @@
       "district": "Meram",
       "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80",
       "shortBio": "Ergen psikolojisi ve bireysel terapi alanında uzmanlaşmış, EMDR sertifikalı klinik psikolog.",
-      "services": ["bireysel-terapi", "ergen-psikolojisi", "kaygi-bozuklugu", "emdr"],
+      "longBio": [
+        "Merhaba, ben Feyza Çaksen. 2018 yılında Selçuk Üniversitesi Klinik Psikoloji yüksek lisans programından mezun olduğumdan bu yana Konya'da ergenler ve yetişkinlerle çalışıyorum.",
+        "Terapi yaklaşımımda bilişsel davranışçı terapi (BDT) temelini esas alırken, kişinin ihtiyacına göre kabul ve kararlılık terapisi (ACT) ile şema terapi tekniklerini de kullanıyorum. EMDR sertifikam sayesinde travma ve travma sonrası stres bozukluğu vakalarında kanıta dayalı müdahale sunabiliyorum.",
+        "Her danışanımla güvenli, yargılamayan ve dürüst bir terapötik ilişki kurmayı hedefliyorum. Danışanlarımın kendilerini olduğu gibi ifade edebildikleri, değişim için iç motivasyonlarını keşfettikleri bir alan yaratmak benim için en önemli öncelik."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "ergen-psikolojisi",
+        "kaygi-bozuklugu",
+        "emdr"
+      ],
       "sessionFee": "3.000₺",
-      "sessionType": ["Yüz Yüze", "Online"],
+      "sessionType": [
+        "Yüz Yüze",
+        "Online"
+      ],
       "experience": "5 yıl",
       "phone": "+90 555 043 42 99",
       "appointmentUrl": "https://wa.me/905550434299",
-      "featured": true
+      "featured": true,
+      "education": [
+        {
+          "degree": "Klinik Psikoloji Yüksek Lisans",
+          "school": "Selçuk Üniversitesi",
+          "year": "2018"
+        },
+        {
+          "degree": "Psikoloji Lisans",
+          "school": "Selçuk Üniversitesi",
+          "year": "2016"
+        }
+      ],
+      "certifications": [
+        "EMDR Terapi Sertifikası — EMDR Europe",
+        "Bilişsel Davranışçı Terapi Sertifikası",
+        "Türk Psikologlar Derneği Üyesi"
+      ],
+      "languages": [
+        "Türkçe",
+        "İngilizce"
+      ],
+      "officeAddress": "Turgut Özal Bulvarı No:12 Kat:3, Meram, Konya",
+      "approaches": [
+        "Bilişsel Davranışçı Terapi (BDT)",
+        "EMDR",
+        "Kabul ve Kararlılık Terapisi (ACT)",
+        "Şema Terapi"
+      ]
     }
   ],
   "services": [
-    { "slug": "bireysel-terapi", "name": "Bireysel Terapi", "icon": "💬", "shortDescription": "Kişiye özel terapi seanslarıyla duygusal iyileşme ve kişisel gelişim." },
-    { "slug": "cift-terapisi", "name": "Çift Terapisi", "icon": "🤝", "shortDescription": "İlişki sorunlarını çözmek ve bağı güçlendirmek için çift terapisi." },
-    { "slug": "ergen-psikolojisi", "name": "Ergen Psikolojisi", "icon": "🌱", "shortDescription": "Ergenlerin duygusal ve sosyal gelişimini destekleyen uzman danışmanlık." },
-    { "slug": "aile-terapisi", "name": "Aile Terapisi", "icon": "🏠", "shortDescription": "Aile içi iletişimi güçlendiren ve çatışmaları çözen terapi desteği." },
-    { "slug": "kaygi-bozuklugu", "name": "Kaygı & Panik Atak", "icon": "🌿", "shortDescription": "Kaygı bozukluğu ve panik atak için kanıta dayalı terapi yaklaşımları." },
-    { "slug": "emdr", "name": "EMDR Terapisi", "icon": "✨", "shortDescription": "Travma ve TSSB tedavisinde etkili EMDR yöntemi." }
+    {
+      "slug": "bireysel-terapi",
+      "name": "Bireysel Terapi",
+      "icon": "💬",
+      "shortDescription": "Kişiye özel terapi seanslarıyla duygusal iyileşme ve kişisel gelişim.",
+      "longDescription": "Bireysel terapi, kişinin kendisiyle ve çevresiyle daha sağlıklı bir ilişki kurmasını hedefleyen, yüz yüze veya online gerçekleştirilen birebir görüşmelerdir. Konya'daki psikolog ve terapistlerimiz; depresyon, kaygı, özgüven sorunları, iş stresi, yas ve kimlik arayışı gibi pek çok konuda destek sunar.\n\nTerapi sürecinde hangi yaklaşım kullanılacağı tamamen danışanın ihtiyacına göre belirlenir: Bilişsel Davranışçı Terapi (BDT), Şema Terapi, Kabul ve Kararlılık Terapisi (ACT) veya psikodinamik yöntemler bunların başında gelir. İlk seans genellikle tanışma ve ihtiyaç değerlendirmesi amacıyla yapılır; sonraki seansların sıklığı ise psikolog ile birlikte planlanır.\n\nKonya'da bireysel terapi seansları 45–50 dakika sürer ve haftalık ya da iki haftada bir yapılabilir. Yüz yüze seans tercih edemeyenler için online bireysel terapi de aynı etkinlikte sonuç vermektedir.",
+      "faqs": [
+        { "q": "Bireysel terapiye nasıl başlanır?", "a": "Sayfamızdaki uzmanlardan birini seçip randevu bağlantısına tıklayarak ilk görüşmeyi planlayabilirsiniz. İlk seans genellikle değerlendirme amaçlıdır ve herhangi bir taahhüt gerektirmez." },
+        { "q": "Kaç seans gerekir?", "a": "Sorunun türüne ve derinliğine göre değişir. Hafif kaygı veya stres için 6–8 seans yeterli olabilirken, kronik veya kökleşmiş sorunlar daha uzun bir süreci gerektirebilir." },
+        { "q": "Online terapi yüz yüze kadar etkili mi?", "a": "Araştırmalar, video terapi seanslarının birçok sorun için yüz yüze terapi kadar etkili olduğunu göstermektedir. Özellikle kaygı, depresyon ve ilişki sorunlarında benzer sonuçlar elde edilmektedir." }
+      ]
+    },
+    {
+      "slug": "cift-terapisi",
+      "name": "Çift Terapisi",
+      "icon": "🤝",
+      "shortDescription": "İlişki sorunlarını çözmek ve bağı güçlendirmek için çift terapisi.",
+      "longDescription": "Çift terapisi, iki partnerin iletişim sorunlarını, güven krizlerini, cinsellik meselelerini ya da yoğunlaşan çatışmaları profesyonel bir terapist eşliğinde ele aldığı bir psikoterapi biçimidir. Konya'daki çift terapistlerimiz; ayrılık sürecinde de, ilişkiyi güçlendirme amacıyla da randevu vermektedir.\n\nÇift terapisinde yaygın olarak kullanılan Gottman Yöntemi ve Duygusal Odaklı Terapi (EFT), iletişim kalıplarını yeniden şekillendirmeye ve bağlanma güvenliğini pekiştirmeye odaklanır. Seans sayısı genellikle 8 ile 20 arasında değişir; haftalık görüşme önerilir.\n\nYeni evli çiftlerden uzun yıllık ilişkilere, nişanlı danışanlardan ayrılık sonrası uzlaşma çalışmalarına kadar her aşamada çift terapisi fayda sağlar. Eğer partneriniz terapiye katılmak istemiyorsa, bireysel olarak ilişki terapisi almak da mümkündür.",
+      "faqs": [
+        { "q": "Partnerim katılmak istemezse ne olur?", "a": "Partneriniz hazır hissetmiyorsa siz bireysel olarak ilişki odaklı terapi alabilirsiniz. Bu yaklaşım da iletişim kalıplarını anlamaya ve değiştirmeye yardımcı olur." },
+        { "q": "Çift terapisi evliliği kurtarır mı?", "a": "Çift terapisi bir garanti vermez; ancak her iki taraf da sürece istekle katıldığında büyük değişimler mümkündür. Araştırmalar, yapılandırılmış çift terapisinin ilişki doyumunu anlamlı ölçüde artırdığını gösteriyor." },
+        { "q": "Kaç seansta sonuç alınır?", "a": "Çoğu çift ilk 4–6 seansta belirgin bir değişim fark etse de kapsamlı bir dönüşüm için genellikle 12–20 seans önerilir." }
+      ]
+    },
+    {
+      "slug": "ergen-psikolojisi",
+      "name": "Ergen Psikolojisi",
+      "icon": "🌱",
+      "shortDescription": "Ergenlerin duygusal ve sosyal gelişimini destekleyen uzman danışmanlık.",
+      "longDescription": "Ergenlik dönemi; kimlik oluşumu, akran baskısı, akademik stres ve aile içi çatışmaların yoğunlaştığı kritik bir gelişim sürecidir. Konya'daki ergen terapistlerimiz, 12–20 yaş grubundaki gençlerle seans yürütme konusunda özel eğitim almış uzmanlardır.\n\nErgen terapisinde sıklıkla ele alınan konular arasında okul kaygısı, sınav stresi, zorbalık, öfke kontrolü, sosyal geri çekilme, kimlik ve cinsel yönelim soruları, yeme bozuklukları ve kendine zarar verme davranışları yer alır. Terapist; hem genç hem de gerektiğinde ebeveynlerle görüşerek bütüncül bir destek çerçevesi oluşturur.\n\nErgenin terapiste güvenmesi için ilk birkaç seansta gizlilik ilkesi özenle korunur. Ebeveynlere düzenli aralıklarla genel geri bildirim verilirken içerik paylaşılmaz.",
+      "faqs": [
+        { "q": "Çocuğumun terapiye ihtiyacı olduğunu nasıl anlarım?", "a": "İki haftadan uzun süren isteksizlik, okul kaçma, uyku sorunları, ani kilo değişimleri veya kendini yaralama belirtileri varsa bir uzmana başvurmanızı öneririz." },
+        { "q": "Ergen terapiste gitmek istemezse ne yapmalıyım?", "a": "Zorlamak genellikle direnci artırır. Önce siz bir danışma seansı alarak terapistten rehberlik isteyin; ebeveyn tutumu çoğu zaman gencin sürece dahil olmasını kolaylaştırır." },
+        { "q": "Seanslarda neler konuşulur?", "a": "Terapist genci yargılamaz; duyguları ve deneyimleri keşfetmesi için güvenli bir alan yaratır. Konuşmanın yanı sıra sanat, yazma ya da oyun tabanlı yöntemler de kullanılabilir." }
+      ]
+    },
+    {
+      "slug": "aile-terapisi",
+      "name": "Aile Terapisi",
+      "icon": "🏠",
+      "shortDescription": "Aile içi iletişimi güçlendiren ve çatışmaları çözen terapi desteği.",
+      "longDescription": "Aile terapisi, ailenin tamamının veya bir kısmının katılımıyla yürütülen, ilişki dinamiklerini ve iletişim kalıplarını ele alan bir terapi biçimidir. Konya'daki aile terapistlerimiz; boşanma, kayıp, ebeveyn-çocuk çatışmaları ve aile içi şiddet toparlanma süreçleri gibi ağır konularda deneyimlidir.\n\nSistemik aile terapisi yaklaşımı, sorunu bireysel bir patoloji olarak değil, aile sistemi içindeki bir işlev bozukluğu olarak ele alır. Bu perspektif sayesinde suçlama döngüsü kırılır ve tüm aile üyeleri çözümün parçası haline gelir.\n\nKonya'da aile terapisi seansları genellikle 60–75 dakika sürer. Tüm üyelerin katılımı teşvik edilse de kısmi katılımla da ilerleme mümkündür. Ortalama 8–15 seans planlanan vakalarda aile için ev ödevi ve günlük iletişim egzersizleri de sürece dahil edilir.",
+      "faqs": [
+        { "q": "Aile terapisine kimler katılmalı?", "a": "Sorundan etkilenen tüm aile üyelerinin katılması ideal olmakla birlikte, bazı seanslar yalnızca ebeveynler veya yalnızca çocuklarla da yapılabilir." },
+        { "q": "Boşanma sürecinde aile terapisi işe yarar mı?", "a": "Evet. Ayrılık sürecindeki ebeveynlerin çocuklarıyla sağlıklı iletişimini korumak ve boşanma sonrası ebeveynlik planı oluşturmak için oldukça faydalıdır." },
+        { "q": "Aile terapisi bireysel terapinin yerini tutar mı?", "a": "Tutmaz; tamamlayıcıdır. Ciddi bireysel sorunlarda (depresyon, bağımlılık vb.) aile terapisiyle eş zamanlı bireysel terapi önerilir." }
+      ]
+    },
+    {
+      "slug": "kaygi-bozuklugu",
+      "name": "Kaygı & Panik Atak",
+      "icon": "🌿",
+      "shortDescription": "Kaygı bozukluğu ve panik atak için kanıta dayalı terapi yaklaşımları.",
+      "longDescription": "Kaygı bozukluğu Türkiye'de en sık görülen ruh sağlığı sorunlarından biridir. Sürekli gerginlik, kontrol edilemeyen endişe, çarpıntı, nefes darlığı veya belirli durumlardan kaçınma gibi belirtiler işlevselliği ciddi biçimde bozabilir. Konya'daki uzmanlarımız bu konuda kanıta dayalı yöntemlerle çalışmaktadır.\n\nBilişsel Davranışçı Terapi (BDT), kaygı bozuklukları için en kapsamlı araştırma desteğine sahip yaklaşımdır. Maruz bırakma terapisi, bilişsel yeniden yapılandırma ve nefes teknikleri seanslar boyunca birlikte uygulanır. Panik ataklar için ise interoceptive exposure (beden duyumlarına maruz bırakma) özellikle etkili sonuçlar vermektedir.\n\nKonya'da kaygı terapisi genellikle 8–12 seansla önemli iyileşme sağlar. Gerekli durumlarda terapist psikiyatri konsültasyonu da düzenleyebilir.",
+      "faqs": [
+        { "q": "Panik atak ile kaygı bozukluğu aynı şey mi?", "a": "Hayır. Panik atak, yoğun korku ve bedensel belirtilerle karakterize ani krizlerdir. Kaygı bozukluğu ise uzun süreli, günlük yaşamı etkileyen kronik bir endişe halidir. Her ikisi de tedavi edilebilir." },
+        { "q": "İlaç mı terapi mi?", "a": "Bu karar psikiyatrist tarafından verilir. Hafif-orta düzey kaygıda terapi tek başına yeterli olabilir; ağır vakalarda ilaç+terapi kombinasyonu daha hızlı sonuç verir." },
+        { "q": "Terapide ne kadar sürede iyileşme başlar?", "a": "BDT'de çoğu danışan 4–6. seanstan itibaren belirgin rahatlama hisseder. Panik atak sıklığı genellikle ilk 8 seansta önemli ölçüde azalır." }
+      ]
+    },
+    {
+      "slug": "emdr",
+      "name": "EMDR Terapisi",
+      "icon": "✨",
+      "shortDescription": "Travma ve TSSB tedavisinde etkili EMDR yöntemi.",
+      "longDescription": "EMDR (Göz Hareketleriyle Duyarsızlaştırma ve Yeniden İşleme), travma, TSSB, fobiler ve kaygı bozuklukları tedavisinde Dünya Sağlık Örgütü tarafından da onaylanmış kanıta dayalı bir psikoterapi yöntemidir. Konya'daki EMDR sertifikalı terapistlerimiz bu yöntemi bireysel seans çerçevesinde uygulamaktadır.\n\nEMDR seanslarında danışan travmatik anıya eşzamanlı bir ikili uyaran (göz hareketi, dokunsal veya işitsel) eşliğinde odaklanır. Bu süreç, beynin travma anısını adaptif biçimde yeniden işlemesine olanak tanır. Anı kaybolmaz; ancak artık acı verici duygusal yük taşımaz hale gelir.\n\nKonya'da EMDR terapisi için standart seans süresi 60–90 dakikadır. Basit travmalarda 3–6 seans yeterli olabilirken, komplex travma veya TSSB vakalarında süreç uzayabilir. Seanslar arasında danışana stabilizasyon teknikleri de öğretilir.",
+      "faqs": [
+        { "q": "EMDR kimler için uygundur?", "a": "Trafik kazası, kayıp, istismar, doğal afet, tıbbi travma ya da uzun süreli ihmal deneyimlerine bağlı TSSB, fobiler ve kaygı bozukluklarında etkilidir. Çocuklar dahil her yaşta uygulanabilir." },
+        { "q": "EMDR hipnoz mudur?", "a": "Hayır. EMDR'da danışan tamamen bilinçlidir ve her an süreci durdurabileceğini bilir. Hipnozdan farklı olarak herhangi bir telkin ya da transa girme söz konusu değildir." },
+        { "q": "EMDR için terapiste nasıl başvurabilirim?", "a": "Sayfamızdaki EMDR sertifikalı uzmanlardan birinin profilini inceleyip randevu alabilirsiniz. İlk seans, yöntemin uygunluğunun değerlendirilmesine ayrılır." }
+      ]
+    }
   ],
   "cities": [
-    { "slug": "konya", "name": "Konya", "region": "İç Anadolu", "active": true },
-    { "slug": "kayseri", "name": "Kayseri", "region": "İç Anadolu", "active": false },
-    { "slug": "eskisehir", "name": "Eskişehir", "region": "İç Anadolu", "active": false }
+    {
+      "slug": "konya",
+      "name": "Konya",
+      "region": "İç Anadolu",
+      "active": true
+    },
+    {
+      "slug": "kayseri",
+      "name": "Kayseri",
+      "region": "İç Anadolu",
+      "active": false
+    },
+    {
+      "slug": "eskisehir",
+      "name": "Eskişehir",
+      "region": "İç Anadolu",
+      "active": false
+    }
   ],
   "blogPosts": [
     {
-      "slug": "konya-panik-atak-belirtileri",
-      "title": "Panik Atak Belirtileri Nelerdir? Nasıl Geçer?",
-      "excerpt": "Panik atak yaşıyorsanız yalnız değilsiniz. Belirtiler, nedenleri ve terapi süreci hakkında bilmeniz gerekenler.",
-      "publishedAt": "2026-03-15",
-      "category": "Kaygı",
-      "image": "/images/blog/panik-atak.jpg"
+      "slug": "konya-psikolog-nasil-secilir",
+      "title": "Konya'da Psikolog Nasıl Seçilir?",
+      "excerpt": "Konya'da psikolog bulmak artık çok daha kolay — ama doğru seçimi yapmak hâlâ zaman alıyor. İşte süreci kolaylaştıracak birkaç somut kriter.",
+      "publishedAt": "2026-04-01",
+      "category": "Genel",
+      "image": "/images/blog/konya-psikolog-nasil-secilir.jpg",
+      "author": "TerapiRehberi Editör"
+    }
+  ],
+  "tests": [
+    {
+      "slug": "anksiyete-testi",
+      "title": "Anksiyete (Kaygı) Testi",
+      "shortTitle": "Anksiyete",
+      "description": "Genel Anksiyete Bozukluğu ölçeği (GAD-7) temel alınarak hazırlanmış 7 soruluk bu test, kaygı düzeyinizi değerlendirmenize yardımcı olur.",
+      "icon": "🫀",
+      "color": "#6366f1",
+      "bg": "#eef2ff",
+      "questionCount": 7,
+      "estimatedMinutes": 2,
+      "instruction": "Son 2 haftada aşağıdaki durumları ne sıklıkla yaşadınız?",
+      "options": [
+        {
+          "text": "Hiç",
+          "value": 0
+        },
+        {
+          "text": "Birkaç gün",
+          "value": 1
+        },
+        {
+          "text": "Günlerin yarısından fazlası",
+          "value": 2
+        },
+        {
+          "text": "Neredeyse her gün",
+          "value": 3
+        }
+      ],
+      "questions": [
+        {
+          "id": 1,
+          "text": "Kendinizi gergin, tedirgin veya sinirli hissettiniz mi?"
+        },
+        {
+          "id": 2,
+          "text": "Endişelerinizi durduramadığınızı veya kontrol edemediğinizi fark ettiniz mi?"
+        },
+        {
+          "id": 3,
+          "text": "Farklı konularda çok fazla endişelendiniz mi?"
+        },
+        {
+          "id": 4,
+          "text": "Rahatlamakta güçlük çektiniz mi?"
+        },
+        {
+          "id": 5,
+          "text": "Çok huzursuz hissederek yerinizde duramadınız mı?"
+        },
+        {
+          "id": 6,
+          "text": "Kolayca sinirlenip rahatsız oldunuz mu?"
+        },
+        {
+          "id": 7,
+          "text": "Korkunç bir şey olacakmış gibi hissettiniz mi?"
+        }
+      ],
+      "scoring": [
+        {
+          "min": 0,
+          "max": 4,
+          "level": "Minimal Kaygı",
+          "color": "#22c55e",
+          "description": "Kaygı düzeyiniz oldukça düşük görünüyor. Bu harika bir işaret! Sağlıklı başa çıkma becerilerinizi korumaya devam edin."
+        },
+        {
+          "min": 5,
+          "max": 9,
+          "level": "Hafif Kaygı",
+          "color": "#84cc16",
+          "description": "Hafif düzeyde kaygı belirtileri yaşıyorsunuz. Stres yönetimi teknikleri ve yaşam tarzı değişiklikleri faydalı olabilir."
+        },
+        {
+          "min": 10,
+          "max": 14,
+          "level": "Orta Düzey Kaygı",
+          "color": "#f59e0b",
+          "description": "Orta düzeyde kaygı belirtileri tespit edildi. Bir uzmanla görüşmek, bu belirtileri yönetmenize yardımcı olabilir."
+        },
+        {
+          "min": 15,
+          "max": 21,
+          "level": "Şiddetli Kaygı",
+          "color": "#ef4444",
+          "description": "Yüksek düzeyde kaygı belirtileri yaşıyorsunuz. Bir klinik psikolog veya psikiyatrist ile görüşmenizi şiddetle öneririz."
+        }
+      ]
     },
     {
-      "slug": "konya-cift-terapisi-ne-zaman",
-      "title": "Çift Terapisine Ne Zaman Gidilmeli?",
-      "excerpt": "İlişkinizde tekrar eden kavgalar, iletişim kopukluğu veya güven sorunu mu var? Çift terapisi tam zamanı.",
-      "publishedAt": "2026-03-10",
-      "category": "İlişkiler",
-      "image": "/images/blog/cift-terapisi.jpg"
+      "slug": "depresyon-testi",
+      "title": "Depresyon Testi",
+      "shortTitle": "Depresyon",
+      "description": "Hasta Sağlığı Anketi (PHQ-9) temel alınarak hazırlanmış bu test, depresyon belirtilerinin şiddetini ölçer.",
+      "icon": "🌧️",
+      "color": "#3b82f6",
+      "bg": "#eff6ff",
+      "questionCount": 9,
+      "estimatedMinutes": 3,
+      "instruction": "Son 2 haftada aşağıdaki durumları ne sıklıkla yaşadınız?",
+      "options": [
+        {
+          "text": "Hiç",
+          "value": 0
+        },
+        {
+          "text": "Birkaç gün",
+          "value": 1
+        },
+        {
+          "text": "Günlerin yarısından fazlası",
+          "value": 2
+        },
+        {
+          "text": "Neredeyse her gün",
+          "value": 3
+        }
+      ],
+      "questions": [
+        {
+          "id": 1,
+          "text": "Hiçbir şeyden zevk almama veya ilgi duymama"
+        },
+        {
+          "id": 2,
+          "text": "Kendini üzgün, kederli veya çaresiz hissetme"
+        },
+        {
+          "id": 3,
+          "text": "Uykuya dalmakta güçlük çekme, uyanık kalma veya tam tersi çok fazla uyuma"
+        },
+        {
+          "id": 4,
+          "text": "Yorgun hissetme ya da az enerjiye sahip olma"
+        },
+        {
+          "id": 5,
+          "text": "İştahsızlık veya aşırı yeme"
+        },
+        {
+          "id": 6,
+          "text": "Kendini başarısız gibi hissetme ya da kendinizi ve ailenizi hayal kırıklığına uğrattığınızı düşünme"
+        },
+        {
+          "id": 7,
+          "text": "Gazete okuma veya TV izleme gibi işlere yoğunlaşmakta güçlük çekme"
+        },
+        {
+          "id": 8,
+          "text": "Diğerlerinin fark edebileceği kadar yavaş hareket etme veya konuşma; ya da tam tersine normalden çok daha huzursuz ve sinirli olma"
+        },
+        {
+          "id": 9,
+          "text": "Kendinize zarar verme ya da ölmek istediğinize dair düşünceler"
+        }
+      ],
+      "scoring": [
+        {
+          "min": 0,
+          "max": 4,
+          "level": "Minimal",
+          "color": "#22c55e",
+          "description": "Depresyon belirtisi görünmüyor. Psikolojik sağlığınızı korumak için sağlıklı alışkanlıklarınıza devam edin."
+        },
+        {
+          "min": 5,
+          "max": 9,
+          "level": "Hafif Depresyon",
+          "color": "#84cc16",
+          "description": "Hafif depresyon belirtileri mevcut. Düzenli egzersiz, sosyal bağlantı ve uyku düzeni bu belirtileri azaltabilir."
+        },
+        {
+          "min": 10,
+          "max": 14,
+          "level": "Orta Düzey Depresyon",
+          "color": "#f59e0b",
+          "description": "Orta düzeyde depresyon belirtileri tespit edildi. Bir psikolog ile görüşmek bu süreçte size yol gösterecektir."
+        },
+        {
+          "min": 15,
+          "max": 19,
+          "level": "Orta-Şiddetli Depresyon",
+          "color": "#f97316",
+          "description": "Orta-şiddetli depresyon belirtileri mevcut. En kısa sürede bir klinik psikolog veya psikiyatristyle görüşmenizi öneririz."
+        },
+        {
+          "min": 20,
+          "max": 27,
+          "level": "Şiddetli Depresyon",
+          "color": "#ef4444",
+          "description": "Şiddetli depresyon belirtileri yaşıyorsunuz. Lütfen vakit kaybetmeden bir uzmana başvurun."
+        }
+      ]
     },
     {
-      "slug": "ergen-psikologa-gitmiyor",
-      "title": "Ergeniniz Psikologa Gitmek İstemiyor mu?",
-      "excerpt": "Zorla getirilen ergen terapi sürecine direnç gösterir. İşte ilk adımı doğru atmanın yolu.",
-      "publishedAt": "2026-03-05",
-      "category": "Ergen",
-      "image": "/images/blog/ergen.jpg"
+      "slug": "stres-testi",
+      "title": "Stres Düzeyi Testi",
+      "shortTitle": "Stres",
+      "description": "Algılanan Stres Ölçeği (PSS-10) temel alınarak hazırlanmış bu test, son bir aydaki stres yükünüzü değerlendirir.",
+      "icon": "🧠",
+      "color": "#0ea5e9",
+      "bg": "#f0f9ff",
+      "questionCount": 10,
+      "estimatedMinutes": 3,
+      "instruction": "Son 1 ayda aşağıdaki durumları ne sıklıkla yaşadınız?",
+      "options": [
+        {
+          "text": "Hiç",
+          "value": 0
+        },
+        {
+          "text": "Neredeyse hiç",
+          "value": 1
+        },
+        {
+          "text": "Bazen",
+          "value": 2
+        },
+        {
+          "text": "Oldukça sık",
+          "value": 3
+        },
+        {
+          "text": "Çok sık",
+          "value": 4
+        }
+      ],
+      "questions": [
+        {
+          "id": 1,
+          "text": "Beklenmedik bir şey olduğu için üzüldünüz mü?",
+          "reverse": false
+        },
+        {
+          "id": 2,
+          "text": "Hayatınızdaki önemli şeyleri kontrol edemediğinizi hissettiniz mi?",
+          "reverse": false
+        },
+        {
+          "id": 3,
+          "text": "Gergin ve stresli hissettiniz mi?",
+          "reverse": false
+        },
+        {
+          "id": 4,
+          "text": "Kişisel problemlerinizle başa çıkma yeteneğinizden emin oldunuz mu?",
+          "reverse": true
+        },
+        {
+          "id": 5,
+          "text": "Her şeyin yolunda gittiğini hissettiniz mi?",
+          "reverse": true
+        },
+        {
+          "id": 6,
+          "text": "Başa çıkamayacağınız kadar çok şey biriktiğini hissettiniz mi?",
+          "reverse": false
+        },
+        {
+          "id": 7,
+          "text": "Sinirlerinize hakim olabildiniz mi?",
+          "reverse": true
+        },
+        {
+          "id": 8,
+          "text": "Her şeyi kontrol edebildiğinizi hissettiniz mi?",
+          "reverse": true
+        },
+        {
+          "id": 9,
+          "text": "İşlerin kötü gitmesinden dolayı kızgın oldunuz mu?",
+          "reverse": false
+        },
+        {
+          "id": 10,
+          "text": "Güçlüklerin üstesinden gelemeyecek kadar çok şey biriktiğini hissettiniz mi?",
+          "reverse": false
+        }
+      ],
+      "scoring": [
+        {
+          "min": 0,
+          "max": 13,
+          "level": "Düşük Stres",
+          "color": "#22c55e",
+          "description": "Stres düzeyiniz makul sınırlar içinde. Stresle başa çıkma becerileriniz iyi çalışıyor."
+        },
+        {
+          "min": 14,
+          "max": 26,
+          "level": "Orta Düzey Stres",
+          "color": "#f59e0b",
+          "description": "Orta düzeyde stres yaşıyorsunuz. Rahatlama teknikleri, egzersiz ve uyku kalitenizi artırmak faydalı olacaktır."
+        },
+        {
+          "min": 27,
+          "max": 40,
+          "level": "Yüksek Stres",
+          "color": "#ef4444",
+          "description": "Yüksek stres altındasınız. Bu durum hem zihinsel hem de bedensel sağlığınızı olumsuz etkileyebilir. Bir uzmanla görüşmenizi öneririz."
+        }
+      ]
+    },
+    {
+      "slug": "oz-saygi-testi",
+      "title": "Öz-Saygı (Benlik) Testi",
+      "shortTitle": "Öz-Saygı",
+      "description": "Rosenberg Öz-Saygı Ölçeği temel alınarak hazırlanmış bu test, kendinize bakış açınızı ve özgüveninizi değerlendirir.",
+      "icon": "💛",
+      "color": "#f59e0b",
+      "bg": "#fffbeb",
+      "questionCount": 10,
+      "estimatedMinutes": 3,
+      "instruction": "Aşağıdaki ifadelere ne ölçüde katılıyorsunuz?",
+      "options": [
+        {
+          "text": "Kesinlikle katılmıyorum",
+          "value": 0
+        },
+        {
+          "text": "Katılmıyorum",
+          "value": 1
+        },
+        {
+          "text": "Katılıyorum",
+          "value": 2
+        },
+        {
+          "text": "Kesinlikle katılıyorum",
+          "value": 3
+        }
+      ],
+      "questions": [
+        {
+          "id": 1,
+          "text": "Kendimi en azından diğerleri kadar değerli biri olarak görüyorum.",
+          "reverse": false
+        },
+        {
+          "id": 2,
+          "text": "Hiç iyi bir yanım olmadığını düşünüyorum.",
+          "reverse": true
+        },
+        {
+          "id": 3,
+          "text": "Genel olarak başarısız biri olduğumu hissediyorum.",
+          "reverse": true
+        },
+        {
+          "id": 4,
+          "text": "Çoğu insanın yapabildiği şeyleri ben de yapabiliyorum.",
+          "reverse": false
+        },
+        {
+          "id": 5,
+          "text": "Kendimden gurur duyacak pek bir şeyim yok.",
+          "reverse": true
+        },
+        {
+          "id": 6,
+          "text": "Kendime karşı olumlu bir tutum sergiliyorum.",
+          "reverse": false
+        },
+        {
+          "id": 7,
+          "text": "Genel olarak kendimden memnunum.",
+          "reverse": false
+        },
+        {
+          "id": 8,
+          "text": "Kendime daha fazla saygı duyabilmeyi istiyorum.",
+          "reverse": true
+        },
+        {
+          "id": 9,
+          "text": "Bazen kendimi gerçekten işe yaramaz hissediyorum.",
+          "reverse": true
+        },
+        {
+          "id": 10,
+          "text": "Bazen iyi bir insan olmadığımı düşünüyorum.",
+          "reverse": true
+        }
+      ],
+      "scoring": [
+        {
+          "min": 0,
+          "max": 15,
+          "level": "Düşük Öz-Saygı",
+          "color": "#ef4444",
+          "description": "Öz-saygı düzeyiniz düşük görünüyor. Bu durum ilişkilerinizi ve günlük yaşamınızı olumsuz etkileyebilir. Bir uzmanla çalışmak bu alanda büyük fark yaratabilir."
+        },
+        {
+          "min": 16,
+          "max": 24,
+          "level": "Orta Öz-Saygı",
+          "color": "#f59e0b",
+          "description": "Orta düzeyde bir öz-saygıya sahipsiniz. Kendinizle daha sağlıklı bir ilişki kurmanız mümkün — bu konuda destek almak süreci hızlandırabilir."
+        },
+        {
+          "min": 25,
+          "max": 30,
+          "level": "Yüksek Öz-Saygı",
+          "color": "#22c55e",
+          "description": "Öz-saygı düzeyiniz yüksek. Kendinize değer verdiğiniz ve güvendiğiniz görülüyor. Bu sağlıklı temeli korumaya devam edin."
+        }
+      ]
+    },
+    {
+      "slug": "panik-atak-testi",
+      "title": "Panik Atak Testi",
+      "shortTitle": "Panik Atak",
+      "description": "Panik bozukluğu şiddet ölçeği temel alınarak hazırlanmış bu test, panik atak belirtilerinin sıklığını ve yoğunluğunu değerlendirir.",
+      "icon": "⚡",
+      "color": "#ec4899",
+      "bg": "#fdf2f8",
+      "questionCount": 10,
+      "estimatedMinutes": 3,
+      "instruction": "Son 1 ayda aşağıdaki durumları ne sıklıkla yaşadınız?",
+      "options": [
+        {
+          "text": "Hiç",
+          "value": 0
+        },
+        {
+          "text": "Nadiren",
+          "value": 1
+        },
+        {
+          "text": "Bazen",
+          "value": 2
+        },
+        {
+          "text": "Sık sık",
+          "value": 3
+        },
+        {
+          "text": "Neredeyse her gün",
+          "value": 4
+        }
+      ],
+      "questions": [
+        {
+          "id": 1,
+          "text": "Ani ve yoğun korku veya panik hissi yaşadım."
+        },
+        {
+          "id": 2,
+          "text": "Kalbimin çok hızlı çarptığını veya güçlü atışlar hissettiğimi fark ettim."
+        },
+        {
+          "id": 3,
+          "text": "Nefes alamıyor ya da boğuluyormuşum gibi hissettim."
+        },
+        {
+          "id": 4,
+          "text": "Kontrolümü kaybedeceğimden ya da 'çıldıracağımdan' korktum."
+        },
+        {
+          "id": 5,
+          "text": "Ölüyor olabileceğimi düşündüm ya da ciddi bir hastalığım olduğundan korktum."
+        },
+        {
+          "id": 6,
+          "text": "Titreme, terleme veya üşüme/sıcak basması yaşadım."
+        },
+        {
+          "id": 7,
+          "text": "Baş dönmesi, dengesizlik veya bayılma hissi yaşadım."
+        },
+        {
+          "id": 8,
+          "text": "Bedenimden kopmuş veya etrafımın gerçek olmadığını hissettim."
+        },
+        {
+          "id": 9,
+          "text": "Yeni bir atak yaşayacağım korkusuyla belirli yerlere gitmekten kaçındım."
+        },
+        {
+          "id": 10,
+          "text": "Panik atağa yol açacağını düşündüğüm aktivite veya durumlardan uzak durdum."
+        }
+      ],
+      "scoring": [
+        {
+          "min": 0,
+          "max": 10,
+          "level": "Düşük Risk",
+          "color": "#22c55e",
+          "description": "Panik bozukluğuna işaret eden belirtiler minimal düzeyde. Sağlıklı yaşam alışkanlıklarınızı sürdürün."
+        },
+        {
+          "min": 11,
+          "max": 24,
+          "level": "Orta Düzey Belirtiler",
+          "color": "#f59e0b",
+          "description": "Orta düzeyde panik belirtileri mevcut. Nefes egzersizleri ve gevşeme teknikleri faydalı olabilir. Belirtiler günlük yaşamı etkiliyorsa bir uzmanla görüşmenizi öneririz."
+        },
+        {
+          "min": 25,
+          "max": 40,
+          "level": "Yüksek Düzey Belirtiler",
+          "color": "#ef4444",
+          "description": "Belirgin panik bozukluğu belirtileri yaşıyorsunuz. Bir klinik psikolog veya psikiyatristyle görüşmek bu süreçte size çok yardımcı olacaktır."
+        }
+      ]
+    },
+    {
+      "slug": "ofke-kontrolu-testi",
+      "title": "Öfke Kontrolü Testi",
+      "shortTitle": "Öfke Kontrolü",
+      "description": "Spielberger Öfke Ölçeği temel alınarak hazırlanmış bu test, öfkenizi ne ölçüde yönetip yönetemediğinizi değerlendirir.",
+      "icon": "🔥",
+      "color": "#f97316",
+      "bg": "#fff7ed",
+      "questionCount": 10,
+      "estimatedMinutes": 3,
+      "instruction": "Aşağıdaki ifadeler sizin için ne ölçüde doğru?",
+      "options": [
+        {
+          "text": "Hiç doğru değil",
+          "value": 0
+        },
+        {
+          "text": "Biraz doğru",
+          "value": 1
+        },
+        {
+          "text": "Oldukça doğru",
+          "value": 2
+        },
+        {
+          "text": "Tamamen doğru",
+          "value": 3
+        }
+      ],
+      "questions": [
+        {
+          "id": 1,
+          "text": "Küçük aksaklıklar bile beni çok sinirlendirir."
+        },
+        {
+          "id": 2,
+          "text": "Birisi hatamı söylediğinde büyük öfke duyarım."
+        },
+        {
+          "id": 3,
+          "text": "Sinirlendiğimde sakinleşmem uzun zaman alır."
+        },
+        {
+          "id": 4,
+          "text": "Öfkelendiğimde ağzımdan çıkanları kontrol edemiyorum."
+        },
+        {
+          "id": 5,
+          "text": "İnsanlara haksız davranıldığını gördüğümde çok öfkelenirim."
+        },
+        {
+          "id": 6,
+          "text": "Bir şeyler ters gittiğinde kendimi kaybedebiliyorum."
+        },
+        {
+          "id": 7,
+          "text": "Öfkemi içime atma eğilimindeyim, dışa vuramıyorum."
+        },
+        {
+          "id": 8,
+          "text": "Sıklıkla sabırsız ve sinirli hissediyorum."
+        },
+        {
+          "id": 9,
+          "text": "Öfkemi bastırmak için çok enerji harcıyorum."
+        },
+        {
+          "id": 10,
+          "text": "Öfkemi kontrol edemediğimde pişmanlık duyuyorum."
+        }
+      ],
+      "scoring": [
+        {
+          "min": 0,
+          "max": 10,
+          "level": "İyi Öfke Kontrolü",
+          "color": "#22c55e",
+          "description": "Öfkenizi genel olarak iyi yönetiyorsunuz. Duygularınızla sağlıklı bir ilişkiniz var gibi görünüyor."
+        },
+        {
+          "min": 11,
+          "max": 20,
+          "level": "Orta Düzey",
+          "color": "#f59e0b",
+          "description": "Öfke yönetiminde zaman zaman güçlük yaşıyorsunuz. Stres azaltma teknikleri ve öfke yönetimi çalışmaları faydalı olabilir."
+        },
+        {
+          "min": 21,
+          "max": 30,
+          "level": "Öfke Yönetimi Zayıf",
+          "color": "#ef4444",
+          "description": "Öfke yönetiminde ciddi güçlükler yaşıyorsunuz. Bu durum ilişkilerinizi ve iş yaşamınızı olumsuz etkileyebilir. Bir uzmanla çalışmanızı şiddetle tavsiye ederiz."
+        }
+      ]
+    },
+    {
+      "slug": "baglanti-stili-testi",
+      "title": "Bağlanma Stili Testi",
+      "shortTitle": "Bağlanma Stili",
+      "description": "Yetişkin bağlanma ölçeği temel alınarak hazırlanmış bu test, yakın ilişkilerdeki duygusal bağlanma örüntünüzü ortaya koyar.",
+      "icon": "💞",
+      "color": "#8b5cf6",
+      "bg": "#f5f3ff",
+      "questionCount": 12,
+      "estimatedMinutes": 4,
+      "instruction": "Yakın ilişkilerinizi düşünerek aşağıdaki ifadelere ne ölçüde katılıyorsunuz?",
+      "options": [
+        {
+          "text": "Hiç katılmıyorum",
+          "value": 0
+        },
+        {
+          "text": "Katılmıyorum",
+          "value": 1
+        },
+        {
+          "text": "Kararsızım",
+          "value": 2
+        },
+        {
+          "text": "Katılıyorum",
+          "value": 3
+        },
+        {
+          "text": "Tamamen katılıyorum",
+          "value": 4
+        }
+      ],
+      "questions": [
+        {
+          "id": 1,
+          "text": "Birinin beni gerçekten sevip sevmediği konusunda çok endişelenirim.",
+          "reverse": false
+        },
+        {
+          "id": 2,
+          "text": "İnsanların bana fazla yakınlaşmasından rahatsız olurum.",
+          "reverse": false
+        },
+        {
+          "id": 3,
+          "text": "Bir ilişkide terk edilmekten çok korkarım.",
+          "reverse": false
+        },
+        {
+          "id": 4,
+          "text": "Duygusal olarak yakın hissetmek yerine bağımsız kalmayı tercih ederim.",
+          "reverse": false
+        },
+        {
+          "id": 5,
+          "text": "Sevdiğim kişinin benden uzaklaşacağından sürekli endişelenirim.",
+          "reverse": false
+        },
+        {
+          "id": 6,
+          "text": "İhtiyaç duyduğumda başkalarına güvenmekte zorlanırım.",
+          "reverse": false
+        },
+        {
+          "id": 7,
+          "text": "Birinin beni yeterince sevmediğini hissedince çok rahatsız olurum.",
+          "reverse": false
+        },
+        {
+          "id": 8,
+          "text": "Duygularımı paylaşmak beni rahatlamaktan çok zorunluluk gibi hissettiriyor.",
+          "reverse": false
+        },
+        {
+          "id": 9,
+          "text": "İlişkilerimde ne kadar değer verildiğimi sorgulamaktan kendimi alamam.",
+          "reverse": false
+        },
+        {
+          "id": 10,
+          "text": "İnsanlar bana çok bağlandığında bunaltıcı buluyorum.",
+          "reverse": false
+        },
+        {
+          "id": 11,
+          "text": "Yakın ilişkilerimde kendimi güvende ve huzurlu hissediyorum.",
+          "reverse": true
+        },
+        {
+          "id": 12,
+          "text": "Sevdiklerimle sağlıklı sınırlar koyabiliyorum.",
+          "reverse": true
+        }
+      ],
+      "scoring": [
+        {
+          "min": 0,
+          "max": 16,
+          "level": "Güvenli Bağlanma",
+          "color": "#22c55e",
+          "description": "Genel olarak güvenli bağlanma örüntüsü gösteriyorsunuz. Yakın ilişkilerde kendinizi güvende hissediyor, sağlıklı bağlar kurabiliyorsunuz."
+        },
+        {
+          "min": 17,
+          "max": 28,
+          "level": "Kaygılı-Güvenli Arası",
+          "color": "#84cc16",
+          "description": "Zaman zaman ilişkisel kaygılar yaşasanız da genel olarak dengeyi koruyabiliyorsunuz. Farkındalık çalışmaları bu örüntüyü güçlendirebilir."
+        },
+        {
+          "min": 29,
+          "max": 40,
+          "level": "Kaygılı/Kaçıngan Bağlanma",
+          "color": "#f59e0b",
+          "description": "Yakın ilişkilerde kaygı veya mesafe örüntüleri belirgin. Bu örüntüler çocukluk deneyimlerinden kaynaklanır ve terapi ile dönüştürülebilir."
+        },
+        {
+          "min": 41,
+          "max": 48,
+          "level": "Güvensiz Bağlanma",
+          "color": "#ef4444",
+          "description": "Bağlanma güçlükleri yaşıyorsunuz. Bu durum ilişkilerinizi ve duygusal sağlığınızı önemli ölçüde etkiliyor olabilir. Bir uzmanla çalışmanız bu alanda köklü değişimler sağlayabilir."
+        }
+      ]
+    }
+  ],
+  "extraTests": [
+    {
+      "slug": "sosyal-anksiyete-testi",
+      "title": "Sosyal Anksiyete Testi",
+      "shortTitle": "Sosyal Anksiyete",
+      "category": "kaygı",
+      "description": "Sosyal ortamlarda yaşadığınız kaygı ve utangaçlık düzeyini ölçen Liebowitz Sosyal Anksiyete Ölçeği'ne dayalı test.",
+      "scale": "LSAS",
+      "color": "#8b5cf6",
+      "bg": "#f5f3ff",
+      "questionCount": 10,
+      "estimatedMinutes": 4,
+      "instruction": "Son iki haftada sosyal durumlarla ilgili ne hissettinizi düşünerek her soruyu yanıtlayın.",
+      "options": [
+        {
+          "text": "Hiç",
+          "value": 0
+        },
+        {
+          "text": "Hafif",
+          "value": 1
+        },
+        {
+          "text": "Orta",
+          "value": 2
+        },
+        {
+          "text": "Şiddetli",
+          "value": 3
+        }
+      ],
+      "questions": [
+        {
+          "id": 1,
+          "text": "Yabancılarla konuşmak beni endişelendirir."
+        },
+        {
+          "id": 2,
+          "text": "Başkalarının önünde yemek yemek beni rahatsız eder."
+        },
+        {
+          "id": 3,
+          "text": "Otorite figürleriyle konuşmak zor gelir."
+        },
+        {
+          "id": 4,
+          "text": "Partilerde ya da sosyal toplantılarda gerginim."
+        },
+        {
+          "id": 5,
+          "text": "İnsanların beni izlediğini hissedince huzursuzlanırım."
+        },
+        {
+          "id": 6,
+          "text": "Bir gruba katılmak ya da söz almak beni kaygılandırır."
+        },
+        {
+          "id": 7,
+          "text": "Hata yapacağımdan korkarım ve bu beni felç eder."
+        },
+        {
+          "id": 8,
+          "text": "Birinin gözlerinin içine bakmak güç gelir."
+        },
+        {
+          "id": 9,
+          "text": "Sosyal durumlardan sonra kendimi çok eleştiririm."
+        },
+        {
+          "id": 10,
+          "text": "Tanımadığım insanlarla grup halinde çalışmaktan kaçınırım."
+        }
+      ],
+      "scoring": [
+        {
+          "min": 0,
+          "max": 7,
+          "level": "Minimal",
+          "color": "#22c55e",
+          "description": "Sosyal kaygı belirtisi görünmüyor. Sosyal etkileşimlerden rahatsızlık duymuyorsunuz."
+        },
+        {
+          "min": 8,
+          "max": 14,
+          "level": "Hafif",
+          "color": "#84cc16",
+          "description": "Bazı sosyal durumlarda hafif gerginlik yaşayabilirsiniz. Bu oldukça yaygındır."
+        },
+        {
+          "min": 15,
+          "max": 20,
+          "level": "Orta",
+          "color": "#f59e0b",
+          "description": "Sosyal anksiyete belirtileri orta düzeyde. Bir uzmanla görüşmenizi öneririz."
+        },
+        {
+          "min": 21,
+          "max": 30,
+          "level": "Yüksek",
+          "color": "#ef4444",
+          "description": "Sosyal anksiyete günlük hayatı olumsuz etkileyebilir. Profesyonel destek almanızı öneririz."
+        }
+      ]
+    },
+    {
+      "slug": "dehb-testi",
+      "title": "DEHB / Dikkat Eksikliği Testi",
+      "shortTitle": "DEHB Testi",
+      "category": "dikkat",
+      "description": "Dikkat eksikliği ve hiperaktivite belirtilerini değerlendiren, yetişkinler için Conners Yetişkin DEHB Derecelendirme Ölçeği'nden uyarlanmış test.",
+      "scale": "CAARS",
+      "color": "#f97316",
+      "bg": "#fff7ed",
+      "questionCount": 10,
+      "estimatedMinutes": 4,
+      "instruction": "Son 6 ayda kendinizi nasıl hissettinizi düşünerek her soruyu yanıtlayın.",
+      "options": [
+        {
+          "text": "Hiçbir zaman",
+          "value": 0
+        },
+        {
+          "text": "Nadiren",
+          "value": 1
+        },
+        {
+          "text": "Sık sık",
+          "value": 2
+        },
+        {
+          "text": "Her zaman",
+          "value": 3
+        }
+      ],
+      "questions": [
+        {
+          "id": 1,
+          "text": "Bir göreve başlamakta güçlük çekerim."
+        },
+        {
+          "id": 2,
+          "text": "Dikkatimi toplarsken zorlanırım ve kolay dağılırım."
+        },
+        {
+          "id": 3,
+          "text": "Önemli şeyleri unuturum (toplantı, randevu, görev)."
+        },
+        {
+          "id": 4,
+          "text": "Oturduğumda yerimde duramaz, hareket etmek isterim."
+        },
+        {
+          "id": 5,
+          "text": "Bitmeden önce bir işten başka bir işe geçerim."
+        },
+        {
+          "id": 6,
+          "text": "Düşüncelerimi sıralamakta güçlük çekerim."
+        },
+        {
+          "id": 7,
+          "text": "Uzun süreli dikkat gerektiren görevlerden kaçınırım."
+        },
+        {
+          "id": 8,
+          "text": "Sabırsızım, sıra beklemek ya da beklemek zor gelir."
+        },
+        {
+          "id": 9,
+          "text": "Konuşurken aklıma gelen şeyi hemen söylemek isterim."
+        },
+        {
+          "id": 10,
+          "text": "Zaman yönetiminde sıkıntı yaşarım."
+        }
+      ],
+      "scoring": [
+        {
+          "min": 0,
+          "max": 7,
+          "level": "Düşük",
+          "color": "#22c55e",
+          "description": "Dikkat eksikliği ve hiperaktivite belirtisi görünmüyor."
+        },
+        {
+          "min": 8,
+          "max": 14,
+          "level": "Orta",
+          "color": "#f59e0b",
+          "description": "Bazı DEHB benzeri belirtiler mevcut. Günlük hayatta zorluk yaratıyorsa bir uzmanla görüşün."
+        },
+        {
+          "min": 15,
+          "max": 30,
+          "level": "Yüksek",
+          "color": "#ef4444",
+          "description": "Belirgin DEHB belirtileri var. Değerlendirme için bir psikolog veya psikiyatrist ile görüşmenizi öneririz."
+        }
+      ]
+    },
+    {
+      "slug": "travma-tssb-testi",
+      "title": "Travma / TSSB Testi",
+      "shortTitle": "TSSB Testi",
+      "category": "travma",
+      "description": "Travma sonrası stres belirtilerini değerlendiren PCL-5 ölçeğinden uyarlanmış test. Yaşanan travmatik olayların günlük hayata etkisini ölçer.",
+      "scale": "PCL-5",
+      "color": "#6366f1",
+      "bg": "#eef2ff",
+      "questionCount": 10,
+      "estimatedMinutes": 5,
+      "instruction": "Travmatik bir olay yaşadıysanız, son bir ay içinde bu belirtileri ne ölçüde yaşadığınızı değerlendirin.",
+      "options": [
+        {
+          "text": "Hiç",
+          "value": 0
+        },
+        {
+          "text": "Az",
+          "value": 1
+        },
+        {
+          "text": "Orta",
+          "value": 2
+        },
+        {
+          "text": "Çok",
+          "value": 3
+        }
+      ],
+      "questions": [
+        {
+          "id": 1,
+          "text": "Travmatik olayın anıları istem dışı aklıma geliyor."
+        },
+        {
+          "id": 2,
+          "text": "Olayla ilgili kötü rüyalar görüyorum."
+        },
+        {
+          "id": 3,
+          "text": "Olay gerçekleşiyormuş gibi hissediyorum (flashback)."
+        },
+        {
+          "id": 4,
+          "text": "Olayı hatırlatan şeyler beni çok rahatsız ediyor."
+        },
+        {
+          "id": 5,
+          "text": "Olayı hatırlatan yerlerden, kişilerden kaçınıyorum."
+        },
+        {
+          "id": 6,
+          "text": "Olayla ilgili düşünmemeye ya da konuşmamaya çalışıyorum."
+        },
+        {
+          "id": 7,
+          "text": "Kendimi diğer insanlardan uzak ve kopuk hissediyorum."
+        },
+        {
+          "id": 8,
+          "text": "Sürekli tetikte ve tedirgin hissediyorum."
+        },
+        {
+          "id": 9,
+          "text": "Uyku sorunları yaşıyorum."
+        },
+        {
+          "id": 10,
+          "text": "Konsantrasyon güçlüğü çekiyorum."
+        }
+      ],
+      "scoring": [
+        {
+          "min": 0,
+          "max": 9,
+          "level": "Minimal",
+          "color": "#22c55e",
+          "description": "Belirgin travma sonrası stres belirtisi görünmüyor."
+        },
+        {
+          "min": 10,
+          "max": 19,
+          "level": "Hafif",
+          "color": "#84cc16",
+          "description": "Hafif travma belirtileri mevcut. Destek almak iyileşmeyi hızlandırabilir."
+        },
+        {
+          "min": 20,
+          "max": 29,
+          "level": "Orta",
+          "color": "#f59e0b",
+          "description": "Orta düzey TSSB belirtileri var. Bir uzmanla görüşmenizi öneririz."
+        },
+        {
+          "min": 30,
+          "max": 40,
+          "level": "Yüksek",
+          "color": "#ef4444",
+          "description": "Belirgin TSSB belirtileri mevcut. Lütfen en kısa sürede profesyonel destek alın."
+        }
+      ]
+    },
+    {
+      "slug": "okb-testi",
+      "title": "OKB / Takıntı-Zorlantı Testi",
+      "shortTitle": "OKB Testi",
+      "category": "kaygı",
+      "description": "Obsesif kompulsif bozukluk belirtilerini ölçen Yale-Brown Obsesyon Kompulsiyon Ölçeği'nden (Y-BOCS) uyarlanmış değerlendirme.",
+      "scale": "Y-BOCS",
+      "color": "#ec4899",
+      "bg": "#fdf2f8",
+      "questionCount": 10,
+      "estimatedMinutes": 4,
+      "instruction": "Son bir hafta içindeki deneyimlerinizi düşünerek soruları yanıtlayın.",
+      "options": [
+        {
+          "text": "Hiç",
+          "value": 0
+        },
+        {
+          "text": "Hafif",
+          "value": 1
+        },
+        {
+          "text": "Orta",
+          "value": 2
+        },
+        {
+          "text": "Şiddetli",
+          "value": 3
+        }
+      ],
+      "questions": [
+        {
+          "id": 1,
+          "text": "İstemediğim halde zihnime gelen rahatsız edici düşünceler oluyor."
+        },
+        {
+          "id": 2,
+          "text": "Bir şeyi doğru yapıp yapmadığımı defalarca kontrol etmek zorunda hissediyorum."
+        },
+        {
+          "id": 3,
+          "text": "Kapıyı, ocağı ya da elektriği kapatıp kapatmadığımı sürekli kontrol ederim."
+        },
+        {
+          "id": 4,
+          "text": "Ellerin kirli olduğu ya da mikrop kapacağım düşüncesi zihnimi meşgul eder."
+        },
+        {
+          "id": 5,
+          "text": "Eşyaların belirli bir düzende olması gerektiği hissini kontrol edemiyorum."
+        },
+        {
+          "id": 6,
+          "text": "Belirli ritüelleri yapmadan işime devam edemiyorum."
+        },
+        {
+          "id": 7,
+          "text": "Korkutucu ya da yasak düşünceler aklıma geliyor ve bu beni rahatsız ediyor."
+        },
+        {
+          "id": 8,
+          "text": "Bir düşünceden kurtulmak için belirli bir davranış yapmak zorunda hissediyorum."
+        },
+        {
+          "id": 9,
+          "text": "Günlük rutinler aldatıcı derecede uzun sürüyor çünkü tekrar etmem gerekiyor."
+        },
+        {
+          "id": 10,
+          "text": "Bu düşünce ve davranışlar günlük hayatımı olumsuz etkiliyor."
+        }
+      ],
+      "scoring": [
+        {
+          "min": 0,
+          "max": 7,
+          "level": "Minimal",
+          "color": "#22c55e",
+          "description": "Belirgin OKB belirtisi görünmüyor."
+        },
+        {
+          "min": 8,
+          "max": 15,
+          "level": "Hafif",
+          "color": "#f59e0b",
+          "description": "Bazı takıntı ve zorlantı belirtileri mevcut. Günlük hayatı etkiliyorsa bir uzmanla görüşün."
+        },
+        {
+          "min": 16,
+          "max": 30,
+          "level": "Belirgin",
+          "color": "#ef4444",
+          "description": "Belirgin OKB belirtileri var. Profesyonel değerlendirme almanızı öneririz."
+        }
+      ]
+    },
+    {
+      "slug": "sevgi-dili-testi",
+      "title": "Sevgi Dili Testi",
+      "shortTitle": "Sevgi Dili",
+      "category": "ilişki",
+      "description": "Dr. Gary Chapman'ın 5 Sevgi Dili modeline dayalı test. Sevgiyi nasıl aldığınızı ve verdiğinizi keşfedin.",
+      "scale": "Chapman",
+      "color": "#f43f5e",
+      "bg": "#fff1f2",
+      "questionCount": 10,
+      "estimatedMinutes": 3,
+      "instruction": "Her soru için size en çok uyan seçeneği işaretleyin. Doğru veya yanlış cevap yoktur.",
+      "options": [
+        {
+          "text": "Hiç",
+          "value": 0
+        },
+        {
+          "text": "Bazen",
+          "value": 1
+        },
+        {
+          "text": "Çoğunlukla",
+          "value": 2
+        },
+        {
+          "text": "Her zaman",
+          "value": 3
+        }
+      ],
+      "questions": [
+        {
+          "id": 1,
+          "text": "Sevdiğim biri bana sarıldığında ya da dokunduğunda çok özel hissediyorum."
+        },
+        {
+          "id": 2,
+          "text": "Birinin benim için zaman ayırması, hediyeden daha değerli gelir."
+        },
+        {
+          "id": 3,
+          "text": "Söylenilen güzel sözler beni diğer her şeyden çok mutlu eder."
+        },
+        {
+          "id": 4,
+          "text": "Birinin benim için bir şeyler yapması sevgini en çok hissettiren şeydir."
+        },
+        {
+          "id": 5,
+          "text": "Sürpriz hediyeler almak beni çok mutlu eder."
+        },
+        {
+          "id": 6,
+          "text": "El ele tutuşmak ya da yakınlık kurmak benim için önemlidir."
+        },
+        {
+          "id": 7,
+          "text": "Biri yardımıma koştuğunda kendimi sevilmiş hissediyorum."
+        },
+        {
+          "id": 8,
+          "text": "Kaliteli birliktelik zamanı, fiziksel temastan daha önemlidir."
+        },
+        {
+          "id": 9,
+          "text": "Birinin beni övmesi ya da takdir etmesi çok değerlidir."
+        },
+        {
+          "id": 10,
+          "text": "Küçük, düşünceli hediyeler almak sevginin en güzel ifadesidir."
+        }
+      ],
+      "scoring": [
+        {
+          "min": 0,
+          "max": 10,
+          "level": "Fiziksel Temas",
+          "color": "#f43f5e",
+          "description": "Sevginizi en çok dokunma, sarılma ve fiziksel yakınlık aracılığıyla alıp verirsiniz."
+        },
+        {
+          "min": 11,
+          "max": 18,
+          "level": "Kaliteli Zaman",
+          "color": "#8b5cf6",
+          "description": "Birlikte geçirilen kaliteli zaman sizin için sevginin en güzel ifadesidir."
+        },
+        {
+          "min": 19,
+          "max": 24,
+          "level": "Onaylayıcı Sözler",
+          "color": "#3b82f6",
+          "description": "Söylenen güzel ve destekleyici sözler sizi en çok mutlu eder."
+        },
+        {
+          "min": 25,
+          "max": 30,
+          "level": "Hizmet Eylemleri",
+          "color": "#10b981",
+          "description": "Birisinin sizin için bir şeyler yapması sevgiyi en güçlü hissettirir."
+        }
+      ]
+    },
+    {
+      "slug": "toksik-iliski-testi",
+      "title": "Toksik İlişki Testi",
+      "shortTitle": "Toksik İlişki",
+      "category": "ilişki",
+      "description": "Romantik ya da yakın ilişkilerinizdeki sağlıksız örüntüleri fark etmenize yardımcı olan değerlendirme testi.",
+      "scale": "Klinik Uyarlama",
+      "color": "#dc2626",
+      "bg": "#fef2f2",
+      "questionCount": 10,
+      "estimatedMinutes": 4,
+      "instruction": "Şu anki ya da en son ilişkinizi düşünerek soruları yanıtlayın.",
+      "options": [
+        {
+          "text": "Hiçbir zaman",
+          "value": 0
+        },
+        {
+          "text": "Bazen",
+          "value": 1
+        },
+        {
+          "text": "Sık sık",
+          "value": 2
+        },
+        {
+          "text": "Her zaman",
+          "value": 3
+        }
+      ],
+      "questions": [
+        {
+          "id": 1,
+          "text": "Partnerim eleştiri ve aşağılamayı sıkça kullanır."
+        },
+        {
+          "id": 2,
+          "text": "Kendi düşüncelerimi ve hislerimi ifade etmekte zorlanırım."
+        },
+        {
+          "id": 3,
+          "text": "Partnerim kıskançlık nedeniyle hareketlerimi kısıtlar."
+        },
+        {
+          "id": 4,
+          "text": "İlişkide kendimi 'yanlış' ya da 'yetersiz' hissediyorum."
+        },
+        {
+          "id": 5,
+          "text": "Kendi ihtiyaçlarımı partnerin ihtiyaçlarından önce gelmez."
+        },
+        {
+          "id": 6,
+          "text": "Partnerimle yaşanan tartışmalar çok sık ve çözümsüz kalıyor."
+        },
+        {
+          "id": 7,
+          "text": "İlişkide manipülasyon ya da suçlama hissediyorum."
+        },
+        {
+          "id": 8,
+          "text": "Partnerimden korktuğumu ya da tedirgin olduğumu hissediyorum."
+        },
+        {
+          "id": 9,
+          "text": "Bu ilişkiden ayrılmayı düşündüğümde suçluluk ya da korku hissediyorum."
+        },
+        {
+          "id": 10,
+          "text": "Arkadaşlarım ya da ailem bu ilişki hakkında endişelerini dile getiriyor."
+        }
+      ],
+      "scoring": [
+        {
+          "min": 0,
+          "max": 8,
+          "level": "Düşük Risk",
+          "color": "#22c55e",
+          "description": "İlişkinizde belirgin bir toksik örüntü görünmüyor."
+        },
+        {
+          "min": 9,
+          "max": 18,
+          "level": "Orta Risk",
+          "color": "#f59e0b",
+          "description": "Bazı sağlıksız örüntüler mevcut. Bir ilişki terapisti ile görüşmek faydalı olabilir."
+        },
+        {
+          "min": 19,
+          "max": 30,
+          "level": "Yüksek Risk",
+          "color": "#ef4444",
+          "description": "İlişkinizde belirgin toksik örüntüler var. Lütfen bir uzmanla görüşün ve güvende olduğunuzdan emin olun."
+        }
+      ]
+    },
+    {
+      "slug": "narsizm-testi",
+      "title": "Narsistik Kişilik Testi",
+      "shortTitle": "Narsizm Testi",
+      "category": "kişilik",
+      "description": "Narsistik Kişilik Envanteri'nden (NPI) uyarlanmış, kişilik özelliklerinizdeki narsistik eğilimleri ölçen test.",
+      "scale": "NPI",
+      "color": "#7c3aed",
+      "bg": "#f5f3ff",
+      "questionCount": 10,
+      "estimatedMinutes": 4,
+      "instruction": "Her soru için size en çok uyan seçeneği işaretleyin. Dürüst yanıtlar daha doğru sonuç verir.",
+      "options": [
+        {
+          "text": "Hiç",
+          "value": 0
+        },
+        {
+          "text": "Biraz",
+          "value": 1
+        },
+        {
+          "text": "Oldukça",
+          "value": 2
+        },
+        {
+          "text": "Kesinlikle",
+          "value": 3
+        }
+      ],
+      "questions": [
+        {
+          "id": 1,
+          "text": "Çoğu insandan daha özel ve farklı olduğumu düşünüyorum."
+        },
+        {
+          "id": 2,
+          "text": "Başkalarının beni takdir etmesi ve hayran olması benim için önemlidir."
+        },
+        {
+          "id": 3,
+          "text": "Harika şeyler başaracağıma ya da güçlü biri olacağıma inanıyorum."
+        },
+        {
+          "id": 4,
+          "text": "İnsanlar benim fikirlerimi takip etmeli çünkü ben daha iyi bilirim."
+        },
+        {
+          "id": 5,
+          "text": "Eleştirildiğimde çok savunmacı ya da öfkeli olurum."
+        },
+        {
+          "id": 6,
+          "text": "Başkalarının duygularını anlamak ya da empati kurmak zor gelir."
+        },
+        {
+          "id": 7,
+          "text": "Hedeflerime ulaşmak için başkalarını kullanmakta sakınca görmüyorum."
+        },
+        {
+          "id": 8,
+          "text": "Sosyal ortamlarda ilgi odağı olmaktan hoşlanırım."
+        },
+        {
+          "id": 9,
+          "text": "Haklarım çiğnendiğinde bunu çok güçlü bir şekilde ifade ederim."
+        },
+        {
+          "id": 10,
+          "text": "İnsanların benden minnettarlık beklemesi gerekmez, ben yaptıklarımı hak ediyorum."
+        }
+      ],
+      "scoring": [
+        {
+          "min": 0,
+          "max": 9,
+          "level": "Düşük",
+          "color": "#22c55e",
+          "description": "Narsistik kişilik özellikleri düşük düzeyde. Sağlıklı benlik saygısına sahipsiniz."
+        },
+        {
+          "min": 10,
+          "max": 18,
+          "level": "Orta",
+          "color": "#f59e0b",
+          "description": "Bazı narsistik özellikler mevcut. Bu, liderlik gibi alanlarda faydalı olabilir; ancak ilişkilere dikkat edin."
+        },
+        {
+          "min": 19,
+          "max": 30,
+          "level": "Yüksek",
+          "color": "#ef4444",
+          "description": "Belirgin narsistik eğilimler görünüyor. Bir uzmanla bu özellikleri değerlendirmenizi öneririz."
+        }
+      ]
+    }
+  ],
+  "soruCevap": [
+    {
+      "id": "1",
+      "category": "psikolog",
+      "soru": "Sürekli endişeleniyorum ama sebebini bilmiyorum. Bu anksiyete mi?",
+      "cevap": "Sürekli ve kontrolsüz bir endişe hali, özellikle belirli bir nedene bağlı değilse Genel Anksiyete Bozukluğu'nun (GAB) işareti olabilir. Endişenin günlük yaşamı, uykunuzu veya konsantrasyonunuzu etkileyip etkilemediğine bakın. Eğer bu durum 6 ayı aşkın süredir devam ediyorsa ve kontrol etmekte güçlük çekiyorsanız, bir klinik psikologla görüşmenizi öneririm.",
+      "uzman": "Klinik Psikolog",
+      "tarih": "2026-03-22",
+      "begeni": 34
+    },
+    {
+      "id": "2",
+      "category": "cocuk",
+      "soru": "8 yaşındaki çocuğum okula gitmek istemediğini söylüyor, sabahları ağlıyor. Ne yapmalıyım?",
+      "cevap": "Bu durum okul kaygısı veya okul reddi olarak adlandırılır ve çocuklarda oldukça yaygındır. Önce çocuğunuzla sakin bir ortamda konuşun ve sebebini anlamaya çalışın — zorbalık, öğretmen ilişkisi veya ders kaygısı olabilir. Belirtiler uzadıkça derinleşebileceğinden, 2 haftayı aşarsa bir çocuk psikologuyla görüşmenizi şiddetle öneririm. Erken müdahale çok daha etkilidir.",
+      "uzman": "Çocuk Psikoloğu",
+      "tarih": "2026-03-20",
+      "begeni": 28
+    },
+    {
+      "id": "3",
+      "category": "ergen",
+      "soru": "15 yaşındaki oğlum kendine zarar veriyor. Ne yapmalıyım?",
+      "cevap": "Bu durumla karşılaşmak bir ebeveyn için çok zor olabilir. Önce sakin kalın ve suçlayıcı bir dil kullanmadan oğlunuzla konuşmaya çalışın. Kendine zarar verme genellikle ifade edilemeyen duygusal acının bir dışavurumudur. En kısa sürede ergen psikolojisi alanında uzman bir terapiste başvurmanız gerekiyor. Bu bir acil durum olarak değerlendirilmeli ve profesyonel destek alınmalıdır.",
+      "uzman": "Ergen ve Çocuk Terapisti",
+      "tarih": "2026-03-18",
+      "begeni": 52
+    },
+    {
+      "id": "4",
+      "category": "aile",
+      "soru": "Eşimle sürekli aynı konularda kavga ediyoruz. Çift terapisi işe yarar mı?",
+      "cevap": "Çift terapisi, özellikle tekrarlayan çatışma döngülerini kırmak için son derece etkilidir. 'Döngüsel' kavgaların olması, genellikle altında yatan çözülmemiş bir ihtiyacın ya da iletişim örüntüsünün işaretidir. Her iki tarafın da terapiye istekli olması sürecin en kritik koşuludur. Deneyimli bir çift terapistinin eşliğinde bu döngülerden çıkmak mümkündür.",
+      "uzman": "Çift ve Aile Terapisti",
+      "tarih": "2026-03-15",
+      "begeni": 41
+    },
+    {
+      "id": "5",
+      "category": "psikolog",
+      "soru": "Panik atak geçiriyorum ama kalp sorunu olmadığı söylendi. Ne yapmalıyım?",
+      "cevap": "Fiziksel bir neden bulunmamasına rağmen devam eden kalp çarpıntısı, nefes darlığı ve yoğun korku atakları panik bozukluğunun tipik belirtileridir. Panik bozukluğu, Bilişsel Davranışçı Terapi (BDT) ile oldukça başarılı sonuçlar veren, tedavi edilebilir bir durumdur. Bir klinisyene başvurmanızı ve bu dönemde nefes teknikleri ile gevşeme egzersizleri öğrenmenizi öneririm.",
+      "uzman": "Klinik Psikolog",
+      "tarih": "2026-03-12",
+      "begeni": 39
+    },
+    {
+      "id": "6",
+      "category": "cocuk",
+      "soru": "Çocuğumun dikkatini toplamakta çok zorlanıyor, DEHB mi olabilir?",
+      "cevap": "Dikkat dağınıklığı DEHB'nin bir belirtisi olabilir, ancak tanı için mutlaka uzman değerlendirmesi gerekir. Yalnızca dikkat güçlüğü değil; dürtüsellik, hiperaktivite ve bu belirtilerin en az 2 farklı ortamda (ev + okul) gözlemlenmesi gerekir. Bir çocuk psikologu veya psikiyatristine başvurarak kapsamlı bir değerlendirme yaptırmanızı öneririm.",
+      "uzman": "Çocuk Psikoloğu",
+      "tarih": "2026-03-10",
+      "begeni": 47
     }
   ]
 }

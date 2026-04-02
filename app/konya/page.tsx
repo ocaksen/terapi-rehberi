@@ -4,10 +4,16 @@ import { getExpertsByCity, getAllServices } from "@/lib/data";
 import ExpertCard from "@/components/ExpertCard";
 
 export const metadata: Metadata = {
-  title: "Konya Psikolog — Uzman Terapist Rehberi",
+  title: "Konya Psikolog Rehberi — Lisanslı Uzman Terapistler",
   description:
-    "Konya'da uzman psikolog ve terapist bul. Bireysel terapi, çift terapisi, ergen psikolojisi ve EMDR alanında deneyimli klinisyenler.",
-  alternates: { canonical: "/konya" },
+    "Konya'da doğrulanmış psikolog ve terapist bul. Bireysel terapi, çift terapisi, çocuk ve ergen psikolojisi, EMDR. Yüz yüze ve online seans seçenekleri.",
+  keywords: ["konya psikolog", "konya terapist", "konya psikoloji", "konya online terapi"],
+  alternates: { canonical: "https://www.terapirehberi.com/konya" },
+  openGraph: {
+    title: "Konya Psikolog Rehberi — Lisanslı Uzman Terapistler",
+    description: "Konya'da doğrulanmış psikolog ve terapist bul. Yüz yüze ve online seans.",
+    url: "https://www.terapirehberi.com/konya",
+  },
 };
 
 export default function KonyaPage() {
@@ -19,7 +25,7 @@ export default function KonyaPage() {
       {/* Hero */}
       <section className="bg-cream-50 py-16 px-4 border-b border-cream-200">
         <div className="max-w-7xl mx-auto">
-          <p className="section-label mb-3">İç Anadolu · Türkiye</p>
+          <p className="section-label mb-3">Konya, Türkiye</p>
           <h1 className="text-4xl font-bold text-brand-900 mb-4">
             Konya'da Psikolog Bul
           </h1>
@@ -77,13 +83,19 @@ export default function KonyaPage() {
         <div className="max-w-7xl mx-auto">
           <h2 className="text-sm font-semibold text-brand-800 mb-4">İlçeye Göre Psikolog</h2>
           <div className="flex flex-wrap gap-2">
-            {["Meram", "Selçuklu", "Karatay"].map((ilce) => (
-              <span
-                key={ilce}
-                className="bg-cream-50 border border-cream-200 text-brand-700 text-sm px-4 py-1.5 rounded-full"
+            {[
+              { label: "Meram Psikolog",    href: "/konya/meram" },
+              { label: "Selçuklu Psikolog", href: "/konya/selcuklu" },
+              { label: "Karatay Psikolog",  href: "/konya/karatay" },
+              { label: "Oyun Ablası",       href: "/konya/oyun-ablasi" },
+            ].map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="bg-cream-50 border border-cream-200 hover:border-brand-300 hover:bg-brand-50 text-brand-700 text-sm px-4 py-1.5 rounded-full transition-colors"
               >
-                {ilce} Psikolog
-              </span>
+                {item.label}
+              </Link>
             ))}
           </div>
         </div>

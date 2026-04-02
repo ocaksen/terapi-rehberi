@@ -27,7 +27,7 @@ export default function FaqSection({ items, title = "Sık Sorulan Sorular" }: Pr
       <div className="max-w-7xl mx-auto">
         {/* Başlık */}
         <div className="mb-12">
-          <p className="text-xs font-semibold text-brand-500 uppercase tracking-widest mb-3">SSS</p>
+          <p className="section-label mb-3">SSS</p>
           <h2 className="text-3xl sm:text-4xl font-bold text-slate-900">{title}</h2>
         </div>
 
@@ -88,7 +88,7 @@ export default function FaqSection({ items, title = "Sık Sorulan Sorular" }: Pr
                   </h3>
 
                   {/* Cevap */}
-                  <p className="text-slate-500 leading-relaxed text-sm">
+                  <p className="text-slate-600 leading-relaxed text-[0.9375rem]">
                     {items[selected].a}
                   </p>
 

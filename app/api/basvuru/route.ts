@@ -1,0 +1,61 @@
+import { NextRequest, NextResponse } from "next/server";
+
+export async function POST(req: NextRequest) {
+  try {
+    const data = await req.json();
+
+    // --- Resend ile e-posta gönder (RESEND_API_KEY env'de tanımlıysa) ---
+    const resendKey = process.env.RESEND_API_KEY;
+    const adminEmail = process.env.ADMIN_EMAIL ?? "info@terapirehberi.com";
+    const adminPhone = process.env.ADMIN_WHATSAPP ?? "";
+
+    if (resendKey) {
+      await fetch("https://api.resend.com/emails", {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${resendKey}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          from: "TerapiRehberi Başvuru <noreply@terapirehberi.com>",
+          to: [adminEmail],
+          subject: `Yeni Uzman Başvurusu: ${data.adSoyad} — ${data.unvan}`,
+          html: `
+            <h2>Yeni Uzman Başvurusu</h2>
+            <table style="border-collapse:collapse;width:100%">
+              <tr><td style="padding:8px;border:1px solid #eee;font-weight:bold">Ad Soyad</td><td style="padding:8px;border:1px solid #eee">${data.adSoyad}</td></tr>
+              <tr><td style="padding:8px;border:1px solid #eee;font-weight:bold">Unvan</td><td style="padding:8px;border:1px solid #eee">${data.unvan}</td></tr>
+              <tr><td style="padding:8px;border:1px solid #eee;font-weight:bold">E-posta</td><td style="padding:8px;border:1px solid #eee">${data.eposta}</td></tr>
+              <tr><td style="padding:8px;border:1px solid #eee;font-weight:bold">Telefon</td><td style="padding:8px;border:1px solid #eee">${data.telefon}</td></tr>
+              <tr><td style="padding:8px;border:1px solid #eee;font-weight:bold">Şehir / İlçe</td><td style="padding:8px;border:1px solid #eee">${data.sehir} / ${data.ilce}</td></tr>
+              <tr><td style="padding:8px;border:1px solid #eee;font-weight:bold">Okul</td><td style="padding:8px;border:1px solid #eee">${data.okul} (${data.mezuniyetYili})</td></tr>
+              <tr><td style="padding:8px;border:1px solid #eee;font-weight:bold">Deneyim</td><td style="padding:8px;border:1px solid #eee">${data.deneyim}</td></tr>
+              <tr><td style="padding:8px;border:1px solid #eee;font-weight:bold">Çalışma Alanları</td><td style="padding:8px;border:1px solid #eee">${(data.alanlar as string[]).join(", ")}</td></tr>
+              <tr><td style="padding:8px;border:1px solid #eee;font-weight:bold">Seans Tipi</td><td style="padding:8px;border:1px solid #eee">${(data.seanstipi as string[]).join(", ")}</td></tr>
+              <tr><td style="padding:8px;border:1px solid #eee;font-weight:bold">Seans Ücreti</td><td style="padding:8px;border:1px solid #eee">${data.seansUcreti} TL</td></tr>
+              <tr><td style="padding:8px;border:1px solid #eee;font-weight:bold">Kısa Bio</td><td style="padding:8px;border:1px solid #eee">${data.bio}</td></tr>
+            </table>
+            <p style="margin-top:16px;color:#666;font-size:13px">
+              Başvuru tarihi: ${new Date().toLocaleString("tr-TR")}<br/>
+              KVKK onayı: ✅ Verildi
+            </p>
+          `,
+        }),
+      });
+    }
+
+    // --- WhatsApp yedek bildirimi (ADMIN_WHATSAPP env varsa) ---
+    // adminPhone varsa client'a döndür, client tarafı window.open ile açar
+    return NextResponse.json({
+      ok: true,
+      whatsapp: adminPhone
+        ? `https://wa.me/${adminPhone}?text=${encodeURIComponent(
+            `✅ Yeni başvuru: ${data.adSoyad} (${data.unvan}) — ${data.telefon}`
+          )}`
+        : null,
+    });
+  } catch (err) {
+    console.error("Başvuru API hatası:", err);
+    return NextResponse.json({ ok: false }, { status: 500 });
+  }
+}

@@ -1,39 +1,60 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getAllBlogPosts } from "@/lib/data";
+import { getAllBlogPostsFromFiles } from "@/lib/blog.server";
 
 export const metadata: Metadata = {
-  title: "Blog — Psikoloji Rehberi",
-  description: "Kaygı, depresyon, çift terapisi ve daha fazlası hakkında uzman içerikler.",
+  title: "Blog — Psikoloji & Terapi Rehberi | Konya",
+  description: "Kaygı, depresyon, çift terapisi, ergen psikolojisi ve daha fazlası hakkında uzman içerikler. Konya'dan klinik psikologlar tarafından yazıldı.",
+  alternates: { canonical: "/blog" },
 };
 
 export default function BlogPage() {
-  const posts = getAllBlogPosts();
+  const posts = getAllBlogPostsFromFiles();
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-12">
-      <p className="section-label mb-2">Rehber İçerik</p>
-      <h1 className="text-3xl font-bold text-brand-900 mb-10">Blog</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-        {posts.map((post) => (
-          <Link
-            key={post.slug}
-            href={`/blog/${post.slug}`}
-            className="card p-5 flex flex-col gap-3 group hover:shadow-md transition-shadow"
-          >
-            <span className="text-xs font-semibold text-brand-500 uppercase tracking-wide">
-              {post.category}
-            </span>
-            <h2 className="font-semibold text-brand-900 leading-snug group-hover:text-brand-600 transition-colors">
-              {post.title}
-            </h2>
-            <p className="text-sm text-slate-500 leading-relaxed flex-1">{post.excerpt}</p>
-            <div className="flex items-center justify-between text-xs text-slate-400">
-              <span>{new Date(post.publishedAt).toLocaleDateString("tr-TR")}</span>
-              <span className="text-brand-500 font-medium">Oku →</span>
-            </div>
-          </Link>
-        ))}
+    <div className="min-h-screen bg-cream-50">
+      <div className="bg-white border-b border-cream-200 py-12 px-4">
+        <div className="max-w-5xl mx-auto">
+          <p className="section-label mb-2">Rehber İçerik</p>
+          <h1 className="text-3xl sm:text-4xl font-bold text-slate-900">Blog</h1>
+          <p className="text-slate-500 mt-2 text-sm">
+            {posts.length} yazı · Konya'dan uzman psikologlar tarafından
+          </p>
+        </div>
+      </div>
+
+      <div className="max-w-5xl mx-auto px-4 py-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {posts.map((post) => (
+            <Link
+              key={post.slug}
+              href={`/blog/${post.slug}`}
+              className="bg-white rounded-2xl border border-cream-200 shadow-sm p-5 flex flex-col gap-3 group hover:shadow-md transition-shadow"
+            >
+              {post.image && (
+                <div className="w-full h-40 rounded-xl overflow-hidden bg-cream-100">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={post.image}
+                    alt={post.title}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              )}
+              <span className="text-xs font-semibold text-brand-500 uppercase tracking-wide">
+                {post.category}
+              </span>
+              <h2 className="font-semibold text-slate-900 leading-snug group-hover:text-brand-600 transition-colors line-clamp-2">
+                {post.title}
+              </h2>
+              <p className="text-sm text-slate-500 leading-relaxed flex-1 line-clamp-3">{post.excerpt}</p>
+              <div className="flex items-center justify-between text-xs text-slate-400 pt-2 border-t border-cream-100">
+                <span>{new Date(post.publishedAt).toLocaleDateString("tr-TR", { day: "2-digit", month: "long" })}</span>
+                <span className="text-brand-500 font-medium">· {post.readTime} okuma</span>
+              </div>
+            </Link>
+          ))}
+        </div>
       </div>
     </div>
   );

@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getAllExperts, getAllServices, getServiceBySlug } from "@/lib/data";
 import ExpertCard from "@/components/ExpertCard";
+import type { ServiceFaq } from "@/types";
 
 // İlçe bilgileri
 const ILCELER: Record<string, { name: string; description: string; nüfus: string }> = {
@@ -45,7 +46,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (service) {
     return {
       title: `Konya ${service.name} — Uzman Psikolog | TerapiRehberi`,
-      description: service.shortDescription,
+      description: service.longDescription
+        ? service.longDescription.split("\n\n")[0].slice(0, 160)
+        : service.shortDescription,
       alternates: { canonical: `/konya/${ilce}` },
     };
   }
@@ -92,6 +95,7 @@ export default async function KonyaSlugPage({ params }: Props) {
         </div>
 
         <div className="max-w-7xl mx-auto px-4 py-10">
+          {/* Uzman listesi */}
           {experts.length > 0 ? (
             <>
               <p className="text-sm text-slate-500 mb-6 flex items-center gap-1.5">
@@ -100,14 +104,14 @@ export default async function KonyaSlugPage({ params }: Props) {
                 </svg>
                 <strong>{experts.length}</strong> doğrulanmış uzman
               </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
                 {experts.map((e) => (
                   <ExpertCard key={e.slug} expert={e} citySlug="konya" />
                 ))}
               </div>
             </>
           ) : (
-            <div className="card p-10 text-center mb-8">
+            <div className="bg-white rounded-2xl border border-cream-200 p-10 text-center mb-12">
               <p className="text-3xl mb-3">{service.icon}</p>
               <p className="font-semibold text-brand-900 mb-1">
                 Konya&apos;da {service.name} uzmanı yakında
@@ -121,8 +125,37 @@ export default async function KonyaSlugPage({ params }: Props) {
             </div>
           )}
 
+          {/* Uzun açıklama */}
+          {service.longDescription && (
+            <div className="bg-white rounded-2xl border border-cream-200 p-6 sm:p-8 mb-10">
+              <h2 className="text-xl font-bold text-brand-900 mb-4">
+                Konya&apos;da {service.name} Hakkında
+              </h2>
+              <div className="space-y-4">
+                {service.longDescription.split("\n\n").map((para, i) => (
+                  <p key={i} className="text-sm text-slate-600 leading-relaxed">{para}</p>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* SSS */}
+          {service.faqs && service.faqs.length > 0 && (
+            <div className="bg-white rounded-2xl border border-cream-200 p-6 sm:p-8 mb-10">
+              <h2 className="text-xl font-bold text-brand-900 mb-5">Sık Sorulan Sorular</h2>
+              <div className="divide-y divide-cream-200">
+                {service.faqs.map((faq: ServiceFaq, i: number) => (
+                  <div key={i} className="py-4 first:pt-0 last:pb-0">
+                    <p className="font-semibold text-brand-800 text-sm mb-1">{faq.q}</p>
+                    <p className="text-sm text-slate-600 leading-relaxed">{faq.a}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
           {/* Diğer hizmetler */}
-          <div className="mt-10">
+          <div className="mt-2">
             <p className="font-semibold text-brand-900 mb-4 text-sm">Diğer Uzmanlık Alanları</p>
             <div className="flex flex-wrap gap-2">
               {services.filter((s) => s.slug !== ilce).map((s) => (
