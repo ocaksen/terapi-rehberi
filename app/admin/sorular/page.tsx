@@ -1,12 +1,17 @@
 import fs from "fs";
 import path from "path";
 import Link from "next/link";
+import SorularAdmin from "./SorularAdmin";
 
 interface Soru {
   id: string;
   tarih: string;
   kategori: string;
   soru: string;
+  durum?: string;
+  cevap?: string;
+  uzman?: string;
+  begeni?: number;
 }
 
 interface Props {
@@ -32,13 +37,22 @@ export default async function AdminSorularPage({ searchParams }: Props) {
   }
   const reversed = [...sorular].reverse();
 
+  const beklemede = reversed.filter((s) => !s.durum || s.durum === "beklemede").length;
+
   return (
     <div className="min-h-screen bg-cream-50 py-10 px-4">
       <div className="max-w-3xl mx-auto">
         <div className="flex items-center justify-between mb-8 flex-wrap gap-3">
           <div>
             <h1 className="text-2xl font-bold text-brand-900">Soru Sor Kayıtları</h1>
-            <p className="text-sm text-slate-500">{reversed.length} soru</p>
+            <p className="text-sm text-slate-500">
+              {reversed.length} toplam soru
+              {beklemede > 0 && (
+                <span className="ml-2 bg-amber-100 text-amber-700 px-2 py-0.5 rounded-full text-xs font-semibold">
+                  {beklemede} beklemede
+                </span>
+              )}
+            </p>
           </div>
           <Link
             href={`/admin/basvurular?key=${key}`}
@@ -53,21 +67,7 @@ export default async function AdminSorularPage({ searchParams }: Props) {
             Henüz soru yok.
           </div>
         ) : (
-          <div className="space-y-3">
-            {reversed.map((s) => (
-              <div key={s.id} className="bg-white rounded-2xl border border-cream-200 p-4 shadow-sm">
-                <div className="flex items-center gap-3 mb-2 flex-wrap">
-                  <span className="text-xs font-semibold bg-brand-50 text-brand-700 px-2.5 py-0.5 rounded-full capitalize border border-brand-100">
-                    {s.kategori}
-                  </span>
-                  <span className="text-xs text-slate-400">
-                    {new Date(s.tarih).toLocaleString("tr-TR")}
-                  </span>
-                </div>
-                <p className="text-sm text-slate-700 leading-relaxed">{s.soru}</p>
-              </div>
-            ))}
-          </div>
+          <SorularAdmin sorular={reversed} adminKey={adminKey} />
         )}
       </div>
     </div>
