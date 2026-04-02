@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import {
   getAllBlogSlugsFromFiles,
   getBlogPostBySlugFromFile,
@@ -46,58 +47,71 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 function renderContent(body: string) {
-  const paragraphs = body.split("\n\n");
-  return paragraphs.map((block, i) => {
-    if (block.startsWith("## ")) {
+  const blocks = body.split("\n\n");
+  return blocks.map((block, i) => {
+    const trimmed = block.trim();
+    if (!trimmed || trimmed === "---") return null;
+
+    if (trimmed.startsWith("## ")) {
       return (
-        <h2 key={i} className="text-xl font-bold text-brand-900 mt-8 mb-3">
-          {block.replace(/^## /, "")}
+        <h2 key={i} className="text-2xl font-bold text-brand-900 mt-10 mb-4 leading-snug">
+          {trimmed.replace(/^## /, "")}
         </h2>
       );
     }
-    if (block.startsWith("### ")) {
+    if (trimmed.startsWith("### ")) {
       return (
-        <h3 key={i} className="text-base font-bold text-brand-800 mt-5 mb-2">
-          {block.replace(/^### /, "")}
+        <h3 key={i} className="text-lg font-bold text-brand-800 mt-7 mb-3">
+          {trimmed.replace(/^### /, "")}
         </h3>
       );
     }
-    if (block.startsWith("- ") || block.includes("\n- ")) {
-      const items = block.split("\n").filter((l) => l.startsWith("- "));
+    if (trimmed.startsWith("- ") || trimmed.includes("\n- ")) {
+      const items = trimmed.split("\n").filter((l) => l.startsWith("- "));
       return (
-        <ul key={i} className="space-y-2 my-3 pl-1">
+        <ul key={i} className="my-5 space-y-2 pl-1">
           {items.map((item, j) => (
-            <li key={j} className="flex items-start gap-2 text-slate-600 text-sm leading-relaxed">
-              <span className="text-brand-400 mt-1 shrink-0">•</span>
-              <span dangerouslySetInnerHTML={{ __html: item.replace("- ", "").replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>") }} />
+            <li key={j} className="flex items-start gap-3 text-slate-700 leading-relaxed">
+              <span className="text-brand-400 mt-1.5 shrink-0 text-xs">●</span>
+              <span
+                className="text-[15px]"
+                dangerouslySetInnerHTML={{
+                  __html: item.replace(/^- /, "").replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>"),
+                }}
+              />
             </li>
           ))}
         </ul>
       );
     }
-    if (block.match(/^\d+\./)) {
-      const items = block.split("\n").filter((l) => l.match(/^\d+\./));
+    if (trimmed.match(/^\d+\./)) {
+      const items = trimmed.split("\n").filter((l) => l.match(/^\d+\./));
       return (
-        <ol key={i} className="space-y-2 my-3 pl-1">
+        <ol key={i} className="my-5 space-y-3 pl-1">
           {items.map((item, j) => (
-            <li key={j} className="flex items-start gap-2 text-slate-600 text-sm leading-relaxed">
-              <span className="font-bold text-brand-500 shrink-0 w-5">{j + 1}.</span>
-              <span dangerouslySetInnerHTML={{ __html: item.replace(/^\d+\.\s*/, "").replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>") }} />
+            <li key={j} className="flex items-start gap-3 text-slate-700 leading-relaxed">
+              <span className="font-bold text-brand-500 shrink-0 w-6 text-[15px]">{j + 1}.</span>
+              <span
+                className="text-[15px]"
+                dangerouslySetInnerHTML={{
+                  __html: item.replace(/^\d+\.\s*/, "").replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>"),
+                }}
+              />
             </li>
           ))}
         </ol>
       );
     }
-    if (block.trim() && !block.startsWith("---")) {
-      return (
-        <p
-          key={i}
-          className="text-slate-600 leading-relaxed text-sm my-3"
-          dangerouslySetInnerHTML={{ __html: block.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>") }}
-        />
-      );
-    }
-    return null;
+
+    return (
+      <p
+        key={i}
+        className="text-[15px] text-slate-700 leading-[1.8] my-4"
+        dangerouslySetInnerHTML={{
+          __html: trimmed.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>"),
+        }}
+      />
+    );
   });
 }
 
@@ -106,81 +120,189 @@ export default async function BlogPostPage({ params }: Props) {
   const post = getBlogPostBySlugFromFile(slug);
   if (!post) notFound();
 
-  const allPosts = getAllBlogPostsFromFiles()
+  const relatedPosts = getAllBlogPostsFromFiles()
     .filter((p) => p.slug !== slug)
-    .slice(0, 2);
+    .slice(0, 3);
+
+  const publishDate = new Date(post.publishedAt).toLocaleDateString("tr-TR", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
 
   return (
     <div className="min-h-screen bg-cream-50">
-      {/* ── Başlık ── */}
-      <div className="bg-white border-b border-cream-200 py-10 px-4">
-        <div className="max-w-2xl mx-auto">
-          <nav className="text-xs text-slate-400 mb-4 flex items-center gap-1.5">
-            <Link href="/" className="hover:text-brand-600">Ana Sayfa</Link>
+
+      {/* ── Hero başlık ── */}
+      <div className="bg-white border-b border-cream-200 py-12 px-4">
+        <div className="max-w-5xl mx-auto">
+          <nav className="text-xs text-slate-400 mb-5 flex items-center gap-1.5 flex-wrap">
+            <Link href="/" className="hover:text-brand-600 transition-colors">Ana Sayfa</Link>
             <span>/</span>
-            <Link href="/blog" className="hover:text-brand-600">Blog</Link>
+            <Link href="/blog" className="hover:text-brand-600 transition-colors">Blog</Link>
             <span>/</span>
-            <span className="text-brand-600 font-medium truncate">{post.title}</span>
+            <span className="text-brand-600 font-medium truncate max-w-[200px]">{post.title}</span>
           </nav>
 
-          <span className="text-xs font-semibold text-brand-500 uppercase tracking-widest">
+          <span className="inline-block text-xs font-bold text-brand-500 uppercase tracking-widest bg-brand-50 px-3 py-1 rounded-full mb-4">
             {post.category}
           </span>
 
-          <h1 className="text-2xl sm:text-3xl font-bold text-brand-900 mt-2 mb-4 leading-snug">
+          <h1 className="text-3xl sm:text-4xl font-bold text-brand-900 mb-4 leading-tight max-w-3xl">
             {post.title}
           </h1>
 
-          <div className="flex items-center gap-4 text-xs text-slate-400">
-            <span>{new Date(post.publishedAt).toLocaleDateString("tr-TR", { year: "numeric", month: "long", day: "numeric" })}</span>
+          <div className="flex flex-wrap items-center gap-x-5 gap-y-1 text-sm text-slate-400">
+            <span>{publishDate}</span>
             <span>· {post.readTime} okuma</span>
             <span>· {post.author}</span>
           </div>
         </div>
       </div>
 
-      {/* ── İçerik ── */}
-      <div className="max-w-2xl mx-auto px-4 py-10">
-        <div className="bg-white rounded-2xl border border-cream-200 shadow-sm p-6 sm:p-8 mb-8">
-          <div className="bg-brand-50 border-l-4 border-brand-400 rounded-r-xl p-4 mb-6">
-            <p className="text-sm text-brand-800 leading-relaxed font-medium">{post.excerpt}</p>
-          </div>
-          <div>{renderContent(post.body)}</div>
-        </div>
+      {/* ── İçerik + Sidebar ── */}
+      <div className="max-w-5xl mx-auto px-4 py-10">
+        <div className="flex gap-8 items-start">
 
-        {/* CTA */}
-        <div className="bg-brand-700 rounded-2xl p-6 text-white text-center mb-8">
-          <h2 className="font-bold text-lg mb-2">Profesyonel destek almak ister misiniz?</h2>
-          <p className="text-brand-200 text-sm mb-4">Konya'daki doğrulanmış uzmanlarımızla tanışın.</p>
-          <Link
-            href="/konya/psikologlar"
-            className="bg-white text-brand-700 font-bold px-6 py-3 rounded-xl hover:bg-cream-100 transition-colors inline-block"
-          >
-            Psikolog Bul →
-          </Link>
-        </div>
+          {/* Ana içerik */}
+          <main className="flex-1 min-w-0">
 
-        {/* Diğer yazılar */}
-        {allPosts.length > 0 && (
-          <div>
-            <h2 className="font-bold text-brand-900 mb-4">Diğer Yazılar</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {allPosts.map((p) => (
-                <Link
-                  key={p.slug}
-                  href={`/blog/${p.slug}`}
-                  className="bg-white rounded-2xl border border-cream-200 shadow-sm p-4 flex flex-col gap-2 group hover:shadow-md transition-shadow"
-                >
-                  <span className="text-xs font-semibold text-brand-500 uppercase">{p.category}</span>
-                  <h3 className="text-sm font-semibold text-brand-900 leading-snug group-hover:text-brand-600 transition-colors">
-                    {p.title}
-                  </h3>
-                  <span className="text-xs text-brand-500 font-medium mt-auto">Oku →</span>
-                </Link>
-              ))}
+            {/* Hero görsel */}
+            {post.image && (
+              <div className="relative w-full h-64 sm:h-80 rounded-2xl overflow-hidden mb-8 bg-brand-100">
+                <Image
+                  src={post.image}
+                  alt={post.title}
+                  fill
+                  className="object-cover"
+                  priority
+                />
+              </div>
+            )}
+
+            {/* Özet kutusu */}
+            <div className="bg-brand-50 border-l-4 border-brand-400 rounded-r-2xl px-6 py-5 mb-8">
+              <p className="text-[15px] text-brand-800 leading-relaxed font-medium">{post.excerpt}</p>
             </div>
-          </div>
-        )}
+
+            {/* İçerik */}
+            <article className="prose-custom">
+              {renderContent(post.body)}
+            </article>
+
+            {/* CTA — mobil için içerik sonuna */}
+            <div className="lg:hidden mt-10 bg-brand-700 rounded-2xl p-6 text-white text-center">
+              <p className="font-bold text-lg mb-2">Profesyonel destek almak ister misiniz?</p>
+              <p className="text-brand-200 text-sm mb-4">Konya&apos;daki doğrulanmış uzmanlarımızla tanışın.</p>
+              <Link
+                href="/konya/psikologlar"
+                className="bg-white text-brand-700 font-bold px-6 py-3 rounded-xl hover:bg-cream-100 transition-colors inline-block text-sm"
+              >
+                Psikolog Bul →
+              </Link>
+            </div>
+
+            {/* Etiketler */}
+            {post.keywords && post.keywords.length > 0 && (
+              <div className="mt-10 flex flex-wrap gap-2">
+                {post.keywords.map((kw) => (
+                  <span
+                    key={kw}
+                    className="text-xs bg-white border border-cream-200 text-slate-500 px-3 py-1 rounded-full"
+                  >
+                    {kw}
+                  </span>
+                ))}
+              </div>
+            )}
+
+            {/* İlgili yazılar — mobil */}
+            {relatedPosts.length > 0 && (
+              <div className="lg:hidden mt-10">
+                <h2 className="font-bold text-brand-900 mb-4">Diğer Yazılar</h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  {relatedPosts.slice(0, 2).map((p) => (
+                    <Link
+                      key={p.slug}
+                      href={`/blog/${p.slug}`}
+                      className="bg-white rounded-2xl border border-cream-200 p-4 flex flex-col gap-2 group hover:shadow-md transition-shadow"
+                    >
+                      <span className="text-xs font-semibold text-brand-500 uppercase">{p.category}</span>
+                      <h3 className="text-sm font-semibold text-brand-900 leading-snug group-hover:text-brand-600 transition-colors">
+                        {p.title}
+                      </h3>
+                      <span className="text-xs text-brand-500 font-medium mt-auto">Oku →</span>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            )}
+          </main>
+
+          {/* Sidebar — sadece lg+ */}
+          <aside className="hidden lg:flex flex-col gap-6 w-72 shrink-0 sticky top-24">
+
+            {/* CTA */}
+            <div className="bg-brand-700 rounded-2xl p-5 text-white">
+              <p className="font-bold text-base mb-1">Profesyonel destek almak ister misiniz?</p>
+              <p className="text-brand-200 text-xs mb-4 leading-relaxed">
+                Konya&apos;da kimlik ve diploma doğrulamalı uzmanlar.
+              </p>
+              <Link
+                href="/konya/psikologlar"
+                className="block bg-white text-brand-700 font-bold px-4 py-2.5 rounded-xl hover:bg-cream-100 transition-colors text-center text-sm"
+              >
+                Psikolog Bul →
+              </Link>
+            </div>
+
+            {/* Hızlı bağlantılar */}
+            <div className="bg-white rounded-2xl border border-cream-200 p-5">
+              <p className="font-semibold text-brand-900 text-sm mb-3">Uzmanlık Alanları</p>
+              <div className="flex flex-col gap-1.5">
+                {[
+                  { label: "Bireysel Terapi", href: "/konya/bireysel-terapi" },
+                  { label: "Çift Terapisi", href: "/konya/cift-terapisi" },
+                  { label: "Ergen Psikolojisi", href: "/konya/ergen-psikolojisi" },
+                  { label: "Aile Terapisi", href: "/konya/aile-terapisi" },
+                  { label: "EMDR", href: "/konya/emdr" },
+                ].map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className="text-sm text-brand-700 hover:text-brand-900 hover:bg-brand-50 px-2 py-1.5 rounded-lg transition-colors"
+                  >
+                    → {item.label}
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            {/* İlgili yazılar */}
+            {relatedPosts.length > 0 && (
+              <div className="bg-white rounded-2xl border border-cream-200 p-5">
+                <p className="font-semibold text-brand-900 text-sm mb-3">Diğer Yazılar</p>
+                <div className="flex flex-col gap-3">
+                  {relatedPosts.map((p) => (
+                    <Link
+                      key={p.slug}
+                      href={`/blog/${p.slug}`}
+                      className="group block"
+                    >
+                      <span className="text-xs font-semibold text-brand-400 uppercase block mb-0.5">
+                        {p.category}
+                      </span>
+                      <span className="text-sm text-slate-700 leading-snug group-hover:text-brand-600 transition-colors font-medium">
+                        {p.title}
+                      </span>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            )}
+          </aside>
+
+        </div>
       </div>
     </div>
   );

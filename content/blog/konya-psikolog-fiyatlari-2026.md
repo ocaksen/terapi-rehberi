@@ -6,8 +6,6 @@ keywords: ["konya psikolog fiyat", "konya psikolog seans ücreti", "konya psikol
 category: "Genel"
 author: "Klinik Psikolog Feyza Çaksen"
 publishedAt: "2026-04-02"
-- q: "Konya'da en uygun psikolog nasıl bulunur?"
-a: "Üniversite psikoloji merkezleri düşük gelirli bireyler için indirimli seans sunmaktadır. Bunun yanı sıra bazı özel klinikler kayan ücret tarifesi uygulayabilir. Doğru seçim için önce ihtiyacınızı netleştirin, ardından randevu öncesi fiyatı sorun."
 ---
 
 
