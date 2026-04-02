@@ -97,6 +97,9 @@ export default function RootLayout({
   return (
     <html lang="tr" className={`${jakarta.variable} ${lora.variable}`}>
       <head>
+        {/* Preconnect — dış kaynak bağlantılarını önceden kur */}
+        <link rel="preconnect" href="https://images.unsplash.com" />
+        <link rel="preconnect" href="https://randomuser.me" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
       </head>
