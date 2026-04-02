@@ -143,7 +143,7 @@ export default function Header() {
               scrolled ? "text-brand-800" : "text-white"
             }`}
           >
-            Terapi<span className={scrolled ? "text-brand-500" : "text-brand-300"}>Rehberi</span>
+            Terapi<span className={scrolled ? "text-brand-500" : "text-white opacity-80"}>Rehberi</span>
           </span>
         </Link>
 
@@ -158,7 +158,7 @@ export default function Header() {
           >
             <button
               className={`flex items-center gap-1 py-2 transition-colors duration-200 hover:text-brand-400 ${
-                scrolled ? "text-slate-600" : "text-slate-300"
+                scrolled ? "text-slate-700" : "text-white drop-shadow-sm"
               }`}
             >
               Hizmetler
@@ -223,7 +223,7 @@ export default function Header() {
               key={item.href}
               href={item.href}
               className={`py-2 transition-colors duration-200 hover:text-brand-400 ${
-                scrolled ? "text-slate-600" : "text-slate-300"
+                scrolled ? "text-slate-700" : "text-white drop-shadow-sm"
               }`}
             >
               {item.label}
