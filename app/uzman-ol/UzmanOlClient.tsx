@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useState, useRef, useCallback } from "react";
 import Link from "next/link";
 
 /* ─────────────────────────────────────────────
@@ -77,13 +77,33 @@ const EMPTY: FormData = {
   bio: "", kvkk: false, acikRiza: false,
 };
 
+const VIDEO_RULES = [
+  "Süre: 60–90 saniye, dikey (9:16) telefon çekimi",
+  "Sıra: selam + isim → uzmanlık → yaklaşım → randevu daveti",
+  "Arka plan: sade ve düzenli (klinik, kitaplık, beyaz duvar)",
+  "Işık: pencere önü gündüz vakti ideal",
+  "Telefonu sabit tut: tripod veya duvara daya",
+  "Gürültüsüz ortam, gözler kameraya baksın",
+  "Günlük ama profesyonel kıyafet",
+];
+
 export default function UzmanOlClient() {
   const [form, setForm]     = useState<FormData>(EMPTY);
   const [errors, setErrors] = useState<Partial<Record<keyof FormData, string>>>({});
   const [step, setStep]     = useState<1 | 2 | 3>(1);
   const [loading, setLoading] = useState(false);
   const [done, setDone]     = useState(false);
-  const formRef = useRef<HTMLDivElement>(null);
+  const [video, setVideo]   = useState<File | null>(null);
+  const [videoDrag, setVideoDrag] = useState(false);
+  const formRef  = useRef<HTMLDivElement>(null);
+  const videoRef = useRef<HTMLInputElement>(null);
+
+  const handleVideoDrop = useCallback((e: React.DragEvent) => {
+    e.preventDefault();
+    setVideoDrag(false);
+    const file = e.dataTransfer.files[0];
+    if (file && file.type.startsWith("video/")) setVideo(file);
+  }, []);
 
   function set<K extends keyof FormData>(key: K, val: FormData[K]) {
     setForm((p) => ({ ...p, [key]: val }));
@@ -113,6 +133,7 @@ export default function UzmanOlClient() {
       if (form.alanlar.length === 0)    e.alanlar       = "En az bir alan seçin";
       if (form.seanstipi.length === 0)  e.seanstipi     = "Seçiniz";
       if (!form.seansUcreti.trim())     e.seansUcreti   = "Zorunlu alan";
+      if (!video)                       (e as Record<string, string>).video = "Tanıtım videosu zorunludur";
     }
     setErrors(e);
     return Object.keys(e).length === 0;
@@ -129,7 +150,16 @@ export default function UzmanOlClient() {
     if (!form.kvkk) { setErrors({ kvkk: "KVKK onayı zorunludur" }); return; }
     setLoading(true);
     try {
-      const res  = await fetch("/api/basvuru", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(form) });
+      const fd = new globalThis.FormData();
+      // Form alanları
+      Object.entries(form).forEach(([k, v]) => {
+        if (Array.isArray(v)) fd.append(k, v.join(","));
+        else fd.append(k, String(v));
+      });
+      // Video dosyası
+      if (video) fd.append("video", video);
+
+      const res  = await fetch("/api/basvuru", { method: "POST", body: fd });
       const json = await res.json();
       setDone(true);
       if (json.whatsapp && typeof window !== "undefined") window.open(json.whatsapp, "_blank");
@@ -415,6 +445,81 @@ export default function UzmanOlClient() {
                       placeholder="Uzmanlık alanlarınızı ve yaklaşımınızı kısaca anlatın." className={inp() + " resize-none"} />
                     <p className="text-right text-xs text-slate-300 mt-0.5">{form.bio.length}/500</p>
                   </div>
+
+                  {/* ── Tanıtım Videosu ── */}
+                  <div>
+                    <label className="block text-sm font-semibold text-slate-700 mb-1.5">
+                      Tanıtım Videosu <span className="text-red-400">*</span>
+                    </label>
+
+                    {/* Çekim kuralları */}
+                    <div className="bg-brand-50 border border-brand-100 rounded-2xl p-4 mb-3">
+                      <p className="text-xs font-bold text-brand-700 mb-2">📹 Video Çekim Kuralları</p>
+                      <ul className="space-y-1">
+                        {VIDEO_RULES.map((r, i) => (
+                          <li key={i} className="text-xs text-brand-700 flex gap-2">
+                            <span className="shrink-0">·</span>{r}
+                          </li>
+                        ))}
+                      </ul>
+                      <div className="mt-3 p-3 bg-white/70 rounded-xl border border-brand-100">
+                        <p className="text-xs font-semibold text-slate-700 mb-1">Video içeriği sırası:</p>
+                        <p className="text-xs text-slate-600 leading-relaxed">
+                          1. &ldquo;Merhaba, ben [adınız], Konya&apos;da [unvan]ım&rdquo;<br/>
+                          2. &ldquo;Özellikle [alan] alanında çalışıyorum&rdquo;<br/>
+                          3. &ldquo;Seanslarımda [kişisel yaklaşım]ı önemsiyorum&rdquo;<br/>
+                          4. &ldquo;Benimle çalışmak isteyenler profilimden randevu alabilir&rdquo;
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* Upload alanı */}
+                    {video ? (
+                      <div className="border border-brand-200 bg-brand-50 rounded-2xl p-4 flex items-center gap-3">
+                        <svg className="w-8 h-8 text-brand-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+                        </svg>
+                        <div className="flex-1 min-w-0">
+                          <p className="text-sm font-semibold text-brand-700 truncate">{video.name}</p>
+                          <p className="text-xs text-brand-500">{(video.size / 1024 / 1024).toFixed(1)} MB</p>
+                        </div>
+                        <button onClick={() => setVideo(null)} className="text-xs text-red-400 hover:text-red-600 font-medium shrink-0">
+                          Değiştir
+                        </button>
+                      </div>
+                    ) : (
+                      <div
+                        onDragOver={(e) => { e.preventDefault(); setVideoDrag(true); }}
+                        onDragLeave={() => setVideoDrag(false)}
+                        onDrop={handleVideoDrop}
+                        onClick={() => videoRef.current?.click()}
+                        className={`border-2 border-dashed rounded-2xl p-8 text-center cursor-pointer transition-all ${
+                          videoDrag ? "border-brand-400 bg-brand-50" : "border-slate-200 hover:border-brand-300 hover:bg-brand-50/50"
+                        }`}
+                      >
+                        <svg className="w-10 h-10 text-slate-300 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+                        </svg>
+                        <p className="text-sm font-semibold text-slate-700 mb-1">Videoyu buraya sürükle</p>
+                        <p className="text-xs text-slate-400 mb-3">veya tıklayarak seç</p>
+                        <span className="text-xs bg-slate-100 text-slate-500 px-3 py-1 rounded-full">MP4, MOV, WebM · Maks. 200 MB</span>
+                      </div>
+                    )}
+                    <input
+                      ref={videoRef}
+                      type="file"
+                      accept="video/*"
+                      className="hidden"
+                      onChange={(e) => {
+                        const f = e.target.files?.[0];
+                        if (f) setVideo(f);
+                      }}
+                    />
+                    {(errors as Record<string, string>).video && (
+                      <p className="text-xs text-red-500 mt-1">{(errors as Record<string, string>).video}</p>
+                    )}
+                  </div>
+
                   <div className="flex gap-3">
                     <button onClick={() => setStep(1)} className="btn-outline">← Geri</button>
                     <button onClick={goNext} className="btn-primary">
