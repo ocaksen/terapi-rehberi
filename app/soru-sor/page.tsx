@@ -9,6 +9,12 @@ export const metadata: Metadata = {
   title: "Psikolojik Soru Sor",
   description:
     "Merak ettiğiniz psikoloji sorularını anonim sorun, uzman psikologlar yanıtlasın. Konya TerapiRehberi uzman Q&A platformu.",
+  alternates: { canonical: "https://www.terapirehberi.com/soru-sor" },
+  openGraph: {
+    title: "Psikolojik Soru Sor — TerapiRehberi",
+    description: "Merak ettiğiniz psikoloji sorularını anonim sorun, uzman psikologlar yanıtlasın.",
+    url: "https://www.terapirehberi.com/soru-sor",
+  },
 };
 
 interface SorularJson {

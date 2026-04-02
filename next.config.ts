@@ -7,10 +7,6 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "randomuser.me" },
     ],
   },
-  experimental: {
-    // Modern tarayıcılar için gereksiz polyfill'leri kaldır
-    browsersListForSwc: true,
-  },
 };
 
 export default nextConfig;

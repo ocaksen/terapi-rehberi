@@ -16,12 +16,25 @@ export const metadata: Metadata = {
   },
 };
 
+const konyaSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Konya Psikolog Listesi",
+  description: "Konya'da lisanslı ve diploma doğrulamalı psikolog ve terapistler.",
+  url: "https://www.terapirehberi.com/konya",
+  itemListElement: [],
+};
+
 export default function KonyaPage() {
   const experts = getExpertsByCity("konya");
   const services = getAllServices();
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(konyaSchema) }}
+      />
       {/* Hero */}
       <section className="bg-cream-50 py-16 px-4 border-b border-cream-200">
         <div className="max-w-7xl mx-auto">

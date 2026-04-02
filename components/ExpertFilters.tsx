@@ -62,11 +62,11 @@ export default function ExpertFilters({ experts, allCount, services, citySlug, s
   const FilterContent = () => (
     <div className="space-y-5">
       {/* Doğrulanmış banner */}
-      <div className="flex items-center gap-2 p-3 bg-green-50 rounded-xl border border-green-100">
-        <svg className="w-4 h-4 text-green-600 shrink-0" fill="currentColor" viewBox="0 0 20 20">
+      <div className="flex items-center gap-2 p-3 bg-brand-50 rounded-xl border border-brand-100">
+        <svg className="w-4 h-4 text-brand-600 shrink-0" fill="currentColor" viewBox="0 0 20 20">
           <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
         </svg>
-        <p className="text-xs font-semibold text-green-800">Tümü Diploma Doğrulanmış</p>
+        <p className="text-xs font-semibold text-brand-800">Tümü Diploma Doğrulanmış</p>
       </div>
 
       {/* Seans Türü — pill butonlar */}
@@ -182,7 +182,7 @@ export default function ExpertFilters({ experts, allCount, services, citySlug, s
               </svg>
               Filtrele
               {hasFilter && (
-                <span className="bg-brand-500 text-white text-[10px] rounded-full w-4 h-4 flex items-center justify-center">
+                <span className="bg-brand-700 text-white text-[10px] rounded-full w-4 h-4 flex items-center justify-center">
                   {selectedServices.length + selectedTypes.length}
                 </span>
               )}
