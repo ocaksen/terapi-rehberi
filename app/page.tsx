@@ -118,7 +118,8 @@ export default function HomePage() {
                     alt={img.alt}
                     width={img.w}
                     height={img.h}
-                    quality={100}
+                    quality={75}
+                    sizes="(max-width: 768px) 0px, 660px"
                     priority={i === 0}
                     className="absolute inset-0 w-full h-full object-contain rounded-2xl transition-opacity duration-500"
                     style={{ opacity: activeStep === i ? 1 : 0 }}
@@ -616,11 +617,13 @@ export default function HomePage() {
                     style={{ height: "191px" }}
                   >
                     {post.image && (
-                      <img
+                      <Image
                         src={post.image}
                         alt={post.title}
-                        className="w-full h-full object-cover"
-                        onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }}
+                        fill
+                        sizes="310px"
+                        quality={75}
+                        className="object-cover"
                       />
                     )}
                     <span

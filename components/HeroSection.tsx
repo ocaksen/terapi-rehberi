@@ -171,7 +171,7 @@ export default function HeroSection() {
                     "https://randomuser.me/api/portraits/men/32.jpg",
                   ].map((src, i) => (
                     <div key={i} className="w-9 h-9 rounded-full border-2 border-white overflow-hidden bg-slate-200 shadow-sm">
-                      <Image src={src} alt="Uzman" width={36} height={36} className="object-cover w-full h-full" unoptimized />
+                      <Image src={src} alt="Uzman" width={36} height={36} className="object-cover w-full h-full" />
                     </div>
                   ))}
                   <div className="w-9 h-9 rounded-full border-2 border-white bg-brand-100 flex items-center justify-center shadow-sm">
@@ -204,13 +204,12 @@ export default function HeroSection() {
                 className="relative w-full h-full"
               >
                 <Image
-                  src="https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=1200&q=100&fit=crop"
+                  src="https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=600&q=75&fit=crop"
                   alt="Mutlu çocuk oynuyor"
                   fill
-                  sizes="400px"
+                  sizes="300px"
                   className="object-cover"
                   priority
-                  unoptimized
                 />
               </motion.div>
             </motion.div>
@@ -225,12 +224,11 @@ export default function HeroSection() {
               <Float duration={5} y={8} delay={0.5} className="w-full h-full">
                 <div className="relative w-full h-full">
                   <Image
-                    src="https://images.unsplash.com/photo-1476703993599-0035a21b17a9?w=600&q=100&fit=crop"
+                    src="https://images.unsplash.com/photo-1476703993599-0035a21b17a9?w=350&q=75&fit=crop"
                     alt="Aile birlikte"
                     fill
-                    sizes="200px"
+                    sizes="180px"
                     className="object-cover"
-                    unoptimized
                   />
                 </div>
               </Float>
@@ -252,7 +250,6 @@ export default function HeroSection() {
                       width={40}
                       height={40}
                       className="object-cover"
-                      unoptimized
                     />
                   </div>
                   <div>
