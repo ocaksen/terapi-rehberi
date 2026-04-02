@@ -78,7 +78,7 @@ export default function FaqSection({ items, title = "Sık Sorulan Sorular" }: Pr
 
                 <div className="p-8">
                   {/* Soru numarası */}
-                  <span className="text-5xl font-black text-slate-100 leading-none select-none">
+                  <span className="text-5xl font-black text-brand-100 leading-none select-none" aria-hidden="true">
                     0{selected + 1}
                   </span>
 
@@ -97,7 +97,7 @@ export default function FaqSection({ items, title = "Sık Sorulan Sorular" }: Pr
                     <button
                       onClick={() => setSelected(Math.max(0, selected - 1))}
                       disabled={selected === 0}
-                      className="flex items-center gap-2 text-xs font-semibold text-slate-400 hover:text-brand-600 disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+                      className="flex items-center gap-2 text-xs font-semibold text-slate-600 hover:text-brand-700 disabled:opacity-30 disabled:cursor-not-allowed transition-colors min-h-[44px] px-2"
                     >
                       <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -105,25 +105,30 @@ export default function FaqSection({ items, title = "Sık Sorulan Sorular" }: Pr
                       Önceki
                     </button>
 
-                    {/* Nokta göstergesi */}
-                    <div className="flex gap-1.5">
+                    {/* Nokta göstergesi — min 44px touch hedefi için wrapper */}
+                    <div className="flex gap-1" role="tablist" aria-label="Soru navigasyonu">
                       {items.map((_, i) => (
                         <button
                           key={i}
                           onClick={() => setSelected(i)}
-                          className={`rounded-full transition-all duration-200 ${
+                          role="tab"
+                          aria-selected={i === selected}
+                          aria-label={`Soru ${i + 1}`}
+                          className="flex items-center justify-center w-8 h-8 rounded-lg transition-colors hover:bg-brand-50"
+                        >
+                          <span className={`rounded-full transition-all duration-200 block ${
                             i === selected
-                              ? "w-5 h-2 bg-brand-500"
-                              : "w-2 h-2 bg-slate-200 hover:bg-slate-300"
-                          }`}
-                        />
+                              ? "w-5 h-2 bg-brand-700"
+                              : "w-2 h-2 bg-slate-400 hover:bg-slate-500"
+                          }`} />
+                        </button>
                       ))}
                     </div>
 
                     <button
                       onClick={() => setSelected(Math.min(items.length - 1, selected + 1))}
                       disabled={selected === items.length - 1}
-                      className="flex items-center gap-2 text-xs font-semibold text-slate-400 hover:text-brand-600 disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+                      className="flex items-center gap-2 text-xs font-semibold text-slate-600 hover:text-brand-700 disabled:opacity-30 disabled:cursor-not-allowed transition-colors min-h-[44px] px-2"
                     >
                       Sonraki
                       <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

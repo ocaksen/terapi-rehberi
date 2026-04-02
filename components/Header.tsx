@@ -231,7 +231,7 @@ export default function Header() {
           ))}
           <Link
             href="/uzman-ol"
-            className="bg-brand-500 hover:bg-brand-600 text-white font-semibold px-4 py-2 rounded-lg text-xs transition-colors min-h-[36px] flex items-center"
+            className="bg-brand-700 hover:bg-brand-800 text-white font-semibold px-4 py-2 rounded-lg text-xs transition-colors min-h-[36px] flex items-center"
           >
             Uzman Ol
           </Link>

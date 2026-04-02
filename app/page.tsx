@@ -152,7 +152,7 @@ export default function HomePage() {
                       className="font-bold transition-all duration-300 shrink-0"
                       style={{
                         fontSize: isActive ? "2.5rem" : "1.75rem",
-                        color: isActive ? "var(--color-brand-500)" : "#e2e8f0",
+                        color: isActive ? "var(--color-brand-600)" : "#94a3b8",
                       }}
                     >
                       {item.no}
@@ -162,7 +162,7 @@ export default function HomePage() {
                         className="font-bold transition-all duration-300 leading-snug"
                         style={{
                           fontSize: isActive ? "1.125rem" : "0.9375rem",
-                          color: isActive ? "#1e3a2e" : "#94a3b8",
+                          color: isActive ? "#1e3a2e" : "#64748b",
                         }}
                       >
                         {item.title}
@@ -593,7 +593,7 @@ export default function HomePage() {
           }}
         >
             {[...posts, ...posts].map((post, i) => {
-              const accents = ["#2dd4bf", "#fbbf24", "#fb7185", "#a78bfa", "#38bdf8", "#fb923c"];
+              const accents = ["#0f766e", "#b45309", "#be123c", "#7c3aed", "#0369a1", "#c2410c"];
               const gradients = [
                 "from-teal-50 to-teal-100",
                 "from-amber-50 to-amber-100",
@@ -633,14 +633,14 @@ export default function HomePage() {
 
                   {/* Kart içeriği */}
                   <div className="p-5 flex flex-col gap-2 flex-1">
-                    <p className="text-xs text-slate-400">
+                    <p className="text-xs text-slate-500">
                       {new Date(post.publishedAt).toLocaleDateString("tr-TR", { day: "2-digit", month: "long", year: "numeric" })}
                     </p>
                     <h3 className="font-bold text-slate-800 text-sm leading-snug group-hover:text-brand-600 transition-colors line-clamp-2">
                       {post.title}
                     </h3>
                     {post.author && (
-                      <p className="text-xs text-slate-400 mt-auto pt-3 border-t border-slate-100">{post.author}</p>
+                      <p className="text-xs text-slate-500 mt-auto pt-3 border-t border-slate-100">{post.author}</p>
                     )}
                   </div>
                 </Link>
