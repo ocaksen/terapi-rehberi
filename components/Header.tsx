@@ -173,7 +173,7 @@ export default function Header() {
             {/* Flyout */}
             {menuOpen && (
               <div
-                className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[480px] bg-white rounded-2xl shadow-2xl border border-cream-200 p-4 grid grid-cols-2 gap-2"
+                className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[calc(100vw-32px)] sm:w-[480px] max-w-[480px] bg-white rounded-2xl shadow-2xl border border-cream-200 p-4 grid grid-cols-2 gap-2"
                 onMouseEnter={openMenu}
                 onMouseLeave={closeMenu}
               >

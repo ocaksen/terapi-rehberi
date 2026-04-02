@@ -84,11 +84,11 @@ export default function HeroSection() {
       {/* Elle çizilmiş dekoratif elementler */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none select-none">
         {/* Sol üst — yıldız */}
-        <svg className="absolute top-24 left-6 w-10 h-10 text-amber-300 opacity-70" viewBox="0 0 40 40" fill="currentColor">
+        <svg className="absolute top-24 left-2 sm:left-6 w-8 sm:w-10 h-8 sm:h-10 text-amber-300 opacity-70" viewBox="0 0 40 40" fill="currentColor">
           <path d="M20 2l4.5 13H38l-11 8 4 13-11-8-11 8 4-13L2 15h13.5z"/>
         </svg>
         {/* Sağ üst — nokta grubu */}
-        <svg className="absolute top-32 right-10 w-16 h-16 opacity-40" viewBox="0 0 60 60" fill="none">
+        <svg className="absolute top-32 right-2 sm:right-10 w-12 sm:w-16 h-12 sm:h-16 opacity-40" viewBox="0 0 60 60" fill="none">
           <circle cx="10" cy="10" r="5" fill="#30b49a"/>
           <circle cx="30" cy="6" r="3" fill="#f4735a"/>
           <circle cx="50" cy="14" r="6" fill="#f5b84a"/>
@@ -96,15 +96,15 @@ export default function HeroSection() {
           <circle cx="46" cy="34" r="3" fill="#30b49a"/>
         </svg>
         {/* Sol alt — spiral/dalga */}
-        <svg className="absolute bottom-20 left-8 w-20 h-12 opacity-30" viewBox="0 0 80 40" fill="none">
+        <svg className="absolute bottom-20 left-2 sm:left-8 w-16 sm:w-20 h-10 sm:h-12 opacity-30" viewBox="0 0 80 40" fill="none">
           <path d="M0 20 Q10 0 20 20 Q30 40 40 20 Q50 0 60 20 Q70 40 80 20" stroke="#30b49a" strokeWidth="3" strokeLinecap="round" fill="none"/>
         </svg>
         {/* Sağ orta — küçük kalp */}
-        <svg className="absolute top-1/2 right-4 w-8 h-8 text-rose-300 opacity-60" viewBox="0 0 32 32" fill="currentColor">
+        <svg className="absolute top-1/2 right-2 sm:right-4 w-6 sm:w-8 h-6 sm:h-8 text-rose-300 opacity-60" viewBox="0 0 32 32" fill="currentColor">
           <path d="M16 28S2 20 2 10a7 7 0 0112-4.9A7 7 0 0130 10c0 10-14 18-14 18z"/>
         </svg>
         {/* Alt orta — üçgen/balon */}
-        <svg className="absolute bottom-28 right-20 w-8 h-8 opacity-40" viewBox="0 0 32 32" fill="none">
+        <svg className="absolute bottom-28 right-4 sm:right-20 w-7 sm:w-8 h-7 sm:h-8 opacity-40" viewBox="0 0 32 32" fill="none">
           <circle cx="16" cy="13" r="11" fill="#60a5fa" opacity="0.6"/>
           <path d="M13 24l3 6 3-6" fill="#60a5fa" opacity="0.6"/>
         </svg>

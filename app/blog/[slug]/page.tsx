@@ -211,7 +211,7 @@ export default async function BlogPostPage({ params }: Props) {
             <span>/</span>
             <Link href="/blog" className="hover:text-brand-600 transition-colors">Blog</Link>
             <span>/</span>
-            <span className="text-brand-600 font-medium truncate max-w-[200px]">{post.title}</span>
+            <span className="text-brand-600 font-medium truncate max-w-[150px] sm:max-w-xs">{post.title}</span>
           </nav>
 
           <span className="inline-block text-xs font-bold text-brand-500 uppercase tracking-widest bg-brand-50 px-3 py-1 rounded-full mb-4">

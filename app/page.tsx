@@ -74,7 +74,24 @@ export default function HomePage() {
     el.addEventListener("mouseleave", onUp);
     el.addEventListener("mousemove", onMove);
 
-    // Otomatik geçiş: her 1 sn'de bir kart
+    // Touch / swipe desteği
+    let touchStartX = 0, touchStartScroll = 0;
+    const onTouchStart = (e: TouchEvent) => {
+      paused = true;
+      touchStartX = e.touches[0].pageX;
+      touchStartScroll = el.scrollLeft;
+    };
+    const onTouchMove = (e: TouchEvent) => {
+      el.scrollLeft = touchStartScroll - (e.touches[0].pageX - touchStartX) * 1.2;
+    };
+    const onTouchEnd = () => {
+      setTimeout(() => { paused = false; }, 800);
+    };
+    el.addEventListener("touchstart", onTouchStart, { passive: true });
+    el.addEventListener("touchmove", onTouchMove, { passive: true });
+    el.addEventListener("touchend", onTouchEnd);
+
+    // Otomatik geçiş: her 3 sn'de bir kart
     const timer = setInterval(() => {
       if (paused) return;
       if (el.scrollLeft + 1 >= oneSet) {
@@ -90,6 +107,9 @@ export default function HomePage() {
       el.removeEventListener("mouseup", onUp);
       el.removeEventListener("mouseleave", onUp);
       el.removeEventListener("mousemove", onMove);
+      el.removeEventListener("touchstart", onTouchStart);
+      el.removeEventListener("touchmove", onTouchMove);
+      el.removeEventListener("touchend", onTouchEnd);
     };
   }, [posts.length]);
 

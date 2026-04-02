@@ -6,7 +6,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-brand-900 text-cream-100 mt-20">
-      <div className="max-w-7xl mx-auto px-4 py-14 grid grid-cols-1 sm:grid-cols-3 gap-10 text-sm">
+      <div className="max-w-7xl mx-auto px-4 py-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 text-sm">
 
         {/* Marka + açıklama */}
         <div className="sm:col-span-1">
