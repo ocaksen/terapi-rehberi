@@ -5,7 +5,7 @@ excerpt: "Ergenlik dönemi hem genç hem ebeveyn için zorlu olabilir. Konya'da 
 keywords: ["konya ergen terapisi", "ergen psikolojisi konya", "konya ergen psikolog", "ergenlik dönemi terapi", "konya genç terapisi"]
 category: "Ergen"
 author: "TerapiRehberi Editör"
-publishedAt: "2026-03-24"
+publishedAt: "2026-04-02"
 ---
 
 **Konya ergen terapisi** alanında artan talep, ergenlik döneminin ne denli karmaşık bir süreç olduğunu yansıtıyor. Araştırmalar, ruhsal sağlık sorunlarının yüzde 75'inin 24 yaş öncesinde başladığını ortaya koyuyor. Bu erken dönemde alınan destek, uzun vadede büyük fark yaratıyor.
