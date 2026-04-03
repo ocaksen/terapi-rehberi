@@ -5,7 +5,7 @@ excerpt: "Evden çıkmadan Konya'nın psikologlarıyla çalışmak mümkün. Kon
 keywords: ["konya online terapi", "online psikolog konya", "konya online psikoloji", "online terapi fiyat 2026", "konya uzaktan terapi"]
 category: "Genel"
 author: "TerapiRehberi Editör"
-publishedAt: "2026-04-02"
+publishedAt: "2026-03-18"
 ---
 
 **Konya online terapi** artık istisnai bir seçenek değil — Konya'daki psikologların büyük çoğunluğu hem yüz yüze hem online seans sunuyor. Pandemi sonrasında Türkiye'de dijital terapi kullanımı hızla yaygınlaştı. Konya'da da bu dönüşümü net biçimde görüyoruz.

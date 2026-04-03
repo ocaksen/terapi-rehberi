@@ -5,7 +5,7 @@ excerpt: "İlişkinizde bir şeylerin yolunda gitmediğini hissediyorsunuz. Kony
 keywords: ["konya aile terapisi", "konya çift terapisi", "aile terapisi konya", "konya evlilik terapisi", "konya aile danışmanlığı"]
 category: "Aile"
 author: "TerapiRehberi Editör"
-publishedAt: "2026-04-02"
+publishedAt: "2026-02-10"
 ---
 
 **Konya aile terapisi** için başvuran çiftlerin ve ailelerin büyük çoğunluğu benzer bir cümleyle geliyor: "Çok erken gelmemiş miyiz?" Ama araştırmalar tam tersini söylüyor — en büyük hata geç kalmak.

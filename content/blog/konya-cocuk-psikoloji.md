@@ -5,7 +5,7 @@ excerpt: "Çocuğunuzda bir şeylerin yolunda gitmediğini hissediyorsunuz ama e
 keywords: ["konya çocuk psikoloji", "konya çocuk psikoloğu", "çocuk psikolojisi konya", "konya çocuk psikoloğu ne zaman", "konya pedagog"]
 category: "Çocuk"
 author: "TerapiRehberi Editör"
-publishedAt: "2026-04-02"
+publishedAt: "2026-02-24"
 ---
 
 **Konya çocuk psikolojisi** alanında uzman arayan ebeveynlerin sayısı her yıl artıyor. Ama hangi belirtide uzman aranmalı, psikolog mu pedagog mu tercih edilmeli, ilk seansta ne olur? Bu sorular çoğu ebeveyn için belirsiz kalıyor.

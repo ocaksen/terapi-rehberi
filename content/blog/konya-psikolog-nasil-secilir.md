@@ -5,7 +5,7 @@ excerpt: "2025'te Türkiye'de psikolojik danışmanlık en çok tercih edilen de
 keywords: ["konya psikolog", "konya psikolog nasıl seçilir", "klinik psikolog konya", "konya psikolog seçimi", "konya psikolog ücretleri 2026"]
 category: "Genel"
 author: "TerapiRehberi Editör"
-publishedAt: "2026-04-02"
+publishedAt: "2026-01-15"
 ---
 
 **2025 yılında Türkiye'de psikolojik danışmanlık, çalışanlar arasında en çok tercih edilen destek hizmeti oldu — oran yüzde 43.** Konya psikolog arayanların sayısı da her yıl artıyor. Ama bu talebin büyümesi, doğru psikoloğu bulmanın kolaylaştığı anlamına gelmiyor.

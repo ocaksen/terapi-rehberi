@@ -5,7 +5,7 @@ excerpt: "Çocuğunuzun konuşma gelişimini izliyorsunuz ama ne zaman uzman ara
 keywords: ["konya dil terapisti", "konya dil ve konuşma terapisi", "çocuk konuşma gecikmesi konya", "dil terapisti ne zaman", "konya konuşma terapisti"]
 category: "Çocuk"
 author: "TerapiRehberi Editör"
-publishedAt: "2026-04-02"
+publishedAt: "2026-04-03"
 ---
 
 **Konya dil terapisti** arayan ebeveynlerin büyük çoğunluğu aynı soruyla geliyor: "Beklememem mi gerekiyordu?" Çocuklarda konuşma gecikmesi aileler tarafından çoğunlukla "büyüyünce geçer" beklentisiyle izleniyor. Ama erken müdahale, bu alandaki en güçlü araç.
