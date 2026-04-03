@@ -204,7 +204,7 @@ export default function HeroSection() {
                 className="relative w-full h-full"
               >
                 <Image
-                  src="https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=600&q=75&fit=crop"
+                  src="https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=900&q=85&fit=crop"
                   alt="Mutlu çocuk oynuyor"
                   fill
                   sizes="300px"
@@ -224,7 +224,7 @@ export default function HeroSection() {
               <Float duration={5} y={8} delay={0.5} className="w-full h-full">
                 <div className="relative w-full h-full">
                   <Image
-                    src="https://images.unsplash.com/photo-1476703993599-0035a21b17a9?w=350&q=75&fit=crop"
+                    src="https://images.unsplash.com/photo-1476703993599-0035a21b17a9?w=500&q=85&fit=crop"
                     alt="Aile birlikte"
                     fill
                     sizes="180px"
