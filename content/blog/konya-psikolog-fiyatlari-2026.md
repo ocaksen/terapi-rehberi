@@ -5,7 +5,7 @@ excerpt: "Psikolog ücreti kafanızı karıştırıyorsa yalnız değilsiniz. Ko
 keywords: ["konya psikolog fiyat", "konya psikolog seans ücreti", "konya psikolog 2026", "konya terapi ücreti", "psikoloji seans fiyatı"]
 category: "Genel"
 author: "Klinik Psikolog Feyza Çaksen"
-publishedAt: "2026-01-28"
+publishedAt: "2026-03-13"
 ---
 
 

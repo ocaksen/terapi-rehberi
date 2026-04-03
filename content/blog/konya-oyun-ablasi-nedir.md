@@ -5,7 +5,7 @@ excerpt: "Çocuklar duygularını sözcüklerle değil oyunla anlatır. Konya'da
 keywords: ["konya oyun terapisi", "oyun terapisi nedir", "çocuk oyun terapisi konya", "oyun terapisi ne zaman", "konya oyun terapisti"]
 category: "Çocuk"
 author: "TerapiRehberi Editör"
-publishedAt: "2026-03-28"
+publishedAt: "2026-03-31"
 ---
 
 **Oyun terapisi**, çocukların duygularını ve yaşadıklarını oyun aracılığıyla ifade ettikleri, uzman eşliğinde yürütülen psikoterapi yöntemidir. Çocuklar için oyun, yetişkinlerin kullandığı dil gibi çalışır — düşünceleri, korkuları ve iç dünyaları oyunla dışa vurulur.
