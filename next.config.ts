@@ -19,6 +19,8 @@ const securityHeaders = [
       "img-src 'self' data: blob: https://images.unsplash.com https://randomuser.me https://www.google-analytics.com",
       "connect-src 'self' https://www.google-analytics.com",
       "frame-ancestors 'none'",
+      "base-uri 'self'",
+      "form-action 'self'",
     ].join("; "),
   },
 ];
