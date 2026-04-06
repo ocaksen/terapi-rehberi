@@ -39,24 +39,79 @@ function getInitials(name: string) {
 }
 
 /* ─────────────────────────────────────────
-   Style 4 — Balon (mavi)
-   Çocuk psikolojisi
+   Lastik Ördek — Çocuk psikolojisi
 ───────────────────────────────────────── */
-function BalloonDecoration() {
+function DuckDecoration() {
   return (
     <svg
       aria-hidden="true"
-      className="absolute -bottom-2 -right-3 w-28 h-36 pointer-events-none select-none"
-      viewBox="0 0 90 120"
+      className="absolute -bottom-2 -right-2 w-28 h-28 pointer-events-none select-none"
+      viewBox="0 0 100 100"
       fill="none"
+      opacity="0.22"
     >
-      <ellipse cx="45" cy="44" rx="30" ry="34" fill="#60A5FA" opacity="0.22" />
-      <ellipse cx="45" cy="44" rx="30" ry="34" stroke="#3B82F6" strokeWidth="2.2" opacity="0.3" />
-      <ellipse cx="34" cy="32" rx="9" ry="12" fill="white" opacity="0.35" />
-      <path d="M39 76 Q45 81 51 76 Q48 73 45 74 Q42 73 39 76Z" fill="#3B82F6" opacity="0.3" />
-      <path d="M45 78 Q36 90 44 102 Q50 112 42 118" stroke="#3B82F6" strokeWidth="1.8" strokeLinecap="round" opacity="0.25" />
-      <ellipse cx="73" cy="28" rx="13" ry="15" fill="#93C5FD" opacity="0.15" />
-      <ellipse cx="73" cy="28" rx="13" ry="15" stroke="#60A5FA" strokeWidth="1.5" opacity="0.2" />
+      {/* Gövde */}
+      <ellipse cx="48" cy="65" rx="30" ry="22" fill="#FCD34D" />
+      {/* Kanat */}
+      <ellipse cx="38" cy="68" rx="16" ry="10" fill="#F59E0B" />
+      {/* Boyun */}
+      <ellipse cx="68" cy="52" rx="10" ry="13" fill="#FCD34D" />
+      {/* Baş */}
+      <circle cx="72" cy="36" r="14" fill="#FCD34D" />
+      {/* Gaga üst */}
+      <ellipse cx="84" cy="37" rx="8" ry="5" fill="#F97316" />
+      {/* Gaga alt */}
+      <ellipse cx="84" cy="40" rx="7" ry="3.5" fill="#EA580C" />
+      {/* Göz */}
+      <circle cx="76" cy="30" r="3" fill="#1E293B" />
+      <circle cx="77" cy="29" r="1" fill="white" />
+      {/* Kanat çizgisi */}
+      <path d="M22 65 Q35 58 50 62" stroke="#F59E0B" strokeWidth="2" strokeLinecap="round" />
+      {/* Su yüzeyi */}
+      <path d="M14 82 Q30 76 48 80 Q66 84 82 78 Q90 76 96 80" stroke="#93C5FD" strokeWidth="3" strokeLinecap="round" fill="none" />
+    </svg>
+  );
+}
+
+/* ─────────────────────────────────────────
+   ABC Bloğu — Aile terapisi
+───────────────────────────────────────── */
+function BlockDecoration() {
+  return (
+    <svg
+      aria-hidden="true"
+      className="absolute -bottom-2 -right-2 w-28 h-28 pointer-events-none select-none"
+      viewBox="0 0 100 100"
+      fill="none"
+      opacity="0.2"
+    >
+      {/* Büyük küp — sol */}
+      {/* Üst yüz */}
+      <path d="M10 42 L34 30 L58 42 L34 54Z" fill="#FCA5A5" />
+      {/* Sol yüz */}
+      <path d="M10 42 L10 68 L34 80 L34 54Z" fill="#F87171" />
+      {/* Sağ yüz */}
+      <path d="M58 42 L58 68 L34 80 L34 54Z" fill="#FECACA" />
+      {/* A harfi sol yüzde */}
+      <text x="16" y="70" fontSize="14" fontWeight="bold" fill="white" opacity="0.7" fontFamily="serif">A</text>
+
+      {/* Küçük küp — sağ üstte */}
+      {/* Üst yüz */}
+      <path d="M58 28 L76 20 L94 28 L76 36Z" fill="#86EFAC" />
+      {/* Sol yüz */}
+      <path d="M58 28 L58 48 L76 56 L76 36Z" fill="#4ADE80" />
+      {/* Sağ yüz */}
+      <path d="M94 28 L94 48 L76 56 L76 36Z" fill="#BBF7D0" />
+      {/* B harfi sağ yüzde */}
+      <text x="78" y="50" fontSize="11" fontWeight="bold" fill="white" opacity="0.7" fontFamily="serif">B</text>
+
+      {/* Orta küp — arkada */}
+      {/* Üst yüz */}
+      <path d="M38 18 L56 10 L74 18 L56 26Z" fill="#93C5FD" opacity="0.7" />
+      {/* Sağ yüz */}
+      <path d="M74 18 L74 34 L56 42 L56 26Z" fill="#BFDBFE" opacity="0.7" />
+      {/* C harfi */}
+      <text x="58" y="36" fontSize="10" fontWeight="bold" fill="white" opacity="0.6" fontFamily="serif">C</text>
     </svg>
   );
 }
@@ -174,9 +229,11 @@ function TeddyDecoration() {
 /* ─────────────────────────────────────────
    Uzmanlığa göre dekorasyon seç
 ───────────────────────────────────────── */
-function ExpertDecoration({ services }: { services: string[] }) {
-  if (services.includes("cocuk-psikolojisi")) return <BalloonDecoration />;
-  if (services.includes("aile-terapisi"))     return <HouseDecoration />;
+function ExpertDecoration({ services, index }: { services: string[]; index: number }) {
+  if (services.includes("cocuk-psikolojisi"))
+    return index % 2 === 0 ? <DuckDecoration /> : <TeddyDecoration />;
+  if (services.includes("aile-terapisi"))
+    return index % 2 === 0 ? <BlockDecoration /> : <HouseDecoration />;
   if (services.includes("ergen-psikolojisi")) return <StarsDecoration />;
   if (services.includes("bireysel-terapi"))   return <TeddyDecoration />;
   return null;
@@ -272,7 +329,7 @@ export default function IlceBentoClient({ experts }: { experts: Expert[] }) {
                   className="relative bg-white rounded-2xl overflow-hidden flex flex-col border border-slate-100 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200"
                 >
                   {/* Uzmanlık dekorasyonu */}
-                  <ExpertDecoration services={expert.services} />
+                  <ExpertDecoration services={expert.services} index={index} />
 
                   <div className="relative z-10 p-5 flex flex-col gap-3 flex-1">
                     {/* Üst: avatar + isim */}
