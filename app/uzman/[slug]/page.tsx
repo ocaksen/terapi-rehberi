@@ -149,7 +149,7 @@ export default async function ExpertPage({ params }: Props) {
                   <svg className="w-4 h-4 text-brand-300 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                  {expert.experience} deneyim
+                  {expert.experience ?? "—"} deneyim
                 </span>
                 {expert.languages && (
                   <span className="flex items-center gap-1.5">
@@ -185,10 +185,10 @@ export default async function ExpertPage({ params }: Props) {
 
             {/* Fiyat — sağ üst köşe, büyük ekran */}
             <div className="hidden sm:block text-right pb-1 shrink-0">
-              <p className="text-3xl font-black text-white">{expert.sessionFee}</p>
+              <p className="text-3xl font-black text-white">{expert.sessionFee ?? "Belirtilmemiş"}</p>
               <p className="text-brand-300/70 text-xs mt-0.5">/ seans (50 dk)</p>
               <a
-                href={expert.appointmentUrl}
+                href={expert.appointmentUrl ?? "#"}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-3 flex items-center gap-2 bg-white text-brand-700 hover:bg-cream-50 font-bold px-5 py-2.5 rounded-xl transition-colors text-sm whitespace-nowrap shadow-lg"
@@ -205,7 +205,7 @@ export default async function ExpertPage({ params }: Props) {
           {/* Stats bar */}
           <div className="border-t border-white/10 grid grid-cols-3 divide-x divide-white/10 -mx-4 px-4">
             {[
-              { label: "Deneyim",    value: expert.experience },
+              { label: "Deneyim",    value: expert.experience ?? "—" },
               { label: "Uzmanlık",   value: `${expert.services.length} Alan` },
               { label: "Seans",      value: expert.sessionType.join(" + ") },
             ].map((s) => (
@@ -375,7 +375,7 @@ export default async function ExpertPage({ params }: Props) {
 
               {/* Fiyat */}
               <div className="text-center pb-4 border-b border-slate-100">
-                <p className="text-3xl font-black text-brand-700">{expert.sessionFee}</p>
+                <p className="text-3xl font-black text-brand-700">{expert.sessionFee ?? "Belirtilmemiş"}</p>
                 <p className="text-xs text-slate-400 mt-0.5">seans başına · 50 dakika</p>
               </div>
 
@@ -409,7 +409,7 @@ export default async function ExpertPage({ params }: Props) {
 
               {/* CTA */}
               <a
-                href={expert.appointmentUrl}
+                href={expert.appointmentUrl ?? "#"}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 w-full bg-green-500 hover:bg-green-600 text-white font-bold px-4 py-3.5 rounded-xl transition-colors text-sm"
@@ -421,7 +421,7 @@ export default async function ExpertPage({ params }: Props) {
                 WhatsApp ile Randevu Al
               </a>
               <a
-                href={`tel:${expert.phone}`}
+                href={expert.phone ? `tel:${expert.phone}` : "#"}
                 className="flex items-center justify-center gap-2 w-full border-2 border-brand-200 text-brand-700 hover:bg-brand-50 font-semibold px-4 py-3 rounded-xl transition-colors text-sm"
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -469,7 +469,7 @@ export default async function ExpertPage({ params }: Props) {
       {/* ── Mobil sticky CTA ─────────────────────────────────────── */}
       <div className="lg:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 px-4 py-3 flex gap-3 z-40 shadow-lg">
         <a
-          href={`tel:${expert.phone}`}
+          href={expert.phone ? `tel:${expert.phone}` : "#"}
           className="flex-1 flex items-center justify-center gap-1.5 border-2 border-brand-200 text-brand-700 font-semibold rounded-xl py-3 text-sm"
         >
           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -478,7 +478,7 @@ export default async function ExpertPage({ params }: Props) {
           Ara
         </a>
         <a
-          href={expert.appointmentUrl}
+          href={expert.appointmentUrl ?? "#"}
           target="_blank"
           rel="noopener noreferrer"
           className="flex-[2] flex items-center justify-center gap-1.5 bg-green-500 hover:bg-green-600 text-white font-bold rounded-xl py-3 text-sm transition-colors"

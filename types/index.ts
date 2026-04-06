@@ -15,11 +15,11 @@ export interface Expert {
   shortBio: string;
   longBio?: string[];
   services: string[];
-  sessionFee: string;
+  sessionFee: string | null;
   sessionType: ("Yüz Yüze" | "Online")[];
-  experience: string;
-  phone: string;
-  appointmentUrl: string;
+  experience: string | null;
+  phone: string | null;
+  appointmentUrl: string | null;
   featured: boolean;
   education?: Education[];
   certifications?: string[];

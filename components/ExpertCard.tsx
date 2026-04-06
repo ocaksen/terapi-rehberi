@@ -63,9 +63,11 @@ export default function ExpertCard({ expert, citySlug }: Props) {
                 <p className="text-brand-600 text-sm font-medium">{expert.title}</p>
               </div>
               {/* Deneyim */}
-              <span className="shrink-0 text-xs font-semibold bg-brand-50 text-brand-700 px-2.5 py-1 rounded-full whitespace-nowrap">
-                {expert.experience}
-              </span>
+              {expert.experience && (
+                <span className="shrink-0 text-xs font-semibold bg-brand-50 text-brand-700 px-2.5 py-1 rounded-full whitespace-nowrap">
+                  {expert.experience}
+                </span>
+              )}
             </div>
             <p className="text-xs text-slate-400 mt-0.5 flex items-center gap-1">
               <svg className="w-3 h-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -111,11 +113,14 @@ export default function ExpertCard({ expert, citySlug }: Props) {
 
           {/* Alt: fiyat + butonlar */}
           <div className="mt-auto pt-2 border-t border-cream-100">
-            <div className="mb-2">
-              <span className="font-black text-brand-700 text-base">{expert.sessionFee}</span>
-              <span className="text-xs text-slate-400 ml-1">/ seans</span>
-            </div>
+            {expert.sessionFee && (
+              <div className="mb-2">
+                <span className="font-black text-brand-700 text-base">{expert.sessionFee}</span>
+                <span className="text-xs text-slate-400 ml-1">/ seans</span>
+              </div>
+            )}
             <div className="flex gap-2">
+              {expert.appointmentUrl ? (
               <a
                 href={expert.appointmentUrl}
                 target="_blank"
@@ -128,6 +133,7 @@ export default function ExpertCard({ expert, citySlug }: Props) {
                 </svg>
                 Randevu
               </a>
+              ) : null}
               <Link
                 href={href}
                 className="flex-1 flex items-center justify-center gap-1 border-2 border-brand-600 text-brand-600 hover:bg-brand-50 text-xs font-semibold px-2 py-2.5 rounded-xl transition-colors"

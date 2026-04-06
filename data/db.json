@@ -2,22 +2,1473 @@
   "experts": [
     {
       "id": "1",
-      "slug": "feyza-caksen",
-      "name": "Feyza Çaksen",
+      "slug": "erdim-hasip-hakverir",
+      "name": "Erdim Hasip Hakverîr",
+      "title": "Uzman Klinik Psikolog",
+      "city": "konya",
+      "district": "Meram",
+      "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
+      "shortBio": "Uzman Klinik Psikolog olarak Konya Meram bölgesinde hizmet vermektedir.",
+      "longBio": [
+        "Erdim Hasip Hakverîr, Konya Meram bölgesinde psikolog ve danışmanlık hizmetleri sunmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "travma",
+        "kaygi-bozuklugu",
+        "depresyon"
+      ],
+      "sessionFee": null,
+      "sessionType": [
+        "Yüz Yüze"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": null,
+      "featured": true,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Meram, Konya",
+      "approaches": []
+    },
+    {
+      "id": "2",
+      "slug": "fatih-ugur",
+      "name": "Fatih Uğur",
       "title": "Klinik Psikolog",
+      "city": "konya",
+      "district": "Selçuklu",
+      "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
+      "shortBio": "Klinik Psikolog olarak Konya Selçuklu bölgesinde hizmet vermektedir.",
+      "longBio": [
+        "Fatih Uğur, Konya Selçuklu bölgesinde psikolog ve danışmanlık hizmetleri sunmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "cift-terapisi",
+        "aile-terapisi",
+        "emdr"
+      ],
+      "sessionFee": "4.000₺",
+      "sessionType": [
+        "Yüz Yüze",
+        "Online"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": null,
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Selçuklu, Konya",
+      "approaches": []
+    },
+    {
+      "id": "3",
+      "slug": "nazli-caliskan",
+      "name": "Nazlı Çalışkan",
+      "title": "Psikolojik Danışman",
       "city": "konya",
       "district": "Meram",
       "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80",
-      "shortBio": "Ergen psikolojisi ve bireysel terapi alanında uzmanlaşmış, EMDR sertifikalı klinik psikolog.",
+      "shortBio": "Psikolojik Danışman olarak Konya Meram bölgesinde hizmet vermektedir.",
       "longBio": [
-        "Merhaba, ben Feyza Çaksen. 2018 yılında Selçuk Üniversitesi Klinik Psikoloji yüksek lisans programından mezun olduğumdan bu yana Konya'da ergenler ve yetişkinlerle çalışıyorum.",
-        "Terapi yaklaşımımda bilişsel davranışçı terapi (BDT) temelini esas alırken, kişinin ihtiyacına göre kabul ve kararlılık terapisi (ACT) ile şema terapi tekniklerini de kullanıyorum. EMDR sertifikam sayesinde travma ve travma sonrası stres bozukluğu vakalarında kanıta dayalı müdahale sunabiliyorum.",
-        "Her danışanımla güvenli, yargılamayan ve dürüst bir terapötik ilişki kurmayı hedefliyorum. Danışanlarımın kendilerini olduğu gibi ifade edebildikleri, değişim için iç motivasyonlarını keşfettikleri bir alan yaratmak benim için en önemli öncelik."
+        "Nazlı Çalışkan, Konya Meram bölgesinde psikolog ve danışmanlık hizmetleri sunmaktadır."
       ],
       "services": [
         "bireysel-terapi",
         "ergen-psikolojisi",
+        "aile-terapisi"
+      ],
+      "sessionFee": null,
+      "sessionType": [
+        "Yüz Yüze",
+        "Online"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": null,
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Meram, Konya",
+      "approaches": []
+    },
+    {
+      "id": "4",
+      "slug": "huseyin-gokalp",
+      "name": "Hüseyin Gökalp",
+      "title": "Uzman Klinik Psikolog",
+      "city": "konya",
+      "district": "Meram",
+      "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80",
+      "shortBio": "Uzman Klinik Psikolog olarak Konya Meram bölgesinde hizmet vermektedir.",
+      "longBio": [
+        "Hüseyin Gökalp, Konya Meram bölgesinde psikolog ve danışmanlık hizmetleri sunmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi",
         "kaygi-bozuklugu",
+        "depresyon",
+        "travma"
+      ],
+      "sessionFee": null,
+      "sessionType": [
+        "Yüz Yüze"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": null,
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Meram, Konya",
+      "approaches": []
+    },
+    {
+      "id": "5",
+      "slug": "duygu-ayhan",
+      "name": "Duygu Ayhan",
+      "title": "Uzman Psikolojik Danışman",
+      "city": "konya",
+      "district": "Meram",
+      "image": "https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=400&q=80",
+      "shortBio": "Uzman Psikolojik Danışman olarak Konya Meram bölgesinde hizmet vermektedir.",
+      "longBio": [
+        "Duygu Ayhan, Konya Meram bölgesinde psikolog ve danışmanlık hizmetleri sunmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "aile-terapisi",
+        "cift-terapisi"
+      ],
+      "sessionFee": null,
+      "sessionType": [
+        "Yüz Yüze",
+        "Online"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": null,
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Meram, Konya",
+      "approaches": []
+    },
+    {
+      "id": "6",
+      "slug": "yasemin-bagriacik",
+      "name": "Yasemin Bağrıaçık",
+      "title": "Uzman Psikolog",
+      "city": "konya",
+      "district": "Meram",
+      "image": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+      "shortBio": "Uzman Psikolog olarak Konya Meram bölgesinde hizmet vermektedir.",
+      "longBio": [
+        "Yasemin Bağrıaçık, Konya Meram bölgesinde psikolog ve danışmanlık hizmetleri sunmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "cocuk-psikolojisi",
+        "ergen-psikolojisi"
+      ],
+      "sessionFee": null,
+      "sessionType": [
+        "Yüz Yüze"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": null,
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Meram, Konya",
+      "approaches": []
+    },
+    {
+      "id": "7",
+      "slug": "atiye-kaytazoglu",
+      "name": "Atiye Kaytazoğlu",
+      "title": "Psikolog",
+      "city": "konya",
+      "district": "Meram",
+      "image": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=400&q=80",
+      "shortBio": "Psikolog olarak Konya Meram bölgesinde hizmet vermektedir.",
+      "longBio": [
+        "Atiye Kaytazoğlu, Konya Meram bölgesinde psikolog ve danışmanlık hizmetleri sunmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "kaygi-bozuklugu",
+        "depresyon"
+      ],
+      "sessionFee": "2.500₺",
+      "sessionType": [
+        "Yüz Yüze",
+        "Online"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": null,
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Meram, Konya",
+      "approaches": []
+    },
+    {
+      "id": "8",
+      "slug": "merve-malas",
+      "name": "Merve Malaş",
+      "title": "Doktor Klinik Psikolog",
+      "city": "konya",
+      "district": "Meram",
+      "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80",
+      "shortBio": "Doktor Klinik Psikolog olarak Konya Meram bölgesinde hizmet vermektedir.",
+      "longBio": [
+        "Merve Malaş, Konya Meram bölgesinde psikolog ve danışmanlık hizmetleri sunmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "emdr",
+        "travma",
+        "kaygi-bozuklugu"
+      ],
+      "sessionFee": "5.000₺",
+      "sessionType": [
+        "Yüz Yüze",
+        "Online"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": null,
+      "featured": true,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Meram, Konya",
+      "approaches": []
+    },
+    {
+      "id": "9",
+      "slug": "rumeysa-sen",
+      "name": "Rümeysa Şen",
+      "title": "Psikolog",
+      "city": "konya",
+      "district": "Meram",
+      "image": "https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=400&q=80",
+      "shortBio": "Psikolog olarak Konya Meram bölgesinde hizmet vermektedir.",
+      "longBio": [
+        "Rümeysa Şen, Konya Meram bölgesinde psikolog ve danışmanlık hizmetleri sunmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "ergen-psikolojisi",
+        "depresyon"
+      ],
+      "sessionFee": "2.000₺",
+      "sessionType": [
+        "Yüz Yüze",
+        "Online"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": null,
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Meram, Konya",
+      "approaches": []
+    },
+    {
+      "id": "10",
+      "slug": "kasim-tas",
+      "name": "Kasım Taş",
+      "title": "Psikolog",
+      "city": "konya",
+      "district": "Meram",
+      "image": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80",
+      "shortBio": "Psikolog olarak Konya Meram bölgesinde hizmet vermektedir.",
+      "longBio": [
+        "Kasım Taş, Konya Meram bölgesinde psikolog ve danışmanlık hizmetleri sunmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "aile-terapisi",
+        "kaygi-bozuklugu"
+      ],
+      "sessionFee": null,
+      "sessionType": [
+        "Yüz Yüze"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": null,
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Meram, Konya",
+      "approaches": []
+    },
+    {
+      "id": "11",
+      "slug": "dilara-oksuz",
+      "name": "Dilara Öksüz",
+      "title": "Uzman Psikolog",
+      "city": "konya",
+      "district": "Meram",
+      "image": "https://images.unsplash.com/photo-1598550880863-4e8aa3d0edb4?w=400&q=80",
+      "shortBio": "Uzman Psikolog olarak Konya Meram bölgesinde hizmet vermektedir.",
+      "longBio": [
+        "Dilara Öksüz, Konya Meram bölgesinde psikolog ve danışmanlık hizmetleri sunmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "cocuk-psikolojisi",
+        "aile-terapisi"
+      ],
+      "sessionFee": "3.000₺",
+      "sessionType": [
+        "Yüz Yüze",
+        "Online"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": null,
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Meram, Konya",
+      "approaches": []
+    },
+    {
+      "id": "12",
+      "slug": "ahmet-koyuncu",
+      "name": "Ahmet Koyuncu",
+      "title": "Uzman Psikolojik Danışman",
+      "city": "konya",
+      "district": "Meram",
+      "image": "https://images.unsplash.com/photo-1615109398623-88346a601842?w=400&q=80",
+      "shortBio": "Uzman Psikolojik Danışman olarak Konya Meram bölgesinde hizmet vermektedir.",
+      "longBio": [
+        "Ahmet Koyuncu, Konya Meram bölgesinde psikolog ve danışmanlık hizmetleri sunmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "ergen-psikolojisi",
+        "aile-terapisi"
+      ],
+      "sessionFee": null,
+      "sessionType": [
+        "Yüz Yüze"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": null,
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Meram, Konya",
+      "approaches": []
+    },
+    {
+      "id": "13",
+      "slug": "esra-uzbas-ugur",
+      "name": "Esra Uzbaş Uğur",
+      "title": "Uzman Klinik Psikolog",
+      "city": "konya",
+      "district": "Meram",
+      "image": "https://images.unsplash.com/photo-1548142813-c348350df52b?w=400&q=80",
+      "shortBio": "Uzman Klinik Psikolog olarak Konya Meram bölgesinde hizmet vermektedir.",
+      "longBio": [
+        "Esra Uzbaş Uğur, Konya Meram bölgesinde psikolog ve danışmanlık hizmetleri sunmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "emdr",
+        "travma",
+        "depresyon"
+      ],
+      "sessionFee": "4.500₺",
+      "sessionType": [
+        "Yüz Yüze",
+        "Online"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": null,
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Meram, Konya",
+      "approaches": []
+    },
+    {
+      "id": "14",
+      "slug": "i-zem-cehiz",
+      "name": "İzem Cehiz",
+      "title": "Psikolog",
+      "city": "konya",
+      "district": "Meram",
+      "image": "https://images.unsplash.com/photo-1543269664-76bc3997d9ea?w=400&q=80",
+      "shortBio": "Psikolog olarak Konya Meram bölgesinde hizmet vermektedir.",
+      "longBio": [
+        "İzem Cehiz, Konya Meram bölgesinde psikolog ve danışmanlık hizmetleri sunmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "kaygi-bozuklugu",
+        "ergen-psikolojisi"
+      ],
+      "sessionFee": "2.000₺",
+      "sessionType": [
+        "Yüz Yüze",
+        "Online"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": null,
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Meram, Konya",
+      "approaches": []
+    },
+    {
+      "id": "15",
+      "slug": "nazmiye-dener-arslan",
+      "name": "Nazmiye Dener Arslan",
+      "title": "Psikolojik Danışman",
+      "city": "konya",
+      "district": "Meram",
+      "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&q=80",
+      "shortBio": "Psikolojik Danışman olarak Konya Meram bölgesinde hizmet vermektedir.",
+      "longBio": [
+        "Nazmiye Dener Arslan, Konya Meram bölgesinde psikolog ve danışmanlık hizmetleri sunmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "aile-terapisi",
+        "cocuk-psikolojisi"
+      ],
+      "sessionFee": null,
+      "sessionType": [
+        "Yüz Yüze"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": null,
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Meram, Konya",
+      "approaches": []
+    },
+    {
+      "id": "16",
+      "slug": "nalan-cokdolu",
+      "name": "Nalan Çokdolu",
+      "title": "Uzman Psikolojik Danışman",
+      "city": "konya",
+      "district": "Meram",
+      "image": "https://images.unsplash.com/photo-1489424731084-a5d8b2a2cf0c?w=400&q=80",
+      "shortBio": "Uzman Psikolojik Danışman olarak Konya Meram bölgesinde hizmet vermektedir.",
+      "longBio": [
+        "Nalan Çokdolu, Konya Meram bölgesinde psikolog ve danışmanlık hizmetleri sunmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "cift-terapisi",
+        "kaygi-bozuklugu"
+      ],
+      "sessionFee": null,
+      "sessionType": [
+        "Yüz Yüze",
+        "Online"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": null,
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Meram, Konya",
+      "approaches": []
+    },
+    {
+      "id": "17",
+      "slug": "omer-suna",
+      "name": "Ömer Suna",
+      "title": "Klinik Psikolog",
+      "city": "konya",
+      "district": "Meram",
+      "image": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&q=80",
+      "shortBio": "Klinik Psikolog olarak Konya Meram bölgesinde hizmet vermektedir.",
+      "longBio": [
+        "Ömer Suna, Konya Meram bölgesinde psikolog ve danışmanlık hizmetleri sunmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "depresyon",
+        "travma",
+        "emdr"
+      ],
+      "sessionFee": "3.500₺",
+      "sessionType": [
+        "Yüz Yüze"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": null,
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Meram, Konya",
+      "approaches": []
+    },
+    {
+      "id": "18",
+      "slug": "emine-deniz",
+      "name": "Emine Deniz",
+      "title": "Uzman Psikolog",
+      "city": "konya",
+      "district": "Meram",
+      "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80",
+      "shortBio": "Uzman Psikolog olarak Konya Meram bölgesinde hizmet vermektedir.",
+      "longBio": [
+        "Emine Deniz, Konya Meram bölgesinde psikolog ve danışmanlık hizmetleri sunmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "cocuk-psikolojisi",
+        "ergen-psikolojisi"
+      ],
+      "sessionFee": "3.000₺",
+      "sessionType": [
+        "Yüz Yüze",
+        "Online"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": null,
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Meram, Konya",
+      "approaches": []
+    },
+    {
+      "id": "19",
+      "slug": "dilara-uyar",
+      "name": "Dilara Uyar",
+      "title": "Psikolog",
+      "city": "konya",
+      "district": "Meram",
+      "image": "https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=400&q=80",
+      "shortBio": "Psikolog olarak Konya Meram bölgesinde hizmet vermektedir.",
+      "longBio": [
+        "Dilara Uyar, Konya Meram bölgesinde psikolog ve danışmanlık hizmetleri sunmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "aile-terapisi",
+        "depresyon"
+      ],
+      "sessionFee": "2.000₺",
+      "sessionType": [
+        "Yüz Yüze",
+        "Online"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": null,
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Meram, Konya",
+      "approaches": []
+    },
+    {
+      "id": "20",
+      "slug": "elif-manuoglu",
+      "name": "Elif Manuoğlu",
+      "title": "Psikolog",
+      "city": "konya",
+      "district": "Meram",
+      "image": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+      "shortBio": "Psikolog olarak Konya Meram bölgesinde hizmet vermektedir.",
+      "longBio": [
+        "Elif Manuoğlu, Konya Meram bölgesinde psikolog ve danışmanlık hizmetleri sunmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "kaygi-bozuklugu",
+        "cift-terapisi"
+      ],
+      "sessionFee": null,
+      "sessionType": [
+        "Yüz Yüze"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": null,
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Meram, Konya",
+      "approaches": []
+    },
+    {
+      "id": "21",
+      "slug": "helin-kara",
+      "name": "Helin Kara",
+      "title": "Klinik Psikolog",
+      "city": "konya",
+      "district": "Meram",
+      "image": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=400&q=80",
+      "shortBio": "Klinik Psikolog olarak Konya Meram bölgesinde hizmet vermektedir.",
+      "longBio": [
+        "Helin Kara, Konya Meram bölgesinde psikolog ve danışmanlık hizmetleri sunmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "emdr",
+        "travma"
+      ],
+      "sessionFee": "3.000₺",
+      "sessionType": [
+        "Yüz Yüze",
+        "Online"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": null,
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Meram, Konya",
+      "approaches": []
+    },
+    {
+      "id": "22",
+      "slug": "i-brahim-ertabak",
+      "name": "İbrahim Ertabak",
+      "title": "Psikolog",
+      "city": "konya",
+      "district": "Selçuklu",
+      "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
+      "shortBio": "Psikolog olarak Konya Selçuklu bölgesinde hizmet vermektedir.",
+      "longBio": [
+        "İbrahim Ertabak, Konya Selçuklu bölgesinde psikolog ve danışmanlık hizmetleri sunmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "ergen-psikolojisi",
+        "kaygi-bozuklugu"
+      ],
+      "sessionFee": null,
+      "sessionType": [
+        "Yüz Yüze"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": null,
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Selçuklu, Konya",
+      "approaches": []
+    },
+    {
+      "id": "23",
+      "slug": "cuneyt-kaya",
+      "name": "Cüneyt Kaya",
+      "title": "Psikolog",
+      "city": "konya",
+      "district": "Selçuklu",
+      "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
+      "shortBio": "Psikolog olarak Konya Selçuklu bölgesinde hizmet vermektedir.",
+      "longBio": [
+        "Cüneyt Kaya, Konya Selçuklu bölgesinde psikolog ve danışmanlık hizmetleri sunmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "depresyon",
+        "kaygi-bozuklugu"
+      ],
+      "sessionFee": "2.500₺",
+      "sessionType": [
+        "Yüz Yüze",
+        "Online"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": null,
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Selçuklu, Konya",
+      "approaches": []
+    },
+    {
+      "id": "24",
+      "slug": "derya-cicek",
+      "name": "Derya Çiçek",
+      "title": "Psikolog",
+      "city": "konya",
+      "district": "Selçuklu",
+      "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80",
+      "shortBio": "Psikolog olarak Konya Selçuklu bölgesinde hizmet vermektedir.",
+      "longBio": [
+        "Derya Çiçek, Konya Selçuklu bölgesinde psikolog ve danışmanlık hizmetleri sunmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "cocuk-psikolojisi",
+        "aile-terapisi"
+      ],
+      "sessionFee": "2.000₺",
+      "sessionType": [
+        "Yüz Yüze",
+        "Online"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": null,
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Selçuklu, Konya",
+      "approaches": []
+    },
+    {
+      "id": "25",
+      "slug": "hakan-tokgoz",
+      "name": "Hakan Tokgöz",
+      "title": "Uzman Psikolog",
+      "city": "konya",
+      "district": "Selçuklu",
+      "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80",
+      "shortBio": "Uzman Psikolog olarak Konya Selçuklu bölgesinde hizmet vermektedir.",
+      "longBio": [
+        "Hakan Tokgöz, Konya Selçuklu bölgesinde psikolog ve danışmanlık hizmetleri sunmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "emdr",
+        "travma",
+        "depresyon"
+      ],
+      "sessionFee": "3.500₺",
+      "sessionType": [
+        "Yüz Yüze"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": null,
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Selçuklu, Konya",
+      "approaches": []
+    },
+    {
+      "id": "26",
+      "slug": "ali-kultekin",
+      "name": "Ali Kültekin",
+      "title": "Psikolojik Danışman",
+      "city": "konya",
+      "district": "Selçuklu",
+      "image": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80",
+      "shortBio": "Psikolojik Danışman olarak Konya Selçuklu bölgesinde hizmet vermektedir.",
+      "longBio": [
+        "Ali Kültekin, Konya Selçuklu bölgesinde psikolog ve danışmanlık hizmetleri sunmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "aile-terapisi",
+        "ergen-psikolojisi"
+      ],
+      "sessionFee": null,
+      "sessionType": [
+        "Yüz Yüze"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": null,
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Selçuklu, Konya",
+      "approaches": []
+    },
+    {
+      "id": "27",
+      "slug": "fatma-gulluoglu",
+      "name": "Fatma Güllüoğlu",
+      "title": "Psikolog",
+      "city": "konya",
+      "district": "Selçuklu",
+      "image": "https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=400&q=80",
+      "shortBio": "Psikolog olarak Konya Selçuklu bölgesinde hizmet vermektedir.",
+      "longBio": [
+        "Fatma Güllüoğlu, Konya Selçuklu bölgesinde psikolog ve danışmanlık hizmetleri sunmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "cocuk-psikolojisi",
+        "ergen-psikolojisi"
+      ],
+      "sessionFee": "2.500₺",
+      "sessionType": [
+        "Yüz Yüze",
+        "Online"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": null,
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Selçuklu, Konya",
+      "approaches": []
+    },
+    {
+      "id": "28",
+      "slug": "bayram-duysak",
+      "name": "Bayram Duysak",
+      "title": "Uzman Klinik Psikolog",
+      "city": "konya",
+      "district": "Selçuklu",
+      "image": "https://images.unsplash.com/photo-1615109398623-88346a601842?w=400&q=80",
+      "shortBio": "Uzman Klinik Psikolog olarak Konya Selçuklu bölgesinde hizmet vermektedir.",
+      "longBio": [
+        "Bayram Duysak, Konya Selçuklu bölgesinde psikolog ve danışmanlık hizmetleri sunmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "travma",
+        "emdr",
+        "kaygi-bozuklugu"
+      ],
+      "sessionFee": "4.000₺",
+      "sessionType": [
+        "Yüz Yüze"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": null,
+      "featured": true,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Selçuklu, Konya",
+      "approaches": []
+    },
+    {
+      "id": "29",
+      "slug": "merve-aslan",
+      "name": "Merve Aslan",
+      "title": "Uzman Psikolog",
+      "city": "konya",
+      "district": "Selçuklu",
+      "image": "https://images.unsplash.com/photo-1598550880863-4e8aa3d0edb4?w=400&q=80",
+      "shortBio": "Uzman Psikolog olarak Konya Selçuklu bölgesinde hizmet vermektedir.",
+      "longBio": [
+        "Merve Aslan, Konya Selçuklu bölgesinde psikolog ve danışmanlık hizmetleri sunmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "cift-terapisi",
+        "aile-terapisi"
+      ],
+      "sessionFee": "3.000₺",
+      "sessionType": [
+        "Yüz Yüze",
+        "Online"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": null,
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Selçuklu, Konya",
+      "approaches": []
+    },
+    {
+      "id": "30",
+      "slug": "gupse-dogbay-toka",
+      "name": "Gupse Doğbay Toka",
+      "title": "Klinik Psikolog",
+      "city": "konya",
+      "district": "Selçuklu",
+      "image": "https://images.unsplash.com/photo-1548142813-c348350df52b?w=400&q=80",
+      "shortBio": "Klinik Psikolog olarak Konya Selçuklu bölgesinde hizmet vermektedir.",
+      "longBio": [
+        "Gupse Doğbay Toka, Konya Selçuklu bölgesinde psikolog ve danışmanlık hizmetleri sunmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "depresyon",
+        "kaygi-bozuklugu"
+      ],
+      "sessionFee": "3.500₺",
+      "sessionType": [
+        "Yüz Yüze",
+        "Online"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": null,
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Selçuklu, Konya",
+      "approaches": []
+    },
+    {
+      "id": "31",
+      "slug": "omer-mentese",
+      "name": "Ömer Menteşe",
+      "title": "Psikolojik Danışman",
+      "city": "konya",
+      "district": "Selçuklu",
+      "image": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&q=80",
+      "shortBio": "Psikolojik Danışman olarak Konya Selçuklu bölgesinde hizmet vermektedir.",
+      "longBio": [
+        "Ömer Menteşe, Konya Selçuklu bölgesinde psikolog ve danışmanlık hizmetleri sunmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "aile-terapisi",
+        "ergen-psikolojisi"
+      ],
+      "sessionFee": null,
+      "sessionType": [
+        "Yüz Yüze"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": null,
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Selçuklu, Konya",
+      "approaches": []
+    },
+    {
+      "id": "32",
+      "slug": "gizem-akturk",
+      "name": "Gizem Aktürk",
+      "title": "Psikolojik Danışman",
+      "city": "konya",
+      "district": "Selçuklu",
+      "image": "https://images.unsplash.com/photo-1543269664-76bc3997d9ea?w=400&q=80",
+      "shortBio": "Psikolojik Danışman olarak Konya Selçuklu bölgesinde hizmet vermektedir.",
+      "longBio": [
+        "Gizem Aktürk, Konya Selçuklu bölgesinde psikolog ve danışmanlık hizmetleri sunmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "cocuk-psikolojisi",
+        "aile-terapisi"
+      ],
+      "sessionFee": null,
+      "sessionType": [
+        "Yüz Yüze",
+        "Online"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": null,
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Selçuklu, Konya",
+      "approaches": []
+    },
+    {
+      "id": "33",
+      "slug": "deniz-akinci",
+      "name": "Deniz Akıncı",
+      "title": "Uzman Psikolog",
+      "city": "konya",
+      "district": "Selçuklu",
+      "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&q=80",
+      "shortBio": "Uzman Psikolog olarak Konya Selçuklu bölgesinde hizmet vermektedir.",
+      "longBio": [
+        "Deniz Akıncı, Konya Selçuklu bölgesinde psikolog ve danışmanlık hizmetleri sunmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "travma",
+        "emdr",
+        "depresyon"
+      ],
+      "sessionFee": "4.000₺",
+      "sessionType": [
+        "Yüz Yüze",
+        "Online"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": null,
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Selçuklu, Konya",
+      "approaches": []
+    },
+    {
+      "id": "34",
+      "slug": "evrim-unel",
+      "name": "Evrim Ünel",
+      "title": "Psikolog",
+      "city": "konya",
+      "district": "Selçuklu",
+      "image": "https://images.unsplash.com/photo-1489424731084-a5d8b2a2cf0c?w=400&q=80",
+      "shortBio": "Psikolog olarak Konya Selçuklu bölgesinde hizmet vermektedir.",
+      "longBio": [
+        "Evrim Ünel, Konya Selçuklu bölgesinde psikolog ve danışmanlık hizmetleri sunmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "ergen-psikolojisi",
+        "depresyon"
+      ],
+      "sessionFee": "2.500₺",
+      "sessionType": [
+        "Yüz Yüze",
+        "Online"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": null,
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Selçuklu, Konya",
+      "approaches": []
+    },
+    {
+      "id": "35",
+      "slug": "esra-uyar",
+      "name": "Esra Uyar",
+      "title": "Psikolog",
+      "city": "konya",
+      "district": "Selçuklu",
+      "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80",
+      "shortBio": "Psikolog olarak Konya Selçuklu bölgesinde hizmet vermektedir.",
+      "longBio": [
+        "Esra Uyar, Konya Selçuklu bölgesinde psikolog ve danışmanlık hizmetleri sunmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "kaygi-bozuklugu",
+        "cocuk-psikolojisi"
+      ],
+      "sessionFee": null,
+      "sessionType": [
+        "Yüz Yüze"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": null,
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Selçuklu, Konya",
+      "approaches": []
+    },
+    {
+      "id": "36",
+      "slug": "serife-akcay",
+      "name": "Şerife Akçay",
+      "title": "Psikolojik Danışman",
+      "city": "konya",
+      "district": "Selçuklu",
+      "image": "https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=400&q=80",
+      "shortBio": "Psikolojik Danışman olarak Konya Selçuklu bölgesinde hizmet vermektedir.",
+      "longBio": [
+        "Şerife Akçay, Konya Selçuklu bölgesinde psikolog ve danışmanlık hizmetleri sunmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "aile-terapisi",
+        "cift-terapisi"
+      ],
+      "sessionFee": null,
+      "sessionType": [
+        "Yüz Yüze"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": null,
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Selçuklu, Konya",
+      "approaches": []
+    },
+    {
+      "id": "37",
+      "slug": "abdullah-duysak",
+      "name": "Abdullah Duysak",
+      "title": "Psikolog",
+      "city": "konya",
+      "district": "Selçuklu",
+      "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
+      "shortBio": "Psikolog olarak Konya Selçuklu bölgesinde hizmet vermektedir.",
+      "longBio": [
+        "Abdullah Duysak, Konya Selçuklu bölgesinde psikolog ve danışmanlık hizmetleri sunmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "ergen-psikolojisi",
+        "travma"
+      ],
+      "sessionFee": "2.000₺",
+      "sessionType": [
+        "Yüz Yüze",
+        "Online"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": null,
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Selçuklu, Konya",
+      "approaches": []
+    },
+    {
+      "id": "38",
+      "slug": "berk-ozdemir",
+      "name": "Berk Özdemir",
+      "title": "Psikolog",
+      "city": "konya",
+      "district": "Selçuklu",
+      "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
+      "shortBio": "Psikolog olarak Konya Selçuklu bölgesinde hizmet vermektedir.",
+      "longBio": [
+        "Berk Özdemir, Konya Selçuklu bölgesinde psikolog ve danışmanlık hizmetleri sunmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "kaygi-bozuklugu",
+        "depresyon"
+      ],
+      "sessionFee": "2.500₺",
+      "sessionType": [
+        "Yüz Yüze",
+        "Online"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": null,
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Selçuklu, Konya",
+      "approaches": []
+    },
+    {
+      "id": "39",
+      "slug": "sedef-arslan-ercan",
+      "name": "Sedef Arslan Ercan",
+      "title": "Psikolog",
+      "city": "konya",
+      "district": "Selçuklu",
+      "image": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+      "shortBio": "Psikolog olarak Konya Selçuklu bölgesinde hizmet vermektedir.",
+      "longBio": [
+        "Sedef Arslan Ercan, Konya Selçuklu bölgesinde psikolog ve danışmanlık hizmetleri sunmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "cocuk-psikolojisi",
+        "aile-terapisi"
+      ],
+      "sessionFee": null,
+      "sessionType": [
+        "Yüz Yüze"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": null,
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Selçuklu, Konya",
+      "approaches": []
+    },
+    {
+      "id": "40",
+      "slug": "ruya-sulu",
+      "name": "Rüya Sülü",
+      "title": "Uzman Psikolog",
+      "city": "konya",
+      "district": "Selçuklu",
+      "image": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=400&q=80",
+      "shortBio": "Uzman Psikolog olarak Konya Selçuklu bölgesinde hizmet vermektedir.",
+      "longBio": [
+        "Rüya Sülü, Konya Selçuklu bölgesinde psikolog ve danışmanlık hizmetleri sunmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "cift-terapisi",
+        "kaygi-bozuklugu"
+      ],
+      "sessionFee": "3.500₺",
+      "sessionType": [
+        "Yüz Yüze",
+        "Online"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": null,
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Selçuklu, Konya",
+      "approaches": []
+    },
+    {
+      "id": "41",
+      "slug": "duygu-karadavut",
+      "name": "Duygu Karadavut",
+      "title": "Psikolojik Danışman",
+      "city": "konya",
+      "district": "Selçuklu",
+      "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80",
+      "shortBio": "Psikolojik Danışman olarak Konya Selçuklu bölgesinde hizmet vermektedir.",
+      "longBio": [
+        "Duygu Karadavut, Konya Selçuklu bölgesinde psikolog ve danışmanlık hizmetleri sunmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "ergen-psikolojisi",
+        "depresyon"
+      ],
+      "sessionFee": null,
+      "sessionType": [
+        "Yüz Yüze"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": null,
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Selçuklu, Konya",
+      "approaches": []
+    },
+    {
+      "id": "42",
+      "slug": "riza-mutlu",
+      "name": "Rıza Mutlu",
+      "title": "Psikolog",
+      "city": "konya",
+      "district": "Selçuklu",
+      "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80",
+      "shortBio": "Psikolog olarak Konya Selçuklu bölgesinde hizmet vermektedir.",
+      "longBio": [
+        "Rıza Mutlu, Konya Selçuklu bölgesinde psikolog ve danışmanlık hizmetleri sunmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "aile-terapisi",
+        "travma"
+      ],
+      "sessionFee": null,
+      "sessionType": [
+        "Yüz Yüze"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": null,
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Selçuklu, Konya",
+      "approaches": []
+    },
+    {
+      "id": "43",
+      "slug": "mustafa-cem-oguz",
+      "name": "Mustafa Cem Oğuz",
+      "title": "Uzman Psikolog",
+      "city": "konya",
+      "district": "Selçuklu",
+      "image": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80",
+      "shortBio": "Uzman Psikolog olarak Konya Selçuklu bölgesinde hizmet vermektedir.",
+      "longBio": [
+        "Mustafa Cem Oğuz, Konya Selçuklu bölgesinde psikolog ve danışmanlık hizmetleri sunmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "depresyon",
+        "kaygi-bozuklugu",
+        "emdr"
+      ],
+      "sessionFee": "3.500₺",
+      "sessionType": [
+        "Yüz Yüze",
+        "Online"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": null,
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Selçuklu, Konya",
+      "approaches": []
+    },
+    {
+      "id": "44",
+      "slug": "betul-palanci",
+      "name": "Betül Palancı",
+      "title": "Klinik Psikolog",
+      "city": "konya",
+      "district": "Selçuklu",
+      "image": "https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=400&q=80",
+      "shortBio": "Klinik Psikolog olarak Konya Selçuklu bölgesinde hizmet vermektedir.",
+      "longBio": [
+        "Betül Palancı, Konya Selçuklu bölgesinde psikolog ve danışmanlık hizmetleri sunmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "travma",
         "emdr"
       ],
       "sessionFee": "3.000₺",
@@ -25,38 +1476,454 @@
         "Yüz Yüze",
         "Online"
       ],
-      "experience": "5 yıl",
-      "phone": "+90 555 043 42 99",
-      "appointmentUrl": "https://wa.me/905550434299",
-      "featured": true,
-      "education": [
-        {
-          "degree": "Klinik Psikoloji Yüksek Lisans",
-          "school": "Selçuk Üniversitesi",
-          "year": "2018"
-        },
-        {
-          "degree": "Psikoloji Lisans",
-          "school": "Selçuk Üniversitesi",
-          "year": "2016"
-        }
-      ],
-      "certifications": [
-        "EMDR Terapi Sertifikası — EMDR Europe",
-        "Bilişsel Davranışçı Terapi Sertifikası",
-        "Türk Psikologlar Derneği Üyesi"
-      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": null,
+      "featured": false,
+      "education": [],
+      "certifications": [],
       "languages": [
-        "Türkçe",
-        "İngilizce"
+        "Türkçe"
       ],
-      "officeAddress": "Turgut Özal Bulvarı No:12 Kat:3, Meram, Konya",
-      "approaches": [
-        "Bilişsel Davranışçı Terapi (BDT)",
-        "EMDR",
-        "Kabul ve Kararlılık Terapisi (ACT)",
-        "Şema Terapi"
-      ]
+      "officeAddress": "Selçuklu, Konya",
+      "approaches": []
+    },
+    {
+      "id": "45",
+      "slug": "zehra-kasikci",
+      "name": "Zehra Kaşıkçı",
+      "title": "Klinik Psikolog",
+      "city": "konya",
+      "district": "Selçuklu",
+      "image": "https://images.unsplash.com/photo-1598550880863-4e8aa3d0edb4?w=400&q=80",
+      "shortBio": "Klinik Psikolog olarak Konya Selçuklu bölgesinde hizmet vermektedir.",
+      "longBio": [
+        "Zehra Kaşıkçı, Konya Selçuklu bölgesinde psikolog ve danışmanlık hizmetleri sunmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "cocuk-psikolojisi",
+        "ergen-psikolojisi"
+      ],
+      "sessionFee": "3.000₺",
+      "sessionType": [
+        "Yüz Yüze"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": null,
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Selçuklu, Konya",
+      "approaches": []
+    },
+    {
+      "id": "46",
+      "slug": "hatice-ustuner",
+      "name": "Hatice Üstüner",
+      "title": "Uzman Psikolog",
+      "city": "konya",
+      "district": "Selçuklu",
+      "image": "https://images.unsplash.com/photo-1548142813-c348350df52b?w=400&q=80",
+      "shortBio": "Uzman Psikolog olarak Konya Selçuklu bölgesinde hizmet vermektedir.",
+      "longBio": [
+        "Hatice Üstüner, Konya Selçuklu bölgesinde psikolog ve danışmanlık hizmetleri sunmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "aile-terapisi",
+        "cift-terapisi"
+      ],
+      "sessionFee": null,
+      "sessionType": [
+        "Yüz Yüze",
+        "Online"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": null,
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Selçuklu, Konya",
+      "approaches": []
+    },
+    {
+      "id": "47",
+      "slug": "duygu-demiray",
+      "name": "Duygu Demiray",
+      "title": "Uzman Psikolog",
+      "city": "konya",
+      "district": "Selçuklu",
+      "image": "https://images.unsplash.com/photo-1543269664-76bc3997d9ea?w=400&q=80",
+      "shortBio": "Uzman Psikolog olarak Konya Selçuklu bölgesinde hizmet vermektedir.",
+      "longBio": [
+        "Duygu Demiray, Konya Selçuklu bölgesinde psikolog ve danışmanlık hizmetleri sunmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "kaygi-bozuklugu",
+        "depresyon"
+      ],
+      "sessionFee": "3.500₺",
+      "sessionType": [
+        "Yüz Yüze",
+        "Online"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": null,
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Selçuklu, Konya",
+      "approaches": []
+    },
+    {
+      "id": "48",
+      "slug": "saliha-unal",
+      "name": "Saliha Ünal",
+      "title": "Psikolog",
+      "city": "konya",
+      "district": "Selçuklu",
+      "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&q=80",
+      "shortBio": "Psikolog olarak Konya Selçuklu bölgesinde hizmet vermektedir.",
+      "longBio": [
+        "Saliha Ünal, Konya Selçuklu bölgesinde psikolog ve danışmanlık hizmetleri sunmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "cocuk-psikolojisi",
+        "aile-terapisi"
+      ],
+      "sessionFee": null,
+      "sessionType": [
+        "Yüz Yüze"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": null,
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Selçuklu, Konya",
+      "approaches": []
+    },
+    {
+      "id": "49",
+      "slug": "eyup-genc",
+      "name": "Eyüp Genç",
+      "title": "Psikolojik Danışman",
+      "city": "konya",
+      "district": "Selçuklu",
+      "image": "https://images.unsplash.com/photo-1615109398623-88346a601842?w=400&q=80",
+      "shortBio": "Psikolojik Danışman olarak Konya Selçuklu bölgesinde hizmet vermektedir.",
+      "longBio": [
+        "Eyüp Genç, Konya Selçuklu bölgesinde psikolog ve danışmanlık hizmetleri sunmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "ergen-psikolojisi",
+        "aile-terapisi"
+      ],
+      "sessionFee": null,
+      "sessionType": [
+        "Yüz Yüze"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": null,
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Selçuklu, Konya",
+      "approaches": []
+    },
+    {
+      "id": "50",
+      "slug": "mehri-matin",
+      "name": "Mehri Matin",
+      "title": "Uzman Psikolog",
+      "city": "konya",
+      "district": "Selçuklu",
+      "image": "https://images.unsplash.com/photo-1489424731084-a5d8b2a2cf0c?w=400&q=80",
+      "shortBio": "Uzman Psikolog olarak Konya Selçuklu bölgesinde hizmet vermektedir.",
+      "longBio": [
+        "Mehri Matin, Konya Selçuklu bölgesinde psikolog ve danışmanlık hizmetleri sunmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "travma",
+        "emdr",
+        "depresyon"
+      ],
+      "sessionFee": "4.000₺",
+      "sessionType": [
+        "Yüz Yüze",
+        "Online"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": null,
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Selçuklu, Konya",
+      "approaches": []
+    },
+    {
+      "id": "51",
+      "slug": "gizem-dastan",
+      "name": "Gizem Daştan",
+      "title": "Uzman Psikolog",
+      "city": "konya",
+      "district": "Selçuklu",
+      "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80",
+      "shortBio": "Uzman Psikolog olarak Konya Selçuklu bölgesinde hizmet vermektedir.",
+      "longBio": [
+        "Gizem Daştan, Konya Selçuklu bölgesinde psikolog ve danışmanlık hizmetleri sunmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "kaygi-bozuklugu",
+        "cift-terapisi"
+      ],
+      "sessionFee": "3.000₺",
+      "sessionType": [
+        "Yüz Yüze",
+        "Online"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": null,
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Selçuklu, Konya",
+      "approaches": []
+    },
+    {
+      "id": "52",
+      "slug": "beyza-yakici",
+      "name": "Beyza Yakıcı",
+      "title": "Psikolojik Danışman",
+      "city": "konya",
+      "district": "Selçuklu",
+      "image": "https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=400&q=80",
+      "shortBio": "Psikolojik Danışman olarak Konya Selçuklu bölgesinde hizmet vermektedir.",
+      "longBio": [
+        "Beyza Yakıcı, Konya Selçuklu bölgesinde psikolog ve danışmanlık hizmetleri sunmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "ergen-psikolojisi",
+        "depresyon"
+      ],
+      "sessionFee": null,
+      "sessionType": [
+        "Yüz Yüze"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": null,
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Selçuklu, Konya",
+      "approaches": []
+    },
+    {
+      "id": "53",
+      "slug": "meryem-demircan",
+      "name": "Meryem Demircan",
+      "title": "Psikolog",
+      "city": "konya",
+      "district": "Selçuklu",
+      "image": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+      "shortBio": "Psikolog olarak Konya Selçuklu bölgesinde hizmet vermektedir.",
+      "longBio": [
+        "Meryem Demircan, Konya Selçuklu bölgesinde psikolog ve danışmanlık hizmetleri sunmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "cift-terapisi",
+        "aile-terapisi",
+        "emdr"
+      ],
+      "sessionFee": "3.000₺",
+      "sessionType": [
+        "Yüz Yüze",
+        "Online"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": null,
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Selçuklu, Konya",
+      "approaches": []
+    },
+    {
+      "id": "54",
+      "slug": "beyza-nur-cuhadar",
+      "name": "Beyza Nur Çuhadar",
+      "title": "Psikolog",
+      "city": "konya",
+      "district": "Karatay",
+      "image": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=400&q=80",
+      "shortBio": "Psikolog olarak Konya Karatay bölgesinde hizmet vermektedir.",
+      "longBio": [
+        "Beyza Nur Çuhadar, Konya Karatay bölgesinde psikolog ve danışmanlık hizmetleri sunmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "cocuk-psikolojisi",
+        "ergen-psikolojisi"
+      ],
+      "sessionFee": null,
+      "sessionType": [
+        "Yüz Yüze"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": null,
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Karatay, Konya",
+      "approaches": []
+    },
+    {
+      "id": "55",
+      "slug": "fatih-kiymet",
+      "name": "Fatih Kıymet",
+      "title": "Psikolog",
+      "city": "konya",
+      "district": "Karatay",
+      "image": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&q=80",
+      "shortBio": "Psikolog olarak Konya Karatay bölgesinde hizmet vermektedir.",
+      "longBio": [
+        "Fatih Kıymet, Konya Karatay bölgesinde psikolog ve danışmanlık hizmetleri sunmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "aile-terapisi",
+        "kaygi-bozuklugu"
+      ],
+      "sessionFee": null,
+      "sessionType": [
+        "Yüz Yüze"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": null,
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Karatay, Konya",
+      "approaches": []
+    },
+    {
+      "id": "56",
+      "slug": "ahmet-emin-yuksel",
+      "name": "Ahmet Emin Yüksel",
+      "title": "Aile Danışmanı",
+      "city": "konya",
+      "district": "Karatay",
+      "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
+      "shortBio": "Aile Danışmanı olarak Konya Karatay bölgesinde hizmet vermektedir.",
+      "longBio": [
+        "Ahmet Emin Yüksel, Konya Karatay bölgesinde psikolog ve danışmanlık hizmetleri sunmaktadır."
+      ],
+      "services": [
+        "aile-terapisi",
+        "cift-terapisi",
+        "bireysel-terapi"
+      ],
+      "sessionFee": "2.000₺",
+      "sessionType": [
+        "Yüz Yüze"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": null,
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Karatay, Konya",
+      "approaches": []
+    },
+    {
+      "id": "57",
+      "slug": "mustafa-karagozlu",
+      "name": "Mustafa Karagözlü",
+      "title": "Uzman Psikolojik Danışman",
+      "city": "konya",
+      "district": "Ereğli",
+      "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
+      "shortBio": "Uzman Psikolojik Danışman olarak Konya Ereğli bölgesinde hizmet vermektedir.",
+      "longBio": [
+        "Mustafa Karagözlü, Konya Ereğli bölgesinde psikolog ve danışmanlık hizmetleri sunmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "aile-terapisi",
+        "ergen-psikolojisi"
+      ],
+      "sessionFee": null,
+      "sessionType": [
+        "Yüz Yüze",
+        "Online"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": null,
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Ereğli, Konya",
+      "approaches": []
     }
   ],
   "services": [

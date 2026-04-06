@@ -22,7 +22,8 @@ const SORT_OPTIONS = [
   { value: "deneyim",   label: "En Deneyimli" },
 ];
 
-function parseFee(fee: string): number {
+function parseFee(fee: string | null): number {
+  if (!fee) return 0;
   return parseInt(fee.replace(/\D/g, ""), 10) || 0;
 }
 
@@ -30,7 +31,7 @@ function sortExperts(list: Expert[], sort: string): Expert[] {
   const arr = [...list];
   if (sort === "fiyat-asc")  return arr.sort((a, b) => parseFee(a.sessionFee) - parseFee(b.sessionFee));
   if (sort === "fiyat-desc") return arr.sort((a, b) => parseFee(b.sessionFee) - parseFee(a.sessionFee));
-  if (sort === "deneyim")    return arr.sort((a, b) => parseInt(b.experience) - parseInt(a.experience));
+  if (sort === "deneyim")    return arr.sort((a, b) => parseInt(b.experience ?? "0") - parseInt(a.experience ?? "0"));
   return arr; // onerilen = mevcut sıra (featured önce)
 }
 
