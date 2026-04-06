@@ -1,6 +1,41 @@
 {
   "experts": [
     {
+      "id": "100",
+      "slug": "feyza-caksen",
+      "name": "Feyza Çaksen",
+      "title": "Psikolog",
+      "city": "konya",
+      "district": "Selçuklu",
+      "image": "",
+      "shortBio": "Bireysel terapi, kaygı, depresyon ve travma alanlarında uzmanlaşmış psikolog.",
+      "longBio": [
+        "Feyza Çaksen, Konya'da bireysel terapi, kaygı bozukluğu, depresyon ve travma alanlarında danışmanlık hizmetleri sunmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "kaygi-bozuklugu",
+        "depresyon",
+        "travma"
+      ],
+      "sessionFee": "3.000 TL",
+      "sessionType": [
+        "Yüz Yüze",
+        "Online"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": "https://www.feyzacaksen.com",
+      "featured": true,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Selçuklu, Konya",
+      "approaches": []
+    },
+    {
       "id": "2",
       "slug": "fatih-ugur",
       "name": "Fatih Uğur",
