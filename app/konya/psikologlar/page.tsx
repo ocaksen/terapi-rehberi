@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getExpertsByCity } from "@/lib/data";
 
+
 export const metadata: Metadata = {
   title: "Konya Psikolog Listesi — TerapiRehberi",
   description:
@@ -73,12 +74,13 @@ export default function KonyaPsikologlarPage() {
             </h2>
             <div className="divide-y divide-cream-200 bg-white rounded-2xl border border-cream-200 overflow-hidden shadow-sm">
               {byDistrict[district].map((expert) => (
-                <div
+                <Link
                   key={expert.slug}
-                  className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 px-5 py-4 hover:bg-cream-50 transition-colors"
+                  href={`/uzman/${expert.slug}`}
+                  className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 px-5 py-4 hover:bg-cream-50 transition-colors cursor-pointer"
                 >
                   <div className="flex-1 min-w-0">
-                    <p className="font-semibold text-brand-900 text-sm">{expert.name}</p>
+                    <p className="font-semibold text-brand-900 text-sm hover:text-brand-700 transition-colors">{expert.name}</p>
                     <p className="text-xs text-slate-500 mt-0.5">{expert.title}</p>
                     <div className="flex flex-wrap gap-1 mt-2">
                       {expert.services.slice(0, 4).map((s) => (
@@ -102,8 +104,11 @@ export default function KonyaPsikologlarPage() {
                         <span key={t} className="text-xs text-slate-400 whitespace-nowrap">{t}</span>
                       ))}
                     </div>
+                    <svg className="w-4 h-4 text-slate-300 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/>
+                    </svg>
                   </div>
-                </div>
+                </Link>
               ))}
             </div>
           </div>
