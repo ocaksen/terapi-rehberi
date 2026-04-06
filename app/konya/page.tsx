@@ -109,7 +109,7 @@ export default function KonyaPage() {
               <div className="flex flex-wrap items-center gap-2 mb-2">
                 <p className="font-black text-white text-xl">Feyza Çaksen</p>
                 <span className="text-xs font-bold bg-white/20 text-white px-2.5 py-1 rounded-full border border-white/20">
-                  Psikolog
+                  Klinik Psikolog
                 </span>
               </div>
               <div className="flex flex-wrap gap-2 mb-3">

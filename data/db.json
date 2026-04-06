@@ -4,7 +4,7 @@
       "id": "100",
       "slug": "feyza-caksen",
       "name": "Feyza Çaksen",
-      "title": "Psikolog",
+      "title": "Klinik Psikolog",
       "city": "konya",
       "district": "Selçuklu",
       "image": "",
@@ -443,40 +443,6 @@
       "approaches": []
     },
     {
-      "id": "28",
-      "slug": "bayram-duysak",
-      "name": "Bayram Duysak",
-      "title": "Uzman Klinik Psikolog",
-      "city": "konya",
-      "district": "Selçuklu",
-      "image": "https://images.unsplash.com/photo-1615109398623-88346a601842?w=400&q=80",
-      "shortBio": "Uzman Klinik Psikolog olarak Konya Selçuklu bölgesinde hizmet vermektedir.",
-      "longBio": [
-        "Bayram Duysak, Konya Selçuklu bölgesinde psikolog ve danışmanlık hizmetleri sunmaktadır."
-      ],
-      "services": [
-        "bireysel-terapi",
-        "travma",
-        "emdr",
-        "kaygi-bozuklugu"
-      ],
-      "sessionFee": "4.000₺",
-      "sessionType": [
-        "Yüz Yüze"
-      ],
-      "experience": null,
-      "phone": null,
-      "appointmentUrl": "https://www.doktortakvimi.com/bayram-duysak/psikoloji/konya",
-      "featured": true,
-      "education": [],
-      "certifications": [],
-      "languages": [
-        "Türkçe"
-      ],
-      "officeAddress": "Selçuklu, Konya",
-      "approaches": []
-    },
-    {
       "id": "29",
       "slug": "merve-aslan",
       "name": "Merve Aslan",
@@ -570,40 +536,6 @@
       "experience": null,
       "phone": null,
       "appointmentUrl": "https://www.doktortakvimi.com/evrim-unel/psikoloji/konya",
-      "featured": false,
-      "education": [],
-      "certifications": [],
-      "languages": [
-        "Türkçe"
-      ],
-      "officeAddress": "Selçuklu, Konya",
-      "approaches": []
-    },
-    {
-      "id": "37",
-      "slug": "abdullah-duysak",
-      "name": "Abdullah Duysak",
-      "title": "Psikolog",
-      "city": "konya",
-      "district": "Selçuklu",
-      "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
-      "shortBio": "Psikolog olarak Konya Selçuklu bölgesinde hizmet vermektedir.",
-      "longBio": [
-        "Abdullah Duysak, Konya Selçuklu bölgesinde psikolog ve danışmanlık hizmetleri sunmaktadır."
-      ],
-      "services": [
-        "bireysel-terapi",
-        "ergen-psikolojisi",
-        "travma"
-      ],
-      "sessionFee": "2.000₺",
-      "sessionType": [
-        "Yüz Yüze",
-        "Online"
-      ],
-      "experience": null,
-      "phone": null,
-      "appointmentUrl": "https://www.doktortakvimi.com/abdullah-duysak/psikoloji/konya",
       "featured": false,
       "education": [],
       "certifications": [],
