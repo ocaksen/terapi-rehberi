@@ -228,31 +228,53 @@ function StarsDecoration() {
 }
 
 /* ─────────────────────────────────────────
-   Oyuncak Ayı büyük — Bireysel terapi
+   Dağ + Yürüyüşçü — Bireysel terapi
    Sağ üst köşe
 ───────────────────────────────────────── */
-function TeddyDecoration() {
+function MountainDecoration() {
   return (
     <svg
       aria-hidden="true"
       className="absolute top-0 right-0 w-24 h-24 pointer-events-none select-none"
-      viewBox="0 0 80 90"
-      fill="#D97706"
+      viewBox="0 0 100 100"
+      fill="none"
     >
-      <ellipse cx="40" cy="58" rx="21" ry="24" />
-      <circle cx="40" cy="28" r="17" />
-      <circle cx="25" cy="14" r="8" />
-      <circle cx="25" cy="14" r="5" fill="#FDE68A" />
-      <circle cx="55" cy="14" r="8" />
-      <circle cx="55" cy="14" r="5" fill="#FDE68A" />
-      <ellipse cx="17" cy="56" rx="8" ry="13" transform="rotate(-18 17 56)" />
-      <ellipse cx="63" cy="56" rx="8" ry="13" transform="rotate(18 63 56)" />
-      <ellipse cx="28" cy="79" rx="11" ry="7" />
-      <ellipse cx="52" cy="79" rx="11" ry="7" />
-      <ellipse cx="40" cy="60" rx="12" ry="14" fill="#FDE68A" />
-      <circle cx="34" cy="25" r="2.5" fill="white" />
-      <circle cx="46" cy="25" r="2.5" fill="white" />
-      <ellipse cx="40" cy="31" rx="3.5" ry="2" fill="white" />
+      {/* Arka dağ — soluk */}
+      <path d="M5 82 L35 28 L65 82Z" fill="#C4B5FD" />
+      <path d="M5 82 L35 28 L65 82Z" fill="#A78BFA" opacity="0.4" />
+      {/* Kar — arka dağ */}
+      <path d="M27 42 L35 28 L43 42 Q35 38 27 42Z" fill="white" opacity="0.7" />
+
+      {/* Ön dağ — büyük */}
+      <path d="M30 82 L68 18 L100 82Z" fill="#7C3AED" />
+      <path d="M30 82 L68 18 L100 82Z" fill="#8B5CF6" opacity="0.6" />
+      {/* Kar — ön dağ */}
+      <path d="M57 32 L68 18 L79 32 Q68 26 57 32Z" fill="white" opacity="0.85" />
+
+      {/* Zemin */}
+      <path d="M0 82 L100 82 L100 90 L0 90Z" fill="#6D28D9" opacity="0.3" />
+
+      {/* Yürüyüşçü — zirveye yakın */}
+      {/* Gövde */}
+      <circle cx="68" cy="22" r="3" fill="#FDE68A" />
+      <line x1="68" y1="25" x2="68" y2="34" stroke="#FCD34D" strokeWidth="2" strokeLinecap="round" />
+      {/* Kollar */}
+      <line x1="63" y1="28" x2="68" y2="31" stroke="#FCD34D" strokeWidth="1.5" strokeLinecap="round" />
+      <line x1="68" y1="31" x2="73" y2="28" stroke="#FCD34D" strokeWidth="1.5" strokeLinecap="round" />
+      {/* Bacaklar */}
+      <line x1="68" y1="34" x2="64" y2="41" stroke="#FCD34D" strokeWidth="1.5" strokeLinecap="round" />
+      <line x1="68" y1="34" x2="72" y2="41" stroke="#FCD34D" strokeWidth="1.5" strokeLinecap="round" />
+      {/* Baston */}
+      <line x1="63" y1="28" x2="60" y2="41" stroke="#FCD34D" strokeWidth="1.5" strokeLinecap="round" />
+
+      {/* Güneş */}
+      <circle cx="15" cy="15" r="7" fill="#FCD34D" />
+      <line x1="15" y1="4"  x2="15" y2="1"  stroke="#FCD34D" strokeWidth="1.5" strokeLinecap="round" />
+      <line x1="15" y1="26" x2="15" y2="29" stroke="#FCD34D" strokeWidth="1.5" strokeLinecap="round" />
+      <line x1="4"  y1="15" x2="1"  y2="15" stroke="#FCD34D" strokeWidth="1.5" strokeLinecap="round" />
+      <line x1="26" y1="15" x2="29" y2="15" stroke="#FCD34D" strokeWidth="1.5" strokeLinecap="round" />
+      <line x1="7"  y1="7"  x2="5"  y2="5"  stroke="#FCD34D" strokeWidth="1.5" strokeLinecap="round" />
+      <line x1="23" y1="7"  x2="25" y2="5"  stroke="#FCD34D" strokeWidth="1.5" strokeLinecap="round" />
     </svg>
   );
 }
@@ -266,7 +288,7 @@ function ExpertDecoration({ services, index }: { services: string[]; index: numb
   if (services.includes("aile-terapisi"))
     return index % 2 === 0 ? <HouseDecoration /> : <BirdNestDecoration />;
   if (services.includes("ergen-psikolojisi")) return <StarsDecoration />;
-  if (services.includes("bireysel-terapi"))   return <TeddyDecoration />;
+  if (services.includes("bireysel-terapi"))   return <MountainDecoration />;
   return null;
 }
 
