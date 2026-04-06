@@ -53,7 +53,7 @@
         "aile-terapisi",
         "emdr"
       ],
-      "sessionFee": "4.000₺",
+      "sessionFee": null,
       "sessionType": [
         "Yüz Yüze",
         "Online"
@@ -188,7 +188,7 @@
         "kaygi-bozuklugu",
         "depresyon"
       ],
-      "sessionFee": "2.500₺",
+      "sessionFee": null,
       "sessionType": [
         "Yüz Yüze",
         "Online"
@@ -223,7 +223,7 @@
         "travma",
         "emdr"
       ],
-      "sessionFee": "3.500₺",
+      "sessionFee": null,
       "sessionType": [
         "Yüz Yüze"
       ],
@@ -256,7 +256,7 @@
         "cocuk-psikolojisi",
         "ergen-psikolojisi"
       ],
-      "sessionFee": "3.000₺",
+      "sessionFee": null,
       "sessionType": [
         "Yüz Yüze",
         "Online"
@@ -290,7 +290,7 @@
         "depresyon",
         "kaygi-bozuklugu"
       ],
-      "sessionFee": "2.500₺",
+      "sessionFee": null,
       "sessionType": [
         "Yüz Yüze",
         "Online"
@@ -324,7 +324,7 @@
         "cocuk-psikolojisi",
         "aile-terapisi"
       ],
-      "sessionFee": "2.000₺",
+      "sessionFee": null,
       "sessionType": [
         "Yüz Yüze",
         "Online"
@@ -359,7 +359,7 @@
         "travma",
         "depresyon"
       ],
-      "sessionFee": "3.500₺",
+      "sessionFee": null,
       "sessionType": [
         "Yüz Yüze"
       ],
@@ -425,7 +425,7 @@
         "cocuk-psikolojisi",
         "ergen-psikolojisi"
       ],
-      "sessionFee": "2.500₺",
+      "sessionFee": null,
       "sessionType": [
         "Yüz Yüze",
         "Online"
@@ -459,7 +459,7 @@
         "cift-terapisi",
         "aile-terapisi"
       ],
-      "sessionFee": "3.000₺",
+      "sessionFee": null,
       "sessionType": [
         "Yüz Yüze",
         "Online"
@@ -494,7 +494,7 @@
         "emdr",
         "depresyon"
       ],
-      "sessionFee": "4.000₺",
+      "sessionFee": null,
       "sessionType": [
         "Yüz Yüze",
         "Online"
@@ -528,7 +528,7 @@
         "ergen-psikolojisi",
         "depresyon"
       ],
-      "sessionFee": "2.500₺",
+      "sessionFee": null,
       "sessionType": [
         "Yüz Yüze",
         "Online"
@@ -562,7 +562,7 @@
         "kaygi-bozuklugu",
         "depresyon"
       ],
-      "sessionFee": "2.500₺",
+      "sessionFee": null,
       "sessionType": [
         "Yüz Yüze",
         "Online"
@@ -596,7 +596,7 @@
         "travma",
         "emdr"
       ],
-      "sessionFee": "3.000₺",
+      "sessionFee": null,
       "sessionType": [
         "Yüz Yüze",
         "Online"
@@ -630,7 +630,7 @@
         "kaygi-bozuklugu",
         "depresyon"
       ],
-      "sessionFee": "3.500₺",
+      "sessionFee": null,
       "sessionType": [
         "Yüz Yüze",
         "Online"
@@ -665,7 +665,7 @@
         "emdr",
         "depresyon"
       ],
-      "sessionFee": "4.000₺",
+      "sessionFee": null,
       "sessionType": [
         "Yüz Yüze",
         "Online"
@@ -700,7 +700,7 @@
         "aile-terapisi",
         "emdr"
       ],
-      "sessionFee": "3.000₺",
+      "sessionFee": null,
       "sessionType": [
         "Yüz Yüze",
         "Online"
