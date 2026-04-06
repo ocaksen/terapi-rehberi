@@ -48,7 +48,6 @@ function DuckDecoration() {
       className="absolute -bottom-2 -right-2 w-28 h-28 pointer-events-none select-none"
       viewBox="0 0 100 100"
       fill="none"
-      opacity="0.22"
     >
       {/* Gövde */}
       <ellipse cx="48" cy="65" rx="30" ry="22" fill="#FCD34D" />
@@ -83,35 +82,23 @@ function BlockDecoration() {
       className="absolute -bottom-2 -right-2 w-28 h-28 pointer-events-none select-none"
       viewBox="0 0 100 100"
       fill="none"
-      opacity="0.2"
     >
       {/* Büyük küp — sol */}
-      {/* Üst yüz */}
       <path d="M10 42 L34 30 L58 42 L34 54Z" fill="#FCA5A5" />
-      {/* Sol yüz */}
       <path d="M10 42 L10 68 L34 80 L34 54Z" fill="#F87171" />
-      {/* Sağ yüz */}
       <path d="M58 42 L58 68 L34 80 L34 54Z" fill="#FECACA" />
-      {/* A harfi sol yüzde */}
-      <text x="16" y="70" fontSize="14" fontWeight="bold" fill="white" opacity="0.7" fontFamily="serif">A</text>
+      <text x="16" y="70" fontSize="14" fontWeight="bold" fill="white" fontFamily="sans-serif">A</text>
 
       {/* Küçük küp — sağ üstte */}
-      {/* Üst yüz */}
       <path d="M58 28 L76 20 L94 28 L76 36Z" fill="#86EFAC" />
-      {/* Sol yüz */}
       <path d="M58 28 L58 48 L76 56 L76 36Z" fill="#4ADE80" />
-      {/* Sağ yüz */}
       <path d="M94 28 L94 48 L76 56 L76 36Z" fill="#BBF7D0" />
-      {/* B harfi sağ yüzde */}
-      <text x="78" y="50" fontSize="11" fontWeight="bold" fill="white" opacity="0.7" fontFamily="serif">B</text>
+      <text x="78" y="50" fontSize="11" fontWeight="bold" fill="white" fontFamily="sans-serif">B</text>
 
       {/* Orta küp — arkada */}
-      {/* Üst yüz */}
-      <path d="M38 18 L56 10 L74 18 L56 26Z" fill="#93C5FD" opacity="0.7" />
-      {/* Sağ yüz */}
-      <path d="M74 18 L74 34 L56 42 L56 26Z" fill="#BFDBFE" opacity="0.7" />
-      {/* C harfi */}
-      <text x="58" y="36" fontSize="10" fontWeight="bold" fill="white" opacity="0.6" fontFamily="serif">C</text>
+      <path d="M38 18 L56 10 L74 18 L56 26Z" fill="#93C5FD" />
+      <path d="M74 18 L74 34 L56 42 L56 26Z" fill="#BFDBFE" />
+      <text x="58" y="36" fontSize="10" fontWeight="bold" fill="white" fontFamily="sans-serif">C</text>
     </svg>
   );
 }
@@ -130,7 +117,6 @@ function HouseDecoration() {
       stroke="#F97316"
       strokeLinecap="round"
       strokeLinejoin="round"
-      opacity="0.28"
     >
       <path d="M13 52 L12 83 L87 84 L88 52" strokeWidth="3" />
       <path d="M6 56 L50 17 L94 56" strokeWidth="3" />
@@ -189,7 +175,7 @@ function StarsDecoration() {
       preserveAspectRatio="xMaxYMid slice"
     >
       {items.map((s, i) => (
-        <path key={i} d={star(s.cx, s.cy, s.r, s.rot)} fill="#FBBF24" opacity="0.22" />
+        <path key={i} d={star(s.cx, s.cy, s.r, s.rot)} fill="#FBBF24" />
       ))}
     </svg>
   );
@@ -206,7 +192,6 @@ function TeddyDecoration() {
       className="absolute -bottom-3 -right-4 w-24 h-28 pointer-events-none select-none"
       viewBox="0 0 80 90"
       fill="#D97706"
-      opacity="0.18"
     >
       <ellipse cx="40" cy="58" rx="21" ry="24" />
       <circle cx="40" cy="28" r="17" />
