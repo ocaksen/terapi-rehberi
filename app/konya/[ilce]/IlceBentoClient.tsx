@@ -39,109 +39,114 @@ function getInitials(name: string) {
 }
 
 /* ─────────────────────────────────────────
-   Lastik Ördek — Çocuk psikolojisi
+   Lastik Ördek — Çocuk psikolojisi (A)
+   Sağ üst köşe
 ───────────────────────────────────────── */
 function DuckDecoration() {
   return (
     <svg
       aria-hidden="true"
-      className="absolute -bottom-2 -right-2 w-28 h-28 pointer-events-none select-none"
+      className="absolute top-0 right-0 w-24 h-24 pointer-events-none select-none"
       viewBox="0 0 100 100"
       fill="none"
     >
-      {/* Gövde */}
       <ellipse cx="48" cy="65" rx="30" ry="22" fill="#FCD34D" />
-      {/* Kanat */}
       <ellipse cx="38" cy="68" rx="16" ry="10" fill="#F59E0B" />
-      {/* Boyun */}
       <ellipse cx="68" cy="52" rx="10" ry="13" fill="#FCD34D" />
-      {/* Baş */}
       <circle cx="72" cy="36" r="14" fill="#FCD34D" />
-      {/* Gaga üst */}
       <ellipse cx="84" cy="37" rx="8" ry="5" fill="#F97316" />
-      {/* Gaga alt */}
       <ellipse cx="84" cy="40" rx="7" ry="3.5" fill="#EA580C" />
-      {/* Göz */}
       <circle cx="76" cy="30" r="3" fill="#1E293B" />
       <circle cx="77" cy="29" r="1" fill="white" />
-      {/* Kanat çizgisi */}
       <path d="M22 65 Q35 58 50 62" stroke="#F59E0B" strokeWidth="2" strokeLinecap="round" />
-      {/* Su yüzeyi */}
-      <path d="M14 82 Q30 76 48 80 Q66 84 82 78 Q90 76 96 80" stroke="#93C5FD" strokeWidth="3" strokeLinecap="round" fill="none" />
+      <path d="M14 82 Q30 76 48 80 Q66 84 82 78" stroke="#93C5FD" strokeWidth="3" strokeLinecap="round" fill="none" />
     </svg>
   );
 }
 
 /* ─────────────────────────────────────────
-   ABC Bloğu — Aile terapisi
+   Oyuncak Ayı (çocuk B) — sağ üst
 ───────────────────────────────────────── */
-function BlockDecoration() {
+function TeddySmallDecoration() {
   return (
     <svg
       aria-hidden="true"
-      className="absolute -bottom-2 -right-2 w-28 h-28 pointer-events-none select-none"
+      className="absolute top-0 right-0 w-20 h-24 pointer-events-none select-none"
+      viewBox="0 0 80 90"
+      fill="#D97706"
+    >
+      <ellipse cx="40" cy="58" rx="21" ry="24" />
+      <circle cx="40" cy="28" r="17" />
+      <circle cx="25" cy="14" r="8" />
+      <circle cx="25" cy="14" r="5" fill="#FDE68A" />
+      <circle cx="55" cy="14" r="8" />
+      <circle cx="55" cy="14" r="5" fill="#FDE68A" />
+      <ellipse cx="17" cy="56" rx="8" ry="13" transform="rotate(-18 17 56)" />
+      <ellipse cx="63" cy="56" rx="8" ry="13" transform="rotate(18 63 56)" />
+      <ellipse cx="28" cy="79" rx="11" ry="7" />
+      <ellipse cx="52" cy="79" rx="11" ry="7" />
+      <ellipse cx="40" cy="60" rx="12" ry="14" fill="#FDE68A" />
+      <circle cx="34" cy="25" r="2.5" fill="white" />
+      <circle cx="46" cy="25" r="2.5" fill="white" />
+      <ellipse cx="40" cy="31" rx="3.5" ry="2" fill="white" />
+    </svg>
+  );
+}
+
+/* ─────────────────────────────────────────
+   Aile — İki figür el ele (A)
+   Sağ üst köşe
+───────────────────────────────────────── */
+function FamilyFiguresDecoration() {
+  return (
+    <svg
+      aria-hidden="true"
+      className="absolute top-0 right-0 w-24 h-24 pointer-events-none select-none"
       viewBox="0 0 100 100"
       fill="none"
     >
-      {/* Büyük küp — sol */}
-      <path d="M10 42 L34 30 L58 42 L34 54Z" fill="#FCA5A5" />
-      <path d="M10 42 L10 68 L34 80 L34 54Z" fill="#F87171" />
-      <path d="M58 42 L58 68 L34 80 L34 54Z" fill="#FECACA" />
-      <text x="16" y="70" fontSize="14" fontWeight="bold" fill="white" fontFamily="sans-serif">A</text>
-
-      {/* Küçük küp — sağ üstte */}
-      <path d="M58 28 L76 20 L94 28 L76 36Z" fill="#86EFAC" />
-      <path d="M58 28 L58 48 L76 56 L76 36Z" fill="#4ADE80" />
-      <path d="M94 28 L94 48 L76 56 L76 36Z" fill="#BBF7D0" />
-      <text x="78" y="50" fontSize="11" fontWeight="bold" fill="white" fontFamily="sans-serif">B</text>
-
-      {/* Orta küp — arkada */}
-      <path d="M38 18 L56 10 L74 18 L56 26Z" fill="#93C5FD" />
-      <path d="M74 18 L74 34 L56 42 L56 26Z" fill="#BFDBFE" />
-      <text x="58" y="36" fontSize="10" fontWeight="bold" fill="white" fontFamily="sans-serif">C</text>
+      {/* Büyük figür (ebeveyn) */}
+      <circle cx="35" cy="22" r="12" fill="#FDA4AF" />
+      <ellipse cx="35" cy="52" rx="14" ry="20" fill="#FB7185" />
+      {/* Küçük figür (çocuk) */}
+      <circle cx="68" cy="28" r="9" fill="#FDE68A" />
+      <ellipse cx="68" cy="54" rx="10" ry="15" fill="#FCD34D" />
+      {/* El ele — bağlantı */}
+      <path d="M49 55 Q58 52 58 55" stroke="#F87171" strokeWidth="3" strokeLinecap="round" fill="none" />
+      {/* Küçük kalpler */}
+      <path d="M52 18 C52 16 49 14 49 17 C49 19 52 21 52 21 C52 21 55 19 55 17 C55 14 52 16 52 18Z" fill="#F43F5E" />
+      <path d="M62 10 C62 8.5 60 7 60 9 C60 10.5 62 12 62 12 C62 12 64 10.5 64 9 C64 7 62 8.5 62 10Z" fill="#FB7185" />
     </svg>
   );
 }
 
 /* ─────────────────────────────────────────
-   Style 1 — El Çizimi Ev (turuncu/sıcak)
-   Aile terapisi
+   Aile — İç içe kalpler (B)
+   Sağ üst köşe
 ───────────────────────────────────────── */
-function HouseDecoration() {
+function NestedHeartsDecoration() {
   return (
     <svg
       aria-hidden="true"
-      className="absolute -bottom-1 -right-2 w-28 h-28 pointer-events-none select-none"
-      viewBox="0 0 100 95"
+      className="absolute top-0 right-0 w-24 h-24 pointer-events-none select-none"
+      viewBox="0 0 100 100"
       fill="none"
-      stroke="#F97316"
-      strokeLinecap="round"
-      strokeLinejoin="round"
     >
-      <path d="M13 52 L12 83 L87 84 L88 52" strokeWidth="3" />
-      <path d="M6 56 L50 17 L94 56" strokeWidth="3" />
-      <path d="M37 84 L37 63 Q50 57 63 63 L63 84" strokeWidth="2.5" />
-      <rect x="16" y="57" width="15" height="15" rx="3" strokeWidth="2" />
-      <line x1="23.5" y1="57" x2="23.5" y2="72" strokeWidth="1.5" />
-      <line x1="16" y1="64.5" x2="31" y2="64.5" strokeWidth="1.5" />
-      <rect x="69" y="57" width="15" height="15" rx="3" strokeWidth="2" />
-      <line x1="76.5" y1="57" x2="76.5" y2="72" strokeWidth="1.5" />
-      <line x1="69" y1="64.5" x2="84" y2="64.5" strokeWidth="1.5" />
-      <path d="M64 33 L64 19 L74 19 L74 37" strokeWidth="2.5" />
-      <path d="M65 14 Q64 10 68 9 Q70 5 74 8 Q78 7 78 11 Q81 14 78 16 Q65 18 65 14Z" strokeWidth="1.5" />
-      <path
-        d="M50 72 C50 70 47 67 47 70 C47 72.5 50 75 50 75 C50 75 53 72.5 53 70 C53 67 50 70 50 72Z"
-        fill="#F97316"
-        stroke="none"
-        opacity="0.7"
-      />
+      {/* Büyük kalp */}
+      <path d="M50 82 C50 82 10 58 10 32 C10 18 22 10 35 14 C42 16 50 24 50 24 C50 24 58 16 65 14 C78 10 90 18 90 32 C90 58 50 82 50 82Z" fill="#FCA5A5" />
+      {/* Orta kalp */}
+      <path d="M50 66 C50 66 28 50 28 36 C28 27 36 22 43 25 C46 26 50 30 50 30 C50 30 54 26 57 25 C64 22 72 27 72 36 C72 50 50 66 50 66Z" fill="#F87171" />
+      {/* Küçük kalp */}
+      <path d="M50 52 C50 52 38 44 38 38 C38 33 42 30 46 32 C48 33 50 35 50 35 C50 35 52 33 54 32 C58 30 62 33 62 38 C62 44 50 52 50 52Z" fill="#EF4444" />
+      {/* Parlama */}
+      <ellipse cx="30" cy="26" rx="6" ry="4" fill="white" opacity="0.3" transform="rotate(-30 30 26)" />
     </svg>
   );
 }
 
 /* ─────────────────────────────────────────
-   Style 3 — Yıldız Pattern (altın)
-   Ergen psikolojisi
+   Yıldız Pattern (4 adet) — Ergen
+   Sağ üst köşe
 ───────────────────────────────────────── */
 function StarsDecoration() {
   const star = (cx: number, cy: number, r: number, rot: number) => {
@@ -156,23 +161,17 @@ function StarsDecoration() {
   };
 
   const items = [
-    { cx: 80, cy: 12, r: 7,   rot: 12 },
-    { cx: 90, cy: 38, r: 4.5, rot: 30 },
-    { cx: 75, cy: 60, r: 5.5, rot: 0  },
-    { cx: 88, cy: 75, r: 3.5, rot: 45 },
-    { cx: 65, cy: 22, r: 3.5, rot: 20 },
-    { cx: 93, cy: 55, r: 3,   rot: 10 },
-    { cx: 78, cy: 85, r: 4,   rot: 35 },
-    { cx: 60, cy: 8,  r: 2.5, rot: 5  },
-    { cx: 96, cy: 20, r: 2,   rot: 50 },
+    { cx: 78, cy: 14, r: 8,   rot: 12 },
+    { cx: 92, cy: 36, r: 5,   rot: 30 },
+    { cx: 70, cy: 36, r: 4,   rot: 0  },
+    { cx: 88, cy: 58, r: 3.5, rot: 45 },
   ];
 
   return (
     <svg
       aria-hidden="true"
-      className="absolute inset-0 w-full h-full pointer-events-none select-none"
+      className="absolute top-0 right-0 w-24 h-24 pointer-events-none select-none"
       viewBox="0 0 100 100"
-      preserveAspectRatio="xMaxYMid slice"
     >
       {items.map((s, i) => (
         <path key={i} d={star(s.cx, s.cy, s.r, s.rot)} fill="#FBBF24" />
@@ -182,31 +181,31 @@ function StarsDecoration() {
 }
 
 /* ─────────────────────────────────────────
-   Style 2 — Oyuncak Ayı (kahve/sıcak)
-   Bireysel terapi
+   Oyuncak Ayı büyük — Bireysel terapi
+   Sağ üst köşe
 ───────────────────────────────────────── */
 function TeddyDecoration() {
   return (
     <svg
       aria-hidden="true"
-      className="absolute -bottom-3 -right-4 w-24 h-28 pointer-events-none select-none"
+      className="absolute top-0 right-0 w-24 h-24 pointer-events-none select-none"
       viewBox="0 0 80 90"
       fill="#D97706"
     >
       <ellipse cx="40" cy="58" rx="21" ry="24" />
       <circle cx="40" cy="28" r="17" />
       <circle cx="25" cy="14" r="8" />
-      <circle cx="25" cy="14" r="5" fill="#FDE68A" opacity="0.6" />
+      <circle cx="25" cy="14" r="5" fill="#FDE68A" />
       <circle cx="55" cy="14" r="8" />
-      <circle cx="55" cy="14" r="5" fill="#FDE68A" opacity="0.6" />
+      <circle cx="55" cy="14" r="5" fill="#FDE68A" />
       <ellipse cx="17" cy="56" rx="8" ry="13" transform="rotate(-18 17 56)" />
       <ellipse cx="63" cy="56" rx="8" ry="13" transform="rotate(18 63 56)" />
       <ellipse cx="28" cy="79" rx="11" ry="7" />
       <ellipse cx="52" cy="79" rx="11" ry="7" />
-      <ellipse cx="40" cy="60" rx="12" ry="14" fill="#FDE68A" opacity="0.4" />
-      <circle cx="34" cy="25" r="2.5" fill="white" opacity="0.7" />
-      <circle cx="46" cy="25" r="2.5" fill="white" opacity="0.7" />
-      <ellipse cx="40" cy="31" rx="3.5" ry="2" fill="white" opacity="0.5" />
+      <ellipse cx="40" cy="60" rx="12" ry="14" fill="#FDE68A" />
+      <circle cx="34" cy="25" r="2.5" fill="white" />
+      <circle cx="46" cy="25" r="2.5" fill="white" />
+      <ellipse cx="40" cy="31" rx="3.5" ry="2" fill="white" />
     </svg>
   );
 }
@@ -216,9 +215,9 @@ function TeddyDecoration() {
 ───────────────────────────────────────── */
 function ExpertDecoration({ services, index }: { services: string[]; index: number }) {
   if (services.includes("cocuk-psikolojisi"))
-    return index % 2 === 0 ? <DuckDecoration /> : <TeddyDecoration />;
+    return index % 2 === 0 ? <DuckDecoration /> : <TeddySmallDecoration />;
   if (services.includes("aile-terapisi"))
-    return index % 2 === 0 ? <BlockDecoration /> : <HouseDecoration />;
+    return index % 2 === 0 ? <FamilyFiguresDecoration /> : <NestedHeartsDecoration />;
   if (services.includes("ergen-psikolojisi")) return <StarsDecoration />;
   if (services.includes("bireysel-terapi"))   return <TeddyDecoration />;
   return null;
