@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getAllExperts, getAllServices, getServiceBySlug } from "@/lib/data";
-import ExpertCard from "@/components/ExpertCard";
 import type { ServiceFaq } from "@/types";
 
 // İlçe bilgileri
@@ -98,15 +97,21 @@ export default async function KonyaSlugPage({ params }: Props) {
           {/* Uzman listesi */}
           {experts.length > 0 ? (
             <>
-              <p className="text-sm text-slate-500 mb-6 flex items-center gap-1.5">
-                <svg className="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                </svg>
-                <strong>{experts.length}</strong> doğrulanmış uzman
+              <p className="text-sm text-slate-500 mb-6">
+                Bu alanda <strong className="text-slate-700">{experts.length} uzman</strong> listemizde yer alıyor.
               </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+              <div className="divide-y divide-cream-200 bg-white rounded-2xl border border-cream-200 overflow-hidden shadow-sm mb-12">
                 {experts.map((e) => (
-                  <ExpertCard key={e.slug} expert={e} citySlug="konya" />
+                  <div key={e.slug} className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 px-5 py-4">
+                    <div>
+                      <p className="font-semibold text-brand-900 text-sm">{e.name}</p>
+                      <p className="text-xs text-slate-500">{e.title} · {e.district}</p>
+                    </div>
+                    <div className="flex items-center gap-3 shrink-0">
+                      {e.sessionFee && <span className="text-xs font-semibold bg-slate-100 text-slate-700 px-2.5 py-1 rounded-lg">{e.sessionFee}</span>}
+                      <span className="text-xs text-slate-400">{e.sessionType.join(" · ")}</span>
+                    </div>
+                  </div>
                 ))}
               </div>
             </>
@@ -207,9 +212,18 @@ export default async function KonyaSlugPage({ params }: Props) {
 
       <div className="max-w-7xl mx-auto px-4 py-10">
         {districtExperts.length > 0 ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+          <div className="divide-y divide-cream-200 bg-white rounded-2xl border border-cream-200 overflow-hidden shadow-sm mb-10">
             {districtExperts.map((e) => (
-              <ExpertCard key={e.slug} expert={e} citySlug="konya" />
+              <div key={e.slug} className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 px-5 py-4">
+                <div>
+                  <p className="font-semibold text-brand-900 text-sm">{e.name}</p>
+                  <p className="text-xs text-slate-500">{e.title}</p>
+                </div>
+                <div className="flex items-center gap-3 shrink-0">
+                  {e.sessionFee && <span className="text-xs font-semibold bg-slate-100 text-slate-700 px-2.5 py-1 rounded-lg">{e.sessionFee}</span>}
+                  <span className="text-xs text-slate-400">{e.sessionType.join(" · ")}</span>
+                </div>
+              </div>
             ))}
           </div>
         ) : (

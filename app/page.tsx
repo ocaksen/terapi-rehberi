@@ -4,7 +4,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
 import { getFeaturedExperts, getAllBlogPosts, getAllTests } from "@/lib/data";
-import ExpertCard from "@/components/ExpertCard";
 import FaqSection from "@/components/FaqSection";
 import AnimatedSection from "@/components/AnimatedSection";
 import HeroSection from "@/components/HeroSection";
@@ -529,36 +528,26 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* One Cikan Uzmanlar */}
-      {featured.length > 0 && (
-        <section className="py-20 px-4 bg-cream-50">
-          <div className="max-w-5xl mx-auto">
-            <AnimatedSection>
-              <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-10 gap-4">
-                <div>
-                  <p className="section-label mb-2">Konya</p>
-                  <h2 className="text-3xl sm:text-4xl font-bold text-slate-900">
-                    Titizlikle Seçilmiş Uzmanlar
-                  </h2>
-                  <p className="text-slate-600 text-sm mt-2">
-                    Her uzman kimlik ve lisans doğrulamasından geçmiştir.
-                  </p>
-                </div>
-                <Link href="/konya/psikologlar" className="btn-outline shrink-0">
-                  Tümünü Gör
-                </Link>
-              </div>
-            </AnimatedSection>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {featured.map((expert, i) => (
-                <AnimatedSection key={expert.slug} delay={i * 0.1} direction="up">
-                  <ExpertCard expert={expert} citySlug="konya" />
-                </AnimatedSection>
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
+      {/* Uzmanlar CTA */}
+      <section className="py-16 px-4 bg-cream-50">
+        <div className="max-w-5xl mx-auto text-center">
+          <AnimatedSection>
+            <p className="section-label mb-3">Konya</p>
+            <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-3">
+              Konya&apos;daki Tüm Psikologlar
+            </h2>
+            <p className="text-slate-600 text-sm mb-8 max-w-xl mx-auto">
+              Meram, Selçuklu, Karatay ve diğer ilçelerden <strong>{featured.length > 0 ? "50+" : ""}</strong> psikolog ve terapist listemizde yer alıyor.
+            </p>
+            <Link href="/konya/psikologlar" className="inline-flex items-center gap-2 bg-brand-700 hover:bg-brand-800 text-white font-bold text-sm px-8 py-3.5 rounded-xl transition-colors">
+              Psikolog Listesini Gör
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+              </svg>
+            </Link>
+          </AnimatedSection>
+        </div>
+      </section>
 
       {/* Blog Carousel */}
       <section className="py-20 bg-white">

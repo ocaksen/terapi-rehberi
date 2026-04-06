@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getExpertsByCity, getAllServices } from "@/lib/data";
-import ExpertCard from "@/components/ExpertCard";
 
 export const metadata: Metadata = {
   title: "Konya Psikolog Rehberi — Lisanslı Uzman Terapistler",
@@ -74,20 +73,22 @@ export default function KonyaPage() {
         </div>
       </section>
 
-      {/* Uzmanlar */}
+      {/* Uzmanlar özet */}
       <section className="py-14 px-4 bg-cream-50">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-xl font-bold text-brand-900 mb-2">
-            Konya Uzmanlarımız
-          </h2>
-          <p className="text-sm text-slate-500 mb-8">
-            Kimlik ve lisans doğrulamasından geçmiş uzmanlar.
+          <h2 className="text-xl font-bold text-brand-900 mb-2">Konya Psikolog Listesi</h2>
+          <p className="text-sm text-slate-500 mb-6">
+            Konya&apos;da hizmet veren <strong className="text-slate-700">{experts.length} uzman</strong> listemizde yer alıyor.
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {experts.map((e) => (
-              <ExpertCard key={e.slug} expert={e} citySlug="konya" />
-            ))}
-          </div>
+          <Link
+            href="/konya/psikologlar"
+            className="inline-flex items-center gap-2 bg-brand-700 hover:bg-brand-800 text-white font-semibold text-sm px-6 py-3 rounded-xl transition-colors"
+          >
+            Tüm Listeyi Gör
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+            </svg>
+          </Link>
         </div>
       </section>
 
