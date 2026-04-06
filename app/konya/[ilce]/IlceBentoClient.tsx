@@ -65,7 +65,33 @@ function DuckDecoration() {
 }
 
 /* ─────────────────────────────────────────
-   Oyuncak Ayı (çocuk B) — sağ üst
+   ABC Bloğu — Çocuk (B) — sağ üst
+───────────────────────────────────────── */
+function BlockDecoration() {
+  return (
+    <svg
+      aria-hidden="true"
+      className="absolute top-0 right-0 w-24 h-24 pointer-events-none select-none"
+      viewBox="0 0 100 100"
+      fill="none"
+    >
+      <path d="M10 42 L34 30 L58 42 L34 54Z" fill="#FCA5A5" />
+      <path d="M10 42 L10 68 L34 80 L34 54Z" fill="#F87171" />
+      <path d="M58 42 L58 68 L34 80 L34 54Z" fill="#FECACA" />
+      <text x="16" y="70" fontSize="14" fontWeight="bold" fill="white" fontFamily="sans-serif">A</text>
+      <path d="M58 28 L76 20 L94 28 L76 36Z" fill="#86EFAC" />
+      <path d="M58 28 L58 48 L76 56 L76 36Z" fill="#4ADE80" />
+      <path d="M94 28 L94 48 L76 56 L76 36Z" fill="#BBF7D0" />
+      <text x="78" y="50" fontSize="11" fontWeight="bold" fill="white" fontFamily="sans-serif">B</text>
+      <path d="M38 18 L56 10 L74 18 L56 26Z" fill="#93C5FD" />
+      <path d="M74 18 L74 34 L56 42 L56 26Z" fill="#BFDBFE" />
+      <text x="58" y="36" fontSize="10" fontWeight="bold" fill="white" fontFamily="sans-serif">C</text>
+    </svg>
+  );
+}
+
+/* ─────────────────────────────────────────
+   (kullanılmıyor — eski çocuk B)
 ───────────────────────────────────────── */
 function TeddySmallDecoration() {
   return (
@@ -94,37 +120,39 @@ function TeddySmallDecoration() {
 }
 
 /* ─────────────────────────────────────────
-   Aile — İki figür el ele (A)
-   Sağ üst köşe
+   Aile — El Çizimi Ev (A) — sağ üst
 ───────────────────────────────────────── */
-function FamilyFiguresDecoration() {
+function HouseDecoration() {
   return (
     <svg
       aria-hidden="true"
       className="absolute top-0 right-0 w-24 h-24 pointer-events-none select-none"
-      viewBox="0 0 100 100"
+      viewBox="0 0 100 95"
       fill="none"
+      stroke="#F97316"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     >
-      {/* Büyük figür (ebeveyn) */}
-      <circle cx="35" cy="22" r="12" fill="#FDA4AF" />
-      <ellipse cx="35" cy="52" rx="14" ry="20" fill="#FB7185" />
-      {/* Küçük figür (çocuk) */}
-      <circle cx="68" cy="28" r="9" fill="#FDE68A" />
-      <ellipse cx="68" cy="54" rx="10" ry="15" fill="#FCD34D" />
-      {/* El ele — bağlantı */}
-      <path d="M49 55 Q58 52 58 55" stroke="#F87171" strokeWidth="3" strokeLinecap="round" fill="none" />
-      {/* Küçük kalpler */}
-      <path d="M52 18 C52 16 49 14 49 17 C49 19 52 21 52 21 C52 21 55 19 55 17 C55 14 52 16 52 18Z" fill="#F43F5E" />
-      <path d="M62 10 C62 8.5 60 7 60 9 C60 10.5 62 12 62 12 C62 12 64 10.5 64 9 C64 7 62 8.5 62 10Z" fill="#FB7185" />
+      <path d="M13 52 L12 83 L87 84 L88 52" strokeWidth="3" />
+      <path d="M6 56 L50 17 L94 56" strokeWidth="3" />
+      <path d="M37 84 L37 63 Q50 57 63 63 L63 84" strokeWidth="2.5" />
+      <rect x="16" y="57" width="15" height="15" rx="3" strokeWidth="2" />
+      <line x1="23.5" y1="57" x2="23.5" y2="72" strokeWidth="1.5" />
+      <line x1="16" y1="64.5" x2="31" y2="64.5" strokeWidth="1.5" />
+      <rect x="69" y="57" width="15" height="15" rx="3" strokeWidth="2" />
+      <line x1="76.5" y1="57" x2="76.5" y2="72" strokeWidth="1.5" />
+      <line x1="69" y1="64.5" x2="84" y2="64.5" strokeWidth="1.5" />
+      <path d="M64 33 L64 19 L74 19 L74 37" strokeWidth="2.5" />
+      <path d="M65 14 Q64 10 68 9 Q70 5 74 8 Q78 7 78 11 Q81 14 78 16 Q65 18 65 14Z" strokeWidth="1.5" />
     </svg>
   );
 }
 
 /* ─────────────────────────────────────────
-   Aile — İç içe kalpler (B)
-   Sağ üst köşe
+   Aile — Kuş yuvası (B) — sağ üst
+   Anne + baba + 2 yavru kuş
 ───────────────────────────────────────── */
-function NestedHeartsDecoration() {
+function BirdNestDecoration() {
   return (
     <svg
       aria-hidden="true"
@@ -132,14 +160,33 @@ function NestedHeartsDecoration() {
       viewBox="0 0 100 100"
       fill="none"
     >
-      {/* Büyük kalp */}
-      <path d="M50 82 C50 82 10 58 10 32 C10 18 22 10 35 14 C42 16 50 24 50 24 C50 24 58 16 65 14 C78 10 90 18 90 32 C90 58 50 82 50 82Z" fill="#FCA5A5" />
-      {/* Orta kalp */}
-      <path d="M50 66 C50 66 28 50 28 36 C28 27 36 22 43 25 C46 26 50 30 50 30 C50 30 54 26 57 25 C64 22 72 27 72 36 C72 50 50 66 50 66Z" fill="#F87171" />
-      {/* Küçük kalp */}
-      <path d="M50 52 C50 52 38 44 38 38 C38 33 42 30 46 32 C48 33 50 35 50 35 C50 35 52 33 54 32 C58 30 62 33 62 38 C62 44 50 52 50 52Z" fill="#EF4444" />
-      {/* Parlama */}
-      <ellipse cx="30" cy="26" rx="6" ry="4" fill="white" opacity="0.3" transform="rotate(-30 30 26)" />
+      {/* Dal */}
+      <path d="M5 72 Q50 65 95 72" stroke="#92400E" strokeWidth="4" strokeLinecap="round" />
+      {/* Yuva */}
+      <path d="M25 72 Q50 58 75 72" fill="#D97706" />
+      <path d="M28 72 Q50 62 72 72 Q70 78 50 80 Q30 78 28 72Z" fill="#F59E0B" />
+      {/* Yavru 1 */}
+      <circle cx="38" cy="65" r="7" fill="#FDE68A" />
+      <ellipse cx="38" cy="63" rx="4" ry="3" fill="#FCD34D" />
+      <path d="M42 65 L46 63 L42 62Z" fill="#F97316" />
+      <circle cx="40" cy="62" r="1.2" fill="#1E293B" />
+      {/* Yavru 2 */}
+      <circle cx="58" cy="64" r="7" fill="#FDE68A" />
+      <ellipse cx="58" cy="62" rx="4" ry="3" fill="#FCD34D" />
+      <path d="M54 64 L50 62 L54 61Z" fill="#F97316" />
+      <circle cx="56" cy="61" r="1.2" fill="#1E293B" />
+      {/* Anne kuş — solda dal üstünde */}
+      <ellipse cx="16" cy="58" rx="9" ry="7" fill="#6EE7B7" />
+      <circle cx="16" cy="50" r="6" fill="#6EE7B7" />
+      <path d="M22 51 L27 49 L22 48Z" fill="#F97316" />
+      <circle cx="18" cy="49" r="1.2" fill="#1E293B" />
+      <path d="M8 58 Q12 52 16 55" fill="#34D399" />
+      {/* Baba kuş — sağda dal üstünde */}
+      <ellipse cx="84" cy="56" rx="10" ry="7" fill="#93C5FD" />
+      <circle cx="84" cy="48" r="6" fill="#93C5FD" />
+      <path d="M78 49 L73 47 L78 46Z" fill="#F97316" />
+      <circle cx="82" cy="47" r="1.2" fill="#1E293B" />
+      <path d="M92 56 Q88 50 84 53" fill="#60A5FA" />
     </svg>
   );
 }
@@ -215,9 +262,9 @@ function TeddyDecoration() {
 ───────────────────────────────────────── */
 function ExpertDecoration({ services, index }: { services: string[]; index: number }) {
   if (services.includes("cocuk-psikolojisi"))
-    return index % 2 === 0 ? <DuckDecoration /> : <TeddySmallDecoration />;
+    return index % 2 === 0 ? <DuckDecoration /> : <BlockDecoration />;
   if (services.includes("aile-terapisi"))
-    return index % 2 === 0 ? <FamilyFiguresDecoration /> : <NestedHeartsDecoration />;
+    return index % 2 === 0 ? <HouseDecoration /> : <BirdNestDecoration />;
   if (services.includes("ergen-psikolojisi")) return <StarsDecoration />;
   if (services.includes("bireysel-terapi"))   return <TeddyDecoration />;
   return null;
