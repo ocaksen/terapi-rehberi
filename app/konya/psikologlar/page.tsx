@@ -91,15 +91,15 @@ export default function KonyaPsikologlarPage() {
                       ))}
                     </div>
                   </div>
-                  <div className="flex items-center gap-4 shrink-0">
+                  <div className="flex items-center gap-3 shrink-0">
                     {expert.sessionFee && (
-                      <span className="text-xs font-semibold text-slate-700 bg-slate-100 px-2.5 py-1 rounded-lg">
+                      <span className="text-xs font-semibold text-slate-700 bg-slate-100 px-2.5 py-1 rounded-lg whitespace-nowrap">
                         {expert.sessionFee}
                       </span>
                     )}
                     <div className="flex flex-col items-end gap-0.5">
                       {expert.sessionType.map((t) => (
-                        <span key={t} className="text-xs text-slate-400">{t}</span>
+                        <span key={t} className="text-xs text-slate-400 whitespace-nowrap">{t}</span>
                       ))}
                     </div>
                   </div>

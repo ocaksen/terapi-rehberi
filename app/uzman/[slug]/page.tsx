@@ -20,11 +20,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${expert.name} — ${expert.title} | TerapiRehberi`,
     description: expert.shortBio,
-    alternates: { canonical: `/uzman/${slug}` },
-    openGraph: {
-      title: `${expert.name} — ${expert.title}`,
-      description: expert.shortBio,
-    },
+    robots: { index: false, follow: false },
   };
 }
 
