@@ -102,6 +102,17 @@ export default function RootLayout({
         <link rel="preconnect" href="https://randomuser.me" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-2TP7B2CGPH" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-2TP7B2CGPH');
+            `,
+          }}
+        />
       </head>
       <body className="min-h-screen flex flex-col antialiased">
         <Header />
