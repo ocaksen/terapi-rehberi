@@ -19,12 +19,35 @@ const KAT_RENK: Record<string, { bg: string; text: string; border: string }> = {
   aile:     { bg: "#fff7ed", text: "#c2410c", border: "#fed7aa" },
 };
 
-const KAT_ICONS: Record<string, string> = {
-  psikolog: "🧠",
-  cocuk:    "🧸",
-  ergen:    "⭐",
-  aile:     "🏡",
-};
+// SVG icon per category — no emojis
+function KatIcon({ slug, size = 20 }: { slug: string; size?: number }) {
+  const s = size;
+  if (slug === "psikolog") return (
+    <svg width={s} height={s} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8}
+        d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+    </svg>
+  );
+  if (slug === "cocuk") return (
+    <svg width={s} height={s} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8}
+        d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z"/>
+    </svg>
+  );
+  if (slug === "ergen") return (
+    <svg width={s} height={s} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8}
+        d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/>
+    </svg>
+  );
+  if (slug === "aile") return (
+    <svg width={s} height={s} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8}
+        d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"/>
+    </svg>
+  );
+  return null;
+}
 
 type Kategori = "psikolog" | "cocuk" | "ergen" | "aile";
 
@@ -114,15 +137,19 @@ export default function SoruSorClient({ sorular }: { sorular: SoruCevap[] }) {
 
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-brand-900 via-brand-800 to-brand-700 py-16 px-4">
-        <div className="absolute -top-12 -right-12 w-56 h-56 rounded-full bg-white/5 pointer-events-none" />
-        <div className="absolute -bottom-8 left-1/4 w-32 h-32 rounded-full bg-white/5 pointer-events-none" />
+        <div className="absolute -top-12 -right-12 w-64 h-64 rounded-full bg-white/5 pointer-events-none" />
+        <div className="absolute -bottom-8 left-1/4 w-36 h-36 rounded-full bg-white/5 pointer-events-none" />
+        <div className="absolute top-6 right-1/3 w-20 h-20 rounded-full bg-white/5 pointer-events-none" />
+
         <div className="relative max-w-2xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-1.5 mb-5">
-            <svg className="w-3.5 h-3.5 text-green-300" fill="currentColor" viewBox="0 0 24 24">
-              <path fillRule="evenodd" d="M12 1.5a5.25 5.25 0 00-5.25 5.25v3a3 3 0 00-3 3v6.75a3 3 0 003 3h10.5a3 3 0 003-3v-6.75a3 3 0 00-3-3v-3c0-2.9-2.35-5.25-5.25-5.25zm3.75 8.25v-3a3.75 3.75 0 10-7.5 0v3h7.5z" clipRule="evenodd"/>
+            <svg className="w-3.5 h-3.5 text-green-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
             </svg>
             <span className="text-xs font-semibold text-white/90">Sorularınız gizlilikle yanıtlanır</span>
           </div>
+
           <h1 className="text-3xl sm:text-4xl font-black text-white mb-4 leading-tight">
             Psikolojik Sorularınızı<br />
             <span className="text-brand-300">Anonim Sorun</span>
@@ -132,16 +159,43 @@ export default function SoruSorClient({ sorular }: { sorular: SoruCevap[] }) {
             Kişisel bilgi paylaşmanıza gerek yok.
           </p>
 
-          {/* Trust badges */}
-          <div className="flex flex-wrap items-center justify-center gap-4 mt-6">
+          {/* Trust badges — SVG ikonlarla */}
+          <div className="flex flex-wrap items-center justify-center gap-3 mt-7">
             {[
-              { icon: "🔒", text: "Anonim & Gizli" },
-              { icon: "✅", text: "Uzman Yanıtı" },
-              { icon: "⚡", text: "24-48 Saat" },
+              {
+                icon: (
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                      d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                  </svg>
+                ),
+                text: "Anonim & Gizli",
+              },
+              {
+                icon: (
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  </svg>
+                ),
+                text: "Uzman Yanıtı",
+              },
+              {
+                icon: (
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  </svg>
+                ),
+                text: "24-48 Saat",
+              },
             ].map((b) => (
-              <div key={b.text} className="flex items-center gap-1.5 text-xs text-white/70">
-                <span>{b.icon}</span>
-                <span>{b.text}</span>
+              <div
+                key={b.text}
+                className="flex items-center gap-2 bg-white/10 border border-white/15 rounded-full px-3.5 py-2 text-xs font-semibold text-white/90"
+              >
+                <span className="text-brand-300">{b.icon}</span>
+                {b.text}
               </div>
             ))}
           </div>
@@ -151,7 +205,7 @@ export default function SoruSorClient({ sorular }: { sorular: SoruCevap[] }) {
       {/* Multi-step Form */}
       <section className="max-w-2xl mx-auto px-4 -mt-6 relative z-10">
         {gonderildi ? (
-          <div className="bg-white rounded-3xl border border-slate-100 shadow-md p-10 text-center">
+          <div className="bg-white rounded-3xl border border-slate-100 shadow-lg p-10 text-center">
             <div className="w-16 h-16 rounded-full bg-green-50 border-2 border-green-200 flex items-center justify-center mx-auto mb-4">
               <svg className="w-8 h-8 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7"/>
@@ -162,12 +216,18 @@ export default function SoruSorClient({ sorular }: { sorular: SoruCevap[] }) {
               Uzman ekibimiz sorunuzu inceleyip 24–48 saat içinde yanıtlayacak.
               Yanıt bu sayfada anonim olarak yayımlanacak.
             </p>
-            <button onClick={() => setGonderildi(false)} className="btn-outline text-sm">
+            <button
+              onClick={() => setGonderildi(false)}
+              className="inline-flex items-center gap-2 border-2 border-brand-200 text-brand-700 font-semibold text-sm px-6 py-2.5 rounded-xl hover:bg-brand-50 transition-colors cursor-pointer"
+            >
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4"/>
+              </svg>
               Yeni Soru Sor
             </button>
           </div>
         ) : (
-          <div className="bg-white rounded-3xl border border-slate-100 shadow-md overflow-hidden">
+          <div className="bg-white rounded-3xl border border-slate-100 shadow-lg overflow-hidden">
             {/* Adım göstergesi */}
             <div className="px-6 pt-6 pb-0 flex items-center gap-3">
               {[1, 2].map((n) => (
@@ -207,14 +267,16 @@ export default function SoruSorClient({ sorular }: { sorular: SoruCevap[] }) {
                         <button
                           key={k.slug}
                           onClick={() => setSeciliKat(k.slug as Kategori)}
-                          className="flex items-center gap-3 px-4 py-3.5 rounded-2xl text-sm font-semibold transition-all duration-150 border-2 text-left"
+                          className="flex items-center gap-3 px-4 py-3.5 rounded-2xl text-sm font-semibold transition-all duration-150 border-2 text-left cursor-pointer hover:-translate-y-0.5 hover:shadow-md"
                           style={
                             isActive
                               ? { background: renk.bg, color: renk.text, borderColor: renk.border }
                               : { background: "#f8fafc", color: "#64748b", borderColor: "#e2e8f0" }
                           }
                         >
-                          <span className="text-xl">{KAT_ICONS[k.slug as Kategori]}</span>
+                          <span style={{ color: isActive ? renk.text : "#94a3b8" }}>
+                            <KatIcon slug={k.slug} size={18} />
+                          </span>
                           <span>{k.label}</span>
                           {isActive && (
                             <svg className="w-4 h-4 ml-auto" fill="currentColor" viewBox="0 0 24 24">
@@ -227,10 +289,10 @@ export default function SoruSorClient({ sorular }: { sorular: SoruCevap[] }) {
                   </div>
                   <button
                     onClick={handleIleri}
-                    className="btn-primary w-full justify-center"
+                    className="w-full flex items-center justify-center gap-2 bg-brand-700 text-white font-black text-sm px-6 py-3 rounded-xl hover:bg-brand-800 transition-colors cursor-pointer"
                   >
                     Devam Et
-                    <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/>
                     </svg>
                   </button>
@@ -274,7 +336,6 @@ export default function SoruSorClient({ sorular }: { sorular: SoruCevap[] }) {
                     </div>
                   </div>
 
-                  {/* Hata mesajı — empatik */}
                   {hata && (
                     <div className="flex items-start gap-2 mt-2 text-orange-600 bg-orange-50 border border-orange-200 rounded-xl px-3 py-2.5 animate-pulse">
                       <svg className="w-4 h-4 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -285,8 +346,9 @@ export default function SoruSorClient({ sorular }: { sorular: SoruCevap[] }) {
                   )}
 
                   <p className="text-xs text-slate-400 mt-3 mb-5 flex items-center gap-1.5">
-                    <svg className="w-3.5 h-3.5 shrink-0" fill="currentColor" viewBox="0 0 24 24">
-                      <path fillRule="evenodd" d="M12 1.5a5.25 5.25 0 00-5.25 5.25v3a3 3 0 00-3 3v6.75a3 3 0 003 3h10.5a3 3 0 003-3v-6.75a3 3 0 00-3-3v-3c0-2.9-2.35-5.25-5.25-5.25zm3.75 8.25v-3a3.75 3.75 0 10-7.5 0v3h7.5z" clipRule="evenodd"/>
+                    <svg className="w-3.5 h-3.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                        d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
                     </svg>
                     Kişisel bilgi paylaşmanıza gerek yok. Sorular incelendikten sonra anonim yayımlanır.
                   </p>
@@ -294,10 +356,10 @@ export default function SoruSorClient({ sorular }: { sorular: SoruCevap[] }) {
                   <button
                     onClick={handleGonder}
                     disabled={soru.trim().length < 10}
-                    className="btn-primary w-full justify-center disabled:opacity-40 disabled:cursor-not-allowed"
+                    className="w-full flex items-center justify-center gap-2 bg-brand-700 text-white font-black text-sm px-6 py-3 rounded-xl hover:bg-brand-800 transition-colors cursor-pointer disabled:opacity-40 disabled:cursor-not-allowed"
                   >
                     Soruyu Gönder
-                    <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
                     </svg>
                   </button>
@@ -310,27 +372,49 @@ export default function SoruSorClient({ sorular }: { sorular: SoruCevap[] }) {
 
       {/* Nasıl Çalışır? */}
       <section className="max-w-2xl mx-auto px-4 pt-12 pb-2">
-        <p className="text-xs font-black uppercase tracking-widest text-brand-600 mb-5 text-center">Nasıl Çalışır?</p>
+        <div className="flex items-center gap-3 mb-6">
+          <div className="h-px flex-1 bg-slate-200" />
+          <p className="text-xs font-black uppercase tracking-widest text-brand-600">Nasıl Çalışır?</p>
+          <div className="h-px flex-1 bg-slate-200" />
+        </div>
         <div className="grid grid-cols-3 gap-4">
           {[
-            { step: "1", icon: (
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8.625 9.75a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 01.778-.332 48.294 48.294 0 005.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"/>
-              </svg>
-            ), title: "Soru Sor", desc: "Anonim olarak sorunuzu yazın" },
-            { step: "2", icon: (
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
-              </svg>
-            ), title: "24 Saatte Yanıt", desc: "Uzman psikolog inceler ve yanıtlar" },
-            { step: "3", icon: (
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3.98 8.223A10.477 10.477 0 001.934 12C3.226 16.338 7.244 19.5 12 19.5c.993 0 1.953-.138 2.863-.395M6.228 6.228A10.45 10.45 0 0112 4.5c4.756 0 8.773 3.162 10.065 7.498a10.523 10.523 0 01-4.293 5.774M6.228 6.228L3 3m3.228 3.228l3.65 3.65m7.894 7.894L21 21m-3.228-3.228l-3.65-3.65m0 0a3 3 0 10-4.243-4.243m4.242 4.242L9.88 9.88"/>
-              </svg>
-            ), title: "Gizli Kal", desc: "Kimliğiniz hiçbir zaman paylaşılmaz" },
+            {
+              step: "01",
+              icon: (
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5}
+                    d="M8.625 9.75a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 01.778-.332 48.294 48.294 0 005.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"/>
+                </svg>
+              ),
+              title: "Soru Sor",
+              desc: "Anonim olarak sorunuzu yazın",
+            },
+            {
+              step: "02",
+              icon: (
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5}
+                    d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+              ),
+              title: "24 Saatte Yanıt",
+              desc: "Uzman psikolog inceler ve yanıtlar",
+            },
+            {
+              step: "03",
+              icon: (
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5}
+                    d="M3.98 8.223A10.477 10.477 0 001.934 12C3.226 16.338 7.244 19.5 12 19.5c.993 0 1.953-.138 2.863-.395M6.228 6.228A10.45 10.45 0 0112 4.5c4.756 0 8.773 3.162 10.065 7.498a10.523 10.523 0 01-4.293 5.774M6.228 6.228L3 3m3.228 3.228l3.65 3.65m7.894 7.894L21 21m-3.228-3.228l-3.65-3.65m0 0a3 3 0 10-4.243-4.243m4.242 4.242L9.88 9.88"/>
+                </svg>
+              ),
+              title: "Gizli Kal",
+              desc: "Kimliğiniz hiçbir zaman paylaşılmaz",
+            },
           ].map((item) => (
-            <div key={item.step} className="bg-white rounded-2xl border border-slate-100 shadow-sm p-4 text-center">
-              <div className="w-10 h-10 rounded-xl bg-brand-50 text-brand-700 flex items-center justify-center mx-auto mb-3">
+            <div key={item.step} className="bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow duration-200 p-4 text-center">
+              <div className="w-11 h-11 rounded-xl bg-brand-50 text-brand-700 flex items-center justify-center mx-auto mb-3">
                 {item.icon}
               </div>
               <p className="font-black text-slate-900 text-sm mb-1">{item.title}</p>
@@ -343,17 +427,17 @@ export default function SoruSorClient({ sorular }: { sorular: SoruCevap[] }) {
       {/* Soru & Cevap Listesi */}
       <section className="max-w-2xl mx-auto px-4 py-10">
         <div className="flex items-center gap-2 flex-wrap mb-6">
-          <span className="text-sm font-bold text-slate-600 mr-1">Önceki Sorular</span>
+          <span className="text-sm font-black text-slate-700">Önceki Sorular</span>
           <div className="flex flex-wrap gap-1.5 ml-auto">
             {KATEGORILER.map((k) => (
               <button
                 key={k.slug}
                 onClick={() => setAktifFiltre(k.slug as typeof aktifFiltre)}
-                className="px-3 py-1.5 rounded-full text-xs font-semibold transition-all duration-150 cursor-pointer"
+                className="px-3 py-1.5 rounded-full text-xs font-semibold transition-all duration-150 cursor-pointer hover:-translate-y-0.5"
                 style={
                   aktifFiltre === k.slug
                     ? { background: "var(--color-brand-700)", color: "#fff" }
-                    : { background: "#fff", color: "#64748b", border: "1px solid #e2e8f0" }
+                    : { background: "#fff", color: "#64748b", border: "1.5px solid #e2e8f0" }
                 }
               >
                 {k.label}
@@ -370,17 +454,19 @@ export default function SoruSorClient({ sorular }: { sorular: SoruCevap[] }) {
             return (
               <div
                 key={item.id}
-                className="bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden transition-shadow hover:shadow-md"
+                className="bg-white rounded-2xl border-2 border-slate-100 shadow-sm overflow-hidden transition-all duration-200 hover:border-slate-200 hover:shadow-md"
               >
                 <button
                   className="w-full text-left p-5 flex gap-4 items-start cursor-pointer"
                   onClick={() => setAcikKart(acik ? null : item.id)}
                 >
                   <div
-                    className="w-8 h-8 rounded-full shrink-0 flex items-center justify-center text-xs font-bold mt-0.5"
-                    style={{ background: renk.bg, color: renk.text }}
+                    className="w-8 h-8 rounded-full shrink-0 flex items-center justify-center mt-0.5"
+                    style={{ background: renk.bg, border: `1.5px solid ${renk.border}` }}
                   >
-                    S
+                    <span style={{ color: renk.text }}>
+                      <KatIcon slug={item.category} size={14} />
+                    </span>
                   </div>
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-2 mb-1.5">
@@ -408,20 +494,23 @@ export default function SoruSorClient({ sorular }: { sorular: SoruCevap[] }) {
                 {acik && (
                   <div className="px-5 pb-5 border-t border-slate-50">
                     <div className="flex gap-3 items-start pt-4">
-                      <div className="w-8 h-8 rounded-full bg-brand-50 border border-brand-100 shrink-0 flex items-center justify-center text-xs font-bold text-brand-700 mt-0.5">
-                        U
+                      <div className="w-8 h-8 rounded-full bg-brand-50 border border-brand-100 shrink-0 flex items-center justify-center mt-0.5">
+                        <svg className="w-4 h-4 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8}
+                            d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                        </svg>
                       </div>
                       <div className="flex-1">
-                        <p className="text-xs font-semibold text-brand-600 mb-1.5">{item.uzman}</p>
+                        <p className="text-xs font-black text-brand-600 mb-1.5">{item.uzman}</p>
                         <p className="text-slate-600 text-sm leading-loose">{item.cevap}</p>
                         <div className="flex items-center gap-4 mt-4 pt-3 border-t border-slate-50">
                           <button
                             onClick={() => handleOy(item.id, item.begeni)}
                             disabled={oyVerilen.has(item.id)}
-                            className={`flex items-center gap-1.5 text-xs font-medium transition-all duration-150 px-3 py-1.5 rounded-lg border cursor-pointer ${
+                            className={`flex items-center gap-1.5 text-xs font-semibold transition-all duration-150 px-3 py-1.5 rounded-lg border cursor-pointer ${
                               oyVerilen.has(item.id)
                                 ? "bg-brand-50 text-brand-700 border-brand-200 cursor-default"
-                                : "bg-white text-slate-500 border-slate-200 hover:bg-brand-50 hover:text-brand-700 hover:border-brand-200"
+                                : "bg-white text-slate-500 border-slate-200 hover:bg-brand-50 hover:text-brand-700 hover:border-brand-200 hover:-translate-y-0.5"
                             }`}
                           >
                             <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
@@ -431,9 +520,12 @@ export default function SoruSorClient({ sorular }: { sorular: SoruCevap[] }) {
                           </button>
                           <Link
                             href="/konya/psikologlar"
-                            className="text-xs font-semibold text-brand-600 hover:text-brand-800 transition-colors ml-auto"
+                            className="text-xs font-black text-brand-600 hover:text-brand-800 transition-colors ml-auto flex items-center gap-1"
                           >
-                            Uzmanla Görüş →
+                            Uzmanla Görüş
+                            <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                            </svg>
                           </Link>
                         </div>
                       </div>
@@ -448,15 +540,19 @@ export default function SoruSorClient({ sorular }: { sorular: SoruCevap[] }) {
 
       {/* SSS */}
       <section className="max-w-2xl mx-auto px-4 pb-14">
-        <p className="text-xs font-black uppercase tracking-widest text-brand-600 mb-5">Sık Sorulan Sorular</p>
+        <div className="flex items-center gap-3 mb-5">
+          <div className="h-px flex-1 bg-slate-200" />
+          <p className="text-xs font-black uppercase tracking-widest text-brand-600">Sık Sorulan Sorular</p>
+          <div className="h-px flex-1 bg-slate-200" />
+        </div>
         <div className="space-y-2">
           {FAQ.map((faq, i) => (
-            <div key={i} className="bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden">
+            <div key={i} className="bg-white rounded-2xl border-2 border-slate-100 shadow-sm overflow-hidden hover:border-slate-200 transition-colors duration-150">
               <button
                 className="w-full text-left px-5 py-4 flex items-center justify-between gap-4 cursor-pointer"
                 onClick={() => setAcikFaq(acikFaq === i ? null : i)}
               >
-                <p className="font-semibold text-slate-800 text-sm">{faq.soru}</p>
+                <p className="font-bold text-slate-800 text-sm">{faq.soru}</p>
                 <svg
                   className="w-4 h-4 text-slate-400 shrink-0 transition-transform duration-200"
                   style={{ transform: acikFaq === i ? "rotate(180deg)" : "rotate(0deg)" }}

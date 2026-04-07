@@ -5,14 +5,14 @@ import Link from "next/link";
 import type { PsychTest } from "@/types";
 
 const CATEGORIES = [
-  { slug: "hepsi",   label: "Tümü" },
-  { slug: "kaygı",   label: "Kaygı & Panik" },
+  { slug: "hepsi",     label: "Tümü" },
+  { slug: "kaygı",     label: "Kaygı & Panik" },
   { slug: "depresyon", label: "Depresyon" },
-  { slug: "ilişki",  label: "İlişki" },
-  { slug: "kişilik", label: "Kişilik" },
-  { slug: "travma",  label: "Travma" },
-  { slug: "dikkat",  label: "Dikkat & Odak" },
-  { slug: "stres",   label: "Stres" },
+  { slug: "ilişki",    label: "İlişki" },
+  { slug: "kişilik",   label: "Kişilik" },
+  { slug: "travma",    label: "Travma" },
+  { slug: "dikkat",    label: "Dikkat & Odak" },
+  { slug: "stres",     label: "Stres" },
 ];
 
 function TestIcon({ slug, color }: { slug: string; color: string }) {
@@ -37,8 +37,8 @@ function TestIcon({ slug, color }: { slug: string; color: string }) {
 
   return (
     <div
-      className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0"
-      style={{ background: color + "18" }}
+      className="w-12 h-12 rounded-2xl flex items-center justify-center shrink-0 transition-transform duration-200 group-hover:scale-110"
+      style={{ background: color + "18", border: `1.5px solid ${color}30` }}
     >
       <svg viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={1.7} className="w-5 h-5">
         <path strokeLinecap="round" strokeLinejoin="round" d={d} />
@@ -66,10 +66,12 @@ export default function TestlerClient({ tests }: Props) {
     <div className="max-w-4xl mx-auto px-4 py-10 space-y-8">
 
       {/* Uyarı */}
-      <div className="flex gap-3 items-start bg-amber-50 border border-amber-200 rounded-xl p-4">
-        <svg className="w-4 h-4 text-amber-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-          <path fillRule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clipRule="evenodd"/>
-        </svg>
+      <div className="flex gap-3 items-start bg-amber-50 border border-amber-200 rounded-2xl p-4 shadow-sm">
+        <div className="w-8 h-8 rounded-xl bg-amber-100 border border-amber-200 flex items-center justify-center shrink-0 mt-0.5">
+          <svg className="w-4 h-4 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z"/>
+          </svg>
+        </div>
         <p className="text-amber-800 text-sm leading-relaxed">
           Bu testler <strong>tanı koymaz</strong>, yalnızca genel bir değerlendirme sunar.
           Kesin tanı için bir klinik psikolog veya psikiyatrist ile görüşün.
@@ -88,10 +90,10 @@ export default function TestlerClient({ tests }: Props) {
             <button
               key={cat.slug}
               onClick={() => setActiveCategory(cat.slug)}
-              className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-sm font-medium border transition-all duration-150"
+              className="flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-semibold border-2 transition-all duration-200 cursor-pointer hover:-translate-y-0.5 hover:shadow-md"
               style={
                 isActive
-                  ? { background: "#1a3a5c", color: "#fff", borderColor: "#1a3a5c" }
+                  ? { background: "var(--color-brand-700)", color: "#fff", borderColor: "var(--color-brand-700)" }
                   : { background: "#fff", color: "#475569", borderColor: "#e2e8f0" }
               }
             >
@@ -115,37 +117,50 @@ export default function TestlerClient({ tests }: Props) {
       {showFeatured && featured && (
         <Link
           href={`/testler/${featured.slug}`}
-          className="group block bg-white rounded-2xl border border-cream-200 shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden"
+          className="group block bg-white rounded-3xl border-2 border-cream-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden"
         >
           <div className="flex flex-col sm:flex-row">
-            <div className="w-full sm:w-1.5 h-1.5 sm:h-auto shrink-0" style={{ background: featured.color }} />
-            <div className="flex-1 p-6 flex flex-col sm:flex-row gap-5 items-start">
+            {/* Sol accent bar */}
+            <div className="w-full sm:w-2 h-2 sm:h-auto shrink-0 rounded-t-3xl sm:rounded-t-none sm:rounded-l-3xl" style={{ background: featured.color }} />
+            <div className="flex-1 p-6 sm:p-8 flex flex-col sm:flex-row gap-5 items-start">
               <TestIcon slug={featured.slug} color={featured.color} />
               <div className="flex-1">
-                <div className="flex flex-wrap items-center gap-2 mb-1.5">
-                  <h2 className="text-lg font-bold text-slate-900 group-hover:text-brand-700 transition-colors">
+                <div className="flex flex-wrap items-center gap-2 mb-2">
+                  <h2 className="text-xl font-black text-slate-900 group-hover:text-brand-700 transition-colors">
                     {featured.title}
                   </h2>
                   {featured.scale && (
                     <span
-                      className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border"
+                      className="text-[10px] font-black uppercase tracking-wider px-2.5 py-1 rounded-lg border"
                       style={{ color: featured.color, borderColor: featured.color + "50", background: featured.color + "12" }}
                     >
                       {featured.scale}
                     </span>
                   )}
-                  <span className="text-[10px] font-bold bg-amber-100 text-amber-700 px-2 py-0.5 rounded-full">
+                  <span className="text-[10px] font-black bg-amber-100 text-amber-700 px-2.5 py-1 rounded-full">
                     Öne Çıkan
                   </span>
                 </div>
-                <p className="text-slate-500 text-sm leading-relaxed mb-4">{featured.description}</p>
+                <p className="text-slate-500 text-sm leading-relaxed mb-5">{featured.description}</p>
                 <div className="flex items-center gap-4">
-                  <span className="text-xs text-slate-400">{featured.questionCount} soru · ~{featured.estimatedMinutes} dakika</span>
+                  <div className="flex items-center gap-1.5 text-xs text-slate-400">
+                    <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    {featured.questionCount} soru
+                  </div>
+                  <div className="flex items-center gap-1.5 text-xs text-slate-400">
+                    <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    ~{featured.estimatedMinutes} dakika
+                  </div>
                   <span
-                    className="text-xs font-bold px-4 py-2 rounded-lg"
+                    className="text-sm font-black px-5 py-2 rounded-xl ml-auto transition-opacity duration-200 group-hover:opacity-90"
                     style={{ background: featured.color, color: "#fff" }}
                   >
-                    Testi Başlat →
+                    Testi Başlat
+                    <span className="ml-1.5">→</span>
                   </span>
                 </div>
               </div>
@@ -157,12 +172,19 @@ export default function TestlerClient({ tests }: Props) {
       {/* Test listesi */}
       <div>
         {showFeatured && (
-          <p className="text-xs font-bold uppercase tracking-widest text-slate-400 mb-3">
-            Tüm Testler — {tests.length} test
-          </p>
+          <div className="flex items-center gap-3 mb-4">
+            <div className="h-px flex-1 bg-cream-200" />
+            <p className="text-xs font-black uppercase tracking-widest text-slate-400">
+              Tüm Testler — {tests.length} test
+            </p>
+            <div className="h-px flex-1 bg-cream-200" />
+          </div>
         )}
         {filtered.length === 0 ? (
           <div className="bg-white rounded-2xl border border-cream-200 p-10 text-center">
+            <svg className="w-10 h-10 text-slate-300 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"/>
+            </svg>
             <p className="text-slate-400 text-sm">Bu kategoride henüz test yok.</p>
           </div>
         ) : (
@@ -171,7 +193,7 @@ export default function TestlerClient({ tests }: Props) {
               <Link
                 key={test.slug}
                 href={`/testler/${test.slug}`}
-                className="group bg-white rounded-2xl border border-cream-200 hover:border-slate-300 shadow-sm hover:shadow-md transition-all duration-200 p-5 flex items-center gap-4"
+                className="group bg-white rounded-2xl border-2 border-cream-200 hover:border-brand-200 shadow-sm hover:shadow-lg transition-all duration-200 hover:-translate-y-0.5 p-5 flex items-center gap-4 cursor-pointer"
               >
                 <TestIcon slug={test.slug} color={test.color} />
                 <div className="flex-1 min-w-0">
@@ -181,16 +203,20 @@ export default function TestlerClient({ tests }: Props) {
                     </h2>
                     {test.scale && (
                       <span
-                        className="text-[9px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded shrink-0 border"
+                        className="text-[9px] font-black uppercase tracking-wider px-1.5 py-0.5 rounded-lg shrink-0 border"
                         style={{ color: test.color, borderColor: test.color + "40", background: test.color + "10" }}
                       >
                         {test.scale}
                       </span>
                     )}
                   </div>
-                  <p className="text-xs text-slate-400 mt-1">{test.questionCount} soru · ~{test.estimatedMinutes} dk</p>
+                  <div className="flex items-center gap-3 mt-1.5">
+                    <span className="text-xs text-slate-400">{test.questionCount} soru</span>
+                    <span className="w-1 h-1 rounded-full bg-slate-300" />
+                    <span className="text-xs text-slate-400">~{test.estimatedMinutes} dk</span>
+                  </div>
                 </div>
-                <svg className="w-4 h-4 text-slate-300 group-hover:text-brand-500 transition-colors shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 text-slate-300 group-hover:text-brand-500 group-hover:translate-x-0.5 transition-all shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/>
                 </svg>
               </Link>
@@ -200,14 +226,22 @@ export default function TestlerClient({ tests }: Props) {
       </div>
 
       {/* Alt CTA */}
-      <div className="bg-white border border-cream-200 rounded-2xl p-7 flex flex-col sm:flex-row items-center gap-6">
-        <div className="flex-1">
-          <p className="font-bold text-slate-900 mb-1">Test sonrası uzman desteği alın</p>
-          <p className="text-sm text-slate-500 leading-relaxed">
+      <div className="relative overflow-hidden bg-brand-900 rounded-3xl p-8 flex flex-col sm:flex-row items-center gap-6">
+        <div className="absolute -top-10 -right-10 w-48 h-48 rounded-full bg-white/5 pointer-events-none" />
+        <div className="absolute -bottom-6 left-1/3 w-24 h-24 rounded-full bg-white/5 pointer-events-none" />
+        <div className="relative flex-1">
+          <p className="font-black text-white text-lg mb-1.5">Test sonrası uzman desteği alın</p>
+          <p className="text-brand-300 text-sm leading-relaxed">
             Sonuçlarınızı değerlendirmek için Konya&apos;daki lisanslı psikologlarla görüşün.
           </p>
         </div>
-        <Link href="/konya/psikologlar" className="btn-primary whitespace-nowrap shrink-0">
+        <Link
+          href="/konya/psikologlar"
+          className="relative shrink-0 inline-flex items-center gap-2 bg-white text-brand-900 font-black text-sm px-6 py-3 rounded-xl hover:bg-cream-100 transition-colors whitespace-nowrap cursor-pointer"
+        >
+          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+          </svg>
           Psikolog Bul
         </Link>
       </div>
