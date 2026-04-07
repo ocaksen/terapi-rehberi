@@ -36,41 +36,6 @@
       "approaches": []
     },
     {
-      "id": "2",
-      "slug": "fatih-ugur",
-      "name": "Fatih Uğur",
-      "title": "Klinik Psikolog",
-      "city": "konya",
-      "district": "Selçuklu",
-      "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
-      "shortBio": "Klinik Psikolog olarak Konya Selçuklu bölgesinde hizmet vermektedir.",
-      "longBio": [
-        "Fatih Uğur, Konya Selçuklu bölgesinde psikolog ve danışmanlık hizmetleri sunmaktadır."
-      ],
-      "services": [
-        "bireysel-terapi",
-        "cift-terapisi",
-        "aile-terapisi",
-        "emdr"
-      ],
-      "sessionFee": null,
-      "sessionType": [
-        "Yüz Yüze",
-        "Online"
-      ],
-      "experience": null,
-      "phone": null,
-      "appointmentUrl": "https://www.optimumpsikoloji.com.tr/klinik-psikolog-fatih-ugur/",
-      "featured": false,
-      "education": [],
-      "certifications": [],
-      "languages": [
-        "Türkçe"
-      ],
-      "officeAddress": "Selçuklu, Konya",
-      "approaches": []
-    },
-    {
       "id": "3",
       "slug": "nazli-caliskan",
       "name": "Nazlı Çalışkan",
@@ -673,41 +638,6 @@
       "experience": null,
       "phone": null,
       "appointmentUrl": "https://www.doktortakvimi.com/mehri-matin/psikoloji/konya",
-      "featured": false,
-      "education": [],
-      "certifications": [],
-      "languages": [
-        "Türkçe"
-      ],
-      "officeAddress": "Selçuklu, Konya",
-      "approaches": []
-    },
-    {
-      "id": "53",
-      "slug": "meryem-demircan",
-      "name": "Meryem Demircan",
-      "title": "Psikolog",
-      "city": "konya",
-      "district": "Selçuklu",
-      "image": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
-      "shortBio": "Psikolog olarak Konya Selçuklu bölgesinde hizmet vermektedir.",
-      "longBio": [
-        "Meryem Demircan, Konya Selçuklu bölgesinde psikolog ve danışmanlık hizmetleri sunmaktadır."
-      ],
-      "services": [
-        "bireysel-terapi",
-        "cift-terapisi",
-        "aile-terapisi",
-        "emdr"
-      ],
-      "sessionFee": null,
-      "sessionType": [
-        "Yüz Yüze",
-        "Online"
-      ],
-      "experience": null,
-      "phone": null,
-      "appointmentUrl": "https://www.optimumpsikoloji.com.tr/konya-psikolog-aile-danismani/",
       "featured": false,
       "education": [],
       "certifications": [],
