@@ -1,11 +1,12 @@
 import type { MetadataRoute } from "next";
-import { getAllExperts, getAllBlogPosts, getAllServices } from "@/lib/data";
+import { getAllExperts, getAllServices } from "@/lib/data";
+import { getAllBlogPostsFromFiles } from "@/lib/blog.server";
 
 const BASE = "https://www.terapirehberi.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const experts = getAllExperts();
-  const posts = getAllBlogPosts();
+  const posts = getAllBlogPostsFromFiles();
   const services = getAllServices();
 
   const staticRoutes: MetadataRoute.Sitemap = [
@@ -34,8 +35,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const expertRoutes: MetadataRoute.Sitemap = experts.map((e) => ({
     url: `${BASE}/uzman/${e.slug}`,
     lastModified: new Date(),
-    changeFrequency: "weekly",
-    priority: 0.7,
+    changeFrequency: "monthly",
+    priority: e.featured ? 0.8 : 0.7,
   }));
 
   const blogRoutes: MetadataRoute.Sitemap = posts.map((p) => ({

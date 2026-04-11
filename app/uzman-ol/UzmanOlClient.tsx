@@ -60,7 +60,7 @@ const BENEFITS = [
 const STEPS = [
   { no: "01", title: "Formu Doldurun", desc: "5 dakikada başvuru formunu tamamlayın. Mesleki bilgilerinizi ve uzmanlık alanlarınızı girin." },
   { no: "02", title: "Doğrulama", desc: "Ekibimiz diploma ve Sağlık Bakanlığı sicilinizi 48 saat içinde doğrular, sizi arar." },
-  { no: "03", title: "Profiliniz Yayına Girer", desc: "Aylık listeleme ücretini ödediğinizde profiliniz anında yayına alınır." },
+  { no: "03", title: "Profiliniz Yayına Girer", desc: "İlk 3 ay ücretsiz olarak profiliniz yayına alınır. Sonrasında aylık sabit ücret, komisyon yok." },
 ];
 
 interface FormData {
@@ -185,7 +185,7 @@ export default function UzmanOlClient() {
           <p className="flex gap-2 items-center"><span>✅</span> Başvuru alındı</p>
           <p className="flex gap-2 items-center"><span>⏳</span> Diploma / Sağlık Bakanlığı doğrulama</p>
           <p className="flex gap-2 items-center"><span>⏳</span> Profil oluşturma görüşmesi</p>
-          <p className="flex gap-2 items-center"><span>⏳</span> Ödeme bağlantısı → Yayına alma</p>
+          <p className="flex gap-2 items-center"><span>⏳</span> İlk 3 ay ücretsiz — profil yayına alınır</p>
         </div>
         <Link href="/" className="btn-primary">Ana Sayfaya Dön</Link>
       </div>
@@ -286,6 +286,34 @@ export default function UzmanOlClient() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* ══════════════════════════════════════
+          FİYATLANDIRMA + SOSYAL KANIT
+      ══════════════════════════════════════ */}
+      <section className="py-12 px-4 bg-cream-50 border-y border-cream-200">
+        <div className="max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
+            <div className="bg-white rounded-2xl border border-brand-100 p-5 text-center shadow-sm">
+              <p className="text-3xl font-black text-brand-700 mb-1">3 Ay</p>
+              <p className="text-sm font-semibold text-slate-700">Ücretsiz Deneme</p>
+              <p className="text-xs text-slate-400 mt-1">Kredi kartı gerekmez</p>
+            </div>
+            <div className="bg-brand-700 rounded-2xl p-5 text-center shadow-sm">
+              <p className="text-3xl font-black text-white mb-1">%0</p>
+              <p className="text-sm font-semibold text-brand-200">Komisyon</p>
+              <p className="text-xs text-brand-300 mt-1">Tüm gelir size kalır</p>
+            </div>
+            <div className="bg-white rounded-2xl border border-brand-100 p-5 text-center shadow-sm">
+              <p className="text-3xl font-black text-brand-700 mb-1">48 sa</p>
+              <p className="text-sm font-semibold text-slate-700">Onay Süresi</p>
+              <p className="text-xs text-slate-400 mt-1">Diploma doğrulama</p>
+            </div>
+          </div>
+          <p className="text-center text-xs text-slate-400">
+            3 aylık deneme sonrasında aylık sabit listeleme ücreti alınır — randevu başına komisyon yoktur.
+          </p>
         </div>
       </section>
 

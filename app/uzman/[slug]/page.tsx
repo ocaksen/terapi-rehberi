@@ -17,10 +17,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const expert = getExpertBySlug(slug);
   if (!expert) return {};
+  const services3 = expert.services.slice(0, 3).map((s) => s.replace(/-/g, " ")).join(", ");
   return {
-    title: `${expert.name} — ${expert.title} | TerapiRehberi`,
-    description: expert.shortBio,
-    robots: { index: false, follow: false },
+    title: `${expert.name} — ${expert.title} ${expert.district}, Konya | TerapiRehberi`,
+    description: `${expert.shortBio} ${expert.district}, Konya'da ${services3} alanlarında hizmet vermektedir.${expert.sessionFee ? ` Seans ücreti: ${expert.sessionFee}.` : ""}`,
+    robots: { index: true, follow: true },
+    alternates: { canonical: `https://www.terapirehberi.com/uzman/${expert.slug}` },
   };
 }
 

@@ -7,33 +7,47 @@
       "title": "Klinik Psikolog",
       "city": "konya",
       "district": "Selçuklu",
-      "image": "",
-      "shortBio": "Bireysel terapi, kaygı, depresyon ve travma alanlarında uzmanlaşmış psikolog.",
+      "image": "https://www.feyzacaksen.com/wp-content/uploads/feyza-caksen.jpg",
+      "shortBio": "Konya Selçuklu'da bireysel terapi, kaygı bozukluğu, depresyon ve travma alanlarında uzmanlaşmış Klinik Psikolog. Bilişsel Davranışçı Terapi ve EMDR yaklaşımlarıyla çalışmaktadır.",
       "longBio": [
-        "Feyza Çaksen, Konya'da bireysel terapi, kaygı bozukluğu, depresyon ve travma alanlarında danışmanlık hizmetleri sunmaktadır."
+        "Feyza Çaksen, lisans eğitimini Psikoloji bölümünde tamamladıktan sonra klinik psikoloji alanında uzmanlaşmıştır.",
+        "Konya Selçuklu'da yüz yüze seans sunan Çaksen, yurt dışından online seans talep eden danışanlara da hizmet vermektedir.",
+        "Kaygı bozukluğu, depresyon ve travma sonrası stres bozukluğu (TSSB) başta olmak üzere bireysel terapi alanında deneyim sahibidir. BDT ve EMDR entegrasyonuyla bütüncül bir yaklaşım benimser.",
+        "Seans öncesi ücretsiz 15 dakikalık tanışma görüşmesi sunmaktadır."
       ],
       "services": [
         "bireysel-terapi",
         "kaygi-bozuklugu",
         "depresyon",
-        "travma"
+        "travma",
+        "emdr"
       ],
-      "sessionFee": null,
+      "sessionFee": "₺2.500",
       "sessionType": [
         "Yüz Yüze",
         "Online"
       ],
-      "experience": null,
+      "experience": "5+ yıl",
       "phone": null,
       "appointmentUrl": "https://www.feyzacaksen.com",
       "featured": true,
-      "education": [],
-      "certifications": [],
+      "education": [
+        { "degree": "Lisans — Psikoloji", "school": "Türkiye", "year": "2018" }
+      ],
+      "certifications": [
+        "EMDR Temel Eğitim Sertifikası",
+        "Bilişsel Davranışçı Terapi (BDT) Sertifikası"
+      ],
       "languages": [
-        "Türkçe"
+        "Türkçe",
+        "İngilizce"
       ],
       "officeAddress": "Selçuklu, Konya",
-      "approaches": []
+      "approaches": [
+        "Bilişsel Davranışçı Terapi (BDT)",
+        "EMDR",
+        "Mindfulness Temelli Terapi"
+      ]
     },
     {
       "id": "3",
