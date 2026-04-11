@@ -4,6 +4,11 @@ import matter from "gray-matter";
 
 const BLOG_DIR = path.join(process.cwd(), "content", "blog");
 
+export interface BlogFaq {
+  soru: string;
+  cevap: string;
+}
+
 export interface BlogPostFull {
   slug: string;
   title: string;
@@ -16,6 +21,7 @@ export interface BlogPostFull {
   image?: string;
   body: string;
   readTime: string;
+  faqs?: BlogFaq[];
 }
 
 function estimateReadTime(body: string): string {
@@ -93,6 +99,7 @@ export function getBlogPostBySlugFromFile(
     image: resolveImage(slug, data.image),
     body: content,
     readTime: estimateReadTime(content),
+    faqs: data.faqs ?? [],
   };
 }
 

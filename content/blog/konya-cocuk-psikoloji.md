@@ -6,6 +6,13 @@ keywords: ["konya çocuk psikoloji", "konya çocuk psikoloğu", "çocuk psikoloj
 category: "Çocuk"
 author: "TerapiRehberi Editör"
 publishedAt: "2026-04-02"
+faqs:
+  - soru: "Çocuğumu psikoloğa götürmem gerekiyor mu?"
+    cevap: "Belirtiler birden fazla alanda (davranış, duygu, gelişim) kendini gösteriyorsa ve iki haftayı aşıyorsa uzman değerlendirmesi önerilir. Erken müdahale, sorunun kronikleşmesini önler."
+  - soru: "Psikolog mu, pedagog mu tercih etmeliyim?"
+    cevap: "Kaygı, depresyon veya travma gibi klinik sorunlarda klinik psikolog tercih edilir. Gelişimsel takip, oyun terapisi ve ebeveyn danışmanlığı için pedagog yeterli ve uygundur."
+  - soru: "Konya'da çocuk psikoloğu ne kadar tutar?"
+    cevap: "2026 itibarıyla Konya'da çocuk bireysel seansları 900 TL ile 3.000 TL arasında değişiyor. Pedagog seansları genellikle daha uygun fiyatlıdır."
 ---
 
 **Konya çocuk psikolojisi** alanında uzman arayan ebeveynlerin sayısı her yıl artıyor. Ama hangi belirtide uzman aranmalı, psikolog mu pedagog mu tercih edilmeli, ilk seansta ne olur? Bu sorular çoğu ebeveyn için belirsiz kalıyor.

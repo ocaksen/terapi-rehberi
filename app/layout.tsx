@@ -49,6 +49,14 @@ export const metadata: Metadata = {
     title: "TerapiRehberi — Konya'da Psikolog Bul",
     description:
       "Konya'da lisanslı psikolog, terapist ve psikolojik danışman bul. Kimlik ve diploma doğrulamalı uzmanlar.",
+    images: [
+      {
+        url: "/images/aile-section.png",
+        width: 1200,
+        height: 630,
+        alt: "TerapiRehberi — Konya'da Psikolog Bul",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
@@ -58,6 +66,24 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: "https://www.terapirehberi.com",
+  },
+};
+
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "TerapiRehberi",
+  url: "https://www.terapirehberi.com",
+  logo: "https://www.terapirehberi.com/images/aile-section.png",
+  sameAs: [
+    "https://www.psikologcaksen.com",
+    "https://www.terapitime.com",
+    "https://www.caksendanismanlik.com",
+  ],
+  contactPoint: {
+    "@type": "ContactPoint",
+    contactType: "customer service",
+    availableLanguage: "Turkish",
   },
 };
 
@@ -79,14 +105,31 @@ const localBusinessSchema = {
   "@type": "LocalBusiness",
   name: "TerapiRehberi",
   url: "https://www.terapirehberi.com",
-  description: "Konya'da güvenilir psikolog ve terapist rehberi.",
+  description: "Konya'da güvenilir psikolog ve terapist rehberi. Kimlik ve diploma doğrulamalı 50+ uzman.",
   areaServed: [
     { "@type": "City", name: "Konya" },
     { "@type": "City", name: "Meram" },
     { "@type": "City", name: "Selçuklu" },
     { "@type": "City", name: "Karatay" },
   ],
-  address: { "@type": "PostalAddress", addressLocality: "Konya", addressCountry: "TR" },
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Konya",
+    addressRegion: "Konya",
+    postalCode: "42250",
+    addressCountry: "TR",
+  },
+  openingHoursSpecification: {
+    "@type": "OpeningHoursSpecification",
+    dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    opens: "09:00",
+    closes: "18:00",
+  },
+  sameAs: [
+    "https://www.psikologcaksen.com",
+    "https://www.terapitime.com",
+    "https://www.caksendanismanlik.com",
+  ],
 };
 
 export default function RootLayout({
@@ -100,6 +143,7 @@ export default function RootLayout({
         {/* Preconnect — dış kaynak bağlantılarını önceden kur */}
         <link rel="preconnect" href="https://images.unsplash.com" />
         <link rel="preconnect" href="https://randomuser.me" />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-2TP7B2CGPH" />

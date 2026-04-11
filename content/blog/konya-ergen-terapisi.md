@@ -6,6 +6,13 @@ keywords: ["konya ergen terapisi", "ergen psikolojisi konya", "konya ergen psiko
 category: "Ergen"
 author: "TerapiRehberi Editör"
 publishedAt: "2026-04-02"
+faqs:
+  - soru: "Ergenimi terapiye nasıl ikna ederim?"
+    cevap: "Zorlama yerine merak uyandırmak işe yarar. 'Bir kez gidip bakalım, beğenmezsen devam etmek zorunda değilsin' yaklaşımı ve psikologu birlikte araştırmak direnci azaltır."
+  - soru: "Ergen terapisinde ebeveyne bilgi veriliyor mu?"
+    cevap: "Hayır, gizlilik temel ilkedir. Uzman seans içeriğini ebeveynle paylaşmaz. Sadece kişiyi tehlikeye atan bilgiler (kendine veya başkasına zarar) paylaşım gerektirir."
+  - soru: "Konya'da ergen terapisi kaç seans sürer?"
+    cevap: "Duruma göre 10-20 seans arasında değişir. Kaygı gibi belirli sorunlarda 8-12 seans yeterli olabilir. Kimlik ve aile dinamiği odaklı süreçler daha uzun tutulabilir."
 ---
 
 **Konya ergen terapisi** alanında artan talep, ergenlik döneminin ne denli karmaşık bir süreç olduğunu yansıtıyor. Araştırmalar, ruhsal sağlık sorunlarının yüzde 75'inin 24 yaş öncesinde başladığını ortaya koyuyor. Bu erken dönemde alınan destek, uzun vadede büyük fark yaratıyor.

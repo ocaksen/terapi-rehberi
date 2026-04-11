@@ -6,6 +6,13 @@ keywords: ["konya aile terapisi", "konya çift terapisi", "aile terapisi konya",
 category: "Aile"
 author: "TerapiRehberi Editör"
 publishedAt: "2026-04-01"
+faqs:
+  - soru: "Aile terapisine gitmek için ilişkinin çok kötü olması mı gerekir?"
+    cevap: "Hayır. İletişim sorunları, sık tekrar eden tartışmalar veya duygusal uzaklaşma terapiye başvurmak için yeterli nedendir. Erken başvurmak süreci hem kısaltır hem kolaylaştırır."
+  - soru: "Konya'da aile terapisi kaç seans sürer?"
+    cevap: "Genellikle 8-20 seans arasında değişir. Çatışma yönetimi gibi belirli sorunlarda 8-10 seans yeterli olabilir. Kronik güven sorunları veya boşanma krizinde süreç daha uzun tutulabilir."
+  - soru: "Eşim terapiye gelmek istemiyorsa ne yapmalıyım?"
+    cevap: "Yalnız başlayabilirsiniz. Bireysel aile veya ilişki terapisi, eş olmadan da sistemi değiştirmeye başlar. Bir tarafın değişimi ilişki dinamiklerini olumlu yönde etkiler."
 ---
 
 **Konya aile terapisi** için başvuran çiftlerin ve ailelerin büyük çoğunluğu benzer bir cümleyle geliyor: "Çok erken gelmemiş miyiz?" Ama araştırmalar tam tersini söylüyor — en büyük hata geç kalmak.

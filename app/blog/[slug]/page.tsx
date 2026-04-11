@@ -6,6 +6,7 @@ import {
   getAllBlogSlugsFromFiles,
   getBlogPostBySlugFromFile,
   getAllBlogPostsFromFiles,
+  type BlogFaq,
 } from "@/lib/blog.server";
 
 interface Props {
@@ -190,6 +191,50 @@ export default async function BlogPostPage({ params }: Props) {
   const post = getBlogPostBySlugFromFile(slug);
   if (!post) notFound();
 
+  const siteUrl = "https://www.terapirehberi.com";
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Ana Sayfa", item: siteUrl },
+      { "@type": "ListItem", position: 2, name: "Blog", item: `${siteUrl}/blog` },
+      { "@type": "ListItem", position: 3, name: post.title, item: `${siteUrl}/blog/${slug}` },
+    ],
+  };
+
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.title,
+    description: post.description,
+    image: post.image ? `${siteUrl}${post.image}` : `${siteUrl}/images/aile-section.png`,
+    datePublished: post.publishedAt,
+    dateModified: post.publishedAt,
+    author: {
+      "@type": "Organization",
+      name: "TerapiRehberi",
+      url: siteUrl,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "TerapiRehberi",
+      url: siteUrl,
+      logo: { "@type": "ImageObject", url: `${siteUrl}/images/aile-section.png` },
+    },
+    mainEntityOfPage: { "@type": "WebPage", "@id": `${siteUrl}/blog/${slug}` },
+  };
+
+  const faqSchema = post.faqs && post.faqs.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: post.faqs.map((faq: BlogFaq) => ({
+      "@type": "Question",
+      name: faq.soru,
+      acceptedAnswer: { "@type": "Answer", text: faq.cevap },
+    })),
+  } : null;
+
   const relatedPosts = getAllBlogPostsFromFiles()
     .filter((p) => p.slug !== slug)
     .slice(0, 3);
@@ -202,6 +247,11 @@ export default async function BlogPostPage({ params }: Props) {
 
   return (
     <div className="min-h-screen bg-cream-50">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      {faqSchema && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      )}
 
       {/* ── Hero başlık ── */}
       <div className="bg-white border-b border-cream-200 py-12 px-4">

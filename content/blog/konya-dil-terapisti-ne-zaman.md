@@ -6,6 +6,13 @@ keywords: ["konya dil terapisti", "konya dil ve konuşma terapisi", "çocuk konu
 category: "Çocuk"
 author: "TerapiRehberi Editör"
 publishedAt: "2026-04-03"
+faqs:
+  - soru: "Çocuğum kaç yaşında hâlâ konuşmuyorsa uzman aranmalı?"
+    cevap: "18 ayda 10'dan az kelimesi varsa veya 24 ayda iki kelimeli cümle kuramıyorsa Konya dil terapisti değerlendirmesi önerilir. Herhangi bir konuşma kaybı ise derhal değerlendirmeyi gerektirir."
+  - soru: "Dil gecikmesi kendiliğinden geçer mi?"
+    cevap: "Hafif gecikmelerde zaman zaman kendiliğinden ilerleme olabilir. Ancak belirgin gecikmelerde beklemek süreci uzatır. Değerlendirme seansı doğru yönlendirme için yeterli bilgiyi sağlar."
+  - soru: "Konya'da dil terapisi kaç seans sürer?"
+    cevap: "Sorunun türüne göre değişir. Hafif artikülasyon sorunlarında 8-12 seans yeterli olabilir. Dil gecikmesi ve kekemelikte süreç 3-6 ay ve üzerine çıkabilir."
 ---
 
 **Konya dil terapisti** arayan ebeveynlerin büyük çoğunluğu aynı soruyla geliyor: "Beklememem mi gerekiyordu?" Çocuklarda konuşma gecikmesi aileler tarafından çoğunlukla "büyüyünce geçer" beklentisiyle izleniyor. Ama erken müdahale, bu alandaki en güçlü araç.

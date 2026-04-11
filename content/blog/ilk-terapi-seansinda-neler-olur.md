@@ -6,6 +6,13 @@ keywords: ["ilk terapi seansı", "terapiye nasıl başlanır", "psikolog ilk gö
 category: "Rehber"
 author: "TerapiRehberi Editör"
 publishedAt: "2026-04-06"
+faqs:
+  - soru: "İlk terapi seansında ne sorulur?"
+    cevap: "Terapist ne zamandır bu konuyla mücadele ettiğinizi, hayatınızda şu an neler olduğunu ve terapiden ne beklediğinizi sorar. Bu sorular sizi köşeye sıkıştırmak için değil, doğru yol haritasını çıkarmak içindir."
+  - soru: "İlk seans için hazırlanmam gerekiyor mu?"
+    cevap: "Hayır. Ne söyleyeceğinizi bilmeden gelen insanlar da seanstan memnun ayrılır. Terapistin işi tam da bu boşluğu birlikte doldurmaktır."
+  - soru: "İlk seanstan sonra iyi hissetmek zorunda mıyım?"
+    cevap: "Hayır. Çoğu insan ilk seanstan hem rahatlamış hem de yorgun çıkar. Uzun süredir taşıdığınız bir şeyi ilk kez yüksek sesle söylemek duygusal olarak yorucu olabilir. İlk seans bir başlangıç noktasıdır."
 ---
 
 Çoğu insan ilk seansa gitmeden önce tam olarak ne olacağını bilmiyor. Oysa süreci anlamak, o ilk adımı atmayı çok daha kolaylaştırıyor.

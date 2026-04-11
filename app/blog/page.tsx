@@ -8,11 +8,21 @@ export const metadata: Metadata = {
   alternates: { canonical: "/blog" },
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Ana Sayfa", item: "https://www.terapirehberi.com" },
+    { "@type": "ListItem", position: 2, name: "Blog", item: "https://www.terapirehberi.com/blog" },
+  ],
+};
+
 export default function BlogPage() {
   const posts = getAllBlogPostsFromFiles();
 
   return (
     <div className="min-h-screen bg-cream-50">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <div className="bg-white border-b border-cream-200 py-12 px-4">
         <div className="max-w-5xl mx-auto">
           <p className="section-label mb-2">Rehber İçerik</p>

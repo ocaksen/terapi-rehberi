@@ -24,6 +24,16 @@ const SERVICE_LABELS: Record<string, string> = {
 
 const DISTRICT_ORDER = ["Meram", "Selçuklu", "Karatay", "Ereğli"];
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Ana Sayfa", item: "https://www.terapirehberi.com" },
+    { "@type": "ListItem", position: 2, name: "Konya", item: "https://www.terapirehberi.com/konya" },
+    { "@type": "ListItem", position: 3, name: "Psikologlar", item: "https://www.terapirehberi.com/konya/psikologlar" },
+  ],
+};
+
 export default function KonyaPsikologlarPage() {
   const experts = getExpertsByCity("konya");
 
@@ -39,8 +49,24 @@ export default function KonyaPsikologlarPage() {
     ...Object.keys(byDistrict).filter((d) => !DISTRICT_ORDER.includes(d)),
   ];
 
+  const itemListSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Konya Psikolog Listesi",
+    url: "https://www.terapirehberi.com/konya/psikologlar",
+    numberOfItems: experts.length,
+    itemListElement: experts.map((e, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: e.name,
+      url: `https://www.terapirehberi.com/uzman/${e.slug}`,
+    })),
+  };
+
   return (
     <div className="min-h-screen bg-cream-50">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
 
       {/* Başlık */}
       <div className="bg-white border-b border-cream-200 py-10 px-4">
@@ -122,13 +148,13 @@ export default function KonyaPsikologlarPage() {
           <h2 className="text-xl font-bold text-white mb-2">Sizi de Listeye Ekleyelim</h2>
           <p className="text-white/70 text-sm leading-relaxed mb-6 max-w-lg">
             Konya&apos;da hizmet veren psikolog ve terapistlerin tümünü bu rehberde toplamayı hedefliyoruz.
-            Profilinizin burada yer almasını istiyorsanız iletişime geçin — tamamen ücretsiz.
+            İlk 3 ay ücretsiz profil oluşturun, Konya&apos;da sizi arayan ailelere ulaşın.
           </p>
           <Link
-            href="/iletisim"
+            href="/uzman-ol"
             className="inline-flex items-center gap-2 bg-white text-brand-900 font-bold text-sm px-6 py-2.5 rounded-xl hover:bg-cream-100 transition-colors"
           >
-            Başvuru Yap
+            Ücretsiz Profil Oluştur
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6"/>
             </svg>
