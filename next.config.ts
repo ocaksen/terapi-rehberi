@@ -16,7 +16,7 @@ const securityHeaders = [
       "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com",
       "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
       "font-src 'self' https://fonts.gstatic.com",
-      "img-src 'self' data: blob: https://images.unsplash.com https://randomuser.me https://www.google-analytics.com",
+      "img-src 'self' data: blob: https://images.unsplash.com https://randomuser.me https://www.google-analytics.com https://www.feyzacaksen.com",
       "connect-src 'self' https://www.google-analytics.com",
       "frame-ancestors 'none'",
       "base-uri 'self'",
@@ -30,6 +30,8 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       { protocol: "https", hostname: "images.unsplash.com" },
       { protocol: "https", hostname: "randomuser.me" },
+      { protocol: "https", hostname: "www.feyzacaksen.com" },
+      { protocol: "https", hostname: "www.terapirehberi.com" },
     ],
   },
   experimental: {

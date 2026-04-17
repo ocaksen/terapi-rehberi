@@ -6,9 +6,9 @@ interface Props {
 
 export default async function AdminPage({ searchParams }: Props) {
   const { key } = await searchParams;
-  const adminKey = process.env.ADMIN_KEY ?? "admin123";
+  const adminKey = process.env.ADMIN_KEY;
 
-  if (key === adminKey) {
+  if (adminKey && key === adminKey) {
     redirect(`/admin/basvurular?key=${key}`);
   }
 

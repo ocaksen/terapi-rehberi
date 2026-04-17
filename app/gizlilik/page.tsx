@@ -4,7 +4,6 @@ export const metadata: Metadata = {
   title: "Gizlilik Politikası — TerapiRehberi",
   description: "TerapiRehberi gizlilik politikası. Kişisel verilerinizin nasıl toplandığı, kullanıldığı ve korunduğu hakkında bilgi.",
   alternates: { canonical: "https://www.terapirehberi.com/gizlilik" },
-  robots: { index: false },
 };
 
 export default function GizlilikPage() {

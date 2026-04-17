@@ -19,11 +19,11 @@ const lora = Lora({
 
 export const metadata: Metadata = {
   title: {
-    default: "TerapiRehberi — Konya'da Psikolog Bul",
+    default: "Konya Psikolog Bul 2026 | TerapiRehberi — Doğrulanmış 50+ Uzman",
     template: "%s | TerapiRehberi",
   },
   description:
-    "Konya'da lisanslı psikolog, terapist ve psikolojik danışman bul. Kimlik ve diploma doğrulamalı uzmanlar. Bireysel terapi, çift terapisi, ergen ve çocuk psikolojisi.",
+    "Konya'da lisanslı psikolog, terapist ve psikolojik danışman bul. 50+ kimlik ve diploma doğrulamalı uzman. Bireysel terapi, çift terapisi, ergen ve çocuk psikolojisi. Yüz yüze ve online seans.",
   metadataBase: new URL(
     process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.terapirehberi.com"
   ),
@@ -46,9 +46,9 @@ export const metadata: Metadata = {
     siteName: "TerapiRehberi",
     locale: "tr_TR",
     type: "website",
-    title: "TerapiRehberi — Konya'da Psikolog Bul",
+    title: "Konya Psikolog Bul 2026 | TerapiRehberi — 50+ Doğrulanmış Uzman",
     description:
-      "Konya'da lisanslı psikolog, terapist ve psikolojik danışman bul. Kimlik ve diploma doğrulamalı uzmanlar.",
+      "Konya'da lisanslı psikolog, terapist ve psikolojik danışman bul. 50+ kimlik ve diploma doğrulamalı uzman. Yüz yüze ve online seans.",
     images: [
       {
         url: "/images/aile-section.png",
@@ -60,9 +60,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "TerapiRehberi — Konya'da Psikolog Bul",
+    title: "Konya Psikolog Bul 2026 | TerapiRehberi — 50+ Doğrulanmış Uzman",
     description:
-      "Konya'da lisanslı psikolog, terapist ve psikolojik danışman bul. Kimlik ve diploma doğrulamalı uzmanlar.",
+      "Konya'da lisanslı psikolog, terapist ve psikolojik danışman bul. 50+ kimlik ve diploma doğrulamalı uzman.",
   },
   alternates: {
     canonical: "https://www.terapirehberi.com",

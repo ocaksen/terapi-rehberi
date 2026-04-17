@@ -25,9 +25,9 @@ interface Props {
 
 export default async function AdminBasvurularPage({ searchParams }: Props) {
   const { key } = await searchParams;
-  const adminKey = process.env.ADMIN_KEY ?? "admin123";
+  const adminKey = process.env.ADMIN_KEY;
 
-  if (key !== adminKey) {
+  if (!adminKey || key !== adminKey) {
     return (
       <div className="min-h-screen flex items-center justify-center text-red-600 font-semibold">
         Yetkisiz erişim

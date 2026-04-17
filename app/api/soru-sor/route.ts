@@ -2,14 +2,45 @@ import { NextRequest, NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
 
+const ALLOWED_KATEGORILER = new Set(["psikolog", "cocuk", "ergen", "aile"]);
+const MAX_SORU_LEN = 800;
+
+function esc(str: string): string {
+  return str
+    .replace(/&/g, "&amp;").replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+}
+
 export async function POST(req: NextRequest) {
   try {
+    // Content-Type kontrolü
+    const contentType = req.headers.get("content-type") ?? "";
+    if (!contentType.includes("application/json")) {
+      return NextResponse.json({ ok: false, error: "Geçersiz istek" }, { status: 400 });
+    }
+
     const data = await req.json();
+
+    // Soru zorunlu ve uzunluk limiti
+    const soru = String(data.soru ?? "").trim();
+    if (!soru || soru.length < 10) {
+      return NextResponse.json({ ok: false, error: "Soru en az 10 karakter olmalı" }, { status: 400 });
+    }
+    if (soru.length > MAX_SORU_LEN) {
+      return NextResponse.json({ ok: false, error: `Soru ${MAX_SORU_LEN} karakteri aşamaz` }, { status: 400 });
+    }
+
+    // Kategori whitelist kontrolü
+    const kategori = String(data.kategori ?? "psikolog").trim();
+    if (!ALLOWED_KATEGORILER.has(kategori)) {
+      return NextResponse.json({ ok: false, error: "Geçersiz kategori" }, { status: 400 });
+    }
+
     const entry = {
       id: Date.now().toString(),
       tarih: new Date().toISOString(),
-      kategori: data.kategori ?? "psikolog",
-      soru: data.soru ?? "",
+      kategori,
+      soru,
     };
 
     // Dosyaya kaydet
@@ -21,8 +52,8 @@ export async function POST(req: NextRequest) {
     existing.push(entry);
     fs.writeFileSync(filePath, JSON.stringify(existing, null, 2), "utf-8");
 
-    // Resend ile e-posta (opsiyonel)
-    const resendKey = process.env.RESEND_API_KEY;
+    // Resend ile e-posta — değerler escape edildi
+    const resendKey  = process.env.RESEND_API_KEY;
     const adminEmail = process.env.ADMIN_EMAIL ?? "info@terapirehberi.com";
     if (resendKey) {
       await fetch("https://api.resend.com/emails", {
@@ -31,8 +62,8 @@ export async function POST(req: NextRequest) {
         body: JSON.stringify({
           from: "TerapiRehberi <noreply@terapirehberi.com>",
           to: [adminEmail],
-          subject: `Yeni Soru: ${entry.soru.slice(0, 60)}...`,
-          html: `<h3>Yeni Soru Sor Başvurusu</h3><p><b>Kategori:</b> ${entry.kategori}</p><p><b>Soru:</b> ${entry.soru}</p><p><b>Tarih:</b> ${entry.tarih}</p>`,
+          subject: `Yeni Soru: ${esc(soru.slice(0, 60))}...`,
+          html: `<h3>Yeni Soru Sor Başvurusu</h3><p><b>Kategori:</b> ${esc(kategori)}</p><p><b>Soru:</b> ${esc(soru)}</p><p><b>Tarih:</b> ${entry.tarih}</p>`,
         }),
       });
     }

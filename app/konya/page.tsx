@@ -16,17 +16,25 @@ export const metadata: Metadata = {
   },
 };
 
-const konyaSchema = {
-  "@context": "https://schema.org",
-  "@type": "ItemList",
-  name: "Konya Psikolog Listesi",
-  description: "Konya'da lisanslı ve diploma doğrulamalı psikolog ve terapistler.",
-  url: "https://www.terapirehberi.com/konya",
-  itemListElement: [],
-};
+const BASE = "https://www.terapirehberi.com";
 
 export default function KonyaPage() {
   const experts = getExpertsByCity("konya");
+
+  const konyaSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Konya Psikolog Listesi",
+    description: "Konya'da lisanslı ve diploma doğrulamalı psikolog ve terapistler.",
+    url: `${BASE}/konya`,
+    numberOfItems: experts.length,
+    itemListElement: experts.map((e, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: e.name,
+      url: `${BASE}/uzman/${e.slug}`,
+    })),
+  };
 
   return (
     <>

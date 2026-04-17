@@ -80,6 +80,8 @@ export function getAllBlogPostsFromFiles(): Omit<BlogPostFull, "body">[] {
 export function getBlogPostBySlugFromFile(
   slug: string
 ): BlogPostFull | undefined {
+  // Path traversal koruması — yalnızca a-z, 0-9, tire kabul et
+  if (!/^[a-z0-9-]+$/.test(slug)) return undefined;
   const filePath = path.join(BLOG_DIR, `${slug}.md`);
   if (!fs.existsSync(filePath)) return undefined;
   const raw = fs.readFileSync(filePath, "utf-8").replace(/\r\n/g, "\n").replace(/\r/g, "\n");

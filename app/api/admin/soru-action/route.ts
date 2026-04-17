@@ -16,9 +16,15 @@ interface Soru {
 export async function POST(req: NextRequest) {
   try {
     const { id, action, cevap, uzman, key } = await req.json();
-    const adminKey = process.env.ADMIN_KEY ?? "admin123";
+    const adminKey = process.env.ADMIN_KEY;
 
-    if (key !== adminKey) {
+    // ADMIN_KEY env değişkeni tanımlı değilse admin işlemlerini kapat
+    if (!adminKey) {
+      console.error("ADMIN_KEY env değişkeni tanımlı değil");
+      return NextResponse.json({ ok: false, error: "Servis yapılandırılmamış" }, { status: 503 });
+    }
+
+    if (!key || key !== adminKey) {
       return NextResponse.json({ ok: false, error: "Yetkisiz" }, { status: 401 });
     }
 

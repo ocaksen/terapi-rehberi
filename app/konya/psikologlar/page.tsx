@@ -4,10 +4,16 @@ import { getExpertsByCity } from "@/lib/data";
 
 
 export const metadata: Metadata = {
-  title: "Konya Psikolog Listesi — TerapiRehberi",
+  title: "Konya Psikolog Bul 2026 — 50+ Doğrulanmış Uzman | TerapiRehberi",
   description:
-    "Konya'da hizmet veren psikolog ve terapistlerin güncel listesi. Meram, Selçuklu, Karatay ve ilçelerden uzmanlar. Bireysel terapi, çocuk psikolojisi, aile terapisi, EMDR.",
+    "Konya'da lisanslı psikolog ve terapist bul. Meram, Selçuklu, Karatay'dan 50+ doğrulanmış uzman. Bireysel terapi, çocuk psikolojisi, aile terapisi, EMDR. Yüz yüze ve online seans.",
+  keywords: ["konya psikolog", "konya terapist bul", "konya psikolog listesi 2026", "meram psikolog", "selçuklu psikolog", "karatay psikolog"],
   alternates: { canonical: "https://www.terapirehberi.com/konya/psikologlar" },
+  openGraph: {
+    title: "Konya Psikolog Bul 2026 — 50+ Doğrulanmış Uzman",
+    description: "Konya'da lisanslı psikolog ve terapist bul. 50+ doğrulanmış uzman, yüz yüze ve online seans.",
+    url: "https://www.terapirehberi.com/konya/psikologlar",
+  },
 };
 
 const SERVICE_LABELS: Record<string, string> = {

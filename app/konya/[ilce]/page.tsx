@@ -5,21 +5,23 @@ import { getAllExperts, getAllServices, getServiceBySlug } from "@/lib/data";
 import type { ServiceFaq } from "@/types";
 import IlceBentoClient from "./IlceBentoClient";
 
+const BASE = "https://www.terapirehberi.com";
+
 // İlçe bilgileri
 const ILCELER: Record<string, { name: string; description: string; nüfus: string }> = {
   meram: {
     name: "Meram",
-    description: "Meram ilçesinde bireysel terapi, çift terapisi ve EMDR alanında uzman psikologlar.",
+    description: "Konya Meram'da bireysel terapi, çift terapisi ve EMDR alanında lisanslı psikolog ve terapistler. 2026 güncel liste.",
     nüfus: "349.000+",
   },
   selcuklu: {
     name: "Selçuklu",
-    description: "Selçuklu ilçesinde kaygı, depresyon ve aile terapisi konularında deneyimli psikologlar.",
+    description: "Konya Selçuklu'da kaygı, depresyon ve aile terapisi konularında deneyimli lisanslı psikologlar. 2026 güncel liste.",
     nüfus: "703.000+",
   },
   karatay: {
     name: "Karatay",
-    description: "Karatay ilçesinde ergen psikolojisi ve bireysel danışmanlık alanında uzman psikologlar.",
+    description: "Konya Karatay'da ergen psikolojisi ve bireysel danışmanlık alanında lisanslı uzman psikologlar. 2026 güncel liste.",
     nüfus: "395.000+",
   },
 };
@@ -45,11 +47,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const service = getServiceBySlug(ilce);
   if (service) {
     return {
-      title: `Konya ${service.name} — Uzman Psikolog | TerapiRehberi`,
+      title: `Konya ${service.name} 2026 — Lisanslı Uzman Psikolog | TerapiRehberi`,
       description: service.longDescription
         ? service.longDescription.split("\n\n")[0].slice(0, 160)
         : service.shortDescription,
-      alternates: { canonical: `/konya/${ilce}` },
+      alternates: { canonical: `${BASE}/konya/${ilce}` },
+      openGraph: {
+        title: `Konya ${service.name} 2026 — Lisanslı Uzman Psikolog`,
+        description: service.shortDescription,
+        url: `${BASE}/konya/${ilce}`,
+      },
     };
   }
 
@@ -57,13 +64,32 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const ilceData = ILCELER[ilce];
   if (ilceData) {
     return {
-      title: `${ilceData.name} Psikolog — Uzman Terapist | TerapiRehberi`,
+      title: `Konya ${ilceData.name} Psikolog 2026 — Lisanslı Uzman Terapist | TerapiRehberi`,
       description: ilceData.description,
-      alternates: { canonical: `/konya/${ilce}` },
+      keywords: [`konya ${ilceData.name.toLowerCase()} psikolog`, `${ilceData.name.toLowerCase()} psikolog`, `konya ${ilceData.name.toLowerCase()} terapist`],
+      alternates: { canonical: `${BASE}/konya/${ilce}` },
+      openGraph: {
+        title: `Konya ${ilceData.name} Psikolog 2026 — Lisanslı Uzman Terapist`,
+        description: ilceData.description,
+        url: `${BASE}/konya/${ilce}`,
+      },
     };
   }
 
   return {};
+}
+
+function makeBreadcrumbSchema(items: { name: string; url: string }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: items.map((item, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: item.name,
+      item: item.url.startsWith("http") ? item.url : `${BASE}${item.url}`,
+    })),
+  };
 }
 
 export default async function KonyaSlugPage({ params }: Props) {
@@ -75,8 +101,28 @@ export default async function KonyaSlugPage({ params }: Props) {
   const service = getServiceBySlug(ilce);
   if (service) {
     const experts = allExperts.filter((e) => e.services.includes(ilce));
+    const serviceBreadcrumb = makeBreadcrumbSchema([
+      { name: "Ana Sayfa",  url: BASE },
+      { name: "Konya",      url: `${BASE}/konya` },
+      { name: service.name, url: `${BASE}/konya/${ilce}` },
+    ]);
+    const serviceItemList = {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      name: `Konya ${service.name} Uzmanları`,
+      url: `${BASE}/konya/${ilce}`,
+      numberOfItems: experts.length,
+      itemListElement: experts.map((e, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        name: e.name,
+        url: `${BASE}/uzman/${e.slug}`,
+      })),
+    };
     return (
       <div className="min-h-screen bg-cream-50">
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceBreadcrumb) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceItemList) }} />
         <div className="bg-white border-b border-cream-200 py-8 px-4">
           <div className="max-w-7xl mx-auto">
             <nav className="text-xs text-slate-400 mb-3 flex items-center gap-1.5">
@@ -188,8 +234,31 @@ export default async function KonyaSlugPage({ params }: Props) {
     (e) => e.district.toLowerCase() === ilceData.name.toLowerCase()
   );
 
+  const breadcrumbSchema = makeBreadcrumbSchema([
+    { name: "Ana Sayfa",   url: BASE },
+    { name: "Konya",       url: `${BASE}/konya` },
+    { name: `${ilceData.name} Psikolog`, url: `${BASE}/konya/${ilce}` },
+  ]);
+
+  const itemListSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: `Konya ${ilceData.name} Psikolog Listesi`,
+    url: `${BASE}/konya/${ilce}`,
+    numberOfItems: districtExperts.length,
+    itemListElement: districtExperts.map((e, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: e.name,
+      url: `${BASE}/uzman/${e.slug}`,
+    })),
+  };
+
   return (
     <div className="min-h-screen bg-cream-50">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
+
       {/* Hero */}
       <div className="relative overflow-hidden bg-gradient-to-br from-brand-900 via-brand-800 to-brand-700 py-14 px-4">
         {/* Dekoratif daireler */}

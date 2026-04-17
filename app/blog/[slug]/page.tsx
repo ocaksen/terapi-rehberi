@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: post.title,
     description: post.description,
     keywords: post.keywords,
-    alternates: { canonical: `/blog/${slug}` },
+    alternates: { canonical: `${siteUrl}/blog/${slug}` },
     openGraph: {
       title: post.title,
       description: post.description,
@@ -53,7 +53,16 @@ function inline(text: string): string {
     .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>")
     .replace(
       /\[([^\]]+)\]\(([^)]+)\)/g,
-      '<a href="$2" class="text-brand-600 hover:underline font-medium">$1</a>'
+      (_, linkText, url) => {
+        // Yalnızca güvenli protokollere izin ver — javascript: vb. engelle
+        const safe =
+          url.startsWith("https://") ||
+          url.startsWith("http://") ||
+          url.startsWith("/") ||
+          url.startsWith("#");
+        const safeUrl = safe ? url : "#";
+        return `<a href="${safeUrl}" class="text-brand-600 hover:underline font-medium">${linkText}</a>`;
+      }
     );
 }
 
