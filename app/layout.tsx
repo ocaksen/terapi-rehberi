@@ -65,7 +65,7 @@ export const metadata: Metadata = {
       "Konya'da lisanslı psikolog, terapist ve psikolojik danışman bul. 50+ kimlik ve diploma doğrulamalı uzman.",
   },
   alternates: {
-    canonical: "https://www.terapirehberi.com",
+    canonical: "/",
   },
 };
 

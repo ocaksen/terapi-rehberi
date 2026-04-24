@@ -39,6 +39,21 @@ const nextConfig: NextConfig = {
       bodySizeLimit: "200mb",
     },
   },
+  async redirects() {
+    return [
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "terapirehberi.com" }],
+        destination: "https://www.terapirehberi.com/:path*",
+        permanent: true,
+      },
+      {
+        source: "/:path*.php",
+        destination: "/404",
+        permanent: false,
+      },
+    ];
+  },
   async headers() {
     return [
       {
