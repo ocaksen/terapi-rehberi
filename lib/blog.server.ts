@@ -71,6 +71,10 @@ export function getAllBlogPostsFromFiles(): Omit<BlogPostFull, "body">[] {
         readTime: estimateReadTime(content),
       };
     })
+    .filter((p) => {
+      const today = new Date().toISOString().split("T")[0];
+      return p.publishedAt <= today;
+    })
     .sort(
       (a, b) =>
         new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
