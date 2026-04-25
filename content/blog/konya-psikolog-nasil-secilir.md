@@ -1,210 +1,104 @@
 ---
-title: "Konya'da Psikolog Nasıl Seçilir? 2026 Rehberi"
-description: "Konya psikolog seçiminde klinik psikolog farkı, ilk seans rehberi, 2026 güncel ücretler ve online terapi karşılaştırması — hepsi bu yazıda."
-excerpt: "2025'te Türkiye'de psikolojik danışmanlık en çok tercih edilen destek hizmeti oldu. Konya psikolog bulmak artık kolay — ama doğrusunu seçmek hâlâ bir adım daha gerektiriyor."
-keywords: ["konya psikolog", "konya psikolog nasıl seçilir", "klinik psikolog konya", "konya psikolog seçimi", "konya psikolog ücretleri 2026"]
-category: "Genel"
-author: "TerapiRehberi Editör"
-publishedAt: "2026-04-01"
+title: "Konya'da Psikolog Nasıl Seçilir? 7 Kritik Soru"
+description: "Konya psikolog tavsiye arayanlar için kapsamlı rehber. Doğru psikoloğu seçmenizi sağlayacak 7 kritik soru ve dikkat edilmesi gereken faktörler."
+keywords: ["konya psikolog tavsiye", "konya psikolog nasıl seçilir", "psikolog tavsiye", "konya klinik psikolog", "psikolog seçimi"]
+category: "Rehber"
+author: "terapirehberi.com Uzman Editörü"
+publishedAt: "2026-04-26"
+faq:
+  - q: "Konya'da iyi psikolog nasıl bulunur?"
+    a: "İhtiyacınızı netleştirin — kaygı, depresyon, ilişki sorunu veya kişisel gelişim. Ardından klinik psikolog unvanlı, ilgili alanda deneyimli uzman arayın. İlk görüşmeyi birkaç farklı psikologla yapın; terapötik uyum en kritik faktördür."
+  - q: "Klinik psikolog ile psikolojik danışman arasındaki fark nedir?"
+    a: "Klinik psikolog, yüksek lisans ve süpervizyon saatleriyle klinik tanı ve psikoterapi yapabilir. Psikolojik danışman ise rehberlik lisansı mezunu olup uyum ve kişisel gelişim odaklı destek sunar. Klinik düzeyde bir sorun için klinik psikolog tercih edilmeli."
+  - q: "İlk seansta psikologdan ne beklenmeli?"
+    a: "İlk seans genellikle değerlendirme görüşmesidir. Psikolog sorunuzu dinler, ön değerlendirme yapar ve terapi planını açıklar. Sizi yargılamaksızın dinlemeli, net bilgi vermeli ve sonraki adımı belirlemelidir."
+  - q: "Konya'da psikolog fiyatları ne kadar?"
+    a: "2026 yılında bireysel seans 1.500-3.500 TL, çift terapisi 2.000-4.000 TL, online seans ise 1.200-2.800 TL arasında değişiyor. Fiyat; terapistin unvanı, uzmanlık alanı ve seans süresine göre belirleniyor."
 ---
 
-**2025 yılında Türkiye'de psikolojik danışmanlık, çalışanlar arasında en çok tercih edilen destek hizmeti oldu — oran yüzde 43.** Konya psikolog arayanların sayısı da her yıl artıyor. Ama bu talebin büyümesi, doğru psikoloğu bulmanın kolaylaştığı anlamına gelmiyor.
+**Konya psikolog tavsiye** arayanların karşılaştığı en büyük güçlük şu: pek çok klinik var, unvanlar karmaşık, fiyatlar değişken. Tanıdıktan tavsiye almak işe yarıyor ama her zaman doğru eşleşmeyi sağlamıyor. Bu rehberde doğru psikoloğu bulmanızı sağlayacak yedi soruyu ve dikkat edilmesi gereken faktörleri adım adım ele alıyoruz.
 
-Konya'da onlarca psikolog, klinik ve danışmanlık merkezi hizmet veriyor. Hepsinin web sitesi var, çoğunun Instagram sayfası var. Peki hangisi sana uygun?
+## Psikologa Gitmeden Önce Bilmeniz Gerekenler
 
-Bu rehberde şunları bulacaksın:
-- Psikolog, uzman psikolog, klinik psikolog unvan farklarını
-- Hangi sorun için hangi uzmanlık alanını
-- Diploma kontrolünü nasıl yapacağını
-- 2026 güncel Konya psikolog ücretlerini
-- Online terapi ile yüz yüze terapi karşılaştırmasını
+Psikolojik destek kişisel bir deneyim. Bir arkadaşınıza fayda sağlayan terapist sizin için aynı sonucu vermeyebilir. Bu nedenle tavsiye almak bir başlangıç noktası olabilir; ancak son karar kendi değerlendirmenize kalır.
 
-## İçindekiler
+Terapi sürecine girmeden önce iki şeyi netleştirmek işe yarar: ne için destek arıyorsunuz ve nasıl bir terapist profili sizin için doğru? Kaygı için mi, ilişki sorunları için mi, yoksa genel bir "kendimi anlama" arayışı için mi başvuruyorsunuz? Bu soruların yanıtı, doğru uzmana ulaşma sürecinizi önemli ölçüde kısaltır.
 
-- [Psikolog, Uzman Psikolog, Klinik Psikolog Farkı](#unvanlar)
-- [Hangi Sorunun Var? Önce Bunu Netleştir](#uzmanlik-alani)
-- [Diplomanı Sor, Utanma](#diploma)
-- [İlk Seanstan Önce Sorman Gereken 5 Soru](#sorular)
-- [İlk Seansta Neler Olur?](#ilk-seans)
-- [Online Terapi mi, Yüz Yüze mi?](#online-vs-yuzyuze)
-- [Konya'da Psikolog Ücretleri 2026](#ucretler)
-- [Sıkça Sorulan Sorular](#sss)
+Pratik bir faktör de var: Konya'nın hangi ilçesinde yaşıyorsunuz ve kliniğe ulaşım sizin için ne kadar kolay? Ulaşımı zor bir klinik zamanla seans devamlılığını olumsuz etkileyebilir. Online seans seçeneği bu sorunu ortadan kaldırıyor; Konya'daki pek çok klinik artık online görüşme sunuyor.
 
----
+**Konya psikolog tavsiye** araştırması yaparken yalnızca isimlere değil, o kişinin çalışma alanına ve yaklaşımına bakın. İki farklı psikolog, aynı sorunu tamamen farklı yöntemlerle ele alabilir. Birinin size uygun olması, diğerinin de uygun olacağı anlamına gelmiyor. Biraz araştırma yapmak, ilerleyen haftalarda hayal kırıklığı yaşamanızı önler.
 
-## Psikolog, Uzman Psikolog, Klinik Psikolog: Hangisi Ne Demek? {#unvanlar}
+## Konya'da Psikolog Seçerken Sorulacak 7 Soru
 
-Bu üç unvan Türkiye'de sıkça karışıyor. Aralarındaki fark küçük gibi görünse de terapi sürecinde büyük anlam taşıyor.
+Bir psikologla çalışmaya karar vermeden önce şu yedi soruyu sormak sizi doğru seçime taşır.
 
-**Psikolog:** Dört yıllık psikoloji lisans mezunu. Psikolojik değerlendirme yapar, destek verir. Bağımsız psikoterapi uygulamak için yüksek lisans tamamlaması gerekir.
+**1. Eğitim ve unvanı ne?**
+Türkiye'de psikoloji alanında birden fazla unvan var: psikolog, klinik psikolog, psikolojik danışman, psikiyatrist. Bu unvanlar aynı şey değil. Klinik psikolog unvanı için lisans üstüne en az iki yıllık klinik yüksek lisans ve süpervizyon saatleri gerekiyor. Bu fark, uygulayabildikleri terapi yöntemleri açısından belirleyici.
 
-**Uzman Psikolog:** Lisans sonrası iki yıllık yüksek lisansı bitirmiş psikolog. Uzmanlık alanı klinik psikoloji dışında da olabilir — eğitim psikolojisi, örgütsel psikoloji, spor psikolojisi gibi farklı alanlar söz konusu.
+**2. Hangi alanda uzmanlaşmış?**
+Her psikolog her sorunu ele alamaz. Travma uzmanlığı, çift terapisi, çocuk ve ergen psikolojisi, yeme bozuklukları gibi alanlar ayrı sertifika eğitimleri gerektiriyor. İhtiyacınıza uygun uzmanlık alanını sormaktan çekinmeyin.
 
-**Klinik Psikolog:** Klinik psikoloji yüksek lisansını tamamlamış, bireylerin ruhsal sağlığını değerlendirme ve psikoterapi uygulama konusunda özelleşmiş uzman. Konya'da psikoterapi desteği arıyorsan klinik psikolog unvanına dikkat etmek en doğru başlangıç noktasını oluşturuyor.
+**3. Hangi terapi yaklaşımını kullanıyor?**
+Bilişsel Davranışçı Terapi (BDT), EMDR, Şema Terapi, psikodinamik terapi farklı çerçeveler. Hangi yaklaşımın kullanılacağını ve bu yaklaşımın neden size uygun olduğunu önceden sorabilirsiniz. Bir uzman bu soruyu açıkça yanıtlamalıdır.
 
-Ciddiye alınan her klinik psikolog eğitim geçmişini açıkça paylaşır. Unvan bir kâğıt değil — aldığı eğitimin kapsamını gösterir.
+**4. İlk görüşme nasıl işliyor?**
+Pek çok klinik ilk görüşmeyi değerlendirme seansı olarak yapıyor. Bu görüşmede sorunuzu dinlemeleri, ön değerlendirme yapmaları ve uygun terapi planını açıklamaları beklenir. İlk seansta "nasıl ilerleyeceğiz?" sorusunun yanıtını almak hakkınız.
 
----
+**5. Seans süresi ve sıklığı ne?**
+Standart bireysel terapi seansı 50 dakika, çift seansı 75-90 dakika sürer. Haftada bir seans genel norm; ancak bazı süreçler başlangıçta daha sık seans gerektirebilir. Seans sıklığını ve toplam süre beklentisini ilk görüşmede netleştirin.
 
-## Hangi Sorunun Var? Önce Bunu Netleştir {#uzmanlik-alani}
+**6. Gizlilik konusunda nasıl bir politika var?**
+Terapi ortamı tamamen gizli olmak zorunda. Kişisel bilgilerin nasıl saklandığını, üçüncü taraflarla paylaşılıp paylaşılmadığını ve yasal zorunluluk gibi olası istisnaları sormak önemli. Ciddi her klinisyen bu soruya hazırlıklı olmalı.
 
-Psikologlar genel değildir. Birinin yetkinliği çocuk gelişimindeyken, bir diğeri travma veya çift terapisinde uzmanlaşmıştır. Konya psikolog aramadan önce şu soruyu sor: *"Tam olarak ne için destek istiyorum?"*
+**7. Raporlama yapılıyor mu?**
+Bazı danışanlar sigorta talebi ya da yasal süreç için raporlama ihtiyacı duyabiliyor. Psikologun raporlama hizmeti sunup sunmadığını ve ek ücret gerektirip gerektirmediğini önceden sormak sürpriz yaşamamanızı sağlar.
 
-Yaygın sorunlar ve uygun uzmanlık alanları:
+## Klinik Psikolog ile Danışman Farkı
 
-- **Kaygı, panik atak, depresyon** → Bilişsel Davranışçı Terapi (BDT) uygulayan klinik psikolog
-- **Geçmişteki travma** → EMDR veya travma odaklı terapi uygulayan uzman
-- **İlişki ve iletişim sorunları** → Çift terapisi veya bireysel terapi
-- **Çocuğun davranış, dil veya gelişim sorunları** → Çocuk ve ergen psikolojisi uzmanı
-- **Okul kaygısı, ergen sorunları** → Ergen psikolojisi ve aile danışmanlığı alanında deneyimli uzman
+**Konya klinik psikolog** araması yaparken karşılaşılan en sık karışıklık budur. Türkiye'deki unvan sistemi karmaşık görünebilir; ancak temel fark netleşince doğru seçim kolaylaşır.
 
-Konya'daki psikologların büyük çoğunluğu web sitelerinde uzmanlık alanlarını belirtiyor. Bu bilgiyi atlamak, randevu aldıktan sonra "bu benim sorunum için değilmiş" yaşamamana yardımcı olur.
+**Psikolog (lisans):** Psikoloji lisansı mezunu. Psikolojik değerlendirme yapabilir; klinik terapi yürütme yetkisi sınırlı.
 
-### Terapi Yöntemleri Arasındaki Fark
+**Klinik psikolog:** Lisans üstüne klinik psikoloji yüksek lisansı yapmış, süpervizyon saatlerini tamamlamış uzman. Tanı değerlendirmesi ve uzun dönemli psikoterapi yapabilir. Depresyon, anksiyete, travma, OKB gibi klinik tablolarla çalışmak için bu unvan tercih edilmeli.
 
-Uzmanlık alanını netleştirdikten sonra terapi yöntemini de gözden geçirmek işe yarıyor.
+**Psikolojik danışman (PDR):** Rehberlik ve psikolojik danışmanlık lisansı mezunu. Bireysel uyum desteği verebilir; klinik düzeyde psikoterapi uygulama yetkisi kısıtlı.
 
-**BDT (Bilişsel Davranışçı Terapi):** Düşünce ve davranış kalıplarını değiştirmeye odaklanır. Kaygı bozuklukları, depresyon ve fobiler için etkili sonuçlar veriyor.
+**Psikiyatrist:** Tıp fakültesi mezunu, psikiyatri ihtisası yapmış hekim. İlaç yazabilir; terapi süreci genellikle psikologla birlikte yürütülür.
 
-**EMDR:** Travmatik anıların işlenmesinde kullanılan göz hareketlerine dayalı bir terapi yöntemi. Travma sonrası stres bozukluğu için birinci seçenek haline geldi.
+Sonuç olarak: klinik bir sorun için klinik psikolog en doğru seçim. Kariyer kararı, uyum sorunları veya kişisel gelişim için psikolojik danışman da yeterli olabilir. Emin değilseniz ilk görüşmede hangi unvanın sizin için uygun olduğunu sormaktan çekinmeyin.
 
-**Şema Terapi:** Erken yaşam deneyimlerinin bugünkü ilişki ve davranış kalıplarına etkisini ele alır. Uzun süreli bireysel terapi süreçlerinde tercih ediliyor.
+Konya'da hem klinik psikolog hem psikolojik danışman seçenekleri mevcut. Unvan farkını bilmek, yanlış uzmana gidip zaman ve para kaybetmenizi önler. Bu konuda net olmayan kliniklerden uzak durmanızı öneririz; şeffaflık, güvenilir bir terapötik ilişkinin temel taşı.
 
-**Çift Terapisi:** İki kişiyi birlikte gören, ilişki dinamiklerine odaklanan yapılandırılmış bir süreç.
+## Konya'da Psikolog Fiyatları Ne Kadar?
 
----
+2026 yılında Konya'da bireysel terapi seansı 1.500-3.500 TL arasında değişiyor. Çift terapisi seansları 2.000-4.000 TL, çocuk terapisi 1.500-3.000 TL, online seans ise 1.200-2.800 TL arasında.
 
-## Diplomanı Sor, Utanma {#diploma}
+Fiyatı belirleyen başlıca faktörler şunlar: terapistin unvanı (klinik psikolog daha yüksek ücret uygular), uzmanlık alanı (EMDR, travma gibi sertifika gerektiren yaklaşımlar daha pahalı), seans süresi ve klinik konumu.
 
-Türkiye'de "psikolog" unvanı yasal koruma altında — ama uygulamada denetim sınırlı kalıyor. Seans öncesi birkaç basit soruyla kendin güvence altına alabilirsin.
+Özel sağlık sigortanız varsa poliçenizde "psikoloji" veya "psikoterapi" kapsamı olup olmadığını kontrol edin. Bazı poliçeler seansların bir kısmını karşılıyor. Devlet hastanelerinde psikiyatri hizmetleri SGK kapsamında; ancak düzenli psikoterapi için özel klinikler daha pratik seçenek.
 
-Şunlara bakabilirsin:
+Konya'daki psikolog klinikleri, uzmanlık alanları ve iletişim bilgileri için [Konya psikolog rehberimizi](/konya/psikolog) inceleyebilirsiniz. Rehberde klinikleri kıyaslayabilir, sizin için uygun uzmanı daha hızlı bulabilirsiniz.
 
-- Mezun olduğu üniversite ve bölüm
-- Yüksek lisans veya doktora bilgisi
-- Türk Psikologlar Derneği (TPD) veya Klinik Psikologlar Derneği üyeliği
-- EMDR, BDT veya diğer yöntemlere ait sertifikalar
+Sigorta ve SGK konusunda şunu da belirtelim: devlet hastanelerinde psikiyatri görüşmeleri SGK kapsamında; ancak düzenli psikoterapi seansı genellikle özel kliniklerde gerçekleştiriliyor. Bazı özel sigorta poliçeleri psikoloji seanslarını kısmen ya da tamamen karşılıyor — poliçenizde "psikoloji" veya "psikoterapi" ifadelerini arayın. Emin değilseniz sigorta şirketinizle doğrudan görüşün; net bir yanıt almanız hakkınız.
 
-Bu soruları sormak ayıp değil. Ciddiye alınan her uzman bu soruları zaten bekliyor. Seni sorguladığın için rahatsız olan bir psikologla çalışmak istemezsin zaten.
+## Sıkça Sorulan Sorular
 
----
+### Konya'da iyi psikolog nasıl bulunur?
 
-## İlk Seanstan Önce Sorman Gereken 5 Soru {#sorular}
+İhtiyacınızı netleştirin: kaygı, depresyon, ilişki sorunu veya kişisel gelişim. Ardından klinik psikolog unvanlı, ilgili alanda deneyimli uzman arayın. İlk görüşmeyi birkaç farklı psikologla yapın; terapötik uyum en kritik faktördür. Konya'daki klinikleri karşılaştırmak için [rehberimizi](/konya/psikolog) ziyaret edin.
 
-Randevu almadan önce — telefonda veya e-postayla — bu beş soruyu sormak alışkanlık haline getir:
+### Klinik psikolog ile psikolojik danışman arasındaki fark nedir?
 
-1. **"Uzmanlık alanınız nedir?"** — BDT mi, EMDR mi, şema terapi mi? Senin sorununa uygun mu?
-2. **"Seans ücreti ne kadar?"** — 2026'da Konya'da fiyat aralığı oldukça geniş; önceden öğrenmek sürprizi önler.
-3. **"Özel sağlık sigortası kabul ediyor musunuz?"** — Bazı poliçeler psikoterapi seanslarını kısmen karşılıyor.
-4. **"Online seans seçeneğiniz var mı?"** — Konya'nın farklı ilçelerinden ulaşım zorsa bu önemli bir kriter.
-5. **"İlk görüşme nasıl işliyor?"** — Değerlendirme seansı mı, yoksa doğrudan terapiye mi başlanıyor?
+Klinik psikolog, klinik psikoloji yüksek lisansı ve süpervizyon saatleriyle klinik tanı ve psikoterapi yapabilir. Psikolojik danışman ise rehberlik lisansı mezunu olup uyum ve kişisel gelişim odaklı destek sunar. Klinik düzeyde bir sorun için klinik psikolog tercih edilmeli.
 
-Bu beş soru, on dakikalık bir aramanın sonunda hangi kapıyı çalacağını netleştiriyor.
+### İlk seansta psikologdan ne beklenmeli?
 
----
+İlk seans genellikle değerlendirme görüşmesidir. Psikolog sorunuzu dinler, ön değerlendirme yapar ve terapi planını açıklar. Sizi yargılamaksızın dinlemeli, net bilgi vermeli ve sonraki adımı belirlemelidir.
 
-## İlk Seansta Neler Olur? {#ilk-seans}
+### Konya'da psikolog fiyatları ne kadar?
 
-İlk seans bir terapi seansı değil, **değerlendirme görüşmesidir.** Psikolog seni dinler, birkaç soru sorar ve terapi sürecini kısaca açıklar.
-
-İlk görüşmede genellikle şunlar konuşulur:
-
-- Terapiye gelme nedenin ve beklentilerin
-- Daha önce psikolojik destek aldıysan o deneyimlerin
-- Mevcut yaşam durumun — iş, ilişki, sağlık
-- Terapinin nasıl işleyeceği ve tahmini seans sayısı
-
-İlk seanstan sonra **"bir şeyler oturdu"** hissi önemli bir sinyaldir. Bu his yoksa başka birini denemek tamamen normaldir. Konya'da seçenek var. Profesyonel bir psikolog bunu sana zaten söyler.
-
-### İlk Seanstan Sonra Karar Verme
-
-İlk seans sonrasında iki soru sor kendine:
-
-1. **"Bu kişiyle dürüst olabilir miyim?"** — Güven hissi yoksa ilerleme zorlaşır.
-2. **"Süreç hakkında net bir açıklama yaptı mı?"** — Kaç seans süreceği, ne üzerinde çalışılacağı belirsiz kalmamalı.
-
-Her iki soruya da evet diyorsan doğru yerdesin.
+2026 yılında bireysel seans 1.500-3.500 TL, çift terapisi 2.000-4.000 TL, online seans ise 1.200-2.800 TL arasında değişiyor. Fiyat; terapistin unvanı, uzmanlık alanı ve seans süresine göre belirleniyor.
 
 ---
 
-## Online Terapi mi, Yüz Yüze mi? {#online-vs-yuzyuze}
-
-ResearchGate'te yayımlanan 2025 tarihli bir sistematik derleme ve meta-analiz, online terapi ile yüz yüze terapi arasında depresyon, anksiyete ve travma sonrası stres bozukluğu gibi yaygın sorunlarda **etkinlik açısından belirgin bir fark olmadığını** ortaya koyuyor.
-
-Yani ekran farkı, sonuç farkı yaratmıyor.
-
-**Online terapiyi tercih et:**
-- Konya'nın farklı ilçelerinden ulaşım zorsa
-- Kaygı bozukluğu dışarı çıkmayı güçleştiriyorsa
-- Yoğun çalışma tempon seans saatlerini kısıtlıyorsa
-- Yurt dışında çalışıp Konya'daki bir uzmanla çalışmak istiyorsan
-
-**Yüz yüze terapiyi tercih et:**
-- Terapötik ilişkiyi fiziksel ortamda kurmayı önemsiyorsan
-- Çocuk veya ergen terapisi söz konusuysa
-- Daha önce online terapide odaklanma güçlüğü yaşadıysan
-
-İki seçenek arasında kaldıysan ilk seanstaki psikologdan görüşünü iste. Sana en uygun formatı birlikte belirleyebilirsiniz.
-
----
-
-## Konya'da Psikolog Ücretleri 2026 {#ucretler}
-
-2026 yılında Konya'da psikolog seans ücretleri unvana, uzmanlık alanına ve seans süresine göre değişiyor.
-
-| Seans Türü | Ücret Aralığı |
-|---|---|
-| Psikolog (lisans mezunu) | 800 – 1.500 TL |
-| Uzman / Klinik Psikolog | 1.200 – 3.500 TL |
-| Çocuk / Ergen Terapisi | 1.000 – 2.500 TL |
-| Çift Terapisi | 1.500 – 4.000 TL |
-| Online Bireysel Terapi | 700 – 2.800 TL |
-
-**Fiyatı etkileyen başlıca faktörler:**
-- Uzmanın unvanı ve deneyim yılı
-- Seans süresi (50 dk. / 75 dk.)
-- Yüz yüze mi online mı
-- Klinik konumu — Selçuklu, Meram, Karatay arasında ufak farklar olabilir
-
-**SGK ve sigorta:** SGK psikolog seanslarını doğrudan karşılamıyor. Ancak bazı özel sağlık sigortaları psikoterapi seanslarını kısmen destekliyor. Poliçeni incelemek veya sigorta şirketini aramak işe yarıyor.
-
-Konuyla ilgili daha fazla ayrıntı için [Konya'da psikolog ücretleri rehberimize](/blog/konya-psikolog-fiyatlari-2026) göz atabilirsin.
-
----
-
-## Sonuç
-
-Konya psikolog seçimi — unvanı anlamak, uzmanlık alanını eşleştirmek, ilk seansta doğru soruları sormak ve bütçeyi netleştirmekle başlıyor.
-
-Dört önemli hatırlatma:
-
-1. Klinik psikolog unvanı, psikoterapi için gereken eğitimi tamamladığını gösterir
-2. İlk seans bir değerlendirme görüşmesidir — terapi o seansta başlamaz
-3. Online terapi, yüz yüze terapi kadar etkili olabiliyor
-4. İlk tercihinde kalmak zorunda değilsin — uyum hissi terapinin temelidir
-
-TerapiRehberi olarak Konya'da çalışan psikologları, klinik psikologları ve uzmanları bir arada listeliyoruz. Selçuklu'dan Meram'a, Karatay'dan Konya merkeze — ihtiyacına uygun uzmanı bulmak için [TerapiRehberi uzman rehberini](https://terapirehberi.com/konya) kullanabilirsin.
-
----
-
-## Sıkça Sorulan Sorular {#sss}
-
-### Klinik psikolog ile psikolog arasındaki fark nedir?
-
-Psikolog dört yıllık lisans mezunudur. Klinik psikolog ise klinik psikoloji yüksek lisansını tamamlamış, psikoterapi uygulama konusunda özelleşmiş bir uzmandır. Psikoterapi desteği arıyorsan klinik psikolog tercih etmek daha güvenli bir başlangıç noktası oluşturuyor.
-
-### Konya'da psikolog seans ücreti 2026'da ne kadar?
-
-2026 itibarıyla Konya'da bireysel terapi seans ücretleri 800 TL ile 3.500 TL arasında değişiyor. Klinik psikolog unvanı, uzmanlık alanı ve seans süresi fiyatı belirleyen başlıca faktörler.
-
-### İlk psikolog seansında ne konuşulur?
-
-İlk seans bir değerlendirme görüşmesidir. Psikolog terapiye gelme nedenini, geçmiş deneyimlerini ve beklentilerini dinler. Doğrudan terapi o seansta başlamaz — amaç karşılıklı tanışmak ve süreci planlamaktır.
-
-### Online terapi yüz yüze terapi kadar etkili mi?
-
-Evet. 2025 tarihli meta-analiz bulguları, online terapi ile yüz yüze terapi arasında depresyon, kaygı ve travma sonrası stres bozukluğu gibi yaygın sorunlarda etkinlik açısından belirgin bir fark olmadığını gösteriyor.
-
-### Psikolog seçerken diploma nasıl kontrol edilir?
-
-Psikoloğun mezun olduğu üniversite ve bölümü, varsa yüksek lisans bilgisini doğrudan sormak en güvenilir yöntem. Türk Psikologlar Derneği (TPD) üyeliği de ek bir referans noktası sunuyor. Ciddiye alınan her uzman bu soruları bekliyor.
+Konya'daki psikolog klinikleri ve uzmanları karşılaştırmak için [Konya psikolog rehberimizi](https://terapirehberi.com/konya/psikolog) ziyaret edin. Konya psikolog tavsiye arıyorsanız rehberde filtreleme seçenekleriyle en uygun uzmana hızlıca ulaşabilirsiniz. Uzmanlık alanı, ücret aralığı ve online seans gibi kriterlere göre filtreleme yapabilirsiniz.
