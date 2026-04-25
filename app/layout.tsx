@@ -3,6 +3,7 @@ import { Plus_Jakarta_Sans, Lora } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import WebMCPTools from "@/components/WebMCPTools";
 
 const jakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -159,6 +160,7 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-screen flex flex-col antialiased">
+        <WebMCPTools />
         <Header />
         <main className="flex-1 pt-0">{children}</main>
         <Footer />

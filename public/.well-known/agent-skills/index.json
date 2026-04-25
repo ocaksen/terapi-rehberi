@@ -1,0 +1,26 @@
+{
+  "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+  "skills": [
+    {
+      "name": "find-psychologist",
+      "type": "skill-md",
+      "description": "Search TerapiRehberi's directory of licensed psychologists and therapists in Konya, Turkey — filterable by district and specialty.",
+      "url": "https://www.terapirehberi.com/.well-known/agent-skills/find-psychologist/SKILL.md",
+      "digest": "sha256:8db3dd792d5af92b4968c3bd7891f682b94ed2180ce3614452b9b77fcf81f26c"
+    },
+    {
+      "name": "ask-question",
+      "type": "skill-md",
+      "description": "Submit an anonymous psychology question to TerapiRehberi's expert Q&A feed via POST /api/soru-sor.",
+      "url": "https://www.terapirehberi.com/.well-known/agent-skills/ask-question/SKILL.md",
+      "digest": "sha256:78b086986a8d1ae0e3c73b01b6343fc88756a1637eb0f4c1c1c037a0c669d870"
+    },
+    {
+      "name": "register-expert",
+      "type": "skill-md",
+      "description": "Submit a listing application for a licensed psychologist or therapist to appear on TerapiRehberi's Konya directory via POST /api/basvuru.",
+      "url": "https://www.terapirehberi.com/.well-known/agent-skills/register-expert/SKILL.md",
+      "digest": "sha256:e06c71a16e3ac151290de9091c46a4117207b98da019b3a85b92e9e096523095"
+    }
+  ]
+}

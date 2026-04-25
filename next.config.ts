@@ -54,11 +54,39 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+  async rewrites() {
+    // Next.js App Router skips dot-prefixed directories, so .well-known routes
+    // are served from /api/well-known/* and rewritten here.
+    return [
+      {
+        source: "/.well-known/api-catalog",
+        destination: "/api/well-known/api-catalog",
+      },
+      {
+        source: "/.well-known/oauth-protected-resource",
+        destination: "/api/well-known/oauth-protected-resource",
+      },
+    ];
+  },
   async headers() {
     return [
       {
         source: "/(.*)",
         headers: securityHeaders,
+      },
+      {
+        source: "/",
+        headers: [
+          {
+            key: "Link",
+            value: [
+              '</.well-known/agent-skills/index.json>; rel="agent-skills"',
+              '</.well-known/api-catalog>; rel="api-catalog"; type="application/linkset+json"',
+              '</.well-known/oauth-protected-resource>; rel="oauth-protected-resource"',
+              '</sitemap.xml>; rel="sitemap"; type="application/xml"',
+            ].join(", "),
+          },
+        ],
       },
     ];
   },
