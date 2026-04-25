@@ -1329,6 +1329,1377 @@
       ],
       "officeAddress": "Konya, Konya",
       "approaches": []
+    },
+    {
+      "id": "119",
+      "slug": "tugce-yilmaz",
+      "name": "Tuğçe Yılmaz",
+      "title": "Psikolog",
+      "city": "konya",
+      "district": "Selçuklu",
+      "image": "https://ui-avatars.com/api/?name=Tu%C4%9F%C3%A7e%20Y%C4%B1lmaz&background=1e3a5f&color=fff&size=400",
+      "shortBio": "Orta Doğu Teknik Üniversitesi Psikoloji lisans bölümünü tamamladıktan sonra Yakın Doğu Üniversitesi Klinik Psikoloji yüksek lisansımı tamamlayarak oyun terapisi, bireysel terapi ve çocuk testleri alanında hizmet vermekteyim.",
+      "longBio": [
+        "Orta Doğu Teknik Üniversitesi Psikoloji lisans bölümünü tamamladıktan sonra Yakın Doğu Üniversitesi Klinik Psikoloji yüksek lisansımı tamamlayarak oyun terapisi, bireysel terapi ve çocuk testleri alanında hizmet vermekteyim."
+      ],
+      "services": [
+        "depresyon",
+        "sosyal-fobi",
+        "yaygın-anksiyete-bozukluğu",
+        "sınav-kaygısı",
+        "panik-atak",
+        "özgüven-sorunu",
+        "obsesif-kompulsif-bozukluk",
+        "stres",
+        "çocuk-ve-ergen-psikolojisi"
+      ],
+      "sessionFee": null,
+      "sessionType": [
+        "Online"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": "https://www.doktortakvimi.com/tugce-yilmaz/psikoloji/konya",
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Konya, Konya",
+      "approaches": []
+    },
+    {
+      "id": "120",
+      "slug": "seyma-uyar-calmaz",
+      "name": "Şeyma Uyar Çalmaz",
+      "title": "Psikolog",
+      "city": "konya",
+      "district": "Selçuklu",
+      "image": "https://ui-avatars.com/api/?name=%C5%9Eeyma%20Uyar%20%C3%87almaz&background=1e3a5f&color=fff&size=400",
+      "shortBio": "Psikolog Şeyma Uyar Çalmaz, Konya'da hizmet vermektedir. Aile ve çocuk danışmanlığı, bireysel terapi, kaygı bozukluğu, depresyon gibi konularda uzmanlık sahiptir.",
+      "longBio": [
+        "Psikolog Şeyma Uyar Çalmaz, Konya'da hizmet vermektedir. Aile ve çocuk danışmanlığı, bireysel terapi, kaygı bozukluğu, depresyon gibi konularda uzmanlık sahiptir."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "kaygi-bozuklugu",
+        "depresyon",
+        "aile-terapisi",
+        "cift-terapisi",
+        "cocuk-psikolojisi",
+        "travma"
+      ],
+      "sessionFee": null,
+      "sessionType": [
+        "Yüz Yüze",
+        "Online"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": "https://www.doktortakvimi.com/seyma-uyar-calmaz/psikoloji/konya",
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Selçuklu, Konya",
+      "approaches": []
+    },
+    {
+      "id": "121",
+      "slug": "elmas-merve-malas",
+      "name": "Elmas Merve Malas",
+      "title": "Klinik Psikolog",
+      "city": "konya",
+      "district": "Meram",
+      "image": "https://ui-avatars.com/api/?name=Elmas%20Merve%20Malas&background=1e3a5f&color=fff&size=400",
+      "shortBio": "Klinik Psikolog Dr. Elmas Merve Malas, yüksek lisans eğitimini İstanbul Fatih Sultan Mehmet Vakıf Üniversitesi ve Bezmialem Vakıf Üniversitesi ortak Klinik Psikoloji üzerine tezli olarak tamamlamıştır. Şu anda Konya Gıda Tarım Üniversitesinde Psikoloji bölümünde Dr. Öğretim Üyesi olarak çalışmaktadır.",
+      "longBio": [
+        "Klinik Psikolog Dr. Elmas Merve Malas, yüksek lisans eğitimini İstanbul Fatih Sultan Mehmet Vakıf Üniversitesi ve Bezmialem Vakıf Üniversitesi ortak Klinik Psikoloji üzerine tezli olarak tamamlamıştır. Şu anda Konya Gıda Tarım Üniversitesinde Psikoloji bölümünde Dr. Öğretim Üyesi olarak çalışmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "depresyon",
+        "aile-terapisi",
+        "cift-terapisi",
+        "cocuk-psikolojisi",
+        "travma",
+        "anksiyete-bozuklugu",
+        "kaygi-bozuklugu"
+      ],
+      "sessionFee": null,
+      "sessionType": [
+        "Yüz Yüze",
+        "Online"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": "https://www.doktortakvimi.com/elmas-merve-malas/psikoloji/konya",
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Meram, Konya",
+      "approaches": []
+    },
+    {
+      "id": "122",
+      "slug": "muzeyyen-afsar",
+      "name": "Müzeyyen Afşar",
+      "title": "Klinik Psikolog | Psikolog | Psikolojik Danışman | Uzman Psikolog",
+      "city": "konya",
+      "district": "Konya",
+      "image": "https://ui-avatars.com/api/?name=M%C3%BCzeyyen%20Af%C5%9Far&background=1e3a5f&color=fff&size=400",
+      "shortBio": "Sivas Cumhuriyet Üniversitesi Psikoloji lisans bölümü mezunuyum. Kendimi geliştirmek adına mesleki anlamda alanımla ilgili çeşitli kurs, seminer ve kongrelere katıldım.",
+      "longBio": [
+        "Sivas Cumhuriyet Üniversitesi Psikoloji lisans bölümü mezunuyum. Kendimi geliştirmek adına mesleki anlamda alanımla ilgili çeşitli kurs, seminer ve kongrelere katıldım."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "depresyon",
+        "aile-terapisi",
+        "cift-terapisi",
+        "cocuk-psikolojisi",
+        "ergen-psikolojisi",
+        "stres",
+        "kaygi",
+        "okula-alisma-sorunu",
+        "takinti",
+        "uyku-duzensizligi"
+      ],
+      "sessionFee": null,
+      "sessionType": [
+        "Yüz Yüze",
+        "Online"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": "https://www.doktortakvimi.com/muzeyyen-afsar/psikoloji/konya",
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Konya, Konya",
+      "approaches": []
+    },
+    {
+      "id": "123",
+      "slug": "ruya-sullu",
+      "name": "Rüya Süllü",
+      "title": "Uzm. Psk.",
+      "city": "konya",
+      "district": "Ferhuniye",
+      "image": "https://ui-avatars.com/api/?name=R%C3%BCya%20S%C3%BCll%C3%BC&background=1e3a5f&color=fff&size=400",
+      "shortBio": "Uzm. Psk. Rüya Süllü, İngilizce Psikoloji eğitimini İzmir Ekonomi Üniversitesinde tamamladı. Yüksek lisansını uygulamalı psikoloji alanında Haliç Üniversitesinde yaptı. Çocuk, ergen ve yetişkin psikolojisi, aile ve çift danışmanlığı alanlarında psikolojik danışmanlık ve terapi hizmetleri vermektedir.",
+      "longBio": [
+        "Uzm. Psk. Rüya Süllü, İngilizce Psikoloji eğitimini İzmir Ekonomi Üniversitesinde tamamladı. Yüksek lisansını uygulamalı psikoloji alanında Haliç Üniversitesinde yaptı. Çocuk, ergen ve yetişkin psikolojisi, aile ve çift danışmanlığı alanlarında psikolojik danışmanlık ve terapi hizmetleri vermektedir."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "depresyon",
+        "aile-terapisi",
+        "cift-terapisi",
+        "cocuk-psikolojisi",
+        "travma",
+        "kaygi-bozuklugu",
+        "sosyal-fobi",
+        "obsesif-kompulsif-bozukluk",
+        "stres",
+        "davranış-bozuklugu",
+        "okul-basarisizligi",
+        "cinsel-islev-bozuklugu",
+        "vajinismus"
+      ],
+      "sessionFee": null,
+      "sessionType": [
+        "Yüz Yüze",
+        "Online"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": "https://www.doktortakvimi.com/ruya-sullu/psikoloji/konya",
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Ferhuniye, Konya",
+      "approaches": []
+    },
+    {
+      "id": "124",
+      "slug": "sena-caldag",
+      "name": "Sena Çaldağ",
+      "title": "Psikolog",
+      "city": "konya",
+      "district": "Meram",
+      "image": "https://ui-avatars.com/api/?name=Sena%20%C3%87alda%C4%9F&background=1e3a5f&color=fff&size=400",
+      "shortBio": "Psikolog olarak Konya'da hizmet vermektedir.",
+      "longBio": [
+        "Sena Çaldağ, Konya'da psikolojik danışmanlık hizmetleri sunmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi"
+      ],
+      "sessionFee": null,
+      "sessionType": [
+        "Yüz Yüze"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": "https://www.doktortakvimi.com/sena-caldag/psikoloji/konya",
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Meram, Konya",
+      "approaches": []
+    },
+    {
+      "id": "125",
+      "slug": "rabia-saylik-sari",
+      "name": "Rabia Saylık Sarı",
+      "title": "Psikolog",
+      "city": "konya",
+      "district": "Selçuklu",
+      "image": "https://ui-avatars.com/api/?name=Rabia%20Sayl%C4%B1k%20Sar%C4%B1&background=1e3a5f&color=fff&size=400",
+      "shortBio": "İstanbul Sabahattin Zaim Üniversitesi İnsan ve Toplum Bilimleri Fakültesi Psikoloji bölümünden onur derecesi ile mezun oldum. Lisans eğitimim esnasında dürtüsellik, yaşam doyumu, kaygı gibi konuları da içeren pek çok farklı makale ve araştırmalarda görev aldım.",
+      "longBio": [
+        "İstanbul Sabahattin Zaim Üniversitesi İnsan ve Toplum Bilimleri Fakültesi Psikoloji bölümünden onur derecesi ile mezun oldum. Lisans eğitimim esnasında dürtüsellik, yaşam doyumu, kaygı gibi konuları da içeren pek çok farklı makale ve araştırmalarda görev aldım."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "kaygi-bozuklugu",
+        "depresyon",
+        "aile-terapisi",
+        "cift-terapisi",
+        "cocuk-psikolojisi",
+        "travma"
+      ],
+      "sessionFee": null,
+      "sessionType": [
+        "Yüz Yüze",
+        "Online"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": "https://www.doktortakvimi.com/rabia-saylik-sari/psikoloji/konya",
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Konya, Konya",
+      "approaches": []
+    },
+    {
+      "id": "126",
+      "slug": "sukran-samanci",
+      "name": "Şükran Samancı",
+      "title": "Psikolog",
+      "city": "konya",
+      "district": "Selçuklu",
+      "image": "https://ui-avatars.com/api/?name=%C5%9E%C3%BCkran%20Samanc%C4%B1&background=1e3a5f&color=fff&size=400",
+      "shortBio": "Psikoloji uzmanı",
+      "longBio": [
+        "Psikoloji uzmanı"
+      ],
+      "services": [
+        "depresyon",
+        "aile-ici-iletisim-sorunlari",
+        "sosyal-fobi",
+        "yaygin-anksiyete-bozuklugu",
+        "sinav-kaygisi"
+      ],
+      "sessionFee": null,
+      "sessionType": [
+        "Yüz Yüze"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": "https://www.doktortakvimi.com/sukran-samanci/psikoloji/konya",
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Selçuklu, Konya",
+      "approaches": []
+    },
+    {
+      "id": "127",
+      "slug": "fatma-guler",
+      "name": "Fatma Güler",
+      "title": "Psikolog",
+      "city": "konya",
+      "district": "Selçuklu | Meram | Karatay",
+      "image": "https://ui-avatars.com/api/?name=Fatma%20G%C3%BCler&background=1e3a5f&color=fff&size=400",
+      "shortBio": "Psikolog olarak Konya'da hizmet vermektedir.",
+      "longBio": [
+        "Fatma Güler, Konya'da psikolojik danışmanlık hizmetleri sunmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi"
+      ],
+      "sessionFee": null,
+      "sessionType": [
+        "Yüz Yüze"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": "https://www.doktortakvimi.com/fatma-guler-2/psikoloji/konya",
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Selçuklu | Meram | Karatay, Konya",
+      "approaches": []
+    },
+    {
+      "id": "128",
+      "slug": "busra-ozturk-mert",
+      "name": "Büşra Öztürk Mert",
+      "title": "Klinik Psikolog",
+      "city": "konya",
+      "district": "Selçuklu",
+      "image": "https://ui-avatars.com/api/?name=B%C3%BC%C5%9Fra%20%C3%96zt%C3%BCrk%20Mert&background=1e3a5f&color=fff&size=400",
+      "shortBio": "Klinik Psikolog Büşra Öztürk Mert, psikoloji alanında uzmanlaşmış ve danışanlarına psikolojik destek sağlamaktadır. Her bireyin ihtiyaçlarına göre özelleştirilmiş terapötik yaklaşımlar sunmaktadır.",
+      "longBio": [
+        "Klinik Psikolog Büşra Öztürk Mert, psikoloji alanında uzmanlaşmış ve danışanlarına psikolojik destek sağlamaktadır. Her bireyin ihtiyaçlarına göre özelleştirilmiş terapötik yaklaşımlar sunmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "kaygi-bozuklugu",
+        "depresyon",
+        "travma",
+        "aile-terapisi",
+        "cift-terapisi",
+        "cocuk-psikolojisi"
+      ],
+      "sessionFee": null,
+      "sessionType": [
+        "Yüz Yüze",
+        "Online"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": "https://www.doktortakvimi.com/busra-ozturk-mert/psikoloji/konya",
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Selçuklu, Konya",
+      "approaches": []
+    },
+    {
+      "id": "129",
+      "slug": "sinem-ekin",
+      "name": "Sinem Ekin",
+      "title": "Klinik Psikolog",
+      "city": "konya",
+      "district": "Selçuklu",
+      "image": "https://ui-avatars.com/api/?name=Sinem%20Ekin&background=1e3a5f&color=fff&size=400",
+      "shortBio": "Klinik psikolog Sinem Ekin, Konya Başkent Üniversitesi Hastanesi'nde danışanlarını kabul etmektedir. 2017 Maltepe Üniversitesi İngilizce Psikoloji bölümünden mezun olmuştur. Kent Üniversitesi Klinik Psikoloji Yüksek Lisansı programını tamamlamıştır.",
+      "longBio": [
+        "Klinik psikolog Sinem Ekin, Konya Başkent Üniversitesi Hastanesi'nde danışanlarını kabul etmektedir. 2017 Maltepe Üniversitesi İngilizce Psikoloji bölümünden mezun olmuştur. Kent Üniversitesi Klinik Psikoloji Yüksek Lisansı programını tamamlamıştır."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "kaygi-bozuklugu",
+        "depresyon",
+        "aile-terapisi",
+        "cift-terapisi",
+        "cocuk-psikolojisi",
+        "travma"
+      ],
+      "sessionFee": null,
+      "sessionType": [
+        "Yüz Yüze",
+        "Online"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": "https://www.doktortakvimi.com/sinem-ekin/psikoloji/konya",
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Selçuklu, Konya",
+      "approaches": []
+    },
+    {
+      "id": "130",
+      "slug": "hayriye-bozgoz-cayli",
+      "name": "Hayriye Bozgöz Çaylı",
+      "title": "Klinik Psikolog",
+      "city": "konya",
+      "district": "Selçuklu",
+      "image": "https://ui-avatars.com/api/?name=Hayriye%20Bozg%C3%B6z%20%C3%87ayl%C4%B1&background=1e3a5f&color=fff&size=400",
+      "shortBio": "2020 yılında Konya Karatay Üniversitesi Psikoloji mezuniyetimle birlikte; çocuk, ergen ve yetişkin terapisti olarak geniş bir yelpazede hizmet vermeye başladım.",
+      "longBio": [
+        "2020 yılında Konya Karatay Üniversitesi Psikoloji mezuniyetimle birlikte; çocuk, ergen ve yetişkin terapisti olarak geniş bir yelpazede hizmet vermeye başladım."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "kaygi-bozuklugu",
+        "depresyon",
+        "aile-terapisi",
+        "cift-terapisi",
+        "cocuk-psikolojisi",
+        "travma"
+      ],
+      "sessionFee": null,
+      "sessionType": [
+        "Yüz Yüze",
+        "Online"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": "https://www.doktortakvimi.com/hayriye-bozgoz-cayli/psikoloji/konya",
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Selçuklu, Konya",
+      "approaches": []
+    },
+    {
+      "id": "131",
+      "slug": "sultan-zehra-utlu",
+      "name": "Sultan Zehra Ütlu",
+      "title": "Psikolog",
+      "city": "konya",
+      "district": "Meram",
+      "image": "https://ui-avatars.com/api/?name=Sultan%20Zehra%20%C3%9Ctlu&background=1e3a5f&color=fff&size=400",
+      "shortBio": "Lisans eğitimimi yüksek şeref öğrencisi olarak bitirdim. Çeşitli kurumlarda staj yaptım. Halihazırda Özel Terapimed Aile Danışmanlık Merkezi’nde psikolog olarak görev yapmaktayım.",
+      "longBio": [
+        "Lisans eğitimimi yüksek şeref öğrencisi olarak bitirdim. Çeşitli kurumlarda staj yaptım. Halihazırda Özel Terapimed Aile Danışmanlık Merkezi’nde psikolog olarak görev yapmaktayım."
+      ],
+      "services": [
+        "aile-terapisi",
+        "cift-terapisi",
+        "cocuk-psikolojisi",
+        "depresyon",
+        "kaygi-bozuklugu",
+        "bireysel-terapi"
+      ],
+      "sessionFee": null,
+      "sessionType": [
+        "Yüz Yüze",
+        "Online"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": "https://www.doktortakvimi.com/sultan-zehra-utlu/psikoloji/konya",
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Meram, Konya",
+      "approaches": []
+    },
+    {
+      "id": "132",
+      "slug": "sait-duzen",
+      "name": "Sait Düzen",
+      "title": "Klinik Psikolog",
+      "city": "konya",
+      "district": "Meram",
+      "image": "https://ui-avatars.com/api/?name=Sait%20D%C3%BCzen&background=1e3a5f&color=fff&size=400",
+      "shortBio": "İnsan ve parçası olduğu doğa, sosyal yapılar ve kurumlarla olan etkileşimi ve ilgili değişkenlere bağlı ortaya çıkan bozukluklara yönelik profesyonel psikolojik destek hizmeti veriyorum.",
+      "longBio": [
+        "İnsan ve parçası olduğu doğa, sosyal yapılar ve kurumlarla olan etkileşimi ve ilgili değişkenlere bağlı ortaya çıkan bozukluklara yönelik profesyonel psikolojik destek hizmeti veriyorum."
+      ],
+      "services": [
+        "kişilik-bozuklukları",
+        "davranış-bozuklukları",
+        "kaygı-bozuklukları",
+        "yeme-bozuklukları",
+        "duygulanım-bozukluğu",
+        "kişilerarası-ilişkilerde-bozukluklar",
+        "yaygın-anksiyete-bozukluğu",
+        "obsesif-kompulsif-bozukluk",
+        "panik-atak",
+        "narsistik-kişilik-bozukluğu",
+        "okula-uyum-sorunları",
+        "bipolar-bozukluk",
+        "şizofreni",
+        "özgüven-sorunu",
+        "distimik-bozukluk",
+        "ağlama-ve-öfke-nöbetleri",
+        "cinsel-terapi-danışmanlığı",
+        "şiddet-ve-istismar",
+        "anksiyete",
+        "tırnak-yeme",
+        "panik-bozukluklar",
+        "internet-bağımlılığı",
+        "telefon-bağımlılığı",
+        "bağlanma-problemleri",
+        "alkol-bağımlılığı",
+        "uyku-bozuklukları",
+        "travma-uyum-bozuklukları",
+        "sosyal-uyum-problemleri",
+        "travma-sonrası-stres-bozukluğu",
+        "alışveriş-bağımlılığı",
+        "fobiler",
+        "oyun-bağımlılığı",
+        "sosyal-medya-bağımlılığı",
+        "sigara-bağımlılığı",
+        "kumar-bağımlılığı"
+      ],
+      "sessionFee": null,
+      "sessionType": [
+        "Yüz Yüze"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": "https://www.doktortakvimi.com/sait-duzen/psikoloji/konya",
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Meram, Konya",
+      "approaches": []
+    },
+    {
+      "id": "133",
+      "slug": "handan-deniz-ayalp",
+      "name": "Handan Deniz Ayalp",
+      "title": "Psikolog",
+      "city": "konya",
+      "district": "Selçuklu",
+      "image": "https://ui-avatars.com/api/?name=Handan%20Deniz%20Ayalp&background=1e3a5f&color=fff&size=400",
+      "shortBio": "Psikolog olarak Konya'da hizmet vermektedir.",
+      "longBio": [
+        "Handan Deniz Ayalp, Konya'da psikolojik danışmanlık hizmetleri sunmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi"
+      ],
+      "sessionFee": null,
+      "sessionType": [
+        "Yüz Yüze"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": "https://www.doktortakvimi.com/handan-deniz-ayalp/psikoloji/konya",
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Selçuklu, Konya",
+      "approaches": []
+    },
+    {
+      "id": "134",
+      "slug": "gulsen-sari",
+      "name": "Gülşen Sarı",
+      "title": "Psikolog",
+      "city": "konya",
+      "district": "Meram",
+      "image": "https://ui-avatars.com/api/?name=G%C3%BCl%C5%9Fen%20Sar%C4%B1&background=1e3a5f&color=fff&size=400",
+      "shortBio": "Psikolog Gülşen Sarı, 2013 senesinde Özel Aday Özel Eğitim ve Rehabilitasyon Merkezi adıyla faaliyetine başlamıştır. Zihinsel Engelli Bireyler Destek Eğitim Programı ve Özel Öğrenme Güçlüğü Destek Eğitim Programlarında 2018 senesine kadar öğrencilerine eğitim vermiştir.",
+      "longBio": [
+        "Psikolog Gülşen Sarı, 2013 senesinde Özel Aday Özel Eğitim ve Rehabilitasyon Merkezi adıyla faaliyetine başlamıştır. Zihinsel Engelli Bireyler Destek Eğitim Programı ve Özel Öğrenme Güçlüğü Destek Eğitim Programlarında 2018 senesine kadar öğrencilerine eğitim vermiştir."
+      ],
+      "services": [
+        "depresyon",
+        "aile-terapisi",
+        "cift-terapisi",
+        "cocuk-psikolojisi",
+        "ergen-psikolojisi",
+        "stres",
+        "sosyal-fobi",
+        "sinir-bozuklugu",
+        "kaygi-bozuklugu",
+        "obsesif-kompulsif-bozukluk",
+        "panik-atak",
+        "kişilik-bozukluğu",
+        "hipokondriazis",
+        "dikkat-eksikligi-ve-hiperaktivite",
+        "pandas-hastaligi",
+        "lohusalik-sendromu",
+        "duygulanim-bozuklugu",
+        "manik-depresif-hastaligi",
+        "majör-depresif-bozukluk",
+        "çocuklarda-yeme-problemleri",
+        "ilaç-bağımlılığı",
+        "okula-uyum-sorunları",
+        "agorafobi",
+        "vücut-disformik-bozukluğu",
+        "telefon-bağımlılığı",
+        "koronofobi",
+        "narsistik-kişilik-bozukluğu",
+        "oyun-bağımlılığı",
+        "sosyal-medya-bağımlılığı",
+        "alkol-bağımlılığı",
+        "sigara-bağımlılığı",
+        "evlilik-sorunları",
+        "evlenme-korkusu",
+        "anne-baba-eğitimi-ve-danışmanlığı",
+        "bipolar-bozukluk",
+        "ilişki-problemleri",
+        "borderline-kişilerarası-ilişkilerde-bozukluklar",
+        "sertleşme-problemi",
+        "saldırganlık",
+        "adipsi",
+        "unutkanlık",
+        "panik-bozukluğu",
+        "madde-kullanımıyla-ilişkili-bozukluklar",
+        "erkek-erken-boşalma-sorunları",
+        "korku"
+      ],
+      "sessionFee": null,
+      "sessionType": [
+        "Yüz Yüze",
+        "Online"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": "https://www.doktortakvimi.com/gulsen-sari-2/psikoloji/konya",
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Meram, Konya",
+      "approaches": []
+    },
+    {
+      "id": "135",
+      "slug": "ayfer-ekentok",
+      "name": "Ayfer Ekentok",
+      "title": "Psikolog",
+      "city": "konya",
+      "district": "Selçuklu | Meram | Karatay",
+      "image": "https://ui-avatars.com/api/?name=Ayfer%20Ekentok&background=1e3a5f&color=fff&size=400",
+      "shortBio": "Psikolog olarak Konya'da hizmet vermektedir.",
+      "longBio": [
+        "Ayfer Ekentok, Konya'da psikolojik danışmanlık hizmetleri sunmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi"
+      ],
+      "sessionFee": null,
+      "sessionType": [
+        "Yüz Yüze"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": "https://www.doktortakvimi.com/ayfer-ekentok/psikoloji/konya",
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Selçuklu | Meram | Karatay, Konya",
+      "approaches": []
+    },
+    {
+      "id": "136",
+      "slug": "gizem-ortakaya",
+      "name": "Gizem Ortakaya",
+      "title": "Klinik Psikolog | Psikolog | Psikolojik Danışman | Uzman Psikolog",
+      "city": "konya",
+      "district": "Selçuklu",
+      "image": "https://ui-avatars.com/api/?name=Gizem%20Ortakaya&background=1e3a5f&color=fff&size=400",
+      "shortBio": "Lisans eğitimimi İstanbul Beykent Üniversitesi Psikoloji Bölümünde tamamladım. Eğitimim sirasinda İstanbul’ da çeşitli huzurevleri bakımevleri ve rehabilitasyon merkezlerinde gönüllü olarak hizmet verdim.",
+      "longBio": [
+        "Lisans eğitimimi İstanbul Beykent Üniversitesi Psikoloji Bölümünde tamamladım. Eğitimim sirasinda İstanbul’ da çeşitli huzurevleri bakımevleri ve rehabilitasyon merkezlerinde gönüllü olarak hizmet verdim."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "aile-terapisi",
+        "cift-terapisi",
+        "cocuk-psikolojisi",
+        "depresyon",
+        "ergen-psikolojisi"
+      ],
+      "sessionFee": null,
+      "sessionType": [
+        "Yüz Yüze",
+        "Online"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": "https://www.doktortakvimi.com/gizem-ortakaya/psikoloji/konya",
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Konya, Konya",
+      "approaches": []
+    },
+    {
+      "id": "137",
+      "slug": "derya-i-nekci",
+      "name": "Derya İnekci",
+      "title": "Psikolog",
+      "city": "konya",
+      "district": "Selçuklu",
+      "image": "https://ui-avatars.com/api/?name=Derya%20%C4%B0nekci&background=1e3a5f&color=fff&size=400",
+      "shortBio": "Psikoloji branşında hastalarına sağlık hizmet vermektedir. Başlıca ilgi alanları depresyon, stres, yaygın anksiyete bozukluğu, aile içi iletişim sorunları ve sosyal fobi",
+      "longBio": [
+        "Psikoloji branşında hastalarına sağlık hizmet vermektedir. Başlıca ilgi alanları depresyon, stres, yaygın anksiyete bozukluğu, aile içi iletişim sorunları ve sosyal fobi"
+      ],
+      "services": [
+        "bireysel-terapi",
+        "depresyon",
+        "anksiyete-bozuklugu",
+        "aile-terapisi",
+        "cift-terapisi",
+        "cocuk-psikolojisi",
+        "travma"
+      ],
+      "sessionFee": null,
+      "sessionType": [
+        "Yüz Yüze"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": "https://www.doktortakvimi.com/derya-inekci/psikoloji/konya",
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Selçuklu, Konya",
+      "approaches": []
+    },
+    {
+      "id": "138",
+      "slug": "nur-banu-polat-sipahi",
+      "name": "Nur Banu Polat Sipahi",
+      "title": "Psikolog",
+      "city": "konya",
+      "district": "Selçuklu",
+      "image": "https://ui-avatars.com/api/?name=Nur%20Banu%20Polat%20Sipahi&background=1e3a5f&color=fff&size=400",
+      "shortBio": "Psikolog olarak Konya'da hizmet vermektedir.",
+      "longBio": [
+        "Nur Banu Polat Sipahi, Konya'da psikolojik danışmanlık hizmetleri sunmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi"
+      ],
+      "sessionFee": null,
+      "sessionType": [
+        "Yüz Yüze"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": "https://www.doktortakvimi.com/nur-banu-polat-sipahi/psikoloji/konya",
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Selçuklu, Konya",
+      "approaches": []
+    },
+    {
+      "id": "139",
+      "slug": "aysenur-yilmaz",
+      "name": "Ayşenur Yılmaz",
+      "title": "Klinik Psikolog",
+      "city": "konya",
+      "district": "Selçuklu",
+      "image": "https://ui-avatars.com/api/?name=Ay%C5%9Fenur%20Y%C4%B1lmaz&background=1e3a5f&color=fff&size=400",
+      "shortBio": "Uzm. Kl. Psk. Ayşenur Yılmaz, Psikoloji alanında hizmet vermektedir. Lisans eğitimini Maltepe Üniversitesi Psikoloji bölümünü tamamlamıştır.",
+      "longBio": [
+        "Uzm. Kl. Psk. Ayşenur Yılmaz, Psikoloji alanında hizmet vermektedir. Lisans eğitimini Maltepe Üniversitesi Psikoloji bölümünü tamamlamıştır."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "depresyon",
+        "emdr",
+        "ergen-psikolojisi",
+        "aile-terapisi",
+        "cift-terapisi",
+        "cocuk-psikolojisi",
+        "travma",
+        "kaygi-bozuklugu"
+      ],
+      "sessionFee": null,
+      "sessionType": [
+        "Yüz Yüze",
+        "Online"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": "https://www.doktortakvimi.com/aysenur-yilmaz-3/psikoloji/konya",
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Selçuklu, Konya",
+      "approaches": []
+    },
+    {
+      "id": "140",
+      "slug": "husniye-dayioglu",
+      "name": "Hüsniye Dayıoğlu",
+      "title": "Psikolog",
+      "city": "konya",
+      "district": "Karatay",
+      "image": "https://ui-avatars.com/api/?name=H%C3%BCsniye%20Day%C4%B1o%C4%9Flu&background=1e3a5f&color=fff&size=400",
+      "shortBio": "KTO Karatay Üniversitesi Psikoloji Bölümü'nden mezun oldum. Lisans sürecimde yönetim kurulu arkadaşlarımız ile kurmuş olduğumuz Psikolojik Etkileşim Topluluk (PSİET) aracılığı ile alanında uzman hocaları okula davet edip bilgi ve birikimlerinden faydalanma fırsatımız oldu.",
+      "longBio": [
+        "KTO Karatay Üniversitesi Psikoloji Bölümü'nden mezun oldum. Lisans sürecimde yönetim kurulu arkadaşlarımız ile kurmuş olduğumuz Psikolojik Etkileşim Topluluk (PSİET) aracılığı ile alanında uzman hocaları okula davet edip bilgi ve birikimlerinden faydalanma fırsatımız oldu."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "depresyon",
+        "aile-terapisi",
+        "cift-terapisi",
+        "cocuk-psikolojisi",
+        "travma",
+        "kaygi-bozuklugu",
+        "emdr",
+        "ergen-psikolojisi"
+      ],
+      "sessionFee": null,
+      "sessionType": [
+        "Yüz Yüze",
+        "Online"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": "https://www.doktortakvimi.com/husniye-dayioglu/psikoloji/konya",
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Karatay, Konya",
+      "approaches": []
+    },
+    {
+      "id": "141",
+      "slug": "merve-celik",
+      "name": "Merve Çelik",
+      "title": "Klinik Psikolog",
+      "city": "konya",
+      "district": "Meram",
+      "image": "https://ui-avatars.com/api/?name=Merve%20%C3%87elik&background=1e3a5f&color=fff&size=400",
+      "shortBio": "Klinik Psikolog Merve Çelik, Boğaziçi Üniversitesi psikoloji bölümünden mezun olduktan sonra İbn Haldun Üniversitesi'nde klinik psikoloji yüksek lisansı yaptı. Çocuk, ergen ve yetişkin terapi hizmetleri veren Merve Çelik, BDT ve ACT ekollerinde eğitimler ve süpervizyonlar aldı.",
+      "longBio": [
+        "Klinik Psikolog Merve Çelik, Boğaziçi Üniversitesi psikoloji bölümünden mezun olduktan sonra İbn Haldun Üniversitesi'nde klinik psikoloji yüksek lisansı yaptı. Çocuk, ergen ve yetişkin terapi hizmetleri veren Merve Çelik, BDT ve ACT ekollerinde eğitimler ve süpervizyonlar aldı."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "depresyon",
+        "aile-terapisi",
+        "cift-terapisi",
+        "cocuk-psikolojisi",
+        "travma",
+        "kaygi-bozuklugu",
+        "ergen-psikolojisi"
+      ],
+      "sessionFee": null,
+      "sessionType": [
+        "Yüz Yüze",
+        "Online"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": "https://www.doktortakvimi.com/merve-celik-3/psikoloji/konya",
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Meram, Konya",
+      "approaches": []
+    },
+    {
+      "id": "142",
+      "slug": "gul-arioz",
+      "name": "Gül Arıöz",
+      "title": "Psikolog",
+      "city": "konya",
+      "district": "Selçuklu",
+      "image": "https://ui-avatars.com/api/?name=G%C3%BCl%20Ar%C4%B1%C3%B6z&background=1e3a5f&color=fff&size=400",
+      "shortBio": "Psikolog olarak mesleki hayatımda önceliğimi çocuklarla çalışmak şeklinde belirledim.",
+      "longBio": [
+        "Psikolog olarak mesleki hayatımda önceliğimi çocuklarla çalışmak şeklinde belirledim."
+      ],
+      "services": [
+        "depresyon",
+        "aile-ici-iletisim-sorunlari",
+        "stres",
+        "sosyal-fobi",
+        "sinav-kaygisi",
+        "ozgüven-sorunu",
+        "yaygin-anksiyete-bozuklugu",
+        "dikkat-eksikligi-ve-hiperaktivite",
+        "okula-uyum-sorunlari",
+        "cocuk-ve-ergen-psikolojisi",
+        "davranis-bozukluklari",
+        "okul-basarısızlığı"
+      ],
+      "sessionFee": null,
+      "sessionType": [
+        "Yüz Yüze"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": "https://www.doktortakvimi.com/gul-arioz/psikoloji/konya",
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Selçuklu, Konya",
+      "approaches": []
+    },
+    {
+      "id": "143",
+      "slug": "kibar-ozcan-akbal",
+      "name": "Kibar Özcan Akbal",
+      "title": "Psikolog",
+      "city": "konya",
+      "district": "Selçuklu",
+      "image": "https://ui-avatars.com/api/?name=Kibar%20%C3%96zcan%20Akbal&background=1e3a5f&color=fff&size=400",
+      "shortBio": "Psikolog Kibar Özcan Akbal, KTO Karatay Üniversitesi Psikoloji Bölümünden mezun oldu. Yüksek Lisansını aynı üniversitede tamamladı. Doktora hazırlık dönemi kapsamında birçok eğitim aldı.",
+      "longBio": [
+        "Psikolog Kibar Özcan Akbal, KTO Karatay Üniversitesi Psikoloji Bölümünden mezun oldu. Yüksek Lisansını aynı üniversitede tamamladı. Doktora hazırlık dönemi kapsamında birçok eğitim aldı."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "aile-terapisi",
+        "cinsel-terapi",
+        "emdr",
+        "bdt",
+        "çözüm-odaklı-terapi",
+        "depresyon",
+        "aile-ici-iletişim-sorunları",
+        "stres",
+        "sosyal-fobi",
+        "sınav-kaygısı"
+      ],
+      "sessionFee": null,
+      "sessionType": [
+        "Yüz Yüze",
+        "Online"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": "https://www.doktortakvimi.com/kibar-ozcan-akbal/psikoloji/konya",
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Selçuklu, Konya",
+      "approaches": []
+    },
+    {
+      "id": "144",
+      "slug": "seyda-yilmaz",
+      "name": "Şeyda Yılmaz",
+      "title": "Psikolog",
+      "city": "konya",
+      "district": "Selçuklu",
+      "image": "https://ui-avatars.com/api/?name=%C5%9Eeyda%20Y%C4%B1lmaz&background=1e3a5f&color=fff&size=400",
+      "shortBio": "2018 yılında Orta Doğu Teknik Üniversitesi, Psikoloji bölümünden mezun oldum. Aynı yıl 'Aile Danışmanlığı' eğitimi tamamladım. 2019 yılında özel bir kurumda yaklaşık bir yıl süren bir klinik staj programını tamamladım.",
+      "longBio": [
+        "2018 yılında Orta Doğu Teknik Üniversitesi, Psikoloji bölümünden mezun oldum. Aynı yıl 'Aile Danışmanlığı' eğitimi tamamladım. 2019 yılında özel bir kurumda yaklaşık bir yıl süren bir klinik staj programını tamamladım."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "depresyon",
+        "aile-terapisi",
+        "cift-terapisi",
+        "cocuk-psikolojisi",
+        "travma",
+        "kaygi-bozuklugu",
+        "ergen-psikolojisi"
+      ],
+      "sessionFee": null,
+      "sessionType": [
+        "Yüz Yüze",
+        "Online"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": "https://www.doktortakvimi.com/seyda-yilmaz-2/psikoloji/konya",
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Selçuklu, Konya",
+      "approaches": []
+    },
+    {
+      "id": "145",
+      "slug": "elif-akgun-yarimoglu",
+      "name": "Elif Akgün Yarımoğlu",
+      "title": "Psikolog",
+      "city": "konya",
+      "district": "Selçuklu",
+      "image": "https://ui-avatars.com/api/?name=Elif%20Akg%C3%BCn%20Yar%C4%B1mo%C4%9Flu&background=1e3a5f&color=fff&size=400",
+      "shortBio": "Psikoloji alanındaki güncel yaklaşımları takip eden ve mesleki yetkinliğini sürekli geliştiren bir psikolog olarak, danışanlarına en etkili ve kanıta dayalı yöntemlerle destek sunmayı hedefliyorum.",
+      "longBio": [
+        "Psikoloji alanındaki güncel yaklaşımları takip eden ve mesleki yetkinliğini sürekli geliştiren bir psikolog olarak, danışanlarına en etkili ve kanıta dayalı yöntemlerle destek sunmayı hedefliyorum."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "çocuk-psikolojisi",
+        "ergen-psikolojisi",
+        "aile-terapisi",
+        "cift-terapisi",
+        "kaygi-bozuklugu",
+        "depresyon",
+        "emdr",
+        "travma"
+      ],
+      "sessionFee": null,
+      "sessionType": [
+        "Yüz Yüze",
+        "Online"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": "https://www.doktortakvimi.com/elif-akgun-yarimoglu/psikoloji/konya",
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Konya, Konya",
+      "approaches": []
+    },
+    {
+      "id": "146",
+      "slug": "tugba-atceken",
+      "name": "Tuğba Atçeken",
+      "title": "Psikolog",
+      "city": "konya",
+      "district": "Selçuklu | Meram",
+      "image": "https://ui-avatars.com/api/?name=Tu%C4%9Fba%20At%C3%A7eken&background=1e3a5f&color=fff&size=400",
+      "shortBio": "1990 Yozgat doğumluyum. Liseyi Boğazlıyan Cemil Çiçek Sağlık Meslek Lisesi Acil Tıp Teknisyenliği bölümünde okuyup 2004 yılında mezun oldum. Sonrasında Cumhuriyet Üniversitesi Ameliyathane Hemşireliği bölümüne devam ettim.",
+      "longBio": [
+        "1990 Yozgat doğumluyum. Liseyi Boğazlıyan Cemil Çiçek Sağlık Meslek Lisesi Acil Tıp Teknisyenliği bölümünde okuyup 2004 yılında mezun oldum. Sonrasında Cumhuriyet Üniversitesi Ameliyathane Hemşireliği bölümüne devam ettim."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "kaygi-bozuklugu",
+        "depresyon",
+        "bağımlılık",
+        "dikkat-eksikliği-ve-hiperaktivite",
+        "destekleyici-psikoterapi",
+        "travma"
+      ],
+      "sessionFee": null,
+      "sessionType": [
+        "Yüz Yüze"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": "https://www.doktortakvimi.com/tugba-atceken/psikoloji/konya",
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Selçuklu | Meram, Konya",
+      "approaches": []
+    },
+    {
+      "id": "147",
+      "slug": "merve-cucun",
+      "name": "Merve Cucun",
+      "title": "Psikolog",
+      "city": "konya",
+      "district": "Karatay",
+      "image": "https://ui-avatars.com/api/?name=Merve%20Cucun&background=1e3a5f&color=fff&size=400",
+      "shortBio": "Karatay Üniversitesi Psikoloji bölümünü başarı belgelerimle bitirdikten sonra gerekli eğitimlerimi tamamladım. Konya'da çalışmalarımı sürdürmekteyim.",
+      "longBio": [
+        "Karatay Üniversitesi Psikoloji bölümünü başarı belgelerimle bitirdikten sonra gerekli eğitimlerimi tamamladım. Konya'da çalışmalarımı sürdürmekteyim."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "aile-terapisi",
+        "cift-terapisi",
+        "depresyon",
+        "stres",
+        "sosyal-fobi",
+        "yaygin-anksiyete-bozuklugu",
+        "obsesif-kompulsif-bozukluk",
+        "travma-sonrasi-stres-bozuklugu",
+        "yeme-bozukluklari",
+        "kisilik-bozukluklari",
+        "panik-bozukluklar"
+      ],
+      "sessionFee": null,
+      "sessionType": [
+        "Yüz Yüze",
+        "Online"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": "https://www.doktortakvimi.com/merve-cucun/psikoloji/konya",
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Karatay, Konya",
+      "approaches": []
+    },
+    {
+      "id": "148",
+      "slug": "esra-ates",
+      "name": "Esra Ateş",
+      "title": "Klinik Psikolog",
+      "city": "konya",
+      "district": "Selçuklu",
+      "image": "https://ui-avatars.com/api/?name=Esra%20Ate%C5%9F&background=1e3a5f&color=fff&size=400",
+      "shortBio": "Klinik Psikolog olarak Konya'da hizmet vermektedir.",
+      "longBio": [
+        "Esra Ateş, Konya'da psikolojik danışmanlık hizmetleri sunmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi"
+      ],
+      "sessionFee": null,
+      "sessionType": [
+        "Yüz Yüze"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": "https://www.doktortakvimi.com/esra-ates-4/psikoloji/konya",
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Konya, Konya",
+      "approaches": []
+    },
+    {
+      "id": "149",
+      "slug": "melek-pitir",
+      "name": "Melek Pıtır",
+      "title": "Psikolog",
+      "city": "konya",
+      "district": "Selçuklu",
+      "image": "https://ui-avatars.com/api/?name=Melek%20P%C4%B1t%C4%B1r&background=1e3a5f&color=fff&size=400",
+      "shortBio": "Ufuk Üniversitesi'nde Psikolog unvanı alan Melek Pıtır, çocuk, ergen ve yetişkin alanlarına ilişkin Bireysel Psikoterapi, Ergen Terapisi, Çocuk Dikkat Ölçme ve Değerlendirme, Nöropsikolojik Test eğitimleriyle hizmet vermektedir.",
+      "longBio": [
+        "Ufuk Üniversitesi'nde Psikolog unvanı alan Melek Pıtır, çocuk, ergen ve yetişkin alanlarına ilişkin Bireysel Psikoterapi, Ergen Terapisi, Çocuk Dikkat Ölçme ve Değerlendirme, Nöropsikolojik Test eğitimleriyle hizmet vermektedir."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "depresyon",
+        "aile-terapisi",
+        "cift-terapisi",
+        "cocuk-psikolojisi"
+      ],
+      "sessionFee": null,
+      "sessionType": [
+        "Yüz Yüze",
+        "Online"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": "https://www.doktortakvimi.com/melek-pitir/psikoloji/konya",
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Selçuklu, Konya",
+      "approaches": []
+    },
+    {
+      "id": "150",
+      "slug": "gokhan-surer",
+      "name": "Gökhan Sürer",
+      "title": "Uzman Psikolog",
+      "city": "konya",
+      "district": "Meram",
+      "image": "https://ui-avatars.com/api/?name=G%C3%B6khan%20S%C3%BCrer&background=1e3a5f&color=fff&size=400",
+      "shortBio": "Uzman Psikolog Gökhan Sürer, 2017 yılında Orta Doğu Teknik Üniversitesi Kuzey Kıbrıs Kampüsünde psikoloji lisans eğitimini tamamladı. 2019 yılında Almanya’nın Leipzig Üniversitesinde Yüksek Lisans Eğitimimi Erken Çocukluk Dönemi Araştırmaları üzerine tamamlayarak uzmanlığını aldı.",
+      "longBio": [
+        "Uzman Psikolog Gökhan Sürer, 2017 yılında Orta Doğu Teknik Üniversitesi Kuzey Kıbrıs Kampüsünde psikoloji lisans eğitimini tamamladı. 2019 yılında Almanya’nın Leipzig Üniversitesinde Yüksek Lisans Eğitimimi Erken Çocukluk Dönemi Araştırmaları üzerine tamamlayarak uzmanlığını aldı."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "depresyon",
+        "aile-terapisi",
+        "cift-terapisi",
+        "cocuk-psikolojisi",
+        "travma",
+        "kaygi-bozuklugu",
+        "ergen-psikolojisi"
+      ],
+      "sessionFee": null,
+      "sessionType": [
+        "Online"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": "https://www.doktortakvimi.com/gokhan-surer-2/psikoloji/konya",
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Meram, Konya",
+      "approaches": []
+    },
+    {
+      "id": "151",
+      "slug": "esra-uzbas-ugur",
+      "name": "Esra Uzbaş Uğur",
+      "title": "Uzman Klinik Psikolog",
+      "city": "konya",
+      "district": "Selçuklu",
+      "image": "https://ui-avatars.com/api/?name=Esra%20Uzba%C5%9F%20U%C4%9Fur&background=1e3a5f&color=fff&size=400",
+      "shortBio": "Uzman Klinik Psikolog Esra Uzbaş Uğur, Hacettepe Üniversitesi Psikoloji Bölümünden lisans ve yüksek lisans eğitimini tamamlamıştır. Bilişsel Davranışçı Terapi ve Şema Terapi eğitimlerini tamamlamış ve online ve yüz yüze görüşmeler gerçekleştirmektedir.",
+      "longBio": [
+        "Uzman Klinik Psikolog Esra Uzbaş Uğur, Hacettepe Üniversitesi Psikoloji Bölümünden lisans ve yüksek lisans eğitimini tamamlamıştır. Bilişsel Davranışçı Terapi ve Şema Terapi eğitimlerini tamamlamış ve online ve yüz yüze görüşmeler gerçekleştirmektedir."
+      ],
+      "services": [
+        "bireysel-terapi",
+        "kaygi-bozuklugu",
+        "depresyon",
+        "bilişsel-davranışçı-terapi",
+        "şema-terapi",
+        "aile-terapisi",
+        "çift-terapisi",
+        "yetişkin-terapisi",
+        "travma"
+      ],
+      "sessionFee": null,
+      "sessionType": [
+        "Yüz Yüze",
+        "Online"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": "https://www.doktortakvimi.com/esra-uzbas-ugur/psikoloji/konya",
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Selçuklu, Konya",
+      "approaches": []
+    },
+    {
+      "id": "152",
+      "slug": "gurkan-erdemir",
+      "name": "Gürkan Erdemir",
+      "title": "Psikolog",
+      "city": "konya",
+      "district": "Selçuklu | Meram | Karatay",
+      "image": "https://ui-avatars.com/api/?name=G%C3%BCrkan%20Erdemir&background=1e3a5f&color=fff&size=400",
+      "shortBio": "Psikoloji uzmanı",
+      "longBio": [
+        "Psikoloji uzmanı"
+      ],
+      "services": [
+        "bireysel-terapi",
+        "ergen-terapisi",
+        "çocuk-ve-ergen-psikolojisi",
+        "bilişsel-davranışçı-terapi",
+        "cinsel-terapi",
+        "oyun-terapisi"
+      ],
+      "sessionFee": null,
+      "sessionType": [
+        "Yüz Yüze"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": "https://www.doktortakvimi.com/gurkan-erdemir/psikoloji/konya",
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Selçuklu | Meram | Karatay, Konya",
+      "approaches": []
+    },
+    {
+      "id": "153",
+      "slug": "zehra-bagcali",
+      "name": "Zehra Bağcalı",
+      "title": "Psikolog",
+      "city": "konya",
+      "district": "Selçuklu",
+      "image": "https://ui-avatars.com/api/?name=Zehra%20Ba%C4%9Fcal%C4%B1&background=1e3a5f&color=fff&size=400",
+      "shortBio": "Psikolog olarak Konya'da hizmet vermektedir.",
+      "longBio": [
+        "Zehra Bağcalı, Konya'da psikolojik danışmanlık hizmetleri sunmaktadır."
+      ],
+      "services": [
+        "bireysel-terapi"
+      ],
+      "sessionFee": null,
+      "sessionType": [
+        "Yüz Yüze"
+      ],
+      "experience": null,
+      "phone": null,
+      "appointmentUrl": "https://www.doktortakvimi.com/zehra-bagcali/psikoloji/konya",
+      "featured": false,
+      "education": [],
+      "certifications": [],
+      "languages": [
+        "Türkçe"
+      ],
+      "officeAddress": "Konya, Konya",
+      "approaches": []
     }
   ],
   "services": [
