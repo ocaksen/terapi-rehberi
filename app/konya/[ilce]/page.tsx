@@ -102,6 +102,202 @@ const ILCELER: Record<string, IlceData> = {
       },
     ],
   },
+  eregli: {
+    name: "Ereğli",
+    description: "Konya Ereğli'de online terapi ve psikolojik danışmanlık hizmetleri. Lisanslı uzmanlarla video seans imkânı. 2026 güncel.",
+    nüfus: "115.000+",
+    tanim: "Konya'nın güneydoğusundaki sanayi ve tarım kenti Ereğli, bölgenin en büyük ilçelerinden biridir.",
+    faqs: [
+      {
+        q: "Ereğli'de psikolog var mı?",
+        a: "Ereğli'de yüz yüze psikolog seçenekleri kısıtlıdır. Online terapi sayesinde Ereğli'den Konya ve Türkiye genelindeki lisanslı uzmanlara kolayca ulaşabilirsiniz.",
+      },
+      {
+        q: "Ereğli'den online terapi nasıl alınır?",
+        a: "TerapiRehberi'nde listelenen uzmanlardan birini seçip randevu bağlantısına tıklamanız yeterli. Video görüşme yalnızca internet bağlantısı ve telefon ya da bilgisayar gerektirmektedir.",
+      },
+      {
+        q: "Online terapi yüz yüze kadar etkili mi?",
+        a: "Araştırmalar online terapinin kaygı, depresyon ve ilişki sorunlarında yüz yüze terapi kadar etkili olduğunu göstermektedir. Ayrıca zaman ve ulaşım tasarrufu sağlar.",
+      },
+      {
+        q: "Ereğli'de çalışan bir psikolog platforma nasıl katılabilir?",
+        a: "Ereğli'de hizmet veren lisanslı psikologlar TerapiRehberi'ne ücretsiz başvurabilir. 'Uzman Ol' sayfasından başvurunuzu iletebilirsiniz.",
+      },
+      {
+        q: "Online seans gizliliği nasıl sağlanır?",
+        a: "Güvenli şifreli video platformları üzerinden yapılan seanslar tamamen gizlidir. Terapistler mesleki etik kuralları gereği danışan bilgilerini üçüncü kişilerle paylaşamaz.",
+      },
+    ],
+  },
+  aksehir: {
+    name: "Akşehir",
+    description: "Konya Akşehir'de online terapi ve psikolojik danışmanlık. Uzman psikologlarla video seans seçeneği. 2026 güncel.",
+    nüfus: "100.000+",
+    tanim: "Nasreddin Hoca'nın memleketi Akşehir, Konya'nın batısında tarihî ve kültürel mirasıyla öne çıkan bir ilçedir.",
+    faqs: [
+      {
+        q: "Akşehir'de psikolog bulabilir miyim?",
+        a: "Akşehir'de yüz yüze psikolog seçenekleri sınırlıdır. Online terapi ile ilçenizden ayrılmadan Konya merkezli lisanslı uzmanlarla çalışabilirsiniz.",
+      },
+      {
+        q: "Akşehir'den online terapi almak pratik mi?",
+        a: "Evet. Akşehir gibi büyük şehir merkezlerine uzak ilçelerde online terapi en erişilebilir seçenektir. Telefon, tablet veya bilgisayarla her yerden seans yapılabilir.",
+      },
+      {
+        q: "Akşehir'de kaygı ve panik atak için destek var mı?",
+        a: "Online terapi yoluyla kaygı bozukluğu ve panik atak konusunda uzmanlaşmış psikologlarla çalışabilirsiniz. TerapiRehberi'nde 'Kaygı & Panik Atak' filtresiyle ilgili uzmanları bulabilirsiniz.",
+      },
+      {
+        q: "Akşehir'de ergen için psikolog nereden bulunur?",
+        a: "Ergen psikolojisi alanında online seans sunan uzmanlar, Akşehir'deki gençlere ilçe fark etmeksizin destek verebilmektedir.",
+      },
+      {
+        q: "Akşehir'de çalışan psikologlar platforma katılabilir mi?",
+        a: "Evet. Akşehir'de hizmet veren lisanslı psikologlar TerapiRehberi'ne ücretsiz kayıt yaptırabilir ve Konya genelindeki danışan ağına ulaşabilir.",
+      },
+    ],
+  },
+  kulu: {
+    name: "Kulu",
+    description: "Konya Kulu'da online terapi ve psikolojik destek hizmetleri. Lisanslı psikologlarla video seans. 2026 güncel.",
+    nüfus: "55.000+",
+    tanim: "Konya'nın kuzeyinde Ankara yolu üzerinde yer alan Kulu, şehir merkezine yakınlığıyla ulaşım avantajı sunan bir ilçedir.",
+    faqs: [
+      {
+        q: "Kulu'da psikolog var mı?",
+        a: "Kulu'da yüz yüze psikolog sayısı kısıtlıdır. Ankara veya Konya'ya olan yakınlık avantajının yanı sıra online terapi de pratik bir alternatiftir.",
+      },
+      {
+        q: "Kulu'dan Konya merkezine terapi için gitmek mi, online mi?",
+        a: "Her ikisi de geçerli seçenektir. Konya merkezine ulaşım kolaysa yüz yüze, zaman veya ulaşım kısıtınız varsa online terapi daha pratiktir.",
+      },
+      {
+        q: "Kulu'da depresyon için psikolojik destek alabilir miyim?",
+        a: "Evet. Depresyon tedavisinde online terapi oldukça etkilidir. Konya'daki deneyimli psikologlar Kulu'dan danışanlara video seans sunmaktadır.",
+      },
+      {
+        q: "Seans ücreti online terapide daha uygun mu?",
+        a: "Online seanslar klinik kirasını ortadan kaldırdığından kimi zaman daha uygun fiyatlı olabilir. Bazı uzmanlar ilk seansta indirim ya da ücretsiz tanışma görüşmesi sunmaktadır.",
+      },
+      {
+        q: "Kulu'da pratisyen hekim mi yoksa psikolog mu tercih etmeliyim?",
+        a: "Psikolojik belirtiler için psikolog veya psikiyatrist başvurusu daha doğrudur. Pratisyen hekim gerektiğinde psikiyatri yönlendirmesi yapabilir; ancak terapi hizmetini psikologlar sunar.",
+      },
+    ],
+  },
+  beysehir: {
+    name: "Beyşehir",
+    description: "Konya Beyşehir'de online terapi ve psikolojik danışmanlık. Lisanslı uzman psikologlarla video seans. 2026 güncel.",
+    nüfus: "55.000+",
+    tanim: "Beyşehir Gölü kıyısında kurulan Beyşehir, Konya'nın güneybatısında doğal güzellikleriyle tanınan bir ilçedir.",
+    faqs: [
+      {
+        q: "Beyşehir'de psikolog bulmak mümkün mü?",
+        a: "Beyşehir'de yüz yüze psikolog seçenekleri oldukça sınırlıdır. Online terapi, ilçe sakinleri için en erişilebilir psikolojik destek yöntemidir.",
+      },
+      {
+        q: "Beyşehir'den online terapi için nasıl randevu alınır?",
+        a: "TerapiRehberi üzerinden istediğiniz uzmana ulaşabilir, profil sayfasındaki randevu bağlantısıyla doğrudan iletişime geçebilirsiniz.",
+      },
+      {
+        q: "Beyşehir'de aile terapisi için nereye başvurmalıyım?",
+        a: "Online aile terapisi seçeneğiyle Beyşehir'den ayrılmadan deneyimli terapistlerle çalışabilirsiniz. Birden fazla aile üyesi aynı video görüşmesine katılabilir.",
+      },
+      {
+        q: "Mevsimsel kaygı ve stres için online terapi yeterli mi?",
+        a: "Evet. Mevsimsel duygudurum değişiklikleri, stres ve kaygı yönetimi konularında online terapi yüz yüze seansla eşdeğer sonuçlar vermektedir.",
+      },
+      {
+        q: "Beyşehir'de psikolog olarak TerapiRehberi'ne nasıl katılırım?",
+        a: "Beyşehir'den online seans veren lisanslı psikologlar 'Uzman Ol' sayfasından ücretsiz başvurabilir, platform aracılığıyla Konya geneline ulaşabilir.",
+      },
+    ],
+  },
+  seydisehir: {
+    name: "Seydişehir",
+    description: "Konya Seydişehir'de online terapi ve psikolojik destek. Lisanslı psikologlarla video seans imkânı. 2026 güncel.",
+    nüfus: "50.000+",
+    tanim: "Konya'nın güneyinde dağlarla çevrili Seydişehir, sanayi ve doğa turizminin iç içe geçtiği bir ilçedir.",
+    faqs: [
+      {
+        q: "Seydişehir'de psikolog var mı?",
+        a: "Seydişehir'de yüz yüze psikolog erişimi kısıtlıdır. Online terapi sayesinde ilçeden ayrılmadan lisanslı Konya psikologlarıyla seans yapabilirsiniz.",
+      },
+      {
+        q: "Seydişehir'den Konya'ya terapi için gitmek zorunda mıyım?",
+        a: "Hayır. Online terapi, Seydişehir gibi merkeze uzak ilçelerde en pratik çözümdür. İnternet bağlantısı olan her ortamdan seans katılımı mümkündür.",
+      },
+      {
+        q: "Seydişehir'de travma terapisi alabilir miyim?",
+        a: "Evet. Travma ve EMDR konusunda uzmanlaşmış psikologlar online seans yoluyla Seydişehir'deki danışanlara hizmet verebilmektedir.",
+      },
+      {
+        q: "Online terapide seans ne kadar sürer?",
+        a: "Standart seans süresi 50 dakikadır. Bazı terapistler 45 veya 60 dakikalık seçenekler de sunabilir. İlk görüşme genellikle ücretsiz ya da indirimli olur.",
+      },
+      {
+        q: "Seydişehir'de çocuk psikoloğuna nasıl ulaşabilirim?",
+        a: "Çocuk psikolojisi alanında online seans sunan uzmanlar, ebeveyn görüşmelerini ve uygun yaş gruplarındaki çocuklarla seansları video üzerinden yürütebilmektedir.",
+      },
+    ],
+  },
+  cihanbeyli: {
+    name: "Cihanbeyli",
+    description: "Konya Cihanbeyli'de online terapi ve psikolojik danışmanlık hizmetleri. Lisanslı uzmanlarla video seans. 2026 güncel.",
+    nüfus: "45.000+",
+    tanim: "Konya'nın kuzeyinde geniş tarım ovalarıyla çevrili Cihanbeyli, hayvancılık ve tahıl üretimiyle öne çıkan bir ilçedir.",
+    faqs: [
+      {
+        q: "Cihanbeyli'de psikolog bulabilir miyim?",
+        a: "Cihanbeyli'de yüz yüze psikolog seçeneği mevcut değildir. Online terapi ile Konya merkezindeki lisanslı uzmanlarla kolayca bağlantı kurabilirsiniz.",
+      },
+      {
+        q: "Cihanbeyli'den online terapi almak güvenli mi?",
+        a: "Evet. Online seanslar şifreli güvenli platformlar üzerinden yapılır ve içerikler tamamen gizlidir. Lisanslı psikologlar mesleki etik sözleşmesiyle bağlıdır.",
+      },
+      {
+        q: "İlk kez terapiye başlayacağım, nereden başlamalıyım?",
+        a: "TerapiRehberi'nde uzmanlık alanı ve seans türüne göre filtreleyerek size uygun bir psikolog bulabilirsiniz. Ücretsiz ilk görüşme sunan uzmanlarla başlamak iyi bir adımdır.",
+      },
+      {
+        q: "Cihanbeyli'de kaygı için hangi terapi yöntemi önerilir?",
+        a: "Kaygı bozukluklarında Bilişsel Davranışçı Terapi (BDT) en yaygın kullanılan ve araştırma destekli yöntemdir. Online terapi yoluyla BDT uzmanlarına ulaşabilirsiniz.",
+      },
+      {
+        q: "Cihanbeyli'de psikolog olarak platforma başvurabilir miyim?",
+        a: "Evet. Cihanbeyli'de veya çevresinde hizmet veren psikologlar 'Uzman Ol' sayfasından ücretsiz başvurabilir.",
+      },
+    ],
+  },
+  cumra: {
+    name: "Çumra",
+    description: "Konya Çumra'da online terapi ve psikolojik danışmanlık. Lisanslı psikologlarla video seans imkânı. 2026 güncel.",
+    nüfus: "40.000+",
+    tanim: "Konya ovasının güneyinde tarımsal üretimiyle tanınan Çumra, verimli toprakları ve gelişen ilçe merkeziyle öne çıkar.",
+    faqs: [
+      {
+        q: "Çumra'da psikolog var mı?",
+        a: "Çumra'da yüz yüze psikolog erişimi kısıtlıdır. Online terapi ile Çumra'dan Konya merkezli lisanslı uzmanlara kolayca ulaşabilirsiniz.",
+      },
+      {
+        q: "Çumra'da ilişki sorunları için terapi alabilir miyim?",
+        a: "Evet. Çift terapisi ve bireysel ilişki danışmanlığı online seans yoluyla Çumra'dan kolaylıkla alınabilmektedir.",
+      },
+      {
+        q: "Online terapide ödeme nasıl yapılır?",
+        a: "Çoğu terapist banka havalesi veya online ödeme sistemlerini kabul etmektedir. Ödeme yöntemi randevu sürecinde terapistinizle netleştirilir.",
+      },
+      {
+        q: "Çumra'dan Konya merkeze kaç dakika uzaklıktadır?",
+        a: "Çumra, Konya merkezine yaklaşık 50–60 km uzaklıktadır. Yüz yüze seans tercih ederseniz Meram veya Selçuklu'daki uzmanları ziyaret edebilirsiniz.",
+      },
+      {
+        q: "Çumra'da psikolog olarak TerapiRehberi'ne nasıl katılırım?",
+        a: "Çumra ve çevresinde hizmet veren lisanslı psikologlar ücretsiz olarak 'Uzman Ol' sayfasından başvurabilir.",
+      },
+    ],
+  },
 };
 
 interface Props {
@@ -391,8 +587,75 @@ export default async function KonyaSlugPage({ params }: Props) {
         </div>
       </div>
 
-      {/* Bento Client (filters + grid + pagination) */}
-      <IlceBentoClient experts={districtExperts} />
+      {/* Uzman listesi ya da online-terapi CTA */}
+      {districtExperts.length > 0 ? (
+        <IlceBentoClient experts={districtExperts} />
+      ) : (
+        <div className="max-w-6xl mx-auto px-4 py-10 space-y-4">
+          {/* Online terapi banner */}
+          <div className="bg-white rounded-2xl border border-brand-200 p-6 sm:p-8">
+            <div className="flex flex-col sm:flex-row gap-6 items-start sm:items-center">
+              <div className="text-4xl shrink-0">🌐</div>
+              <div className="flex-1">
+                <h2 className="font-bold text-brand-900 text-lg mb-2">
+                  {ilceData.name}&apos;da Online Terapi ile Konya&apos;nın Tüm Uzmanlarına Ulaşın
+                </h2>
+                <p className="text-sm text-slate-600 leading-relaxed mb-4">
+                  {ilceData.name} ilçesinde henüz listemizde yüz yüze psikolog yer almıyor.
+                  Online terapi sayesinde ilçenizden ayrılmadan Konya&apos;nın deneyimli ve lisanslı psikologlarıyla video seans yapabilirsiniz.
+                </p>
+                <div className="flex flex-wrap gap-3">
+                  <Link href="/konya/psikologlar" className="btn-primary text-sm">
+                    Konya Psikologlarını Gör →
+                  </Link>
+                  <Link
+                    href="/konya/bireysel-terapi"
+                    className="text-sm border border-brand-300 text-brand-700 px-4 py-2 rounded-xl hover:bg-brand-50 transition-colors font-medium"
+                  >
+                    Online Seanslar
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Online terapi avantajları */}
+          <div className="grid sm:grid-cols-3 gap-3">
+            {[
+              { icon: "📍", baslik: "Konum bağımsız", aciklama: "Ev, ofis veya istediğiniz her yerden seans." },
+              { icon: "⏱️", baslik: "Esnek saat", aciklama: "Sabah erken ya da akşam geç saatler dahil bol seçenek." },
+              { icon: "🔒", baslik: "Tam gizlilik", aciklama: "Şifreli bağlantı, mesleki sır yükümlülüğü." },
+            ].map((item) => (
+              <div key={item.baslik} className="bg-white rounded-2xl border border-cream-200 p-4 flex gap-3">
+                <span className="text-2xl shrink-0">{item.icon}</span>
+                <div>
+                  <p className="font-semibold text-brand-900 text-sm">{item.baslik}</p>
+                  <p className="text-xs text-slate-500 mt-0.5">{item.aciklama}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Uzman davet CTA */}
+          <div className="bg-gradient-to-r from-brand-900 to-brand-700 rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row gap-5 items-start sm:items-center">
+            <div className="flex-1">
+              <p className="font-bold text-white text-base mb-1">
+                {ilceData.name}&apos;da psikolog musunuz?
+              </p>
+              <p className="text-brand-200 text-sm">
+                TerapiRehberi&apos;ne ücretsiz kaydolun, Konya genelindeki danışan ağına ulaşın.
+                Hem yüz yüze hem de online seans verebilirsiniz.
+              </p>
+            </div>
+            <Link
+              href="/uzman-ol"
+              className="shrink-0 bg-white text-brand-900 font-bold text-sm px-5 py-2.5 rounded-xl hover:bg-brand-50 transition-colors"
+            >
+              Platforma Katıl →
+            </Link>
+          </div>
+        </div>
+      )}
 
       {/* Hizmet kartları — combo sayfalara link */}
       <div className="max-w-6xl mx-auto px-4 pt-10 pb-4">

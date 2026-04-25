@@ -76,7 +76,7 @@ export default function KonyaPage() {
                 <p className="text-brand-300 text-xs mt-0.5">Uzman</p>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl px-5 py-4 text-center border border-white/10">
-                <p className="text-2xl font-black text-white">3</p>
+                <p className="text-2xl font-black text-white">10</p>
                 <p className="text-brand-300 text-xs mt-0.5">İlçe</p>
               </div>
             </div>
@@ -170,9 +170,16 @@ export default function KonyaPage() {
           <p className="font-semibold text-brand-900 mb-3 text-sm">İlçeye Göre Psikolog</p>
           <div className="flex flex-wrap gap-2">
             {[
-              { label: "Meram Psikolog",    href: "/konya/meram"    },
-              { label: "Selçuklu Psikolog", href: "/konya/selcuklu" },
-              { label: "Karatay Psikolog",  href: "/konya/karatay"  },
+              { label: "Meram Psikolog",       href: "/konya/meram"       },
+              { label: "Selçuklu Psikolog",    href: "/konya/selcuklu"    },
+              { label: "Karatay Psikolog",     href: "/konya/karatay"     },
+              { label: "Ereğli Psikolog",      href: "/konya/eregli"      },
+              { label: "Akşehir Psikolog",     href: "/konya/aksehir"     },
+              { label: "Kulu Psikolog",        href: "/konya/kulu"        },
+              { label: "Beyşehir Psikolog",    href: "/konya/beysehir"    },
+              { label: "Seydişehir Psikolog",  href: "/konya/seydisehir"  },
+              { label: "Cihanbeyli Psikolog",  href: "/konya/cihanbeyli"  },
+              { label: "Çumra Psikolog",       href: "/konya/cumra"       },
             ].map((item) => (
               <Link
                 key={item.href}
