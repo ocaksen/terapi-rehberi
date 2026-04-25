@@ -212,7 +212,7 @@ export default function OyunAblasıPage() {
           <p className="text-slate-600 text-sm leading-relaxed mb-5">
             Oyun ablası hizmeti sırasında çocuğunuzda dil gecikmesi, dikkat dağınıklığı veya davranış farklılığı fark edilirse sizi bilgilendiririz. Konya'daki uzman psikolog ve dil terapistlerine doğrudan yönlendirebiliriz.
           </p>
-          <div className="flex flex-col sm:flex-row gap-3">
+          <div className="flex flex-col sm:flex-row gap-3 flex-wrap">
             <Link
               href="/konya/psikologlar"
               className="bg-white border border-brand-200 text-brand-700 font-semibold px-5 py-2.5 rounded-xl hover:bg-brand-50 transition-colors text-sm text-center"
@@ -220,10 +220,16 @@ export default function OyunAblasıPage() {
               Konya Psikologları →
             </Link>
             <Link
-              href="/blog/konya-dil-terapisti-ne-zaman"
+              href="/konya/dil-terapisti"
               className="bg-white border border-brand-200 text-brand-700 font-semibold px-5 py-2.5 rounded-xl hover:bg-brand-50 transition-colors text-sm text-center"
             >
-              Dil Terapisti Ne Zaman Gerekir? →
+              Konya Dil Terapistleri →
+            </Link>
+            <Link
+              href="/konya/pedagog"
+              className="bg-white border border-brand-200 text-brand-700 font-semibold px-5 py-2.5 rounded-xl hover:bg-brand-50 transition-colors text-sm text-center"
+            >
+              Konya Pedagog →
             </Link>
           </div>
         </section>

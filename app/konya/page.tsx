@@ -195,6 +195,26 @@ export default function KonyaPage() {
             ))}
           </div>
         </div>
+
+        <div className="border-t border-cream-200 pt-8 mt-8">
+          <p className="font-semibold text-brand-900 mb-3 text-sm">Diğer Uzman Türleri</p>
+          <div className="flex flex-wrap gap-2">
+            {[
+              { label: "Dil ve Konuşma Terapisti", href: "/konya/dil-terapisti" },
+              { label: "Oyun Ablası",               href: "/konya/oyun-ablasi"   },
+              { label: "Pedagog",                   href: "/konya/pedagog"       },
+              { label: "Tüm Psikologlar",           href: "/konya/psikologlar"   },
+            ].map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="bg-brand-50 border border-brand-200 text-brand-700 text-sm font-semibold px-4 py-2 rounded-full hover:bg-brand-100 transition-colors"
+              >
+                {item.label} →
+              </Link>
+            ))}
+          </div>
+        </div>
       </div>
     </>
   );
