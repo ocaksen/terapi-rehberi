@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getAllExperts, getAllServices, getServiceBySlug } from "@/lib/data";
+
 import type { ServiceFaq } from "@/types";
 import IlceBentoClient from "./IlceBentoClient";
 
@@ -305,9 +306,27 @@ export default async function KonyaSlugPage({ params }: Props) {
       {/* Bento Client (filters + grid + pagination) */}
       <IlceBentoClient experts={districtExperts} />
 
+      {/* Uzmanlık alanlarına göre linkler */}
+      <div className="max-w-6xl mx-auto px-4 pb-4">
+        <div className="border-t border-cream-200 pt-8">
+          <p className="font-semibold text-brand-900 mb-3 text-sm">{ilceData.name}&apos;da Uzmanlık Alanına Göre</p>
+          <div className="flex flex-wrap gap-2">
+            {services.map((s) => (
+              <Link
+                key={s.slug}
+                href={`/konya/${ilce}/${s.slug}`}
+                className="flex items-center gap-1.5 bg-white border border-cream-200 text-brand-700 text-sm px-4 py-2 rounded-full hover:border-brand-300 transition-colors"
+              >
+                <span>{s.icon}</span> {s.name}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </div>
+
       {/* Diğer ilçeler */}
       <div className="max-w-6xl mx-auto px-4 pb-10">
-        <div className="border-t border-cream-200 pt-8">
+        <div className="border-t border-cream-200 pt-6">
           <p className="font-semibold text-brand-900 mb-3 text-sm">Konya Diğer İlçeler</p>
           <div className="flex flex-wrap gap-2">
             {Object.entries(ILCELER)

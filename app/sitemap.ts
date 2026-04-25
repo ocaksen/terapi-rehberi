@@ -46,5 +46,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [...staticRoutes, ...serviceRoutes, ...expertRoutes, ...blogRoutes];
+  const ILCE_SLUGS = ["meram", "selcuklu", "karatay"];
+  const comboRoutes: MetadataRoute.Sitemap = ILCE_SLUGS.flatMap((ilce) =>
+    services.map((s) => ({
+      url: `${BASE}/konya/${ilce}/${s.slug}`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.75,
+    }))
+  );
+
+  return [...staticRoutes, ...serviceRoutes, ...comboRoutes, ...expertRoutes, ...blogRoutes];
 }
