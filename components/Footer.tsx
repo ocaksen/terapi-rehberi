@@ -67,25 +67,6 @@ export default function Footer() {
             <li><Link href="/iletisim" className="hover:text-white transition-colors">İletişim</Link></li>
             <li><Link href="/gizlilik" className="hover:text-white transition-colors">Gizlilik Politikası</Link></li>
           </ul>
-
-          <p className="font-semibold text-white mt-8 mb-4">Kardeş Siteler</p>
-          <ul className="space-y-3 text-cream-200 text-xs">
-            <li>
-              <a href="https://www.terapitime.com" target="_blank" rel="noopener" className="hover:text-white transition-colors flex items-center gap-1.5">
-                <span className="text-brand-400">→</span> TerapiTime — Dil Terapistleri
-              </a>
-            </li>
-            <li>
-              <a href="https://www.psikologcaksen.com" target="_blank" rel="noopener" className="hover:text-white transition-colors flex items-center gap-1.5">
-                <span className="text-brand-400">→</span> Psikolog Çaksen
-              </a>
-            </li>
-            <li>
-              <a href="https://psikolog.org.tr" target="_blank" rel="noopener" className="hover:text-white transition-colors flex items-center gap-1.5">
-                <span className="text-brand-400">→</span> Türk Psikologlar Derneği
-              </a>
-            </li>
-          </ul>
         </div>
 
       </div>
