@@ -95,7 +95,7 @@ export default function KonyaPage() {
         </div>
 
         <a
-          href="https://www.feyzacaksen.com"
+          href="https://www.psikologcaksen.com"
           target="_blank"
           rel="noopener noreferrer"
           className="group block rounded-3xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 relative overflow-hidden"
