@@ -9,21 +9,98 @@ import IlceBentoClient from "./IlceBentoClient";
 const BASE = "https://www.terapirehberi.com";
 
 // İlçe bilgileri
-const ILCELER: Record<string, { name: string; description: string; nüfus: string }> = {
+interface IlceData {
+  name: string;
+  description: string;
+  nüfus: string;
+  tanim: string;
+  faqs: { q: string; a: string }[];
+}
+
+const ILCELER: Record<string, IlceData> = {
   meram: {
     name: "Meram",
     description: "Konya Meram'da bireysel terapi, çift terapisi ve EMDR alanında lisanslı psikolog ve terapistler. 2026 güncel liste.",
     nüfus: "349.000+",
+    tanim: "Konya'nın yeşil ve sakin ilçesi Meram, köklü mahalle yapısı ve gelişen sağlık altyapısıyla öne çıkar.",
+    faqs: [
+      {
+        q: "Meram'da psikolog randevusu nasıl alınır?",
+        a: "TerapiRehberi'ndeki Meram psikologlarının profilinde yer alan randevu bağlantısına tıklayarak doğrudan iletişime geçebilirsiniz. Bazı uzmanlar ücretsiz ilk görüşme sunmaktadır.",
+      },
+      {
+        q: "Meram'da seans ücreti ne kadar?",
+        a: "2026 itibarıyla Meram'daki psikoloji seansları genellikle 1.500–3.500 TL arasında değişmektedir. Seans ücreti uzmanlık alanı, deneyim ve seans türüne göre farklılık gösterir.",
+      },
+      {
+        q: "Meram'da online terapi alabilir miyim?",
+        a: "Evet. Meram'daki psikologların büyük çoğunluğu yüz yüze seansın yanı sıra online seans da sunmaktadır. Filtre ile 'Online' seçeneğini işaretleyerek listeleri daraltabilirsiniz.",
+      },
+      {
+        q: "Meram'da çocuk psikoloğu bulabilir miyim?",
+        a: "Evet, Meram'da çocuk psikolojisi ve oyun terapisi alanında uzman psikologlar bulunmaktadır. 'Çocuk Psikolojisi' filtresini kullanarak ilgili uzmanları görebilirsiniz.",
+      },
+      {
+        q: "Meram'da terapist ile psikolog arasındaki fark nedir?",
+        a: "Psikolog, psikoloji lisansı veya yüksek lisansına sahip kişidir. Terapist ise psikoterapi eğitimi almış, lisanslı bir psikoloğu da kapsayan geniş bir unvandır. TerapiRehberi'nde listelenen tüm uzmanlar diploma doğrulamasından geçmektedir.",
+      },
+    ],
   },
   selcuklu: {
     name: "Selçuklu",
     description: "Konya Selçuklu'da kaygı, depresyon ve aile terapisi konularında deneyimli lisanslı psikologlar. 2026 güncel liste.",
     nüfus: "703.000+",
+    tanim: "Konya'nın en kalabalık ilçesi Selçuklu, üniversiteler, hastaneler ve özel klinikler ile şehrin psikolojik destek merkezidir.",
+    faqs: [
+      {
+        q: "Selçuklu'da en iyi psikolog nasıl seçilir?",
+        a: "Önce sorununuzu netleştirin (kaygı, ilişki, travma vb.), ardından o alanda uzmanlaşmış bir terapist arayın. Seans öncesi ücretsiz tanışma görüşmesi sunan uzmanları tercih etmek doğru bir başlangıçtır.",
+      },
+      {
+        q: "Selçuklu'da EMDR terapisi yapan psikolog var mı?",
+        a: "Evet, Selçuklu'da EMDR Temel Eğitim sertifikasına sahip birden fazla psikolog hizmet vermektedir. 'EMDR' filtresiyle listeyi daraltabilirsiniz.",
+      },
+      {
+        q: "Selçuklu'da üniversite öğrencileri için terapi seçenekleri nelerdir?",
+        a: "Selçuklu'da pek çok psikolog öğrenci dostu seans saatleri ve ücretleri sunmaktadır. Online terapi seçeneği de öğrenciler için ekonomik ve erişilebilir bir alternatiftir.",
+      },
+      {
+        q: "Selçuklu'da çift terapisi seansı ne sıklıkla yapılır?",
+        a: "Çift terapisi genellikle haftada bir veya iki haftada bir yapılır. İlk birkaç seans durumu değerlendirmeye yönelik olup terapist sıklığı birlikte belirler.",
+      },
+      {
+        q: "Selçuklu'da online ve yüz yüze terapi arasında nasıl seçim yapmalıyım?",
+        a: "İkisi de etkilidir. Klinik ortamı ve fiziksel yakınlığı önemseyenler için yüz yüze, esnek saat ve konum bağımsızlığı isteyenler için online terapi daha uygundur.",
+      },
+    ],
   },
   karatay: {
     name: "Karatay",
     description: "Konya Karatay'da ergen psikolojisi ve bireysel danışmanlık alanında lisanslı uzman psikologlar. 2026 güncel liste.",
     nüfus: "395.000+",
+    tanim: "Konya'nın tarihi merkezi Karatay, gelişen altyapısıyla sağlık hizmetlerine erişimde Selçuklu ve Meram'a yakın konumdadır.",
+    faqs: [
+      {
+        q: "Karatay'da psikolog bulmak zor mu?",
+        a: "Karatay'da yüz yüze psikolog sayısı diğer ilçelere kıyasla daha sınırlıdır; ancak online terapi seçeneğiyle Konya'nın tüm uzmanlarına kolaylıkla ulaşabilirsiniz.",
+      },
+      {
+        q: "Karatay'dan online terapi alabilir miyim?",
+        a: "Evet. Online terapi, Karatay sakinleri için en pratik seçenektir. TerapiRehberi'nde listelenen uzmanların büyük çoğunluğu video seans sunmaktadır.",
+      },
+      {
+        q: "Karatay'da aile terapisi için nereye gitmeliyim?",
+        a: "Karatay'a yakın konumdaki Selçuklu'da aile terapisi uzmanları mevcuttur. Online seans tercih ederseniz ilçe sınırı olmaksızın tüm Konya uzmanlarına erişebilirsiniz.",
+      },
+      {
+        q: "Karatay'da ilk terapi seansında neler olur?",
+        a: "İlk seans genellikle tanışma ve değerlendirme görüşmesidir. Terapist sorunlarınızı dinler, geçmişinizi anlar ve birlikte hedefler belirler. Herhangi bir karar verme baskısı yoktur.",
+      },
+      {
+        q: "Karatay'da psikolojik destek almak için SGK kapsama giriyor mu?",
+        a: "SGK, sözleşmeli psikiyatristlere bağlı bazı psikolojik hizmetleri karşılayabilir; ancak özel psikolog seansları genellikle kapsam dışıdır. Terapistinizden fatura bilgisi alarak özel sigortanıza başvurabilirsiniz.",
+      },
+    ],
   },
 };
 
@@ -241,6 +318,16 @@ export default async function KonyaSlugPage({ params }: Props) {
     { name: `${ilceData.name} Psikolog`, url: `${BASE}/konya/${ilce}` },
   ]);
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: ilceData.faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.q,
+      acceptedAnswer: { "@type": "Answer", text: faq.a },
+    })),
+  };
+
   const itemListSchema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
@@ -259,6 +346,7 @@ export default async function KonyaSlugPage({ params }: Props) {
     <div className="min-h-screen bg-cream-50">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       {/* Hero */}
       <div className="relative overflow-hidden bg-gradient-to-br from-brand-900 via-brand-800 to-brand-700 py-14 px-4">
@@ -306,19 +394,70 @@ export default async function KonyaSlugPage({ params }: Props) {
       {/* Bento Client (filters + grid + pagination) */}
       <IlceBentoClient experts={districtExperts} />
 
-      {/* Uzmanlık alanlarına göre linkler */}
-      <div className="max-w-6xl mx-auto px-4 pb-4">
-        <div className="border-t border-cream-200 pt-8">
-          <p className="font-semibold text-brand-900 mb-3 text-sm">{ilceData.name}&apos;da Uzmanlık Alanına Göre</p>
-          <div className="flex flex-wrap gap-2">
-            {services.map((s) => (
+      {/* Hizmet kartları — combo sayfalara link */}
+      <div className="max-w-6xl mx-auto px-4 pt-10 pb-4">
+        <h2 className="text-lg font-bold text-brand-900 mb-4">
+          {ilceData.name}&apos;da Uzmanlık Alanları
+        </h2>
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+          {services.map((s) => {
+            const count = districtExperts.filter((e) => e.services.includes(s.slug)).length;
+            return (
               <Link
                 key={s.slug}
                 href={`/konya/${ilce}/${s.slug}`}
-                className="flex items-center gap-1.5 bg-white border border-cream-200 text-brand-700 text-sm px-4 py-2 rounded-full hover:border-brand-300 transition-colors"
+                className="group bg-white rounded-2xl border border-cream-200 p-4 hover:border-brand-300 hover:shadow-sm transition-all"
               >
-                <span>{s.icon}</span> {s.name}
+                <span className="text-2xl block mb-2">{s.icon}</span>
+                <p className="font-semibold text-brand-900 text-sm group-hover:text-brand-700 transition-colors">{s.name}</p>
+                <p className="text-xs text-slate-400 mt-0.5">
+                  {count > 0 ? `${count} uzman` : "Online seçeneği mevcut"}
+                </p>
               </Link>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* Nasıl psikolog seçilir */}
+      <div className="max-w-6xl mx-auto px-4 py-8">
+        <div className="bg-white rounded-2xl border border-cream-200 p-6 sm:p-8">
+          <h2 className="text-lg font-bold text-brand-900 mb-6">
+            {ilceData.name}&apos;da Psikolog Nasıl Seçilir?
+          </h2>
+          <div className="grid sm:grid-cols-2 gap-4">
+            {[
+              { num: "1", baslik: "Sorununuzu netleştirin", aciklama: "Kaygı, depresyon, ilişki, travma mı? Doğru uzmanlık alanı terapinin etkinliğini doğrudan etkiler." },
+              { num: "2", baslik: "Seans türüne karar verin", aciklama: "Yüz yüze seans klinik ortam sunar; online terapi ise esneklik ve konum bağımsızlığı sağlar. İkisi de etkilidir." },
+              { num: "3", baslik: "Bütçenizi planlayın", aciklama: "Seanslar genellikle 1.500–3.500 TL arasındadır. Bazı uzmanlar öğrenci indirimi veya kayan ölçekli ücret sunabilir." },
+              { num: "4", baslik: "İlk görüşmeyi yapın", aciklama: "Çoğu terapist 15 dakikalık ücretsiz tanışma görüşmesi sunar. Kendinizi güvende hissettiğiniz biriyle çalışmak çok önemlidir." },
+            ].map((adim) => (
+              <div key={adim.num} className="flex gap-4">
+                <div className="shrink-0 w-8 h-8 rounded-full bg-brand-100 text-brand-700 font-black text-sm flex items-center justify-center">
+                  {adim.num}
+                </div>
+                <div>
+                  <p className="font-semibold text-brand-900 text-sm mb-1">{adim.baslik}</p>
+                  <p className="text-xs text-slate-500 leading-relaxed">{adim.aciklama}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* SSS */}
+      <div className="max-w-6xl mx-auto px-4 pb-8">
+        <div className="bg-white rounded-2xl border border-cream-200 p-6 sm:p-8">
+          <h2 className="text-lg font-bold text-brand-900 mb-6">
+            Sık Sorulan Sorular — {ilceData.name} Psikolog
+          </h2>
+          <div className="divide-y divide-cream-200">
+            {ilceData.faqs.map((faq, i) => (
+              <div key={i} className="py-4 first:pt-0 last:pb-0">
+                <p className="font-semibold text-brand-800 text-sm mb-1">{faq.q}</p>
+                <p className="text-sm text-slate-600 leading-relaxed">{faq.a}</p>
+              </div>
             ))}
           </div>
         </div>
