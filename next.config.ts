@@ -54,6 +54,11 @@ const nextConfig: NextConfig = {
         destination: "/404",
         permanent: false,
       },
+      {
+        source: "/konya/psikolog",
+        destination: "/konya/psikologlar",
+        permanent: true,
+      },
     ];
   },
   async rewrites() {
