@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import type { Expert } from "@/types";
 
@@ -36,6 +37,29 @@ const PAGE_SIZE = 12;
 
 function getInitials(name: string) {
   return name.split(" ").slice(0, 2).map((n) => n[0]).join("").toUpperCase();
+}
+
+function ExpertAvatar({ name, image }: { name: string; image: string }) {
+  const [err, setErr] = useState(false);
+  if (!image || err) {
+    return (
+      <div className="shrink-0 w-14 h-14 rounded-full bg-brand-100 flex items-center justify-center text-sm font-black text-brand-700 shadow-sm">
+        {getInitials(name)}
+      </div>
+    );
+  }
+  return (
+    <div className="shrink-0 w-14 h-14 rounded-full overflow-hidden shadow-sm bg-brand-100">
+      <Image
+        src={image}
+        alt={name}
+        width={56}
+        height={56}
+        className="w-full h-full object-cover object-top"
+        onError={() => setErr(true)}
+      />
+    </div>
+  );
 }
 
 /* ─────────────────────────────────────────
@@ -387,9 +411,7 @@ export default function IlceBentoClient({ experts }: { experts: Expert[] }) {
                   <div className="relative z-10 p-5 flex flex-col gap-3 flex-1">
                     {/* Üst: avatar + isim */}
                     <div className="flex items-start gap-3">
-                      <div className="shrink-0 w-12 h-12 rounded-full bg-brand-100 flex items-center justify-center text-sm font-black text-brand-700 shadow-sm">
-                        {getInitials(expert.name)}
-                      </div>
+                      <ExpertAvatar name={expert.name} image={expert.image} />
                       <div className="min-w-0 pt-0.5">
                         <p className="font-black text-sm leading-snug text-slate-900">
                           {expert.name}

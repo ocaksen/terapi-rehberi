@@ -6299,6 +6299,12 @@
       "name": "Eskişehir",
       "region": "İç Anadolu",
       "active": false
+    },
+    {
+      "slug": "trabzon",
+      "name": "Trabzon",
+      "region": "Karadeniz",
+      "active": true
     }
   ],
   "blogPosts": [
