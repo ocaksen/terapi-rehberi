@@ -31,49 +31,50 @@ export function cityListSchema(cityName: string, citySlug: string) {
 
 /** Uzman profil sayfası için Person + MedicalBusiness schema */
 export function expertSchema(expert: Expert) {
+  const personNode: Record<string, unknown> = {
+    "@type": "Person",
+    "@id": `${SITE_URL}/uzman/${expert.slug}`,
+    name: expert.name,
+    jobTitle: expert.title,
+    description: expert.shortBio,
+    image: expert.image.startsWith("http")
+      ? expert.image
+      : `${SITE_URL}${expert.image}`,
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: expert.district,
+      addressRegion: expert.city.charAt(0).toUpperCase() + expert.city.slice(1),
+      addressCountry: "TR",
+    },
+    url: `${SITE_URL}/uzman/${expert.slug}`,
+    knowsAbout: expert.services.map((s) => s.replace(/-/g, " ")),
+  };
+  if (expert.phone) personNode.telephone = expert.phone;
+
+  const businessNode: Record<string, unknown> = {
+    "@type": "MedicalBusiness",
+    "@id": `${SITE_URL}/uzman/${expert.slug}#business`,
+    name: expert.name,
+    description: expert.shortBio,
+    medicalSpecialty: "Psychology",
+    url: `${SITE_URL}/uzman/${expert.slug}`,
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: expert.district,
+      addressRegion: expert.city.charAt(0).toUpperCase() + expert.city.slice(1),
+      addressCountry: "TR",
+    },
+    availableService: expert.services.map((s) => ({
+      "@type": "MedicalTherapy",
+      name: s.replace(/-/g, " "),
+    })),
+  };
+  if (expert.phone)      businessNode.telephone  = expert.phone;
+  if (expert.sessionFee) businessNode.priceRange = expert.sessionFee;
+
   return {
     "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Person",
-        "@id": `${SITE_URL}/uzman/${expert.slug}`,
-        name: expert.name,
-        jobTitle: expert.title,
-        description: expert.shortBio,
-        image: expert.image.startsWith("http")
-          ? expert.image
-          : `${SITE_URL}${expert.image}`,
-        address: {
-          "@type": "PostalAddress",
-          addressLocality: expert.district,
-          addressRegion: expert.city.charAt(0).toUpperCase() + expert.city.slice(1),
-          addressCountry: "TR",
-        },
-        telephone: expert.phone,
-        url: `${SITE_URL}/uzman/${expert.slug}`,
-        knowsAbout: expert.services.map((s) => s.replace(/-/g, " ")),
-      },
-      {
-        "@type": "MedicalBusiness",
-        "@id": `${SITE_URL}/uzman/${expert.slug}#business`,
-        name: expert.name,
-        description: expert.shortBio,
-        priceRange: expert.sessionFee,
-        telephone: expert.phone,
-        url: expert.appointmentUrl,
-        medicalSpecialty: "Psychology",
-        address: {
-          "@type": "PostalAddress",
-          addressLocality: expert.district,
-          addressRegion: expert.city.charAt(0).toUpperCase() + expert.city.slice(1),
-          addressCountry: "TR",
-        },
-        availableService: expert.services.map((s) => ({
-          "@type": "MedicalTherapy",
-          name: s.replace(/-/g, " "),
-        })),
-      },
-    ],
+    "@graph": [personNode, businessNode],
   };
 }
 
