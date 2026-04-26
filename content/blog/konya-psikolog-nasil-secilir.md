@@ -77,7 +77,7 @@ Fiyatı belirleyen başlıca faktörler şunlar: terapistin unvanı (klinik psik
 
 Özel sağlık sigortanız varsa poliçenizde "psikoloji" veya "psikoterapi" kapsamı olup olmadığını kontrol edin. Bazı poliçeler seansların bir kısmını karşılıyor. Devlet hastanelerinde psikiyatri hizmetleri SGK kapsamında; ancak düzenli psikoterapi için özel klinikler daha pratik seçenek.
 
-Konya'daki psikolog klinikleri, uzmanlık alanları ve iletişim bilgileri için [Konya psikolog rehberimizi](/konya/psikolog) inceleyebilirsiniz. Rehberde klinikleri kıyaslayabilir, sizin için uygun uzmanı daha hızlı bulabilirsiniz.
+Konya'daki psikolog klinikleri, uzmanlık alanları ve iletişim bilgileri için [Konya psikolog rehberimizi](/konya/psikologlar) inceleyebilirsiniz. Rehberde klinikleri kıyaslayabilir, sizin için uygun uzmanı daha hızlı bulabilirsiniz.
 
 Sigorta ve SGK konusunda şunu da belirtelim: devlet hastanelerinde psikiyatri görüşmeleri SGK kapsamında; ancak düzenli psikoterapi seansı genellikle özel kliniklerde gerçekleştiriliyor. Bazı özel sigorta poliçeleri psikoloji seanslarını kısmen ya da tamamen karşılıyor — poliçenizde "psikoloji" veya "psikoterapi" ifadelerini arayın. Emin değilseniz sigorta şirketinizle doğrudan görüşün; net bir yanıt almanız hakkınız.
 
@@ -85,7 +85,7 @@ Sigorta ve SGK konusunda şunu da belirtelim: devlet hastanelerinde psikiyatri g
 
 ### Konya'da iyi psikolog nasıl bulunur?
 
-İhtiyacınızı netleştirin: kaygı, depresyon, ilişki sorunu veya kişisel gelişim. Ardından klinik psikolog unvanlı, ilgili alanda deneyimli uzman arayın. İlk görüşmeyi birkaç farklı psikologla yapın; terapötik uyum en kritik faktördür. Konya'daki klinikleri karşılaştırmak için [rehberimizi](/konya/psikolog) ziyaret edin.
+İhtiyacınızı netleştirin: kaygı, depresyon, ilişki sorunu veya kişisel gelişim. Ardından klinik psikolog unvanlı, ilgili alanda deneyimli uzman arayın. İlk görüşmeyi birkaç farklı psikologla yapın; terapötik uyum en kritik faktördür. Konya'daki klinikleri karşılaştırmak için [rehberimizi](/konya/psikologlar) ziyaret edin.
 
 ### Klinik psikolog ile psikolojik danışman arasındaki fark nedir?
 
@@ -101,4 +101,4 @@ Klinik psikolog, klinik psikoloji yüksek lisansı ve süpervizyon saatleriyle k
 
 ---
 
-Konya'daki psikolog klinikleri ve uzmanları karşılaştırmak için [Konya psikolog rehberimizi](https://terapirehberi.com/konya/psikolog) ziyaret edin. Konya psikolog tavsiye arıyorsanız rehberde filtreleme seçenekleriyle en uygun uzmana hızlıca ulaşabilirsiniz. Uzmanlık alanı, ücret aralığı ve online seans gibi kriterlere göre filtreleme yapabilirsiniz.
+Konya'daki psikolog klinikleri ve uzmanları karşılaştırmak için [Konya psikolog rehberimizi](https://terapirehberi.com/konya/psikologlar) ziyaret edin. Konya psikolog tavsiye arıyorsanız rehberde filtreleme seçenekleriyle en uygun uzmana hızlıca ulaşabilirsiniz. Uzmanlık alanı, ücret aralığı ve online seans gibi kriterlere göre filtreleme yapabilirsiniz.
