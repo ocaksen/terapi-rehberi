@@ -461,6 +461,18 @@ export default async function ExpertPage({ params }: Props) {
               </svg>
               Tüm Konya Psikologları
             </Link>
+
+            {/* Uzman için düzeltme notu */}
+            <div className="text-[11px] text-slate-400 leading-relaxed border-t border-slate-100 pt-3">
+              Bu profil kamuya açık kaynaklardan derlenmiştir.
+              Bilgi güncelleme veya kaldırma talebi için{" "}
+              <a
+                href={`mailto:iletisim@terapirehberi.com?subject=Profil Talebi: ${expert.name}`}
+                className="text-brand-500 hover:underline"
+              >
+                iletisim@terapirehberi.com
+              </a>
+            </div>
           </div>
 
         </div>
