@@ -55,14 +55,6 @@ const faqSchema = {
   ],
 };
 
-const citySchema = {
-  "@context": "https://schema.org",
-  "@type": "ItemList",
-  name: "Trabzon Psikolog Rehberi",
-  description: "Trabzon'da lisanslı psikolog ve terapistler için kapsamlı rehber.",
-  url: `${BASE}/trabzon`,
-};
-
 const ILCELER = [
   { label: "Akçaabat Psikolog", href: "/trabzon/akcaabat" },
   { label: "Ortahisar Psikolog", href: "/trabzon/ortahisar" },
@@ -73,6 +65,21 @@ const ILCELER = [
   { label: "Sürmene Psikolog", href: "/trabzon/surmene" },
   { label: "Beşikdüzü Psikolog", href: "/trabzon/besikduzu" },
 ];
+
+const citySchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Trabzon Psikolog Rehberi",
+  description: "Trabzon'da lisanslı psikolog ve terapistler için kapsamlı rehber.",
+  url: `${BASE}/trabzon`,
+  numberOfItems: ILCELER.length,
+  itemListElement: ILCELER.map((ilce, i) => ({
+    "@type": "ListItem",
+    position: i + 1,
+    name: ilce.label,
+    url: `${BASE}${ilce.href}`,
+  })),
+};
 
 const BLOG_POSTS = [
   {
