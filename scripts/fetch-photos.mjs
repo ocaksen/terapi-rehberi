@@ -21,21 +21,26 @@ async function fetchPhoto(profileUrl) {
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
   const html = await res.text();
 
-  // pixel-p2 CDN — avatar (küçük kare)
-  const match = html.match(/src="(\/\/pixel-p2\.s3\.eu-central-1\.amazonaws\.com\/doctor\/avatar\/[^"]+\.[a-z]+)"/i);
-  if (match) return "https:" + match[1];
+  // Tüm bilinen CDN pattern'larını tek seferde tara
+  const patterns = [
+    // pixel-p2 (yeni CDN) — avatar
+    /src="(\/\/pixel-p2\.s3\.eu-central-1\.amazonaws\.com\/doctor\/avatar\/[^"]+\.(?:jpg|jpeg|png|webp))"/i,
+    // pixel-p2 — photos
+    /["'](\/\/pixel-p2\.s3\.eu-central-1\.amazonaws\.com\/doctor\/photos\/[^"']+\.(?:jpg|jpeg|png|webp))["']/i,
+    // pixel-p2 genel
+    /src="(\/\/pixel-p2\.s3\.eu-central-1\.amazonaws\.com\/doctor\/[^"]+\.(?:jpg|jpeg|png|webp))"/i,
+    // s3 eu-west — doktortakvimi.com bucket
+    /src="(\/\/s3[^"]+doktortakvimi\.com\/doctor\/[^"]+\.(?:jpg|jpeg|png|webp))"/i,
+    // s3 eu-west — eniyihekim.com bucket
+    /src="(\/\/s3[^"]+eniyihekim\.com\/doctor\/[^"]+\.(?:jpg|jpeg|png|webp))"/i,
+    // genel amazonaws doctor fotoğrafı
+    /src="(\/\/[^"]+amazonaws\.com\/doctor\/[^"]+\.(?:jpg|jpeg|png|webp))"/i,
+  ];
 
-  // pixel-p2 CDN — photos (farklı path)
-  const match2 = html.match(/["'](\/\/pixel-p2\.s3\.eu-central-1\.amazonaws\.com\/doctor\/photos\/[^"']+_large\.[a-z]+)["']/i);
-  if (match2) return "https:" + match2[1];
-
-  // pixel-p2 herhangi bir fotoğraf
-  const match3 = html.match(/["'](\/\/pixel-p2\.s3\.eu-central-1\.amazonaws\.com\/doctor\/[^"']+\.(?:jpg|jpeg|png|webp))["']/i);
-  if (match3) return "https:" + match3[1];
-
-  // eski eniyihekim CDN
-  const match4 = html.match(/src="(\/\/s3[^"]+eniyihekim\.com\/doctor\/[^"]+_(?:220|400)_square\.[a-z]+)"/i);
-  if (match4) return "https:" + match4[1];
+  for (const re of patterns) {
+    const m = html.match(re);
+    if (m) return "https:" + m[1];
+  }
 
   return null;
 }
@@ -43,10 +48,11 @@ async function fetchPhoto(profileUrl) {
 async function main() {
   const db = JSON.parse(fs.readFileSync(DB_PATH, "utf8"));
 
-  // Sadece doktortakvimi URL'i olan ve ui-avatars.com kullananlar
+  // Doktortakvimi URL'i olan tüm uzmanlar (daha önce bulunamayanlar dahil)
   const targets = db.experts.filter(e =>
     e.appointmentUrl?.includes("doktortakvimi.com") &&
-    e.image?.includes("ui-avatars.com")
+    !e.image?.includes("pixel-p2") &&
+    !e.image?.includes("psikologcaksen")
   );
 
   console.log(`📸 ${targets.length} uzman için fotoğraf aranacak`);
