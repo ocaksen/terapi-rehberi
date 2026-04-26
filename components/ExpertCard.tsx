@@ -92,9 +92,6 @@ export default function ExpertCard({ expert, citySlug }: Props) {
                 {SERVICE_LABELS[s] ?? s.replace(/-/g, " ")}
               </span>
             ))}
-            {expert.services.length > 3 && (
-              <span className="text-[10px] text-slate-400 px-1">+{expert.services.length - 3}</span>
-            )}
           </div>
 
           {/* Seans tipi */}
