@@ -215,6 +215,29 @@ export default function KonyaPage() {
             ))}
           </div>
         </div>
+
+        {/* Bilgi bölümü */}
+        <div className="border-t border-cream-200 pt-8 mt-8">
+          <h2 className="text-lg font-black text-brand-900 mb-4">Konya&apos;da Psikolog Nasıl Seçilir?</h2>
+          <div className="grid sm:grid-cols-2 gap-5 text-sm text-slate-600 leading-relaxed">
+            <div>
+              <h3 className="font-semibold text-slate-800 mb-1">Klinik psikolog mu, danışman mı?</h3>
+              <p>Depresyon, kaygı bozukluğu, OKB veya travma gibi klinik tablolarda yüksek lisans mezunu klinik psikolog tercih edilmelidir. Kariyer veya kişisel gelişim odaklı desteklerde psikolojik danışman da yeterli olabilir.</p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-slate-800 mb-1">Seans ücreti ne kadar?</h3>
+              <p>2026 yılında Konya&apos;da bireysel terapi seansı ortalama 1.500–5.000 TL arasındadır. Çift terapisi genellikle 2.000–5.500 TL, online seans ise %10–20 daha uygun fiyatlıdır.</p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-slate-800 mb-1">Online terapi etkili mi?</h3>
+              <p>Araştırmalar online terapinin yüz yüze seansla büyük ölçüde eşdeğer sonuçlar verdiğini göstermektedir. Konya&apos;nın farklı ilçelerinde yaşıyorsanız ya da ulaşım zahmetliyse güvenli bir seçenektir.</p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-slate-800 mb-1">TerapiRehberi&apos;nde uzmanlar nasıl doğrulanıyor?</h3>
+              <p>Listedeki her psikolog diploma ve kimlik belgesiyle doğrulanmaktadır. Türk Psikologlar Derneği veya ilgili meslek kuruluşu üyeliği ya da mezuniyet belgesi kontrol edilmektedir. Lisanssız hiçbir uzman platforma alınmaz.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );

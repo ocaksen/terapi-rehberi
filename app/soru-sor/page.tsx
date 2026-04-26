@@ -55,5 +55,35 @@ export default function SoruSorPage() {
   // Kullanıcı soruları önce, sonra statikler
   const sorular = [...userSorular, ...staticSorular];
 
-  return <SoruSorClient sorular={sorular} />;
+  return (
+    <>
+      {/* Statik SEO içeriği */}
+      <div className="bg-brand-900 py-12 px-4">
+        <div className="max-w-3xl mx-auto">
+          <p className="text-brand-300 text-xs font-semibold uppercase tracking-widest mb-3">Uzman Yanıtları</p>
+          <h1 className="text-3xl font-bold text-white mb-3">Psikolojik Soru & Cevap</h1>
+          <p className="text-brand-200 text-sm leading-relaxed max-w-xl">
+            Psikoloji ve terapi hakkında merak ettiğiniz soruları anonim olarak sorabilir,
+            Konya&apos;daki lisanslı uzmanların yanıtlarını okuyabilirsiniz.
+            Kişisel tavsiye niteliği taşımayan bu yanıtlar genel bilgilendirme amacıyla sunulmaktadır.
+          </p>
+        </div>
+      </div>
+
+      {/* Soru-cevap listesi — sunucu tarafında render */}
+      {sorular.length > 0 && (
+        <div className="max-w-3xl mx-auto px-4 pt-8 pb-2 space-y-5">
+          {sorular.slice(0, 6).map((s) => (
+            <div key={s.id} className="bg-white border border-cream-200 rounded-2xl p-5">
+              <p className="font-semibold text-brand-900 text-sm mb-2">{s.soru}</p>
+              <p className="text-sm text-slate-600 leading-relaxed">{s.cevap}</p>
+              <p className="text-xs text-slate-400 mt-3">Yanıtlayan: {s.uzman}</p>
+            </div>
+          ))}
+        </div>
+      )}
+
+      <SoruSorClient sorular={sorular} />
+    </>
+  );
 }

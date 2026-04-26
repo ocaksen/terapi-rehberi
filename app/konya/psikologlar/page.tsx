@@ -175,6 +175,29 @@ export default function KonyaPsikologlarPage() {
           </Link>
           {" "}— herhangi bir gerekçe beklemeksizin kaldırırız.
         </p>
+
+        {/* Bilgi bölümü */}
+        <div className="max-w-4xl mx-auto px-4 pt-10">
+          <h2 className="text-lg font-bold text-slate-900 mb-4">Konya Psikolog Rehberi Hakkında</h2>
+          <div className="grid sm:grid-cols-2 gap-5 text-sm text-slate-600 leading-relaxed">
+            <div>
+              <h3 className="font-semibold text-slate-800 mb-1">Kimler yer alıyor?</h3>
+              <p>Bu listede yalnızca kimlik ve diploma doğrulamasından geçmiş psikolog, klinik psikolog ve psikolojik danışmanlar yer almaktadır. Türk Psikologlar Derneği üyeliği veya mezuniyet belgesi ile doğrulama yapılmaktadır.</p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-slate-800 mb-1">Nasıl seçim yapmalıyım?</h3>
+              <p>Sorununuzu netleştirin — kaygı, depresyon, ilişki, travma veya kişisel gelişim. İlgili alanda uzmanlaşmış bir terapist seçin. Birden fazla profil inceleyin, ilk görüşmede terapötik uyuma dikkat edin.</p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-slate-800 mb-1">Seans ücretleri hakkında</h3>
+              <p>2026 yılında Konya&apos;da bireysel terapi seansı 1.500–5.000 TL arasında değişmektedir. Her uzmanın profil sayfasında güncel ücret bilgisi yer almakta, bazı uzmanlar ücretsiz ilk görüşme sunmaktadır.</p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-slate-800 mb-1">Online seans seçeneği</h3>
+              <p>Listemizdeki uzmanların büyük çoğunluğu online seans da sunmaktadır. Güvenli video platformu üzerinden gerçekleştirilen online terapi, yüz yüze seansla klinik açıdan eşdeğer etkinliğe sahiptir.</p>
+            </div>
+          </div>
+        </div>
       </div>
 
     </div>

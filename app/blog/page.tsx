@@ -72,6 +72,25 @@ export default function BlogPage() {
             </Link>
           ))}
         </div>
+
+        {/* Bilgi bölümü */}
+        <div className="border-t border-cream-200 mt-10 pt-8">
+          <h2 className="text-base font-bold text-slate-900 mb-4">Bu Blog Hakkında</h2>
+          <div className="grid sm:grid-cols-3 gap-5 text-sm text-slate-600 leading-relaxed">
+            <div>
+              <h3 className="font-semibold text-slate-800 mb-1">Kim yazıyor?</h3>
+              <p>Yazılar Konya&apos;daki lisanslı klinik psikolog ve terapistler ile TerapiRehberi editör ekibi tarafından hazırlanmaktadır. Klinik içerikler uzman incelemesinden geçmektedir.</p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-slate-800 mb-1">Konular</h3>
+              <p>Kaygı ve panik atak, depresyon, çocuk ve ergen psikolojisi, çift terapisi, aile ilişkileri, stres yönetimi, travma ve psikoterapi süreci hakkında kanıta dayalı rehber içerikler.</p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-slate-800 mb-1">Önemli not</h3>
+              <p>Blog içerikleri genel bilgilendirme amacıyla hazırlanmıştır; klinik tanı veya tedavi yerine geçmez. Kişisel durumunuz için bir uzmana danışmanızı öneririz.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
