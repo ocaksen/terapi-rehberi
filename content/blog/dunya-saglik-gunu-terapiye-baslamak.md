@@ -1,5 +1,6 @@
 ---
 title: "7 Nisan Dünya Sağlık Günü: Terapiye Başlamak için İdeal Bir An mı?"
+seoTitle: "Dünya Sağlık Günü: Terapiye Başlamak | TerapiRehberi"
 description: "Dünya Sağlık Günü'nde terapiye başlamayı düşünüyorsanız bu rehber tam size göre. Terapiye nasıl başlanır, ne beklenir, Konya'da nasıl destek alınır?"
 slug: "dunya-saglik-gunu-terapiye-baslamak"
 excerpt: "7 Nisan Dünya Sağlık Günü, ruh sağlığımızı sorgulamak için her yılın en güçlü anlarından biri. Terapiye başlamayı düşünüyorsanız bu rehber tam size göre."

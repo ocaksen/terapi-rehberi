@@ -17,7 +17,7 @@ export async function generateMetadata({
   const test = getTestBySlugCombined(slug);
   if (!test) return {};
   return {
-    title: `${test.title} — Ücretsiz Psikolojik Test | TerapiRehberi`,
+    title: `${test.title} — Ücretsiz Test | TerapiRehberi`,
     description: test.description,
     alternates: { canonical: `https://www.terapirehberi.com/testler/${slug}` },
   };

@@ -322,13 +322,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const service = getServiceBySlug(ilce);
   if (service) {
     return {
-      title: `Konya ${service.name} 2026 — Lisanslı Uzman Psikolog | TerapiRehberi`,
+      title: `Konya ${service.name} — Uzman Psikolog | TerapiRehberi`,
       description: service.longDescription
         ? service.longDescription.split("\n\n")[0].slice(0, 160)
         : service.shortDescription,
       alternates: { canonical: `${BASE}/konya/${ilce}` },
       openGraph: {
-        title: `Konya ${service.name} 2026 — Lisanslı Uzman Psikolog`,
+        title: `Konya ${service.name} — Uzman Psikolog`,
         description: service.shortDescription,
         url: `${BASE}/konya/${ilce}`,
       },
@@ -339,12 +339,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const ilceData = ILCELER[ilce];
   if (ilceData) {
     return {
-      title: `Konya ${ilceData.name} Psikolog 2026 — Lisanslı Uzman Terapist | TerapiRehberi`,
+      title: `Konya ${ilceData.name} Psikolog — Uzman Rehberi | TerapiRehberi`,
       description: ilceData.description,
       keywords: [`konya ${ilceData.name.toLowerCase()} psikolog`, `${ilceData.name.toLowerCase()} psikolog`, `konya ${ilceData.name.toLowerCase()} terapist`],
       alternates: { canonical: `${BASE}/konya/${ilce}` },
       openGraph: {
-        title: `Konya ${ilceData.name} Psikolog 2026 — Lisanslı Uzman Terapist`,
+        title: `Konya ${ilceData.name} Psikolog — Uzman Rehberi`,
         description: ilceData.description,
         url: `${BASE}/konya/${ilce}`,
       },

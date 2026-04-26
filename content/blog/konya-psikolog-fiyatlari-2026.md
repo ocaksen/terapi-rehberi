@@ -1,5 +1,6 @@
 ---
 title: "Konya'da Psikolog Seans Ücreti 2026: Bilmeniz Gereken Her Şey"
+seoTitle: "Konya Psikolog Seans Ücreti 2026 | TerapiRehberi"
 description: "Konya'da psikolog seans ücretleri 2026 yılında ne kadar? Bireysel terapi, çift terapisi ve online seans fiyatlarını karşılaştırın. Sigortayla psikolog mümkün mü?"
 excerpt: "Psikolog ücreti kafanızı karıştırıyorsa yalnız değilsiniz. Konya'da seans fiyatlarını etkileyen faktörleri ve 2026 güncel rakamlarını derledik."
 keywords: ["konya psikolog fiyat", "konya psikolog seans ücreti", "konya psikolog 2026", "konya terapi ücreti", "psikoloji seans fiyatı"]

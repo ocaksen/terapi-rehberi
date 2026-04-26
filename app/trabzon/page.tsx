@@ -261,19 +261,12 @@ export default function TrabzonPage() {
         <div className="border-t border-cream-200 pt-8">
           <p className="font-semibold text-brand-900 mb-3 text-sm">Diğer Şehirler</p>
           <div className="flex flex-wrap gap-2">
-            {[
-              { label: "Konya Psikolog", href: "/konya" },
-              { label: "Kayseri Psikolog", href: "/kayseri" },
-              { label: "Gaziantep Psikolog", href: "/gaziantep" },
-            ].map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="bg-brand-50 border border-brand-200 text-brand-700 text-sm font-semibold px-4 py-2 rounded-full hover:bg-brand-100 transition-colors"
-              >
-                {item.label} →
-              </Link>
-            ))}
+            <Link
+              href="/konya"
+              className="bg-brand-50 border border-brand-200 text-brand-700 text-sm font-semibold px-4 py-2 rounded-full hover:bg-brand-100 transition-colors"
+            >
+              Konya Psikolog →
+            </Link>
           </div>
         </div>
       </div>

@@ -3,12 +3,12 @@ import Link from "next/link";
 import { getAllBlogPostsFromFiles } from "@/lib/blog.server";
 
 export const metadata: Metadata = {
-  title: "Psikoloji & Terapi Blog — Konya Uzman İçerikleri | TerapiRehberi",
+  title: "Psikoloji & Terapi Blog — Uzman İçerikler | TerapiRehberi",
   description: "Kaygı, depresyon, çift terapisi, ergen psikolojisi ve daha fazlası hakkında uzman içerikler. Konya'dan klinik psikologlar tarafından yazıldı.",
   keywords: ["psikoloji blog", "terapi rehberi", "konya psikolog blog", "kaygı depresyon", "çocuk psikolojisi yazıları"],
   alternates: { canonical: "https://www.terapirehberi.com/blog" },
   openGraph: {
-    title: "Psikoloji & Terapi Blog — Konya Uzman İçerikleri",
+    title: "Psikoloji & Terapi Blog — Uzman İçerikler",
     description: "Kaygı, depresyon, çift terapisi ve ergen psikolojisi hakkında Konya psikologlarından uzman içerikler.",
     url: "https://www.terapirehberi.com/blog",
     type: "website",

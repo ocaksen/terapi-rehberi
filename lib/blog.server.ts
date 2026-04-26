@@ -12,6 +12,7 @@ export interface BlogFaq {
 export interface BlogPostFull {
   slug: string;
   title: string;
+  seoTitle?: string;
   description: string;
   excerpt: string;
   keywords: string[];
@@ -96,6 +97,7 @@ export function getBlogPostBySlugFromFile(
   return {
     slug,
     title: data.title ?? slug,
+    seoTitle: data.seoTitle,
     description: data.description ?? excerpt,
     excerpt,
     keywords: data.keywords ?? [],

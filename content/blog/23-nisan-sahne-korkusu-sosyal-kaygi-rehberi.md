@@ -1,5 +1,6 @@
 ---
 title: "23 Nisan'da Sahne Korkusu: Sosyal Kaygı mı, Normal mi? Rehber"
+seoTitle: "23 Nisan Sahne Korkusu: Sosyal Kaygı Rehberi | TerapiRehberi"
 description: "23 Nisan etkinliklerinden kaçınan çocuğunuz sosyal kaygı mı yaşıyor? Sahne korkusunu tanıyın, doğru destek için uzman rehberi."
 excerpt: "Her yıl 23 Nisan öncesinde binlerce ebeveyn aynı soruyla karşılaşır: çocuğum sahneye çıkmak istemiyor. Bu normal bir heyecan mı, yoksa sosyal kaygının işareti mi? Cevap bu rehberde."
 keywords: ["23 nisan sahne korkusu", "çocuklarda sosyal kaygı", "sahne korkusu tedavi", "çocuk okul etkinliği kaygı", "sosyal fobi çocuk"]
