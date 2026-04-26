@@ -5,6 +5,7 @@ import { getAllExperts, getAllServices, getServiceBySlug } from "@/lib/data";
 
 import type { ServiceFaq } from "@/types";
 import IlceBentoClient from "./IlceBentoClient";
+import ExpertCard from "@/components/ExpertCard";
 
 const BASE = "https://www.terapirehberi.com";
 
@@ -415,45 +416,10 @@ export default async function KonyaSlugPage({ params }: Props) {
         </div>
 
         <div className="max-w-7xl mx-auto px-4 py-10">
-          {/* Uzman listesi */}
-          {experts.length > 0 ? (
-            <>
-              <p className="text-sm text-slate-500 mb-6">
-                Bu alanda <strong className="text-slate-700">{experts.length} uzman</strong> listemizde yer alıyor.
-              </p>
-              <div className="divide-y divide-cream-200 bg-white rounded-2xl border border-cream-200 overflow-hidden shadow-sm mb-12">
-                {experts.map((e) => (
-                  <div key={e.slug} className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 px-5 py-4">
-                    <div>
-                      <p className="font-semibold text-brand-900 text-sm">{e.name}</p>
-                      <p className="text-xs text-slate-500">{e.title} · {e.district}</p>
-                    </div>
-                    <div className="flex items-center gap-3 shrink-0">
-                      {e.sessionFee && <span className="text-xs font-semibold bg-slate-100 text-slate-700 px-2.5 py-1 rounded-lg">{e.sessionFee}</span>}
-                      <span className="text-xs text-slate-400">{e.sessionType.join(" · ")}</span>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </>
-          ) : (
-            <div className="bg-white rounded-2xl border border-cream-200 p-10 text-center mb-12">
-              <p className="text-3xl mb-3">{service.icon}</p>
-              <p className="font-semibold text-brand-900 mb-1">
-                Konya&apos;da {service.name} uzmanı yakında
-              </p>
-              <p className="text-sm text-slate-500 mb-4">
-                Bu alanda uzman psikologlar listeye ekleniyor.
-              </p>
-              <Link href="/konya/psikologlar" className="btn-primary text-sm">
-                Tüm Uzmanları Gör →
-              </Link>
-            </div>
-          )}
 
           {/* Uzun açıklama */}
           {service.longDescription && (
-            <div className="bg-white rounded-2xl border border-cream-200 p-6 sm:p-8 mb-10">
+            <div className="bg-white rounded-2xl border border-cream-200 p-6 sm:p-8 mb-8">
               <h2 className="text-xl font-bold text-brand-900 mb-4">
                 Konya&apos;da {service.name} Hakkında
               </h2>
@@ -467,7 +433,7 @@ export default async function KonyaSlugPage({ params }: Props) {
 
           {/* SSS */}
           {service.faqs && service.faqs.length > 0 && (
-            <div className="bg-white rounded-2xl border border-cream-200 p-6 sm:p-8 mb-10">
+            <div className="bg-white rounded-2xl border border-cream-200 p-6 sm:p-8 mb-8">
               <h2 className="text-xl font-bold text-brand-900 mb-5">Sık Sorulan Sorular</h2>
               <div className="divide-y divide-cream-200">
                 {service.faqs.map((faq: ServiceFaq, i: number) => (
@@ -477,6 +443,33 @@ export default async function KonyaSlugPage({ params }: Props) {
                   </div>
                 ))}
               </div>
+            </div>
+          )}
+
+          {/* Uzman listesi */}
+          {experts.length > 0 ? (
+            <>
+              <p className="text-sm text-slate-500 mb-6">
+                Bu alanda <strong className="text-slate-700">{experts.length} uzman</strong> listemizde yer alıyor.
+              </p>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-12">
+                {experts.map((e) => (
+                  <ExpertCard key={e.slug} expert={e} />
+                ))}
+              </div>
+            </>
+          ) : (
+            <div className="bg-white rounded-2xl border border-cream-200 p-10 text-center mb-12">
+              <p className="text-3xl mb-3">{service.icon}</p>
+              <p className="font-semibold text-brand-900 mb-1">
+                Konya&apos;da {service.name} uzmanı yakında
+              </p>
+              <p className="text-sm text-slate-500 mb-4">
+                Bu alanda uzman psikologlar listeye ekleniyor.
+              </p>
+              <Link href="/konya" className="btn-primary text-sm">
+                Tüm Uzmanları Gör →
+              </Link>
             </div>
           )}
 

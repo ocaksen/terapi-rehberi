@@ -56,7 +56,12 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/konya/psikolog",
-        destination: "/konya/psikologlar",
+        destination: "/konya",
+        permanent: true,
+      },
+      {
+        source: "/konya/psikologlar",
+        destination: "/konya",
         permanent: true,
       },
     ];
