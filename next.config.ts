@@ -16,7 +16,7 @@ const securityHeaders = [
       "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com",
       "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
       "font-src 'self' https://fonts.gstatic.com",
-      "img-src 'self' data: blob: https://images.unsplash.com https://randomuser.me https://www.google-analytics.com https://www.feyzacaksen.com",
+      "img-src 'self' data: blob: https://images.unsplash.com https://randomuser.me https://www.google-analytics.com https://www.feyzacaksen.com https://ui-avatars.com https://*.amazonaws.com",
       "connect-src 'self' https://www.google-analytics.com",
       "frame-ancestors 'none'",
       "base-uri 'self'",
@@ -32,6 +32,8 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "randomuser.me" },
       { protocol: "https", hostname: "www.feyzacaksen.com" },
       { protocol: "https", hostname: "www.terapirehberi.com" },
+      { protocol: "https", hostname: "ui-avatars.com" },
+      { protocol: "https", hostname: "**.amazonaws.com" },
     ],
   },
   experimental: {
