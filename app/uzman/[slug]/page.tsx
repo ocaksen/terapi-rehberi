@@ -420,15 +420,17 @@ export default async function ExpertPage({ params }: Props) {
                 </svg>
                 WhatsApp ile Randevu Al
               </a>
-              <a
-                href={expert.phone ? `tel:${expert.phone}` : "#"}
-                className="flex items-center justify-center gap-2 w-full border-2 border-brand-200 text-brand-700 hover:bg-brand-50 font-semibold px-4 py-3 rounded-xl transition-colors text-sm"
-              >
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                </svg>
-                {expert.phone}
-              </a>
+              {expert.phone && (
+                <a
+                  href={`tel:${expert.phone}`}
+                  className="flex items-center justify-center gap-2 w-full border-2 border-brand-200 text-brand-700 hover:bg-brand-50 font-semibold px-4 py-3 rounded-xl transition-colors text-sm"
+                >
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                  </svg>
+                  {expert.phone}
+                </a>
+              )}
 
               <p className="text-[11px] text-slate-400 text-center leading-relaxed">
                 Ücretsiz ön görüşme için WhatsApp&apos;tan mesaj atabilirsiniz.
@@ -480,15 +482,17 @@ export default async function ExpertPage({ params }: Props) {
 
       {/* ── Mobil sticky CTA ─────────────────────────────────────── */}
       <div className="lg:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 px-4 py-3 flex gap-3 z-40 shadow-lg">
-        <a
-          href={expert.phone ? `tel:${expert.phone}` : "#"}
-          className="flex-1 flex items-center justify-center gap-1.5 border-2 border-brand-200 text-brand-700 font-semibold rounded-xl py-3 text-sm"
-        >
-          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-          </svg>
-          Ara
-        </a>
+        {expert.phone && (
+          <a
+            href={`tel:${expert.phone}`}
+            className="flex-1 flex items-center justify-center gap-1.5 border-2 border-brand-200 text-brand-700 font-semibold rounded-xl py-3 text-sm"
+          >
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+            </svg>
+            Ara
+          </a>
+        )}
         <a
           href={expert.appointmentUrl ?? "#"}
           target="_blank"

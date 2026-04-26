@@ -56,7 +56,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  const ILCE_SLUGS = ["meram", "selcuklu", "karatay"];
+  const ILCE_SLUGS = ["meram", "selcuklu", "karatay", "eregli", "aksehir", "kulu", "beysehir", "seydisehir", "cihanbeyli", "cumra"];
   const comboRoutes: MetadataRoute.Sitemap = ILCE_SLUGS.flatMap((ilce) =>
     services.map((s) => ({
       url: `${BASE}/konya/${ilce}/${s.slug}`,
