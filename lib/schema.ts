@@ -56,7 +56,6 @@ export function expertSchema(expert: Expert) {
     "@id": `${SITE_URL}/uzman/${expert.slug}#business`,
     name: expert.name,
     description: expert.shortBio,
-    medicalSpecialty: "Psychology",
     url: `${SITE_URL}/uzman/${expert.slug}`,
     address: {
       "@type": "PostalAddress",
@@ -64,10 +63,6 @@ export function expertSchema(expert: Expert) {
       addressRegion: expert.city.charAt(0).toUpperCase() + expert.city.slice(1),
       addressCountry: "TR",
     },
-    availableService: expert.services.map((s) => ({
-      "@type": "MedicalTherapy",
-      name: s.replace(/-/g, " "),
-    })),
   };
   if (expert.phone)      businessNode.telephone  = expert.phone;
   if (expert.sessionFee) businessNode.priceRange = expert.sessionFee;
