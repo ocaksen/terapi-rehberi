@@ -94,7 +94,7 @@ export default function TestClient({ test }: { test: PsychTest }) {
             <p className="text-xs font-bold uppercase tracking-widest mb-2" style={{ color: result.color }}>
               {test.title} Sonucu {scaleName && `· ${scaleName}`}
             </p>
-            <h1 className="text-3xl font-bold text-slate-900 mb-3">{result.level}</h1>
+            <h2 className="text-3xl font-bold text-slate-900 mb-3">{result.level}</h2>
             <p className="text-slate-600 leading-relaxed max-w-md mx-auto">
               {result.description}
             </p>

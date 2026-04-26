@@ -65,6 +65,46 @@ function SectionHeading({ children }: { children: React.ReactNode }) {
   );
 }
 
+function generateBio(expert: NonNullable<ReturnType<typeof getExpertBySlug>>): string[] {
+  const serviceLabels: Record<string, string> = {
+    "bireysel-terapi":   "bireysel terapi",
+    "cift-terapisi":     "çift terapisi",
+    "ergen-psikolojisi": "ergen psikolojisi",
+    "aile-terapisi":     "aile terapisi",
+    "kaygi-bozuklugu":   "kaygı ve panik atak",
+    "emdr":              "EMDR terapisi",
+    "cocuk-psikolojisi": "çocuk psikolojisi",
+    "depresyon":         "depresyon",
+    "travma":            "travma terapisi",
+  };
+  const serviceNames = expert.services.map((s) => serviceLabels[s] ?? s.replace(/-/g, " "));
+  const serviceTxt = serviceNames.length > 1
+    ? serviceNames.slice(0, -1).join(", ") + " ve " + serviceNames.at(-1)
+    : serviceNames[0] ?? "psikoloji";
+
+  const lines: string[] = [];
+  lines.push(`${expert.shortBio}`);
+  lines.push(
+    `${expert.name.split(" ")[0]}, ${serviceTxt} alanlarında danışanlarına destek sunmaktadır. ` +
+    `Terapi sürecinde bireysel ihtiyaçları ön planda tutan bir yaklaşım benimsemekte; ` +
+    `her danışanla güvene dayalı terapötik bir ilişki kurmayı hedeflemektedir.`
+  );
+  if (expert.approaches && expert.approaches.length > 0) {
+    lines.push(
+      `Terapötik çalışmalarında ${expert.approaches.join(", ")} yöntemlerini kullanan ` +
+      `${expert.name.split(" ")[0]}, kanıta dayalı uygulamalarla desteklenen bir terapi süreci sunar.`
+    );
+  }
+  const sessionDesc = expert.sessionType.includes("Online") && expert.sessionType.includes("Yüz Yüze")
+    ? "hem yüz yüze hem online seans"
+    : expert.sessionType.includes("Online") ? "online seans" : "yüz yüze seans";
+  lines.push(
+    `${expert.district}, Konya'da ${sessionDesc} seçeneği sunan uzman, ` +
+    `randevu ve detaylı bilgi için profilini incelemenizi önerir.`
+  );
+  return lines;
+}
+
 export default async function ExpertPage({ params }: Props) {
   const { slug } = await params;
   const expert = getExpertBySlug(slug);
@@ -272,7 +312,11 @@ export default async function ExpertPage({ params }: Props) {
                   ))}
                 </div>
               ) : (
-                <p className="text-slate-600 leading-relaxed">{expert.shortBio}</p>
+                <div className="space-y-3">
+                  {generateBio(expert).map((para, i) => (
+                    <p key={i} className="text-slate-600 leading-relaxed text-[0.9375rem]">{para}</p>
+                  ))}
+                </div>
               )}
             </section>
 
@@ -352,7 +396,7 @@ export default async function ExpertPage({ params }: Props) {
               <SectionHeading>Sık Sorulan Sorular</SectionHeading>
               <div className="space-y-2.5">
                 {FAQ.map((item, i) => (
-                  <details key={i} className="group border border-slate-100 rounded-xl overflow-hidden">
+                  <details key={i} open className="group border border-slate-100 rounded-xl overflow-hidden">
                     <summary className="flex items-center justify-between gap-3 px-4 py-3.5 cursor-pointer select-none list-none hover:bg-slate-50 transition-colors">
                       <span className="text-sm font-semibold text-slate-800">{item.q}</span>
                       <svg className="w-4 h-4 text-slate-400 shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">

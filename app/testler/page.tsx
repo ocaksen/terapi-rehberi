@@ -102,6 +102,44 @@ export default function TestlerPage() {
       </section>
 
       <TestlerClient tests={tests} />
+
+      {/* Testler hakkında bilgi — SEO içeriği */}
+      <section className="max-w-4xl mx-auto px-4 py-12 border-t border-cream-200">
+        <h2 className="text-xl font-bold text-slate-900 mb-4">Psikolojik Testler Hakkında</h2>
+        <div className="grid sm:grid-cols-2 gap-6 text-sm text-slate-600 leading-relaxed">
+          <div>
+            <h3 className="font-semibold text-slate-800 mb-2">Bu testler ne ölçer?</h3>
+            <p>
+              Platformumuzdaki testler GAD-7, PHQ-9, PSS-10, PCL-5 gibi klinik ortamlarda
+              yaygın kullanılan bilimsel ölçeklere dayanmaktadır. Anksiyete, depresyon, stres,
+              travma, OKB, sosyal kaygı ve ilişki örüntüleri gibi alanlarda farkındalık kazanmanızı sağlar.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-slate-800 mb-2">Sonuçlar tanı niteliği taşır mı?</h3>
+            <p>
+              Hayır. Bu testler yalnızca kişisel farkındalık ve bilgilendirme amacıyla sunulmaktadır.
+              Klinik tanı koyma yetkisi yalnızca lisanslı psikolog ve psikiyatristlere aittir.
+              Sonuçlarınız endişe verici görünüyorsa bir uzmana başvurmanız önerilir.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-slate-800 mb-2">Verilerim saklanıyor mu?</h3>
+            <p>
+              Hayır. Tüm yanıtlarınız yalnızca tarayıcınızda işlenir; hiçbir sunucuya gönderilmez,
+              hiçbir veritabanına kaydedilmez. Testleri anonim olarak istediğiniz kadar tekrarlayabilirsiniz.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-slate-800 mb-2">Testi tamamladıktan sonra ne yapmalıyım?</h3>
+            <p>
+              Sonuçlarınızı bir uzmanla paylaşmanız, terapötik süreci hızlandırabilir.
+              Konya'daki lisanslı psikologlarımızın profillerini inceleyebilir, uygun gördüğünüz
+              uzmanla doğrudan iletişime geçebilirsiniz.
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
