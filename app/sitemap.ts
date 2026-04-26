@@ -30,6 +30,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/uzman-ol`,               lastModified: new Date(), changeFrequency: "monthly", priority: 0.6 },
     { url: `${BASE}/hakkimizda`,             lastModified: new Date(), changeFrequency: "monthly", priority: 0.5 },
     { url: `${BASE}/iletisim`,               lastModified: new Date(), changeFrequency: "monthly", priority: 0.5 },
+    { url: `${BASE}/kvkk`,                   lastModified: new Date(), changeFrequency: "yearly",  priority: 0.3 },
+    { url: `${BASE}/gizlilik`,               lastModified: new Date(), changeFrequency: "yearly",  priority: 0.3 },
+    { url: `${BASE}/kullanim-kosullari`,     lastModified: new Date(), changeFrequency: "yearly",  priority: 0.3 },
   ];
 
   const serviceRoutes: MetadataRoute.Sitemap = services.map((s) => ({

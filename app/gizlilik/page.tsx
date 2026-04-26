@@ -1,84 +1,131 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Gizlilik Politikası — TerapiRehberi",
-  description: "TerapiRehberi gizlilik politikası. Kişisel verilerinizin nasıl toplandığı, kullanıldığı ve korunduğu hakkında bilgi.",
+  description: "TerapiRehberi.com gizlilik politikası ve kişisel veri işleme prensipleri.",
   alternates: { canonical: "https://www.terapirehberi.com/gizlilik" },
+  robots: { index: false },
 };
 
 export default function GizlilikPage() {
   return (
-    <div className="min-h-screen bg-cream-50 py-16 px-4">
-      <div className="max-w-2xl mx-auto">
-        <h1 className="text-3xl font-bold text-brand-900 mb-2">Gizlilik Politikası</h1>
-        <p className="text-slate-400 text-sm mb-10">Son güncelleme: Nisan 2026</p>
+    <div className="max-w-3xl mx-auto px-4 py-14">
+      <nav className="text-xs text-slate-400 mb-8 flex items-center gap-1.5">
+        <Link href="/" className="hover:text-brand-700 transition-colors">Ana Sayfa</Link>
+        <span>/</span>
+        <span className="text-slate-600">Gizlilik Politikası</span>
+      </nav>
 
-        <div className="space-y-8 text-sm text-slate-600 leading-relaxed">
+      <h1 className="text-3xl font-black text-brand-900 mb-2">Gizlilik Politikası</h1>
+      <p className="text-sm text-slate-400 mb-10">Son güncelleme: Nisan 2026</p>
 
-          <section>
-            <h2 className="text-base font-semibold text-brand-900 mb-3">1. Veri Sorumlusu</h2>
-            <p>
-              TerapiRehberi (<strong>terapirehberi.com</strong>) olarak, ziyaretçilerimizin ve uzman başvurucularımızın kişisel verilerini 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) kapsamında işlemekteyiz.
-            </p>
-          </section>
+      <div className="space-y-8 text-slate-700 text-sm leading-relaxed">
 
-          <section>
-            <h2 className="text-base font-semibold text-brand-900 mb-3">2. Toplanan Veriler</h2>
-            <ul className="space-y-2 list-disc pl-5">
-              <li>Uzman başvuru formu: ad, soyad, e-posta, telefon, diploma bilgisi</li>
-              <li>Soru sor formu: sorunuz ve isteğe bağlı e-posta adresi</li>
-              <li>Psikolojik testler: sonuçlar yalnızca tarayıcınızda saklanır, sunucuya gönderilmez</li>
-              <li>Teknik veriler: IP adresi, tarayıcı türü (Google Analytics aracılığıyla)</li>
-            </ul>
-          </section>
+        <section>
+          <h2 className="text-lg font-bold text-brand-900 mb-3">1. Genel Bilgi</h2>
+          <p>
+            TerapiRehberi.com (&quot;Platform&quot;), ziyaretçilerin gizliliğine saygı duyan ve kişisel verileri
+            yalnızca gerekli olduğu ölçüde işleyen bağımsız bir rehber platformudur.
+            Bu politika, site ziyaretçilerine ait verilerin nasıl toplandığını ve kullanıldığını açıklar.
+            Listelenen uzmanların verileriyle ilgili bilgi için <Link href="/kvkk" className="text-brand-700 underline">KVKK Aydınlatma Metni</Link>&apos;ni inceleyiniz.
+          </p>
+        </section>
 
-          <section>
-            <h2 className="text-base font-semibold text-brand-900 mb-3">3. Verilerin Kullanım Amacı</h2>
-            <ul className="space-y-2 list-disc pl-5">
-              <li>Uzman başvurularını değerlendirmek ve başvurucuyu bilgilendirmek</li>
-              <li>Soru-cevap hizmetini yürütmek</li>
-              <li>Site performansını ve kullanıcı deneyimini iyileştirmek</li>
-              <li>Yasal yükümlülükleri yerine getirmek</li>
-            </ul>
-          </section>
+        <section>
+          <h2 className="text-lg font-bold text-brand-900 mb-3">2. Ziyaretçilerden Toplanan Veriler</h2>
+          <p>Platform, ziyaretçilerden aşağıdaki teknik verileri otomatik olarak toplar:</p>
+          <ul className="list-disc pl-6 space-y-1 mt-3">
+            <li>IP adresi (anonimleştirilmiş)</li>
+            <li>Tarayıcı türü ve sürümü</li>
+            <li>Ziyaret edilen sayfalar ve gezinme süresi</li>
+            <li>Yönlendiren URL</li>
+            <li>Cihaz türü (masaüstü / mobil)</li>
+          </ul>
+          <p className="mt-3">
+            Bu veriler kişiyle ilişkilendirilmemekte, yalnızca anonim istatistiksel analiz amacıyla kullanılmaktadır.
+          </p>
+        </section>
 
-          <section>
-            <h2 className="text-base font-semibold text-brand-900 mb-3">4. Üçüncü Taraflarla Paylaşım</h2>
-            <p>
-              Kişisel verileriniz; açık rızanız olmaksızın üçüncü kişilere satılmaz veya ticari amaçla devredilmez. Yalnızca hizmet alınan teknoloji sağlayıcılarla (e-posta servisi, analitik) sınırlı ölçüde paylaşılabilir.
-            </p>
-          </section>
+        <section>
+          <h2 className="text-lg font-bold text-brand-900 mb-3">3. Çerezler (Cookie)</h2>
+          <div className="space-y-3">
+            <div className="bg-slate-50 rounded-xl p-4 border border-slate-100">
+              <p className="font-semibold text-slate-800 mb-1">Zorunlu Çerezler</p>
+              <p>Oturum yönetimi ve güvenlik için gereklidir. Kapatılamaz.</p>
+            </div>
+            <div className="bg-slate-50 rounded-xl p-4 border border-slate-100">
+              <p className="font-semibold text-slate-800 mb-1">Analitik Çerezler</p>
+              <p>Ziyaretçi sayısı ve davranışını anonim olarak ölçmek için kullanılır. Reklam amaçlı değildir.</p>
+            </div>
+          </div>
+          <p className="mt-3 text-xs text-slate-500">
+            Tarayıcı ayarlarından çerezleri devre dışı bırakabilirsiniz; ancak bazı işlevler etkilenebilir.
+          </p>
+        </section>
 
-          <section>
-            <h2 className="text-base font-semibold text-brand-900 mb-3">5. Çerezler (Cookies)</h2>
-            <p>
-              Sitemiz; oturum yönetimi ve analitik amaçlarla çerez kullanmaktadır. Tarayıcınızın ayarlarından çerezleri devre dışı bırakabilirsiniz; ancak bu durumda bazı özellikler çalışmayabilir.
-            </p>
-          </section>
+        <section>
+          <h2 className="text-lg font-bold text-brand-900 mb-3">4. Üçüncü Taraf Hizmetleri</h2>
+          <p>Platform aşağıdaki üçüncü taraf hizmetlerini kullanır:</p>
+          <ul className="list-disc pl-6 space-y-2 mt-3">
+            <li>
+              <strong>Vercel Inc.</strong> — Barındırma ve CDN altyapısı. Sunucu erişim logları tutulabilir.
+            </li>
+            <li>
+              <strong>Google Fonts / CDN</strong> — Yazı tipi yükleme. IP adresi Google&apos;a iletilebilir.
+            </li>
+            <li>
+              <strong>ui-avatars.com</strong> — Profil fotoğrafı bulunmayan uzmanlar için otomatik avatar.
+            </li>
+          </ul>
+          <p className="mt-3">
+            Platform, Google Analytics, Facebook Pixel veya benzeri reklam izleme araçları kullanmamaktadır.
+          </p>
+        </section>
 
-          <section>
-            <h2 className="text-base font-semibold text-brand-900 mb-3">6. Haklarınız</h2>
-            <p>KVKK'nın 11. maddesi kapsamında aşağıdaki haklara sahipsiniz:</p>
-            <ul className="space-y-2 list-disc pl-5 mt-2">
-              <li>Kişisel verilerinizin işlenip işlenmediğini öğrenme</li>
-              <li>İşlenmişse buna ilişkin bilgi talep etme</li>
-              <li>Yanlış verilerin düzeltilmesini isteme</li>
-              <li>Verilerin silinmesini veya yok edilmesini talep etme</li>
-            </ul>
-          </section>
+        <section>
+          <h2 className="text-lg font-bold text-brand-900 mb-3">5. Dış Bağlantılar</h2>
+          <p>
+            Platform, doktortakvimi.com gibi üçüncü taraf sitelere bağlantı içerebilir.
+            Bu sitelerin gizlilik uygulamalarından TerapiRehberi.com sorumlu değildir.
+          </p>
+        </section>
 
-          <section>
-            <h2 className="text-base font-semibold text-brand-900 mb-3">7. İletişim</h2>
-            <p>
-              Gizlilik politikamızla ilgili sorularınız için{" "}
-              <a href="mailto:info@terapirehberi.com" className="text-brand-600 hover:underline">
-                info@terapirehberi.com
-              </a>{" "}
-              adresine yazabilirsiniz.
-            </p>
-          </section>
+        <section>
+          <h2 className="text-lg font-bold text-brand-900 mb-3">6. Veri Güvenliği</h2>
+          <p>
+            Platform HTTPS ile şifrelenmiş bağlantı kullanır. Ziyaretçi verileri yetkisiz erişime
+            karşı korunan güvenli ortamlarda saklanmaktadır.
+          </p>
+        </section>
 
-        </div>
+        <section>
+          <h2 className="text-lg font-bold text-brand-900 mb-3">7. Çocukların Gizliliği</h2>
+          <p>
+            Platform 18 yaş altı bireylere yönelik değildir. Bu yaş grubundan bilerek kişisel veri toplanmamaktadır.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="text-lg font-bold text-brand-900 mb-3">8. Değişiklikler</h2>
+          <p>
+            Bu politika zaman zaman güncellenebilir. Platformu kullanmaya devam etmeniz güncel politikayı
+            kabul ettiğiniz anlamına gelir.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="text-lg font-bold text-brand-900 mb-3">9. İletişim</h2>
+          <p>
+            Gizlilik ile ilgili sorularınız için:{" "}
+            <a href="mailto:iletisim@terapirehberi.com" className="text-brand-700 underline">iletisim@terapirehberi.com</a>
+          </p>
+          <p className="mt-2">
+            Kişisel verilerinizin işlenmesine ilişkin haklarınız için{" "}
+            <Link href="/kvkk" className="text-brand-700 underline">KVKK Aydınlatma Metni</Link>&apos;ni inceleyin.
+          </p>
+        </section>
+
       </div>
     </div>
   );

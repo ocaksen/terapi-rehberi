@@ -66,6 +66,8 @@ export default function Footer() {
             <li><Link href="/hakkimizda" className="hover:text-white transition-colors">Hakkımızda</Link></li>
             <li><Link href="/iletisim" className="hover:text-white transition-colors">İletişim</Link></li>
             <li><Link href="/gizlilik" className="hover:text-white transition-colors">Gizlilik Politikası</Link></li>
+            <li><Link href="/kvkk" className="hover:text-white transition-colors">KVKK Aydınlatma Metni</Link></li>
+            <li><Link href="/kullanim-kosullari" className="hover:text-white transition-colors">Kullanım Koşulları</Link></li>
           </ul>
         </div>
 
