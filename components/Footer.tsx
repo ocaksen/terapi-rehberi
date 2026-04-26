@@ -19,13 +19,13 @@ export default function Footer() {
             <span className="font-bold text-white text-base">TerapiRehberi</span>
           </div>
           <p className="text-cream-200 leading-relaxed mb-3">
-            Konya&apos;da güvenilir psikolog, klinik psikolog ve terapist bulmayı kolaylaştıran bağımsız rehber platformu.
+            Türkiye&apos;de güvenilir psikolog, klinik psikolog ve terapist bulmayı kolaylaştıran bağımsız rehber platformu.
           </p>
           <p className="text-cream-300 leading-relaxed text-xs">
-            Bireysel terapi, çift terapisi, ergen psikolojisi ve EMDR gibi alanlarda kimlik ve diploma doğrulamasından geçmiş uzmanlar. Meram, Selçuklu ve Karatay ilçelerinde yüz yüze; Türkiye genelinde online seans seçenekleri.
+            Bireysel terapi, çift terapisi, ergen psikolojisi ve EMDR gibi alanlarda kimlik ve diploma doğrulamasından geçmiş uzmanlar. Yüz yüze ve online seans seçenekleriyle Türkiye genelinde hizmet.
           </p>
           <div className="mt-5 flex flex-wrap gap-2">
-            {["Konya Psikolog", "Çift Terapisi", "EMDR", "Ergen Psikolojisi"].map((tag) => (
+            {["Konya Psikolog", "Trabzon Psikolog", "Çift Terapisi", "EMDR"].map((tag) => (
               <span key={tag} className="text-xs bg-brand-800 text-cream-300 px-2.5 py-1 rounded-full border border-brand-700">
                 {tag}
               </span>
@@ -55,8 +55,14 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Kurumsal */}
+        {/* Şehirler + Kurumsal */}
         <div>
+          <p className="font-semibold text-white mb-4">Şehirler</p>
+          <ul className="space-y-3 text-cream-200 mb-6">
+            <li><Link href="/konya" className="hover:text-white transition-colors">Konya Psikolog</Link></li>
+            <li><Link href="/trabzon" className="hover:text-white transition-colors">Trabzon Psikolog</Link></li>
+            <li><Link href="/konya/psikologlar" className="hover:text-white transition-colors text-xs text-cream-300">Konya Tüm Psikologlar</Link></li>
+          </ul>
           <p className="font-semibold text-white mb-4">Kurumsal</p>
           <ul className="space-y-3 text-cream-200">
             <li><Link href="/konya/psikologlar" className="hover:text-white transition-colors">Konya Psikologlar</Link></li>
