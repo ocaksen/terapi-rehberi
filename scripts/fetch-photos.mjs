@@ -21,17 +21,21 @@ async function fetchPhoto(profileUrl) {
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
   const html = await res.text();
 
-  // pixel-p2 CDN (yeni format)
-  const match = html.match(/src="(\/\/pixel-p2\.s3\.eu-central-1\.amazonaws\.com\/doctor\/avatar\/[^"]+_small_square\.[a-z]+)"/i);
+  // pixel-p2 CDN — avatar (küçük kare)
+  const match = html.match(/src="(\/\/pixel-p2\.s3\.eu-central-1\.amazonaws\.com\/doctor\/avatar\/[^"]+\.[a-z]+)"/i);
   if (match) return "https:" + match[1];
 
-  // large variant
-  const match2 = html.match(/href="(\/\/pixel-p2\.s3\.eu-central-1\.amazonaws\.com\/doctor\/avatar\/[^"]+_large\.[a-z]+)"/i);
+  // pixel-p2 CDN — photos (farklı path)
+  const match2 = html.match(/["'](\/\/pixel-p2\.s3\.eu-central-1\.amazonaws\.com\/doctor\/photos\/[^"']+_large\.[a-z]+)["']/i);
   if (match2) return "https:" + match2[1];
 
-  // eski eniyihekim CDN
-  const match3 = html.match(/src="(\/\/s3[^"]+eniyihekim\.com\/doctor\/[^"]+_(?:220|400)_square\.[a-z]+)"/i);
+  // pixel-p2 herhangi bir fotoğraf
+  const match3 = html.match(/["'](\/\/pixel-p2\.s3\.eu-central-1\.amazonaws\.com\/doctor\/[^"']+\.(?:jpg|jpeg|png|webp))["']/i);
   if (match3) return "https:" + match3[1];
+
+  // eski eniyihekim CDN
+  const match4 = html.match(/src="(\/\/s3[^"]+eniyihekim\.com\/doctor\/[^"]+_(?:220|400)_square\.[a-z]+)"/i);
+  if (match4) return "https:" + match4[1];
 
   return null;
 }
