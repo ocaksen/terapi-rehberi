@@ -111,22 +111,38 @@ export default function TestlerPage() {
         <div className="bg-white rounded-2xl border border-cream-200 p-6 sm:p-8">
           <h2 className="text-lg font-black text-slate-900 mb-3">Sevgi Eksikliği Testi Nedir?</h2>
           <p className="text-sm text-slate-600 leading-relaxed mb-3">
-            Sevgi eksikliği testi, ilişkilerinizde duygusal ihtiyaçlarınızın ne ölçüde karşılandığını
-            değerlendiren bir öz-değerlendirme aracıdır. Hiçbir zaman yeterince sevilmediğinizi
-            hissediyorsanız, duygularınızı ifade etme konusunda güçlük çekiyorsanız ya da sık sık
-            terk edilme kaygısı yaşıyorsanız bu test size önemli ipuçları verebilir.
+            Sevgi eksikliği testi, ilişkilerinizde duygusal ihtiyaçlarınızın karşılanıp karşılanmadığını
+            ölçen bir öz-değerlendirme aracıdır. &ldquo;Hiçbir zaman yeterince sevilmiyorum&rdquo; duygusu,
+            duygularınızı ifade etmekte güçlük ya da sık yaşanan terk edilme kaygısı — bu belirtiler
+            testin odağındadır.
           </p>
           <p className="text-sm text-slate-600 leading-relaxed mb-3">
-            Test sonucunuzda yüksek sevgi eksikliği skoru çıkması, bağlanma stilinizle doğrudan
-            ilişkili olabilir. Kaygılı bağlanma örüntüsüne sahip kişiler sık sık onay arayışına
-            girer ve duygusal mesafeyi tehdit olarak algılar. Bu örüntüleri anlamak ve değiştirmek
-            için destek almak mümkündür.
+            Yüksek sevgi eksikliği skoru genellikle bağlanma stiliyle ilişkilidir.
+            Kaygılı bağlanan kişiler onay arayışına girer ve duygusal mesafeyi tehdit olarak algılar.
+            Bu örüntüleri fark etmek, değişimin ilk adımıdır.
           </p>
           <p className="text-sm text-slate-600 leading-relaxed">
-            Testi tamamladıktan sonra sonuçlarınızı lisanslı bir psikologla paylaşmanızı öneririz.
-            Bir uzmanla çalışmak, iyileşme sürecini belirgin biçimde hızlandırır ve kalıcı değişim
-            için en etkili yoldur.
+            Sonuçlarınızı lisanslı bir psikologla paylaşmanızı öneririz.
+            Uzman desteği, kalıcı değişim için en etkili yoldur.
           </p>
+        </div>
+      </section>
+
+      {/* Sevgi Eksikliği Testi — Nasıl Yorumlanır */}
+      <section className="max-w-4xl mx-auto px-4 pb-10">
+        <div className="grid sm:grid-cols-3 gap-4 text-sm text-slate-600 leading-relaxed">
+          <div className="bg-white rounded-2xl border border-cream-200 p-5">
+            <p className="font-semibold text-slate-800 mb-2 text-xs uppercase tracking-wide text-green-600">Düşük Skor</p>
+            <p>Duygusal ihtiyaçlarınız büyük ölçüde karşılanıyor. İlişkilerinizde güven ve bağ duygusu öne çıkıyor. Bu güçlü temeli korumak için iletişim becerilerinizi geliştirmeye devam edebilirsiniz.</p>
+          </div>
+          <div className="bg-white rounded-2xl border border-cream-200 p-5">
+            <p className="font-semibold text-slate-800 mb-2 text-xs uppercase tracking-wide text-amber-600">Orta Skor</p>
+            <p>Zaman zaman duygusal boşluk hissediyorsunuz. Bağlanma örüntülerinizi keşfetmek faydalı olabilir. Bir uzmanla kısa süreli bir çalışma, bu örüntülerin kaynağını anlamanızı kolaylaştırır.</p>
+          </div>
+          <div className="bg-white rounded-2xl border border-cream-200 p-5">
+            <p className="font-semibold text-slate-800 mb-2 text-xs uppercase tracking-wide text-red-500">Yüksek Skor</p>
+            <p>Yoğun sevgi eksikliği belirtileri yaşıyorsunuz. Bu durum günlük işlevleri etkileyebilir. Lisanslı bir psikologla görüşmenizi öneririz — destek almak zayıflık değil, bilinçli bir tercihdir.</p>
+          </div>
         </div>
       </section>
 
@@ -200,6 +216,48 @@ export default function TestlerPage() {
             <p className="mt-2">
               Terapi dışında ise kendinizi duygusal açıdan farklı hissettiren dönemlerde
               (yoğun stres, ilişki değişikliği, kayıp) tekrar yapmanız anlamlı olabilir.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Ek SEO bölümü — testlerin faydaları */}
+      <section className="max-w-4xl mx-auto px-4 pb-16 border-t border-cream-200 pt-10">
+        <h2 className="text-xl font-bold text-slate-900 mb-4">Psikolojik Test Yapmak Ne İşe Yarar?</h2>
+        <p className="text-sm text-slate-600 leading-relaxed mb-4">
+          Psikolojik testler, kendinizi daha iyi anlamanın en hızlı yollarından biridir.
+          Duygusal durumunuzu somut bir çerçeveye oturtmanızı sağlar.
+          Bir psikologla ilk görüşmeden önce test sonuçlarınıza bakmak, değerlendirme sürecini kısaltır.
+        </p>
+        <div className="grid sm:grid-cols-2 gap-5 text-sm text-slate-600 leading-relaxed">
+          <div>
+            <h3 className="font-semibold text-slate-800 mb-1">Farkındalık kazandırır</h3>
+            <p>
+              Günlük yaşamda fark etmediğiniz örüntüleri ortaya çıkarır.
+              Kaygı düzeyiniz, stres tepkileriniz veya ilişki alışkanlıklarınız hakkında
+              nesnel bir bakış açısı sunar.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-slate-800 mb-1">Terapi sürecini hızlandırır</h3>
+            <p>
+              Sonuçlarınızı terapistinizle paylaşmak, odak noktasını hızla belirlemenize yardımcı olur.
+              İlk seanstan itibaren daha verimli bir çalışma başlar.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-slate-800 mb-1">İlerlemeyi ölçer</h3>
+            <p>
+              Aynı testi belirli aralıklarla tekrarlamak, terapi sürecindeki değişimi
+              sayısal olarak görmenizi sağlar.
+              Bu geri bildirim motivasyonu artırır.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-slate-800 mb-1">Yardım almaya zemin hazırlar</h3>
+            <p>
+              Bazen bir uzmana başvurmak için somut bir gerekçeye ihtiyaç duyulur.
+              Test sonuçları bu kararı kolaylaştırır; sezgilerinizi veriyle destekler.
             </p>
           </div>
         </div>

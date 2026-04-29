@@ -6,7 +6,7 @@ import IlceBentoClient from "./[ilce]/IlceBentoClient";
 export const metadata: Metadata = {
   title: "Konya Psikolog Rehberi — Lisanslı Uzman Terapistler",
   description:
-    "Konya psikolog rehberi: psikolojik destek ve danışmanlık hizmeti için doğrulanmış uzmanlar. Bireysel terapi, çift terapisi, EMDR. Konya psikolog bul — yüz yüze ve online seans.",
+    "Konya psikolog rehberi: psikolojik destek ve danışmanlık hizmeti için doğrulanmış uzmanlar. Bireysel terapi, çift terapisi, EMDR — yüz yüze ve online seans seçenekleriyle.",
   keywords: ["konya psikolog", "konya terapist", "konya psikoloji", "konya online terapi"],
   alternates: { canonical: "https://www.terapirehberi.com/konya" },
   openGraph: {
@@ -282,16 +282,47 @@ export default function KonyaPage() {
           <h2 className="text-lg font-black text-brand-900 mb-4">Konya&apos;da Psikolojik Destek Almak</h2>
           <div className="grid sm:grid-cols-3 gap-5 text-sm text-slate-600 leading-relaxed">
             <div>
-              <h3 className="font-semibold text-slate-800 mb-1">Konya psikolog bulmak ne kadar sürer?</h3>
-              <p>TerapiRehberi üzerinden Konya psikolog araması yaparak 5 dakika içinde size uygun uzmanın profiline ulaşabilirsiniz. Profil sayfasında uzmanlık alanları, seans ücreti ve iletişim bilgileri yer almaktadır.</p>
+              <h3 className="font-semibold text-slate-800 mb-1">Uzman bulmak ne kadar sürer?</h3>
+              <p>TerapiRehberi üzerinden arama yaparak 5 dakika içinde size uygun uzmanın profiline ulaşabilirsiniz. Profil sayfasında uzmanlık alanları, seans ücreti ve iletişim bilgileri yer almaktadır.</p>
             </div>
             <div>
-              <h3 className="font-semibold text-slate-800 mb-1">Hangi durumlarda psikolojik destek almalıyım?</h3>
+              <h3 className="font-semibold text-slate-800 mb-1">Hangi durumlarda destek almalıyım?</h3>
               <p>Günlük işlevlerinizi etkileyen kaygı, üzüntü, uyku sorunları veya ilişki güçlükleri yaşıyorsanız psikolojik destek almayı değerlendirin. Erken başvuru, iyileşme sürecini belirgin biçimde kısaltır.</p>
             </div>
             <div>
-              <h3 className="font-semibold text-slate-800 mb-1">Konya psikolog seansı nasıl başlatılır?</h3>
-              <p>Profilini beğendiğiniz Konya psikologuna iletişim bilgileri üzerinden doğrudan ulaşın. İlk görüşme çoğunlukla tanışma ve ihtiyaç değerlendirme seansıdır; bağlayıcı bir taahhüt içermez.</p>
+              <h3 className="font-semibold text-slate-800 mb-1">İlk seans nasıl başlatılır?</h3>
+              <p>Profilini beğendiğiniz uzmana iletişim bilgileri üzerinden doğrudan ulaşın. İlk görüşme çoğunlukla tanışma ve ihtiyaç değerlendirme seansıdır; bağlayıcı bir taahhüt içermez.</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Terapi yöntemleri */}
+        <div className="border-t border-cream-200 pt-8 mt-8">
+          <h2 className="text-lg font-black text-brand-900 mb-4">Konya&apos;da Uygulanan Terapi Yöntemleri</h2>
+          <div className="grid sm:grid-cols-2 gap-5 text-sm text-slate-600 leading-relaxed">
+            <div>
+              <h3 className="font-semibold text-slate-800 mb-1">Bilişsel Davranışçı Terapi (BDT)</h3>
+              <p>Olumsuz düşünce kalıplarını fark etmeye ve değiştirmeye odaklanır. Kaygı, depresyon, OKB ve fobiler için kanıtı güçlü bir yöntemdir. Konya&apos;daki klinik psikologların büyük bölümü BDT uygulamaktadır.</p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-slate-800 mb-1">EMDR</h3>
+              <p>Travma işleme konusunda etkinliği kanıtlanmış bir yöntemdir. Travma sonrası stres bozukluğu, çocukluk travmaları ve kayıp yaşantılarının işlenmesinde tercih edilir. Sertifikalı EMDR terapistleri rehberimizde yer almaktadır.</p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-slate-800 mb-1">Çift Terapisi</h3>
+              <p>İletişim sorunları, güven krizleri ve ilişkisel çatışmalarda çiftlerin birlikte çalışmasını sağlar. Boşanma öncesi veya sonrasında da destek amacıyla başvurulabilir.</p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-slate-800 mb-1">Çocuk ve Ergen Psikolojisi</h3>
+              <p>Okul uyum sorunları, davranış bozuklukları ve ergenlik güçlükleri için özelleşmiş yaklaşımlar uygulanır. Oyun terapisi, küçük çocuklarda sıklıkla tercih edilen bir yöntemdir.</p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-slate-800 mb-1">Şema Terapi</h3>
+              <p>Kişilik örüntüleri ve kronik ilişki sorunları üzerinde çalışır. Uzun süreli psikolojik güçlüklerde standart BDT&apos;nin yetersiz kaldığı durumlarda tercih edilir.</p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-slate-800 mb-1">Mindfulness Temelli Terapiler</h3>
+              <p>Kronik stres, tükenmişlik ve tekrarlayan depresyon için etkilidir. Farkındalık egzersizleri seansa entegre edilir. Hem bireysel hem grup formatında uygulanabilir.</p>
             </div>
           </div>
         </div>

@@ -86,13 +86,13 @@ export default function SoruSorPage() {
           <p className="text-brand-300 text-xs font-semibold uppercase tracking-widest mb-3">Uzman Yanıtları</p>
           <h1 className="text-3xl font-bold text-white mb-3">Psikolog Sor: Psikoloji Soruları & Uzman Cevapları</h1>
           <p className="text-brand-200 text-sm leading-relaxed max-w-xl">
-            Psikolog sor, anonim yanıt al. Psikoloji ve terapi hakkında merak ettiğiniz her soruyu
-            psikoloğunuza sorun — Konya&apos;daki lisanslı uzmanlar yanıtlasın.
-            Kişisel tavsiye niteliği taşımayan bu yanıtlar genel bilgilendirme amacıyla sunulmaktadır.
+            Psikoloji ve terapi hakkında merak ettiğiniz her soruyu anonim olarak iletin.
+            Konya&apos;daki lisanslı uzmanlar yanıtlasın.
+            Bu yanıtlar genel bilgilendirme amacıyla sunulmakta olup kişisel tavsiye niteliği taşımaz.
           </p>
           <p className="text-brand-300 text-xs leading-relaxed max-w-xl mt-3">
-            Psikolog sor platformumuzda kaygı, depresyon, ilişki sorunları, travma ve kişisel gelişim
-            konularında uzman yanıtlarına ulaşabilirsiniz. Sorunuzu tamamen anonim olarak iletebilirsiniz.
+            Kaygı, depresyon, ilişki sorunları, travma ve kişisel gelişim konularında uzman görüşlerine ulaşın.
+            Sorunuzu tamamen anonim olarak iletebilirsiniz.
           </p>
         </div>
       </div>
@@ -112,40 +112,60 @@ export default function SoruSorPage() {
 
       <SoruSorClient sorular={sorular} />
 
+      {/* Konu başlıkları — SEO */}
+      <section className="max-w-3xl mx-auto px-4 pt-10 pb-2 border-t border-slate-100">
+        <h2 className="text-lg font-bold text-slate-900 mb-4">Yanıt Bulabileceğiniz Konular</h2>
+        <div className="grid sm:grid-cols-3 gap-4 text-sm text-slate-600 leading-relaxed">
+          <div className="bg-white rounded-2xl border border-slate-100 p-4">
+            <h3 className="font-semibold text-slate-800 mb-2">Kaygı ve Panik</h3>
+            <p>Yoğun kaygı, panik atak ve sosyal kaygı hakkında uzman görüşü alabilirsiniz. Belirtiler günlük hayatı etkiliyorsa bir uzmana danışmak önerilir.</p>
+          </div>
+          <div className="bg-white rounded-2xl border border-slate-100 p-4">
+            <h3 className="font-semibold text-slate-800 mb-2">Depresyon</h3>
+            <p>Süregelen üzüntü, isteksizlik veya anlamsızlık hissi hakkında genel bilgi alabilirsiniz. Bu belirtiler depresyonun işareti olabilir.</p>
+          </div>
+          <div className="bg-white rounded-2xl border border-slate-100 p-4">
+            <h3 className="font-semibold text-slate-800 mb-2">İlişki Sorunları</h3>
+            <p>Çift içi çatışmalar, iletişim güçlükleri veya bağlanma sorunları hakkında uzman bakış açısı edinebilirsiniz.</p>
+          </div>
+          <div className="bg-white rounded-2xl border border-slate-100 p-4">
+            <h3 className="font-semibold text-slate-800 mb-2">Travma ve Stres</h3>
+            <p>Geçmiş olumsuz deneyimler veya kronik stres yönetimi hakkında genel bilgi alabilirsiniz. Klinik destek için bir uzmana başvurun.</p>
+          </div>
+          <div className="bg-white rounded-2xl border border-slate-100 p-4">
+            <h3 className="font-semibold text-slate-800 mb-2">Kişisel Gelişim</h3>
+            <p>Öz saygı, motivasyon veya alışkanlık değişimi konularında farkındalık kazanmak için soru sorabilirsiniz.</p>
+          </div>
+          <div className="bg-white rounded-2xl border border-slate-100 p-4">
+            <h3 className="font-semibold text-slate-800 mb-2">Uyku ve Yorgunluk</h3>
+            <p>Uyku bozuklukları ve kronik yorgunluk psikolojik faktörlerle ilişkili olabilir. Bu konularda genel bilgi almak için soru iletebilirsiniz.</p>
+          </div>
+        </div>
+      </section>
+
       {/* Bilgi bölümü — SEO */}
-      <section className="max-w-3xl mx-auto px-4 py-12 border-t border-slate-100">
-        <h2 className="text-lg font-bold text-slate-900 mb-5">Psikolog Sor: Sık Sorulan Sorular</h2>
+      <section className="max-w-3xl mx-auto px-4 py-10 border-t border-slate-100">
+        <h2 className="text-lg font-bold text-slate-900 mb-5">Sık Sorulan Sorular</h2>
         <div className="grid sm:grid-cols-2 gap-6 text-sm text-slate-600 leading-relaxed">
           <div>
-            <h3 className="font-semibold text-slate-800 mb-2">Psikolog sor platformu nasıl çalışır?</h3>
-            <p>
-              Psikoloğunuza sorun bölümünden anonim olarak soru iletebilirsiniz.
-              Konya&apos;daki lisanslı psikologlar sorunuzu değerlendirerek genel bilgilendirme
-              amacıyla yanıtlar. Yanıtlar kişisel tavsiye niteliği taşımaz.
-            </p>
+            <h3 className="font-semibold text-slate-800 mb-2">Bu platform nasıl çalışır?</h3>
+            <p>Soru alanından anonim olarak sorunuzu iletebilirsiniz.</p>
+            <p className="mt-2">Konya&apos;daki lisanslı uzmanlar soruyu değerlendirir. Yanıt, genel bilgilendirme amacıyla yayımlanır. Yanıtlar kişisel tavsiye ya da klinik tanı niteliği taşımaz.</p>
           </div>
           <div>
-            <h3 className="font-semibold text-slate-800 mb-2">Hangi konularda psikolog sor?</h3>
-            <p>
-              Kaygı, depresyon, ilişki sorunları, travma, uyku bozukluğu, iş stresi ve
-              kişisel gelişim gibi konularda psikolog sor platformumuza soru iletebilirsiniz.
-              Her soru uzman tarafından incelenir.
-            </p>
+            <h3 className="font-semibold text-slate-800 mb-2">Hangi konularda soru sorabilirsiniz?</h3>
+            <p>Kaygı, depresyon, ilişki sorunları, travma ve uyku bozukluğu gibi konularda soru iletebilirsiniz.</p>
+            <p className="mt-2">İş stresi ve kişisel gelişim konuları da dahil olmak üzere her soru bir uzman tarafından incelenir.</p>
           </div>
           <div>
             <h3 className="font-semibold text-slate-800 mb-2">Yanıtlar ne kadar sürede gelir?</h3>
-            <p>
-              Sorular uzmanlar tarafından incelendikten sonra yayımlanır.
-              Acil psikolojik destek ihtiyacında doğrudan bir psikologla görüşmenizi öneririz.
-            </p>
+            <p>Sorular uzmanlar tarafından incelendikten sonra yayımlanır.</p>
+            <p className="mt-2">Acil psikolojik destek ihtiyacında doğrudan bir uzmanla görüşmenizi öneririz. Bu platform acil müdahale hizmeti vermemektedir.</p>
           </div>
           <div>
-            <h3 className="font-semibold text-slate-800 mb-2">Psikolog sor ile terapi aynı şey mi?</h3>
-            <p>
-              Hayır. Psikolog sor platformu genel bilgilendirme içindir; terapi yerine geçmez.
-              Düzenli psikolojik destek için lisanslı bir psikologla bireysel seans almanız gerekir.
-              Konya&apos;daki psikologlarımızı incelemek için <a href="/konya" className="text-brand-600 hover:underline">Konya psikolog rehberimizi</a> ziyaret edebilirsiniz.
-            </p>
+            <h3 className="font-semibold text-slate-800 mb-2">Bu platform terapi yerine geçer mi?</h3>
+            <p>Hayır. Bu bölüm yalnızca genel bilgilendirme içindir. Terapi ya da klinik danışmanlık değildir.</p>
+            <p className="mt-2">Düzenli psikolojik destek için lisanslı bir uzmanla bireysel seans almanız gerekir. <a href="/konya" className="text-brand-600 hover:underline">Konya psikolog rehberimizi</a> inceleyebilirsiniz.</p>
           </div>
         </div>
       </section>
