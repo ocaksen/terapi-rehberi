@@ -1,4 +1,5 @@
 import db from "@/data/db.json";
+import professionalsData from "@/data/professionals.json";
 import type { Expert, Service, City, BlogPost, PsychTest, SoruCevap } from "@/types";
 
 export function getAllExperts(): Expert[] {
@@ -14,7 +15,20 @@ export function getExpertsByCity(citySlug: string): Expert[] {
 }
 
 export function getExpertBySlug(slug: string): Expert | undefined {
-  return (db.experts as Expert[]).find((e) => e.slug === slug);
+  return (
+    (db.experts as Expert[]).find((e) => e.slug === slug) ??
+    (professionalsData as Expert[]).find((p) => p.slug === slug)
+  );
+}
+
+export function getProfessionalsByCity(citySlug: string): Expert[] {
+  return (professionalsData as Expert[]).filter((p) => p.city === citySlug);
+}
+
+export function getProfessionalsByCityAndProfession(citySlug: string, profession: string): Expert[] {
+  return (professionalsData as Expert[]).filter(
+    (p) => p.city === citySlug && p.profession === profession
+  );
 }
 
 export function getAllServices(): Service[] {

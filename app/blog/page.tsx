@@ -48,16 +48,14 @@ export default function BlogPage() {
               href={`/blog/${post.slug}`}
               className="bg-white rounded-2xl border border-cream-200 shadow-sm p-5 flex flex-col gap-3 group hover:shadow-md transition-shadow"
             >
-              {post.image && (
-                <div className="w-full h-40 rounded-xl overflow-hidden bg-cream-100">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src={post.image}
-                    alt={post.title}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              )}
+              <div className="w-full h-40 rounded-xl overflow-hidden bg-cream-100">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={post.image}
+                  alt={post.title}
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <span className="text-xs font-semibold text-brand-500 uppercase tracking-wide">
                 {post.category}
               </span>

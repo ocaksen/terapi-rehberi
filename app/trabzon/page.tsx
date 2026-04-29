@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { getProfessionalsByCityAndProfession } from "@/lib/data";
+import ExpertCard from "@/components/ExpertCard";
 
 export const metadata: Metadata = {
   title: "Trabzon Psikolog Rehberi 2026 — Lisanslı Uzman Terapistler",
@@ -66,20 +68,6 @@ const ILCELER = [
   { label: "Beşikdüzü Psikolog", href: "/trabzon/besikduzu" },
 ];
 
-const citySchema = {
-  "@context": "https://schema.org",
-  "@type": "ItemList",
-  name: "Trabzon Psikolog Rehberi",
-  description: "Trabzon'da lisanslı psikolog ve terapistler için kapsamlı rehber.",
-  url: `${BASE}/trabzon`,
-  numberOfItems: ILCELER.length,
-  itemListElement: ILCELER.map((ilce, i) => ({
-    "@type": "ListItem",
-    position: i + 1,
-    name: ilce.label,
-    url: `${BASE}${ilce.href}`,
-  })),
-};
 
 const BLOG_POSTS = [
   {
@@ -97,6 +85,23 @@ const BLOG_POSTS = [
 ];
 
 export default function TrabzonPage() {
+  const psikologlar = getProfessionalsByCityAndProfession("trabzon", "psikolog");
+
+  const citySchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Trabzon Psikolog Listesi",
+    description: "Trabzon'da lisanslı ve diploma doğrulamalı psikolog ve terapistler.",
+    url: `${BASE}/trabzon`,
+    numberOfItems: psikologlar.length,
+    itemListElement: psikologlar.map((e, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: e.name,
+      url: `${BASE}/uzman/${e.slug}`,
+    })),
+  };
+
   return (
     <>
       <script
@@ -138,12 +143,12 @@ export default function TrabzonPage() {
 
             <div className="flex gap-3 shrink-0">
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl px-5 py-4 text-center border border-white/10">
-                <p className="text-2xl font-black text-white">8</p>
-                <p className="text-brand-300 text-xs mt-0.5">İlçe</p>
+                <p className="text-2xl font-black text-white">{psikologlar.length}</p>
+                <p className="text-brand-300 text-xs mt-0.5">Uzman</p>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl px-5 py-4 text-center border border-white/10">
-                <p className="text-2xl font-black text-white">2026</p>
-                <p className="text-brand-300 text-xs mt-0.5">Güncel</p>
+                <p className="text-2xl font-black text-white">8</p>
+                <p className="text-brand-300 text-xs mt-0.5">İlçe</p>
               </div>
             </div>
           </div>
@@ -152,6 +157,19 @@ export default function TrabzonPage() {
 
       {/* Bilgi kartları */}
       <div className="max-w-6xl mx-auto px-4 py-10">
+
+        {/* Uzman listesi */}
+        {psikologlar.length > 0 && (
+          <div className="mb-10">
+            <h2 className="text-lg font-black text-brand-900 mb-4">Trabzon Psikologları</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {psikologlar.map((expert) => (
+                <ExpertCard key={expert.slug} expert={expert} />
+              ))}
+            </div>
+          </div>
+        )}
+
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
           <div className="bg-white border border-cream-200 rounded-2xl p-5">
             <p className="text-xs font-bold text-brand-500 uppercase tracking-wide mb-1">Bireysel Terapi</p>

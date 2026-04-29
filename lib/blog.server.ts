@@ -19,7 +19,7 @@ export interface BlogPostFull {
   category: string;
   author: string;
   publishedAt: string;
-  image?: string;
+  image: string;
   body: string;
   readTime: string;
   faqs?: BlogFaq[];
@@ -31,7 +31,7 @@ function estimateReadTime(body: string): string {
   return `${minutes} dk`;
 }
 
-function resolveImage(slug: string, frontmatterImage?: string): string | undefined {
+function resolveImage(slug: string, frontmatterImage?: string, title?: string, category?: string): string {
   // 1. Frontmatter'da açıkça belirtilmişse kullan
   if (frontmatterImage) return frontmatterImage;
   // 2. Local görsel var mı? (.jpg, .png, .webp sırasıyla dene)
@@ -39,7 +39,10 @@ function resolveImage(slug: string, frontmatterImage?: string): string | undefin
     const localPath = path.join(process.cwd(), "public", "images", "blog", `${slug}.${ext}`);
     if (fs.existsSync(localPath)) return `/images/blog/${slug}.${ext}`;
   }
-  return undefined;
+  // 3. Dinamik OG görseli
+  const t = encodeURIComponent(title ?? slug);
+  const c = encodeURIComponent(category ?? "Genel");
+  return `/api/og?title=${t}&category=${c}`;
 }
 
 function getSlugs(): string[] {
@@ -68,7 +71,7 @@ export function getAllBlogPostsFromFiles(): Omit<BlogPostFull, "body">[] {
         category: data.category ?? "Genel",
         author: data.author ?? "TerapiRehberi Editör",
         publishedAt: data.publishedAt ?? new Date().toISOString().split("T")[0],
-        image: resolveImage(slug, data.image),
+        image: resolveImage(slug, data.image, data.title ?? slug, data.category ?? "Genel"),
         readTime: estimateReadTime(content),
       };
     })
@@ -104,7 +107,7 @@ export function getBlogPostBySlugFromFile(
     category: data.category ?? "Genel",
     author: data.author ?? "TerapiRehberi Editör",
     publishedAt: data.publishedAt ?? new Date().toISOString().split("T")[0],
-    image: resolveImage(slug, data.image),
+    image: resolveImage(slug, data.image, data.title ?? slug, data.category ?? "Genel"),
     body: content,
     readTime: estimateReadTime(content),
     faqs: data.faqs ?? [],

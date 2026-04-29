@@ -9,6 +9,7 @@ export interface Expert {
   slug: string;
   name: string;
   title: string;
+  profession?: string;
   city: string;
   district: string;
   image: string;

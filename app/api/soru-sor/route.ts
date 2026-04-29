@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
+import { resend, FROM_NOREPLY } from "@/lib/resend";
 
 const ALLOWED_KATEGORILER = new Set(["psikolog", "cocuk", "ergen", "aile"]);
 const MAX_SORU_LEN = 800;
@@ -52,19 +53,13 @@ export async function POST(req: NextRequest) {
     existing.push(entry);
     fs.writeFileSync(filePath, JSON.stringify(existing, null, 2), "utf-8");
 
-    // Resend ile e-posta — değerler escape edildi
-    const resendKey  = process.env.RESEND_API_KEY;
     const adminEmail = process.env.ADMIN_EMAIL ?? "info@terapirehberi.com";
-    if (resendKey) {
-      await fetch("https://api.resend.com/emails", {
-        method: "POST",
-        headers: { Authorization: `Bearer ${resendKey}`, "Content-Type": "application/json" },
-        body: JSON.stringify({
-          from: "TerapiRehberi <noreply@terapirehberi.com>",
-          to: [adminEmail],
-          subject: `Yeni Soru: ${esc(soru.slice(0, 60))}...`,
-          html: `<h3>Yeni Soru Sor Başvurusu</h3><p><b>Kategori:</b> ${esc(kategori)}</p><p><b>Soru:</b> ${esc(soru)}</p><p><b>Tarih:</b> ${entry.tarih}</p>`,
-        }),
+    if (resend) {
+      await resend.emails.send({
+        from: FROM_NOREPLY,
+        to: [adminEmail],
+        subject: `Yeni Soru: ${esc(soru.slice(0, 60))}...`,
+        html: `<h3>Yeni Soru Sor Başvurusu</h3><p><b>Kategori:</b> ${esc(kategori)}</p><p><b>Soru:</b> ${esc(soru)}</p><p><b>Tarih:</b> ${entry.tarih}</p>`,
       });
     }
 

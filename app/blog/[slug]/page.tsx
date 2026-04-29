@@ -300,17 +300,16 @@ export default async function BlogPostPage({ params }: Props) {
           <main className="flex-1 min-w-0">
 
             {/* Hero görsel */}
-            {post.image && (
-              <div className="relative w-full h-64 sm:h-80 rounded-2xl overflow-hidden mb-8 bg-brand-100">
-                <Image
-                  src={post.image}
-                  alt={post.title}
-                  fill
-                  className="object-cover"
-                  priority
-                />
-              </div>
-            )}
+            <div className="relative w-full h-64 sm:h-80 rounded-2xl overflow-hidden mb-8 bg-brand-100">
+              <Image
+                src={post.image}
+                alt={post.title}
+                fill
+                className="object-cover"
+                priority
+                unoptimized={post.image.startsWith("/api/og")}
+              />
+            </div>
 
             {/* Özet kutusu */}
             <div className="bg-brand-50 border-l-4 border-brand-400 rounded-r-2xl px-6 py-5 mb-8">

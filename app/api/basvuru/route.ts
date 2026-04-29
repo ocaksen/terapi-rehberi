@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
 import { writeFile, mkdir } from "fs/promises";
+import { resend, FROM_BASVURU } from "@/lib/resend";
 
 // İzin verilen video MIME türleri
 const ALLOWED_MIME = new Set(["video/mp4", "video/webm", "video/quicktime", "video/x-msvideo"]);
@@ -93,47 +94,38 @@ export async function POST(req: NextRequest) {
       videoPath = `/videos/uzmanlar/${filename}`;
     }
 
-    // Resend ile e-posta — tüm değerler escape edildi
-    const resendKey  = process.env.RESEND_API_KEY;
     const adminEmail = process.env.ADMIN_EMAIL ?? "info@terapirehberi.com";
     const adminPhone = process.env.ADMIN_WHATSAPP ?? "";
 
-    if (resendKey) {
+    if (resend) {
       const row = (label: string, val: string) =>
         `<tr><td style="padding:8px;border:1px solid #eee;font-weight:bold">${label}</td><td style="padding:8px;border:1px solid #eee">${esc(val)}</td></tr>`;
 
-      await fetch("https://api.resend.com/emails", {
-        method: "POST",
-        headers: {
-          Authorization: `Bearer ${resendKey}`,
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          from: "TerapiRehberi Başvuru <noreply@terapirehberi.com>",
-          to: [adminEmail],
-          subject: `Yeni Uzman Başvurusu: ${esc(data.adSoyad)} — ${esc(data.unvan)}`,
-          html: `
-            <h2>Yeni Uzman Başvurusu</h2>
-            <table style="border-collapse:collapse;width:100%">
-              ${row("Ad Soyad",      data.adSoyad)}
-              ${row("Unvan",         data.unvan)}
-              ${row("E-posta",       data.eposta)}
-              ${row("Telefon",       data.telefon)}
-              ${row("Şehir / İlçe", `${data.sehir} / ${data.ilce}`)}
-              ${row("Okul",         `${data.okul} (${data.mezuniyetYili})`)}
-              ${row("Deneyim",       data.deneyim)}
-              ${row("Çalışma Alanları", data.alanlar)}
-              ${row("Seans Tipi",   data.seanstipi)}
-              ${row("Seans Ücreti", `${data.seansUcreti} TL`)}
-              ${row("Kısa Bio",     data.bio)}
-              ${videoPath ? row("Video", `✅ Yüklendi: ${videoPath}`) : ""}
-            </table>
-            <p style="margin-top:16px;color:#666;font-size:13px">
-              Başvuru tarihi: ${new Date().toLocaleString("tr-TR")}<br/>
-              KVKK onayı: ✅ Verildi
-            </p>
-          `,
-        }),
+      await resend.emails.send({
+        from: FROM_BASVURU,
+        to: [adminEmail],
+        subject: `Yeni Uzman Başvurusu: ${esc(data.adSoyad)} — ${esc(data.unvan)}`,
+        html: `
+          <h2>Yeni Uzman Başvurusu</h2>
+          <table style="border-collapse:collapse;width:100%">
+            ${row("Ad Soyad",      data.adSoyad)}
+            ${row("Unvan",         data.unvan)}
+            ${row("E-posta",       data.eposta)}
+            ${row("Telefon",       data.telefon)}
+            ${row("Şehir / İlçe", `${data.sehir} / ${data.ilce}`)}
+            ${row("Okul",         `${data.okul} (${data.mezuniyetYili})`)}
+            ${row("Deneyim",       data.deneyim)}
+            ${row("Çalışma Alanları", data.alanlar)}
+            ${row("Seans Tipi",   data.seanstipi)}
+            ${row("Seans Ücreti", `${data.seansUcreti} TL`)}
+            ${row("Kısa Bio",     data.bio)}
+            ${videoPath ? row("Video", `✅ Yüklendi: ${videoPath}`) : ""}
+          </table>
+          <p style="margin-top:16px;color:#666;font-size:13px">
+            Başvuru tarihi: ${new Date().toLocaleString("tr-TR")}<br/>
+            KVKK onayı: ✅ Verildi
+          </p>
+        `,
       });
     }
 
