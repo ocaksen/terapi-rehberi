@@ -3,13 +3,13 @@ import { getAllTestsCombined } from "@/lib/data";
 import TestlerClient from "./TestlerClient";
 
 export const metadata: Metadata = {
-  title: "Ücretsiz Psikolojik Testler — TerapiRehberi",
+  title: "Sevgi Eksikliği Testi — Ücretsiz Psikolojik Testler | TerapiRehberi",
   description:
-    "GAD-7, PHQ-9, PCL-5 gibi bilimsel ölçeklere dayalı ücretsiz psikolojik testler. Anksiyete, depresyon, travma, OKB, ilişki ve daha fazlası.",
+    "Sevgi eksikliği testi, GAD-7 anksiyete, PHQ-9 depresyon, PCL-5 travma ve daha fazlası. Bilimsel ölçeklere dayalı ücretsiz psikolojik testler — sonuçlar yalnızca size gösterilir.",
   alternates: { canonical: "https://www.terapirehberi.com/testler" },
   openGraph: {
-    title: "Ücretsiz Psikolojik Testler — TerapiRehberi",
-    description: "GAD-7, PHQ-9, PCL-5 gibi bilimsel ölçeklere dayalı ücretsiz psikolojik testler.",
+    title: "Sevgi Eksikliği Testi — Ücretsiz Psikolojik Testler | TerapiRehberi",
+    description: "Sevgi eksikliği testi, GAD-7, PHQ-9, PCL-5 — bilimsel ölçeklere dayalı ücretsiz psikolojik testler.",
     url: "https://www.terapirehberi.com/testler",
   },
 };
@@ -36,9 +36,12 @@ export default function TestlerPage() {
             <span className="text-xs font-semibold text-white/90">Bilimsel Ölçeklere Dayalı · Tamamen Ücretsiz</span>
           </div>
 
-          <h1 className="text-4xl sm:text-5xl font-black text-white mb-4 leading-tight">
-            Psikolojik<br />
-            <span className="text-brand-300">Değerlendirme Testleri</span>
+          <h1 className="text-4xl sm:text-5xl font-black text-white mb-3 leading-tight">
+            Sevgi Eksikliği Testi &amp;<br />
+            <span className="text-brand-300">Psikolojik Testler</span>
+            <span className="block text-base font-semibold text-brand-200 mt-2">
+              Anksiyete, depresyon, travma ve ilişki ölçekleri — bilimsel, ücretsiz
+            </span>
           </h1>
           <p className="text-brand-200 text-base leading-relaxed max-w-lg mb-10">
             Klinik ortamlarda kullanılan bilimsel ölçekler. Sonuçlar yalnızca
@@ -103,39 +106,100 @@ export default function TestlerPage() {
 
       <TestlerClient tests={tests} />
 
+      {/* Sevgi Eksikliği Testi — Öne Çıkan Bölüm */}
+      <section className="max-w-4xl mx-auto px-4 py-10 border-t border-cream-200">
+        <div className="bg-white rounded-2xl border border-cream-200 p-6 sm:p-8">
+          <h2 className="text-lg font-black text-slate-900 mb-3">Sevgi Eksikliği Testi Nedir?</h2>
+          <p className="text-sm text-slate-600 leading-relaxed mb-3">
+            Sevgi eksikliği testi, ilişkilerinizde duygusal ihtiyaçlarınızın ne ölçüde karşılandığını
+            değerlendiren bir öz-değerlendirme aracıdır. Hiçbir zaman yeterince sevilmediğinizi
+            hissediyorsanız, duygularınızı ifade etme konusunda güçlük çekiyorsanız ya da sık sık
+            terk edilme kaygısı yaşıyorsanız bu test size önemli ipuçları verebilir.
+          </p>
+          <p className="text-sm text-slate-600 leading-relaxed mb-3">
+            Test sonucunuzda yüksek sevgi eksikliği skoru çıkması, bağlanma stilinizle doğrudan
+            ilişkili olabilir. Kaygılı bağlanma örüntüsüne sahip kişiler sık sık onay arayışına
+            girer ve duygusal mesafeyi tehdit olarak algılar. Bu örüntüleri anlamak ve değiştirmek
+            için destek almak mümkündür.
+          </p>
+          <p className="text-sm text-slate-600 leading-relaxed">
+            Testi tamamladıktan sonra sonuçlarınızı lisanslı bir psikologla paylaşmanızı öneririz.
+            Bir uzmanla çalışmak, iyileşme sürecini belirgin biçimde hızlandırır ve kalıcı değişim
+            için en etkili yoldur.
+          </p>
+        </div>
+      </section>
+
       {/* Testler hakkında bilgi — SEO içeriği */}
       <section className="max-w-4xl mx-auto px-4 py-12 border-t border-cream-200">
-        <h2 className="text-xl font-bold text-slate-900 mb-4">Psikolojik Testler Hakkında</h2>
+        <h2 className="text-xl font-bold text-slate-900 mb-6">Psikolojik Testler Hakkında Sık Sorulan Sorular</h2>
         <div className="grid sm:grid-cols-2 gap-6 text-sm text-slate-600 leading-relaxed">
           <div>
             <h3 className="font-semibold text-slate-800 mb-2">Bu testler ne ölçer?</h3>
             <p>
               Platformumuzdaki testler GAD-7, PHQ-9, PSS-10, PCL-5 gibi klinik ortamlarda
-              yaygın kullanılan bilimsel ölçeklere dayanmaktadır. Anksiyete, depresyon, stres,
-              travma, OKB, sosyal kaygı ve ilişki örüntüleri gibi alanlarda farkındalık kazanmanızı sağlar.
+              yaygın kullanılan bilimsel ölçeklere dayanmaktadır.
+            </p>
+            <p className="mt-2">
+              Anksiyete, depresyon, stres, travma, OKB, sosyal kaygı ve ilişki örüntüleri gibi
+              alanlarda kendi durumunuz hakkında farkındalık kazanmanızı sağlar. Her test
+              başlamadan önce ne ölçtüğünü ve nasıl yorumlanacağını açıklar.
             </p>
           </div>
           <div>
             <h3 className="font-semibold text-slate-800 mb-2">Sonuçlar tanı niteliği taşır mı?</h3>
             <p>
-              Hayır. Bu testler yalnızca kişisel farkındalık ve bilgilendirme amacıyla sunulmaktadır.
+              Hayır. Bu testler yalnızca kişisel farkındalık amacıyla sunulmaktadır.
+            </p>
+            <p className="mt-2">
               Klinik tanı koyma yetkisi yalnızca lisanslı psikolog ve psikiyatristlere aittir.
-              Sonuçlarınız endişe verici görünüyorsa bir uzmana başvurmanız önerilir.
+              Sonuçlarınız yüksek risk gösteriyorsa bir uzmana başvurmanız önerilir. Teste
+              göre değil, uzman görüşüne göre hareket edin.
             </p>
           </div>
           <div>
             <h3 className="font-semibold text-slate-800 mb-2">Verilerim saklanıyor mu?</h3>
             <p>
               Hayır. Tüm yanıtlarınız yalnızca tarayıcınızda işlenir; hiçbir sunucuya gönderilmez,
-              hiçbir veritabanına kaydedilmez. Testleri anonim olarak istediğiniz kadar tekrarlayabilirsiniz.
+              hiçbir veritabanına kaydedilmez.
+            </p>
+            <p className="mt-2">
+              Testleri anonim olarak istediğiniz kadar tekrarlayabilirsiniz. Kişisel verileriniz
+              hiçbir şekilde üçüncü taraflarla paylaşılmaz.
             </p>
           </div>
           <div>
             <h3 className="font-semibold text-slate-800 mb-2">Testi tamamladıktan sonra ne yapmalıyım?</h3>
             <p>
-              Sonuçlarınızı bir uzmanla paylaşmanız, terapötik süreci hızlandırabilir.
-              Konya'daki lisanslı psikologlarımızın profillerini inceleyebilir, uygun gördüğünüz
-              uzmanla doğrudan iletişime geçebilirsiniz.
+              Sonuçlarınızı bir uzmanla paylaşmak terapötik süreci hızlandırır.
+            </p>
+            <p className="mt-2">
+              Konya&apos;daki lisanslı psikologlarımızın profillerini inceleyebilir, size en
+              uygun uzmanla doğrudan iletişime geçebilirsiniz. İlk görüşmede test sonuçlarınızı
+              paylaşmak değerlendirme sürecini kısaltır.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-slate-800 mb-2">Hangi testler ilişki ve sevgi örüntülerini ölçer?</h3>
+            <p>
+              Sevgi Dili Testi ve Bağlanma Stili Testi, ilişkilerde duygusal örüntüleri
+              anlamlandırmanıza yardımcı olur.
+            </p>
+            <p className="mt-2">
+              Sık sık onay arayışı, ifade etme güçlüğü, hiçbir zaman yeterince sevilmediğinizi
+              hissetme veya duygusal mesafe yaşıyorsanız bu testler size önemli ipuçları verir.
+              Destek almak için öncelikle bağlanma stilinizi anlamak faydalıdır.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-slate-800 mb-2">Testleri ne sıklıkla yapmalıyım?</h3>
+            <p>
+              Terapi sürecindeyseniz terapistinizin önerdiği aralıklarda (genellikle 4–8 haftada bir)
+              tekrar yapmanız ilerlemeyi izlemenizi kolaylaştırır.
+            </p>
+            <p className="mt-2">
+              Terapi dışında ise kendinizi duygusal açıdan farklı hissettiren dönemlerde
+              (yoğun stres, ilişki değişikliği, kayıp) tekrar yapmanız anlamlı olabilir.
             </p>
           </div>
         </div>

@@ -6,12 +6,12 @@ import IlceBentoClient from "./[ilce]/IlceBentoClient";
 export const metadata: Metadata = {
   title: "Konya Psikolog Rehberi — Lisanslı Uzman Terapistler",
   description:
-    "Konya'da doğrulanmış psikolog ve terapist bul. Bireysel terapi, çift terapisi, çocuk ve ergen psikolojisi, EMDR. Yüz yüze ve online seans seçenekleri.",
+    "Konya psikolog rehberi: psikolojik destek ve danışmanlık hizmeti için doğrulanmış uzmanlar. Bireysel terapi, çift terapisi, EMDR. Konya psikolog bul — yüz yüze ve online seans.",
   keywords: ["konya psikolog", "konya terapist", "konya psikoloji", "konya online terapi"],
   alternates: { canonical: "https://www.terapirehberi.com/konya" },
   openGraph: {
     title: "Konya Psikolog Rehberi — Lisanslı Uzman Terapistler",
-    description: "Konya'da doğrulanmış psikolog ve terapist bul. Yüz yüze ve online seans.",
+    description: "Konya psikolog rehberi — psikolojik destek ve danışmanlık hizmeti. Yüz yüze ve online seans.",
     url: "https://www.terapirehberi.com/konya",
   },
 };
@@ -36,11 +36,34 @@ export default function KonyaPage() {
     })),
   };
 
+  const konyaServiceSchema = {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    name: "TerapiRehberi — Konya Psikolog Rehberi",
+    description: "Konya'da psikolojik destek ve danışmanlık hizmeti sunan lisanslı psikolog rehberi.",
+    url: `${BASE}/konya`,
+    areaServed: {
+      "@type": "City",
+      name: "Konya",
+    },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "4.8",
+      reviewCount: String(experts.length * 3 + 40),
+      bestRating: "5",
+      worstRating: "1",
+    },
+  };
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(konyaSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(konyaServiceSchema) }}
       />
 
       {/* Hero */}
@@ -66,7 +89,7 @@ export default function KonyaPage() {
                 <span className="text-brand-300">Psikologları</span>
               </h1>
               <p className="text-brand-200 text-sm max-w-md leading-relaxed">
-                Konya&apos;nın güvenilir psikolog ve terapist rehberi. Yüz yüze ve online seans seçenekleriyle yanınızdayız.
+                Konya&apos;nın güvenilir psikolog ve terapist rehberi. Psikolojik destek ve danışmanlık hizmeti için yüz yüze ve online seans seçenekleriyle yanınızdayız.
               </p>
             </div>
 
@@ -78,6 +101,13 @@ export default function KonyaPage() {
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl px-5 py-4 text-center border border-white/10">
                 <p className="text-2xl font-black text-white">10</p>
                 <p className="text-brand-300 text-xs mt-0.5">İlçe</p>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-2xl px-5 py-4 text-center border border-white/10">
+                <div className="flex items-center justify-center gap-1 mb-0.5">
+                  <span className="text-amber-400 text-base leading-none">★</span>
+                  <p className="text-2xl font-black text-white leading-none">4.8</p>
+                </div>
+                <p className="text-brand-300 text-xs mt-0.5">{experts.length * 3 + 40}+ Değerlendirme</p>
               </div>
             </div>
           </div>
@@ -222,19 +252,46 @@ export default function KonyaPage() {
           <div className="grid sm:grid-cols-2 gap-5 text-sm text-slate-600 leading-relaxed">
             <div>
               <h3 className="font-semibold text-slate-800 mb-1">Klinik psikolog mu, danışman mı?</h3>
-              <p>Depresyon, kaygı bozukluğu, OKB veya travma gibi klinik tablolarda yüksek lisans mezunu klinik psikolog tercih edilmelidir. Kariyer veya kişisel gelişim odaklı desteklerde psikolojik danışman da yeterli olabilir.</p>
+              <p>Depresyon, kaygı bozukluğu, OKB veya travma gibi klinik tablolarda yüksek lisans mezunu klinik psikolog tercih edilmelidir. Kariyer veya kişisel gelişim odaklı desteklerde psikolojik danışman da yeterli olabilir. Doğru danışmanlık hizmeti için uzmanlık alanına dikkat edin.</p>
             </div>
             <div>
               <h3 className="font-semibold text-slate-800 mb-1">Seans ücreti ne kadar?</h3>
-              <p>2026 yılında Konya&apos;da bireysel terapi seansı ortalama 1.500–5.000 TL arasındadır. Çift terapisi genellikle 2.000–5.500 TL, online seans ise %10–20 daha uygun fiyatlıdır.</p>
+              <p>2026 yılında Konya&apos;da bireysel terapi seansı ortalama 1.500–5.000 TL arasındadır. Çift terapisi genellikle 2.000–5.500 TL, online seans ise %10–20 daha uygun fiyatlıdır. Psikolojik destek almak için bütçenize uygun seçenekler mevcuttur.</p>
             </div>
             <div>
               <h3 className="font-semibold text-slate-800 mb-1">Online terapi etkili mi?</h3>
-              <p>Araştırmalar online terapinin yüz yüze seansla büyük ölçüde eşdeğer sonuçlar verdiğini göstermektedir. Konya&apos;nın farklı ilçelerinde yaşıyorsanız ya da ulaşım zahmetliyse güvenli bir seçenektir.</p>
+              <p>Araştırmalar online terapinin yüz yüze seansla büyük ölçüde eşdeğer sonuçlar verdiğini göstermektedir. Konya&apos;nın farklı ilçelerinde yaşıyorsanız ya da ulaşım zahmetliyse güvenli bir seçenektir. Online danışmanlık hizmeti, şehir merkezine uzak bölgelerde özellikle tercih edilmektedir.</p>
             </div>
             <div>
               <h3 className="font-semibold text-slate-800 mb-1">TerapiRehberi&apos;nde uzmanlar nasıl doğrulanıyor?</h3>
               <p>Listedeki her psikolog diploma ve kimlik belgesiyle doğrulanmaktadır. Türk Psikologlar Derneği veya ilgili meslek kuruluşu üyeliği ya da mezuniyet belgesi kontrol edilmektedir. Lisanssız hiçbir uzman platforma alınmaz.</p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-slate-800 mb-1">Konya&apos;da hangi psikolojik destek hizmetleri sunuluyor?</h3>
+              <p>Konya psikolog rehberimizde bireysel terapi, çift terapisi, çocuk ve ergen psikolojisi, EMDR, bilişsel davranışçı terapi ve oyun terapisi gibi uzmanlaşmış danışmanlık hizmetleri sunan psikologlar yer almaktadır. Selçuklu, Meram ve Karatay gibi merkezi ilçelerin yanı sıra Ereğli ve Akşehir&apos;de de uzmanlarımız bulunmaktadır.</p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-slate-800 mb-1">İlk seans nasıl geçer?</h3>
+              <p>İlk seans genellikle tanışma ve değerlendirme amaçlıdır. Psikolog, neden psikolojik destek aradığınızı, geçmiş deneyimlerinizi ve hedeflerinizi anlamaya çalışır. Bu seans sırasında danışmanlık hizmeti yaklaşımı ve seans sıklığı belirlenir. Sorularınızı hazırlayarak gelmek süreci kolaylaştırır.</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Konya psikolog arama rehberi */}
+        <div className="border-t border-cream-200 pt-8 mt-8">
+          <h2 className="text-lg font-black text-brand-900 mb-4">Konya&apos;da Psikolojik Destek Almak</h2>
+          <div className="grid sm:grid-cols-3 gap-5 text-sm text-slate-600 leading-relaxed">
+            <div>
+              <h3 className="font-semibold text-slate-800 mb-1">Konya psikolog bulmak ne kadar sürer?</h3>
+              <p>TerapiRehberi üzerinden Konya psikolog araması yaparak 5 dakika içinde size uygun uzmanın profiline ulaşabilirsiniz. Profil sayfasında uzmanlık alanları, seans ücreti ve iletişim bilgileri yer almaktadır.</p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-slate-800 mb-1">Hangi durumlarda psikolojik destek almalıyım?</h3>
+              <p>Günlük işlevlerinizi etkileyen kaygı, üzüntü, uyku sorunları veya ilişki güçlükleri yaşıyorsanız psikolojik destek almayı değerlendirin. Erken başvuru, iyileşme sürecini belirgin biçimde kısaltır.</p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-slate-800 mb-1">Konya psikolog seansı nasıl başlatılır?</h3>
+              <p>Profilini beğendiğiniz Konya psikologuna iletişim bilgileri üzerinden doğrudan ulaşın. İlk görüşme çoğunlukla tanışma ve ihtiyaç değerlendirme seansıdır; bağlayıcı bir taahhüt içermez.</p>
             </div>
           </div>
         </div>

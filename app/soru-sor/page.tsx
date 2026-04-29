@@ -6,13 +6,13 @@ import type { SoruCevap } from "@/types";
 import SoruSorClient from "./SoruSorClient";
 
 export const metadata: Metadata = {
-  title: "Psikolojik Soru Sor",
+  title: "Psikolog Sor — Anonim Psikoloji Soruları | TerapiRehberi",
   description:
-    "Merak ettiğiniz psikoloji sorularını anonim sorun, uzman psikologlar yanıtlasın. Konya TerapiRehberi uzman Q&A platformu.",
+    "Psikolog sor, anonim yanıt al. Psikoloğunuza sorun — merak ettiğiniz psikoloji sorularını anonim sorun, uzman psikologlar yanıtlasın. TerapiRehberi Q&A platformu.",
   alternates: { canonical: "https://www.terapirehberi.com/soru-sor" },
   openGraph: {
-    title: "Psikolojik Soru Sor — TerapiRehberi",
-    description: "Merak ettiğiniz psikoloji sorularını anonim sorun, uzman psikologlar yanıtlasın.",
+    title: "Psikolog Sor — Anonim Psikoloji Soruları | TerapiRehberi",
+    description: "Psikolog sor, anonim yanıt al. Psikoloğunuza sorun — uzman psikologlar yanıtlasın.",
     url: "https://www.terapirehberi.com/soru-sor",
   },
 };
@@ -55,17 +55,44 @@ export default function SoruSorPage() {
   // Kullanıcı soruları önce, sonra statikler
   const sorular = [...userSorular, ...staticSorular];
 
+  const qaSchema = sorular.length > 0
+    ? {
+        "@context": "https://schema.org",
+        "@type": "QAPage",
+        mainEntity: sorular.slice(0, 6).map((s) => ({
+          "@type": "Question",
+          name: s.soru,
+          answerCount: 1,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: s.cevap,
+            author: { "@type": "Person", name: s.uzman },
+          },
+        })),
+      }
+    : null;
+
   return (
     <>
+      {qaSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(qaSchema) }}
+        />
+      )}
       {/* Statik SEO içeriği */}
       <div className="bg-brand-900 py-12 px-4">
         <div className="max-w-3xl mx-auto">
           <p className="text-brand-300 text-xs font-semibold uppercase tracking-widest mb-3">Uzman Yanıtları</p>
-          <h1 className="text-3xl font-bold text-white mb-3">Psikolojik Soru & Cevap</h1>
+          <h1 className="text-3xl font-bold text-white mb-3">Psikolog Sor: Psikoloji Soruları & Uzman Cevapları</h1>
           <p className="text-brand-200 text-sm leading-relaxed max-w-xl">
-            Psikoloji ve terapi hakkında merak ettiğiniz soruları anonim olarak sorabilir,
-            Konya&apos;daki lisanslı uzmanların yanıtlarını okuyabilirsiniz.
+            Psikolog sor, anonim yanıt al. Psikoloji ve terapi hakkında merak ettiğiniz her soruyu
+            psikoloğunuza sorun — Konya&apos;daki lisanslı uzmanlar yanıtlasın.
             Kişisel tavsiye niteliği taşımayan bu yanıtlar genel bilgilendirme amacıyla sunulmaktadır.
+          </p>
+          <p className="text-brand-300 text-xs leading-relaxed max-w-xl mt-3">
+            Psikolog sor platformumuzda kaygı, depresyon, ilişki sorunları, travma ve kişisel gelişim
+            konularında uzman yanıtlarına ulaşabilirsiniz. Sorunuzu tamamen anonim olarak iletebilirsiniz.
           </p>
         </div>
       </div>
@@ -84,6 +111,44 @@ export default function SoruSorPage() {
       )}
 
       <SoruSorClient sorular={sorular} />
+
+      {/* Bilgi bölümü — SEO */}
+      <section className="max-w-3xl mx-auto px-4 py-12 border-t border-slate-100">
+        <h2 className="text-lg font-bold text-slate-900 mb-5">Psikolog Sor: Sık Sorulan Sorular</h2>
+        <div className="grid sm:grid-cols-2 gap-6 text-sm text-slate-600 leading-relaxed">
+          <div>
+            <h3 className="font-semibold text-slate-800 mb-2">Psikolog sor platformu nasıl çalışır?</h3>
+            <p>
+              Psikoloğunuza sorun bölümünden anonim olarak soru iletebilirsiniz.
+              Konya&apos;daki lisanslı psikologlar sorunuzu değerlendirerek genel bilgilendirme
+              amacıyla yanıtlar. Yanıtlar kişisel tavsiye niteliği taşımaz.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-slate-800 mb-2">Hangi konularda psikolog sor?</h3>
+            <p>
+              Kaygı, depresyon, ilişki sorunları, travma, uyku bozukluğu, iş stresi ve
+              kişisel gelişim gibi konularda psikolog sor platformumuza soru iletebilirsiniz.
+              Her soru uzman tarafından incelenir.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-slate-800 mb-2">Yanıtlar ne kadar sürede gelir?</h3>
+            <p>
+              Sorular uzmanlar tarafından incelendikten sonra yayımlanır.
+              Acil psikolojik destek ihtiyacında doğrudan bir psikologla görüşmenizi öneririz.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-slate-800 mb-2">Psikolog sor ile terapi aynı şey mi?</h3>
+            <p>
+              Hayır. Psikolog sor platformu genel bilgilendirme içindir; terapi yerine geçmez.
+              Düzenli psikolojik destek için lisanslı bir psikologla bireysel seans almanız gerekir.
+              Konya&apos;daki psikologlarımızı incelemek için <a href="/konya" className="text-brand-600 hover:underline">Konya psikolog rehberimizi</a> ziyaret edebilirsiniz.
+            </p>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
